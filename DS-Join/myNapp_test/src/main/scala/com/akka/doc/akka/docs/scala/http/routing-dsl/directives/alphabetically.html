@@ -1,0 +1,726 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Predefined Directives (alphabetically) &mdash; Akka Documentation</title>
+    
+    <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/base.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/docs.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.4.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/toc.js"></script>
+    <script type="text/javascript" src="../../../../_static/prettify.js"></script>
+    <script type="text/javascript" src="../../../../_static/highlightCode.js"></script>
+    <script type="text/javascript" src="../../../../_static/effects.core.js"></script>
+    <script type="text/javascript" src="../../../../_static/effects.highlight.js"></script>
+    <script type="text/javascript" src="../../../../_static/scrollTo.js"></script>
+    <script type="text/javascript" src="../../../../_static/contentsFix.js"></script>
+    <script type="text/javascript" src="../../../../_static/ga.js"></script>
+    <script type="text/javascript" src="../../../../_static/warnOldDocs.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+    <link rel="top" title="Akka Documentation" href="../../../../index.html" />
+    <link rel="up" title="Directives" href="index.html" />
+    <link rel="next" title="Predefined Directives (by trait)" href="by-trait.html" />
+    <link rel="prev" title="Directives" href="index.html" />
+
+
+  </head>
+  <body role="document">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="navbar-logo">
+          <a href="http://akka.io"><img class="svg-logo" src="../../../../_static/akka_full_color.svg" /></a>
+        </div>
+        <ul class="nav">
+          <li><a href="http://akka.io/docs">Documentation</a></li>
+          <li><a href="http://doc.akka.io/docs/akka/current/additional/faq.html">FAQ</a></li>
+          <li><a href="http://akka.io/downloads">Download</a></li>
+          <li><a href="http://groups.google.com/group/akka-user">Mailing List</a></li>
+          <li><a href="http://github.com/akka/akka">Code</a></li>
+          <li><a href="http://www.lightbend.com/how/subscription">Commercial Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="page-title">Predefined Directives (alphabetically)</div>
+      <div class="pdf-link"><a href="../../../../AkkaScala.pdf" title="Akka Scala Documentation"><img src="../../../../_static/pdf-scala-icon.png" style="height: 40px;" /></a></div>
+      <div class="pdf-link"><a href="../../../../AkkaJava.pdf" title="Akka Java Documentation"><img src="../../../../_static/pdf-java-icon.png" style="height: 40px;" /></a></div>
+    </div>
+    <div class="main-container">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <ul class="breadcrumb">
+              <li>
+                 <span class="divider">|</span> <a href="by-trait.html">Predefined Directives (by trait)</a> <span class="divider">»</span>
+              </li>
+              <li>
+                <a href="../../../../java.html">Java Contents</a> <span class="divider">|</span> <a href="../../../../scala.html">Scala Contents</a>
+              </li>
+              <li>
+                <span class="divider">«</span> <a href="index.html">Directives</a> <span class="divider">|</span>
+              </li>
+              <li style="float: left">
+                Version 2.4.9
+              </li>
+              <li style="float: left">
+                <input type="search" id="search" class="form-control" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row"><div class="span9">
+            
+  <div class="section" id="predefined-directives-alphabetically">
+<span id="predefined-directives"></span><h1>Predefined Directives (alphabetically)</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Directive</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="security-directives/authenticateBasic.html#authenticatebasic"><span class="std std-ref">authenticateBasic</span></a></td>
+<td>Wraps the inner route with Http Basic authentication support using a given
+<code class="docutils literal"><span class="pre">Authenticator[T]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="security-directives/authenticateBasicAsync.html#authenticatebasicasync"><span class="std std-ref">authenticateBasicAsync</span></a></td>
+<td>Wraps the inner route with Http Basic authentication support using a given
+<code class="docutils literal"><span class="pre">AsyncAuthenticator[T]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="security-directives/authenticateBasicPF.html#authenticatebasicpf"><span class="std std-ref">authenticateBasicPF</span></a></td>
+<td>Wraps the inner route with Http Basic authentication support using a given
+<code class="docutils literal"><span class="pre">AuthenticatorPF[T]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="security-directives/authenticateBasicPFAsync.html#authenticatebasicpfasync"><span class="std std-ref">authenticateBasicPFAsync</span></a></td>
+<td>Wraps the inner route with Http Basic authentication support using a given
+<code class="docutils literal"><span class="pre">AsyncAuthenticatorPF[T]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="security-directives/authenticateOAuth2.html#authenticateoauth2"><span class="std std-ref">authenticateOAuth2</span></a></td>
+<td>Wraps the inner route with OAuth Bearer Token authentication support using
+a given <code class="docutils literal"><span class="pre">AuthenticatorPF[T]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="security-directives/authenticateOAuth2Async.html#authenticateoauth2async"><span class="std std-ref">authenticateOAuth2Async</span></a></td>
+<td>Wraps the inner route with OAuth Bearer Token authentication support using
+a given <code class="docutils literal"><span class="pre">AsyncAuthenticator[T]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="security-directives/authenticateOAuth2PF.html#authenticateoauth2pf"><span class="std std-ref">authenticateOAuth2PF</span></a></td>
+<td>Wraps the inner route with OAuth Bearer Token authentication support using
+a given <code class="docutils literal"><span class="pre">AuthenticatorPF[T]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="security-directives/authenticateOAuth2PFAsync.html#authenticateoauth2pfasync"><span class="std std-ref">authenticateOAuth2PFAsync</span></a></td>
+<td>Wraps the inner route with OAuth Bearer Token authentication support using
+a given <code class="docutils literal"><span class="pre">AsyncAuthenticatorPF[T]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="security-directives/authenticateOrRejectWithChallenge.html#authenticateorrejectwithchallenge"><span class="std std-ref">authenticateOrRejectWithChallenge</span></a></td>
+<td>Lifts an authenticator function into a directive</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="security-directives/authorize.html#authorize"><span class="std std-ref">authorize</span></a></td>
+<td>Applies the given authorization check to the request</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="security-directives/authorizeAsync.html#authorizeasync"><span class="std std-ref">authorizeAsync</span></a></td>
+<td>Applies the given asynchronous authorization check to the request</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/cancelRejection.html#cancelrejection"><span class="std std-ref">cancelRejection</span></a></td>
+<td>Adds a <code class="docutils literal"><span class="pre">TransformationRejection</span></code> cancelling all rejections equal to the
+given one to the rejections potentially coming back from the inner route.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/cancelRejections.html#cancelrejections"><span class="std std-ref">cancelRejections</span></a></td>
+<td>Adds a <code class="docutils literal"><span class="pre">TransformationRejection</span></code> cancelling all matching rejections
+to the rejections potentially coming back from the inner route</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="header-directives/checkSameOrigin.html#checksameorigin"><span class="std std-ref">checkSameOrigin</span></a></td>
+<td>Checks that the request comes from the same origin</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="route-directives/complete.html#complete"><span class="std std-ref">complete</span></a></td>
+<td>Completes the request using the given arguments</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="future-directives/completeOrRecoverWith.html#completeorrecoverwith"><span class="std std-ref">completeOrRecoverWith</span></a></td>
+<td>&quot;Unwraps&quot; a <code class="docutils literal"><span class="pre">Future[T]</span></code> and runs the inner route when the future has
+failed with the error as an extraction of type <code class="docutils literal"><span class="pre">Throwable</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="marshalling-directives/completeWith.html#completewith"><span class="std std-ref">completeWith</span></a></td>
+<td>Uses the marshaller for a given type to extract a completion function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cache-condition-directives/conditional.html#conditional"><span class="std std-ref">conditional</span></a></td>
+<td>Wraps its inner route with support for conditional requests as defined
+by <a class="reference external" href="http://tools.ietf.org/html/rfc7232">http://tools.ietf.org/html/rfc7232</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cookie-directives/cookie.html#cookie"><span class="std std-ref">cookie</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">HttpCookie</span></code> with the given name</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="coding-directives/decodeRequest.html#decoderequest"><span class="std std-ref">decodeRequest</span></a></td>
+<td>Decompresses the  request if it is <code class="docutils literal"><span class="pre">gzip</span></code> or <code class="docutils literal"><span class="pre">deflate</span></code> compressed</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="coding-directives/decodeRequestWith.html#decoderequestwith"><span class="std std-ref">decodeRequestWith</span></a></td>
+<td>Decodes the incoming request using one of the given decoders</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="method-directives/delete.html#delete"><span class="std std-ref">delete</span></a></td>
+<td>Rejects all non-DELETE requests</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="cookie-directives/deleteCookie.html#deletecookie"><span class="std std-ref">deleteCookie</span></a></td>
+<td>Adds a <code class="docutils literal"><span class="pre">Set-Cookie</span></code> response header expiring the given cookies</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="coding-directives/encodeResponse.html#encoderesponse"><span class="std std-ref">encodeResponse</span></a></td>
+<td>Encodes the response with the encoding that is requested by the client
+via the <code class="docutils literal"><span class="pre">Accept-Encoding</span></code> header (<code class="docutils literal"><span class="pre">NoCoding</span></code>, <code class="docutils literal"><span class="pre">Gzip</span></code> and <code class="docutils literal"><span class="pre">Deflate</span></code>)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="coding-directives/encodeResponseWith.html#encoderesponsewith"><span class="std std-ref">encodeResponseWith</span></a></td>
+<td>Encodes the response with the encoding that is requested by the client
+via the <code class="docutils literal"><span class="pre">Accept-Encoding</span></code> header (from a user-defined set)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="marshalling-directives/entity.html#entity"><span class="std std-ref">entity</span></a></td>
+<td>Extracts the request entity unmarshalled to a given type</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/extract.html#extract"><span class="std std-ref">extract</span></a></td>
+<td>Extracts a single value using a <code class="docutils literal"><span class="pre">RequestContext</span> <span class="pre">⇒</span> <span class="pre">T</span></code> function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/extractDataBytes.html#extractdatabytes"><span class="std std-ref">extractDataBytes</span></a></td>
+<td>Extracts the entities data bytes as a stream <code class="docutils literal"><span class="pre">Source[ByteString,</span> <span class="pre">Any]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="misc-directives/extractClientIP.html#extractclientip"><span class="std std-ref">extractClientIP</span></a></td>
+<td>Extracts the client's IP from either the <code class="docutils literal"><span class="pre">X-Forwarded-</span></code>,
+<code class="docutils literal"><span class="pre">Remote-Address</span></code> or <code class="docutils literal"><span class="pre">X-Real-IP</span></code> header</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="security-directives/extractCredentials.html#extractcredentials"><span class="std std-ref">extractCredentials</span></a></td>
+<td>Extracts the potentially present <code class="docutils literal"><span class="pre">HttpCredentials</span></code> provided with the
+request's <code class="docutils literal"><span class="pre">Authorization</span></code> header</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/extractExecutionContext.html#extractexecutioncontext"><span class="std std-ref">extractExecutionContext</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">ExecutionContext</span></code> from the <code class="docutils literal"><span class="pre">RequestContext</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/extractMaterializer.html#extractmaterializer"><span class="std std-ref">extractMaterializer</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">Materializer</span></code> from the <code class="docutils literal"><span class="pre">RequestContext</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="host-directives/extractHost.html#extracthost"><span class="std std-ref">extractHost</span></a></td>
+<td>Extracts the hostname part of the Host request header value</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/extractLog.html#extractlog"><span class="std std-ref">extractLog</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">LoggingAdapter</span></code> from the <code class="docutils literal"><span class="pre">RequestContext</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="method-directives/extractMethod.html#extractmethod"><span class="std std-ref">extractMethod</span></a></td>
+<td>Extracts the request method</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/extractRequest.html#extractrequest"><span class="std std-ref">extractRequest</span></a></td>
+<td>Extracts the current <code class="docutils literal"><span class="pre">HttpRequest</span></code> instance</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/extractRequestContext.html#extractrequestcontext"><span class="std std-ref">extractRequestContext</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">RequestContext</span></code> itself</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/extractRequestEntity.html#extractrequestentity"><span class="std std-ref">extractRequestEntity</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">RequestEntity</span></code> from the <code class="docutils literal"><span class="pre">RequestContext</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="scheme-directives/extractScheme.html#extractscheme"><span class="std std-ref">extractScheme</span></a></td>
+<td>Extracts the URI scheme from the request</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/extractSettings.html#extractsettings"><span class="std std-ref">extractSettings</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">RoutingSettings</span></code> from the <code class="docutils literal"><span class="pre">RequestContext</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/extractUnmatchedPath.html#extractunmatchedpath"><span class="std std-ref">extractUnmatchedPath</span></a></td>
+<td>Extracts the yet unmatched path from the <code class="docutils literal"><span class="pre">RequestContext</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/extractUri.html#extracturi"><span class="std std-ref">extractUri</span></a></td>
+<td>Extracts the complete request URI</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="route-directives/failWith.html#failwith"><span class="std std-ref">failWith</span></a></td>
+<td>Bubbles the given error up the response chain where it is dealt with by the
+closest <a class="reference internal" href="execution-directives/handleExceptions.html#handleexceptions"><span class="std std-ref">handleExceptions</span></a> directive and its <code class="docutils literal"><span class="pre">ExceptionHandler</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="file-upload-directives/fileUpload.html#fileupload"><span class="std std-ref">fileUpload</span></a></td>
+<td>Provides a stream of an uploaded file from a multipart request</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="form-field-directives/formField.html#formfield-scala"><span class="std std-ref">formField</span></a></td>
+<td>Extracts an HTTP form field from the request</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="form-field-directives/formFieldMap.html#formfieldmap"><span class="std std-ref">formFieldMap</span></a></td>
+<td>Extracts a number of HTTP form field from the request as
+a <code class="docutils literal"><span class="pre">Map[String,</span> <span class="pre">String]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="form-field-directives/formFieldMultiMap.html#formfieldmultimap"><span class="std std-ref">formFieldMultiMap</span></a></td>
+<td>Extracts a number of HTTP form field from the request as
+a <code class="docutils literal"><span class="pre">Map[String,</span> <span class="pre">List[String]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="form-field-directives/formFields.html#formfields"><span class="std std-ref">formFields</span></a></td>
+<td>Extracts a number of HTTP form field from the request</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="form-field-directives/formFieldSeq.html#formfieldseq"><span class="std std-ref">formFieldSeq</span></a></td>
+<td>Extracts a number of HTTP form field from the request as
+a <code class="docutils literal"><span class="pre">Seq[(String,</span> <span class="pre">String)]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="method-directives/get.html#get"><span class="std std-ref">get</span></a></td>
+<td>Rejects all non-GET requests</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="file-and-resource-directives/getFromBrowseableDirectories.html#getfrombrowseabledirectories"><span class="std std-ref">getFromBrowseableDirectories</span></a></td>
+<td>Serves the content of the given directories as a file-system browser, i.e.
+files are sent and directories served as browseable listings</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="file-and-resource-directives/getFromBrowseableDirectory.html#getfrombrowseabledirectory"><span class="std std-ref">getFromBrowseableDirectory</span></a></td>
+<td>Serves the content of the given directory as a file-system browser, i.e.
+files are sent and directories served as browseable listings</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="file-and-resource-directives/getFromDirectory.html#getfromdirectory"><span class="std std-ref">getFromDirectory</span></a></td>
+<td>Completes GET requests with the content of a file underneath a given
+file-system directory</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="file-and-resource-directives/getFromFile.html#getfromfile"><span class="std std-ref">getFromFile</span></a></td>
+<td>Completes GET requests with the content of a given file</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="file-and-resource-directives/getFromResource.html#getfromresource"><span class="std std-ref">getFromResource</span></a></td>
+<td>Completes GET requests with the content of a given class-path resource</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="file-and-resource-directives/getFromResourceDirectory.html#getfromresourcedirectory"><span class="std std-ref">getFromResourceDirectory</span></a></td>
+<td>Completes GET requests with the content of a file underneath a given
+&quot;class-path resource directory&quot;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="execution-directives/handleExceptions.html#handleexceptions"><span class="std std-ref">handleExceptions</span></a></td>
+<td>Transforms exceptions thrown during evaluation of the inner route using the
+given <code class="docutils literal"><span class="pre">ExceptionHandler</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="execution-directives/handleRejections.html#handlerejections"><span class="std std-ref">handleRejections</span></a></td>
+<td>Transforms rejections produced by the inner route using the given
+<code class="docutils literal"><span class="pre">RejectionHandler</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="websocket-directives/handleWebSocketMessages.html#handlewebsocketmessages"><span class="std std-ref">handleWebSocketMessages</span></a></td>
+<td>Handles websocket requests with the given handler and rejects other requests
+with an <code class="docutils literal"><span class="pre">ExpectedWebSocketRequestRejection</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="websocket-directives/handleWebSocketMessagesForProtocol.html#handlewebsocketmessagesforprotocol"><span class="std std-ref">handleWebSocketMessagesForProtocol</span></a></td>
+<td>Handles websocket requests with the given handler if the subprotocol matches
+and rejects other requests with an <code class="docutils literal"><span class="pre">ExpectedWebSocketRequestRejection</span></code> or
+an <code class="docutils literal"><span class="pre">UnsupportedWebSocketSubprotocolRejection</span></code>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="marshalling-directives/handleWith.html#handlewith"><span class="std std-ref">handleWith</span></a></td>
+<td>Completes the request using a given function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="method-directives/head.html#head"><span class="std std-ref">head</span></a></td>
+<td>Rejects all non-HEAD requests</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="header-directives/headerValue.html#headervalue"><span class="std std-ref">headerValue</span></a></td>
+<td>Extracts an HTTP header value using a given <code class="docutils literal"><span class="pre">HttpHeader</span> <span class="pre">⇒</span> <span class="pre">Option[T]</span></code>
+function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="header-directives/headerValueByName.html#headervaluebyname"><span class="std std-ref">headerValueByName</span></a></td>
+<td>Extracts the value of the first HTTP request header with a given name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="header-directives/headerValueByType.html#headervaluebytype"><span class="std std-ref">headerValueByType</span></a></td>
+<td>Extracts the first HTTP request header of the given type</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="header-directives/headerValuePF.html#headervaluepf"><span class="std std-ref">headerValuePF</span></a></td>
+<td>Extracts an HTTP header value using a given
+<code class="docutils literal"><span class="pre">PartialFunction[HttpHeader,</span> <span class="pre">T]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="host-directives/host.html#host"><span class="std std-ref">host</span></a></td>
+<td>Rejects all requests with a non-matching host name</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="file-and-resource-directives/listDirectoryContents.html#listdirectorycontents"><span class="std std-ref">listDirectoryContents</span></a></td>
+<td>Completes GET requests with a unified listing of the contents of all given
+file-system directories</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="debugging-directives/logRequest.html#logrequest"><span class="std std-ref">logRequest</span></a></td>
+<td>Produces a log entry for every incoming request</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="debugging-directives/logRequestResult.html#logrequestresult"><span class="std std-ref">logRequestResult</span></a></td>
+<td>Produces a log entry for every incoming request and <code class="docutils literal"><span class="pre">RouteResult</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="debugging-directives/logResult.html#logresult"><span class="std std-ref">logResult</span></a></td>
+<td>Produces a log entry for every <code class="docutils literal"><span class="pre">RouteResult</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/mapInnerRoute.html#mapinnerroute"><span class="std std-ref">mapInnerRoute</span></a></td>
+<td>Transforms its inner <code class="docutils literal"><span class="pre">Route</span></code> with a <code class="docutils literal"><span class="pre">Route</span> <span class="pre">=&gt;</span> <span class="pre">Route</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/mapRejections.html#maprejections"><span class="std std-ref">mapRejections</span></a></td>
+<td>Transforms rejections from a previous route with an
+<code class="docutils literal"><span class="pre">immutable.Seq[Rejection]</span> <span class="pre">⇒</span> <span class="pre">immutable.Seq[Rejection]</span></code> function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/mapRequest.html#maprequest"><span class="std std-ref">mapRequest</span></a></td>
+<td>Transforms the request with an <code class="docutils literal"><span class="pre">HttpRequest</span> <span class="pre">=&gt;</span> <span class="pre">HttpRequest</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/mapRequestContext.html#maprequestcontext"><span class="std std-ref">mapRequestContext</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">RequestContext</span></code> with a
+<code class="docutils literal"><span class="pre">RequestContext</span> <span class="pre">=&gt;</span> <span class="pre">RequestContext</span></code> function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/mapResponse.html#mapresponse"><span class="std std-ref">mapResponse</span></a></td>
+<td>Transforms the response with an <code class="docutils literal"><span class="pre">HttpResponse</span> <span class="pre">=&gt;</span> <span class="pre">HttpResponse</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/mapResponseEntity.html#mapresponseentity"><span class="std std-ref">mapResponseEntity</span></a></td>
+<td>Transforms the response entity with an <code class="docutils literal"><span class="pre">ResponseEntity</span> <span class="pre">⇒</span> <span class="pre">ResponseEntity</span></code>
+function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/mapResponseHeaders.html#mapresponseheaders"><span class="std std-ref">mapResponseHeaders</span></a></td>
+<td>Transforms the response headers with an
+<code class="docutils literal"><span class="pre">immutable.Seq[HttpHeader]</span> <span class="pre">⇒</span> <span class="pre">immutable.Seq[HttpHeader]</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/mapRouteResult.html#maprouteresult"><span class="std std-ref">mapRouteResult</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">RouteResult</span></code> with a <code class="docutils literal"><span class="pre">RouteResult</span> <span class="pre">⇒</span> <span class="pre">RouteResult</span></code>
+function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/mapRouteResultFuture.html#maprouteresultfuture"><span class="std std-ref">mapRouteResultFuture</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">RouteResult</span></code> future with a
+<code class="docutils literal"><span class="pre">Future[RouteResult]</span> <span class="pre">⇒</span> <span class="pre">Future[RouteResult]</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/mapRouteResultPF.html#maprouteresultpf"><span class="std std-ref">mapRouteResultPF</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">RouteResult</span></code> with a
+<code class="docutils literal"><span class="pre">PartialFunction[RouteResult,</span> <span class="pre">RouteResult]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/mapRouteResultWith.html#maprouteresultwith"><span class="std std-ref">mapRouteResultWith</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">RouteResult</span></code> with a
+<code class="docutils literal"><span class="pre">RouteResult</span> <span class="pre">⇒</span> <span class="pre">Future[RouteResult]</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/mapRouteResultWithPF.html#maprouteresultwithpf"><span class="std std-ref">mapRouteResultWithPF</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">RouteResult</span></code> with a
+<code class="docutils literal"><span class="pre">PartialFunction[RouteResult,</span> <span class="pre">Future[RouteResult]]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/mapSettings.html#mapsettings"><span class="std std-ref">mapSettings</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">RoutingSettings</span></code> with a
+<code class="docutils literal"><span class="pre">RoutingSettings</span> <span class="pre">⇒</span> <span class="pre">RoutingSettings</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/mapUnmatchedPath.html#mapunmatchedpath"><span class="std std-ref">mapUnmatchedPath</span></a></td>
+<td>Transforms the <code class="docutils literal"><span class="pre">unmatchedPath</span></code> of the <code class="docutils literal"><span class="pre">RequestContext</span></code> using a
+<code class="docutils literal"><span class="pre">Uri.Path</span> <span class="pre">⇒</span> <span class="pre">Uri.Path</span></code> function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="method-directives/method.html#method"><span class="std std-ref">method</span></a></td>
+<td>Rejects all requests whose HTTP method does not match the given one</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="future-directives/onComplete.html#oncomplete"><span class="std std-ref">onComplete</span></a></td>
+<td>&quot;Unwraps&quot; a <code class="docutils literal"><span class="pre">Future[T]</span></code> and runs the inner route after future completion
+with the future's value as an extraction of type <code class="docutils literal"><span class="pre">Try[T]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="future-directives/onCompleteWithBreaker.html#oncompletewithbreaker"><span class="std std-ref">onCompleteWithBreaker</span></a></td>
+<td>&quot;Unwraps&quot; a <code class="docutils literal"><span class="pre">Future[T]</span></code> inside a <code class="docutils literal"><span class="pre">CircuitBreaker</span></code> and runs the inner
+route after future completion with the future's value as an extraction of
+type <code class="docutils literal"><span class="pre">Try[T]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="future-directives/onSuccess.html#onsuccess"><span class="std std-ref">onSuccess</span></a></td>
+<td>&quot;Unwraps&quot; a <code class="docutils literal"><span class="pre">Future[T]</span></code> and runs the inner route after future completion
+with the future's value as an extraction of type <code class="docutils literal"><span class="pre">T</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cookie-directives/optionalCookie.html#optionalcookie"><span class="std std-ref">optionalCookie</span></a></td>
+<td>Extracts the <code class="docutils literal"><span class="pre">HttpCookiePair</span></code> with the given name as an
+<code class="docutils literal"><span class="pre">Option[HttpCookiePair]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="header-directives/optionalHeaderValue.html#optionalheadervalue"><span class="std std-ref">optionalHeaderValue</span></a></td>
+<td>Extracts an optional HTTP header value using a given
+<code class="docutils literal"><span class="pre">HttpHeader</span> <span class="pre">⇒</span> <span class="pre">Option[T]</span></code> function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="header-directives/optionalHeaderValueByName.html#optionalheadervaluebyname"><span class="std std-ref">optionalHeaderValueByName</span></a></td>
+<td>Extracts the value of the first optional HTTP request header with a given
+name</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="header-directives/optionalHeaderValueByType.html#optionalheadervaluebytype"><span class="std std-ref">optionalHeaderValueByType</span></a></td>
+<td>Extracts the first optional HTTP request header of the given type</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="header-directives/optionalHeaderValuePF.html#optionalheadervaluepf"><span class="std std-ref">optionalHeaderValuePF</span></a></td>
+<td>Extracts an optional HTTP header value using a given
+<code class="docutils literal"><span class="pre">PartialFunction[HttpHeader,</span> <span class="pre">T]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="method-directives/options.html#options"><span class="std std-ref">options</span></a></td>
+<td>Rejects all non-OPTIONS requests</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="method-directives/overrideMethodWithParameter.html#overridemethodwithparameter"><span class="std std-ref">overrideMethodWithParameter</span></a></td>
+<td>Changes the request method to the value of the specified query parameter</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parameter-directives/parameter.html#parameter"><span class="std std-ref">parameter</span></a></td>
+<td>Extracts a query parameter value from the request</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parameter-directives/parameterMap.html#parametermap"><span class="std std-ref">parameterMap</span></a></td>
+<td>Extracts the request's query parameters as a <code class="docutils literal"><span class="pre">Map[String,</span> <span class="pre">String]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parameter-directives/parameterMultiMap.html#parametermultimap"><span class="std std-ref">parameterMultiMap</span></a></td>
+<td>Extracts the request's query parameters as a <code class="docutils literal"><span class="pre">Map[String,</span> <span class="pre">List[String]]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parameter-directives/parameters.html#parameters-scala"><span class="std std-ref">parameters</span></a></td>
+<td>Extracts a number of query parameter values from the request</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parameter-directives/parameterSeq.html#parameterseq"><span class="std std-ref">parameterSeq</span></a></td>
+<td>Extracts the request's query parameters as a <code class="docutils literal"><span class="pre">Seq[(String,</span> <span class="pre">String)]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/pass.html#pass"><span class="std std-ref">pass</span></a></td>
+<td>Always simply passes the request on to its inner route, i.e. doesn't do
+anything, neither with the request nor the response</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="method-directives/patch.html#patch"><span class="std std-ref">patch</span></a></td>
+<td>Rejects all non-PATCH requests</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="path-directives/path.html#path"><span class="std std-ref">path</span></a></td>
+<td>Applies the given <code class="docutils literal"><span class="pre">PathMatcher</span></code> to the remaining unmatched path after
+consuming a leading slash</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="path-directives/pathEnd.html#pathend"><span class="std std-ref">pathEnd</span></a></td>
+<td>Only passes on the request to its inner route if the request path has been
+matched completely</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="path-directives/pathEndOrSingleSlash.html#pathendorsingleslash"><span class="std std-ref">pathEndOrSingleSlash</span></a></td>
+<td>Only passes on the request to its inner route if the request path has been
+matched completely or only consists of exactly one remaining slash</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="path-directives/pathPrefix.html#pathprefix"><span class="std std-ref">pathPrefix</span></a></td>
+<td>Applies the given <code class="docutils literal"><span class="pre">PathMatcher</span></code> to a prefix of the remaining unmatched
+path after consuming a leading slash</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="path-directives/pathPrefixTest.html#pathprefixtest"><span class="std std-ref">pathPrefixTest</span></a></td>
+<td>Checks whether the unmatchedPath has a prefix matched by the given
+<code class="docutils literal"><span class="pre">PathMatcher</span></code> after implicitly consuming a leading slash</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="path-directives/pathSingleSlash.html#pathsingleslash"><span class="std std-ref">pathSingleSlash</span></a></td>
+<td>Only passes on the request to its inner route if the request path
+consists of exactly one remaining slash</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="path-directives/pathSuffix.html#pathsuffix"><span class="std std-ref">pathSuffix</span></a></td>
+<td>Applies the given <code class="docutils literal"><span class="pre">PathMatcher</span></code> to a suffix of the remaining unmatched
+path (Caution: check scaladoc!)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="path-directives/pathSuffixTest.html#pathsuffixtest"><span class="std std-ref">pathSuffixTest</span></a></td>
+<td>Checks whether the unmatched path has a suffix matched by the given
+<code class="docutils literal"><span class="pre">PathMatcher</span></code> (Caution: check scaladoc!)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="method-directives/post.html#post"><span class="std std-ref">post</span></a></td>
+<td>Rejects all non-POST requests</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/provide.html#provide"><span class="std std-ref">provide</span></a></td>
+<td>Injects a given value into a directive</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="method-directives/put.html#put"><span class="std std-ref">put</span></a></td>
+<td>Rejects all non-PUT requests</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="path-directives/rawPathPrefix.html#rawpathprefix"><span class="std std-ref">rawPathPrefix</span></a></td>
+<td>Applies the given matcher directly to a prefix of the unmatched path of the
+<code class="docutils literal"><span class="pre">RequestContext</span></code>, without implicitly consuming a leading slash</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="path-directives/rawPathPrefixTest.html#rawpathprefixtest"><span class="std std-ref">rawPathPrefixTest</span></a></td>
+<td>Checks whether the unmatchedPath has a prefix matched by the given
+<code class="docutils literal"><span class="pre">PathMatcher</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/recoverRejections.html#recoverrejections"><span class="std std-ref">recoverRejections</span></a></td>
+<td>Transforms rejections from the inner route with an
+<code class="docutils literal"><span class="pre">immutable.Seq[Rejection]</span> <span class="pre">⇒</span> <span class="pre">RouteResult</span></code> function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/recoverRejectionsWith.html#recoverrejectionswith"><span class="std std-ref">recoverRejectionsWith</span></a></td>
+<td>Transforms rejections from the inner route with an
+<code class="docutils literal"><span class="pre">immutable.Seq[Rejection]</span> <span class="pre">⇒</span> <span class="pre">Future[RouteResult]</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="route-directives/redirect.html#redirect"><span class="std std-ref">redirect</span></a></td>
+<td>Completes the request with redirection response of the given type to the
+given URI</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="path-directives/redirectToNoTrailingSlashIfPresent.html#redirecttonotrailingslashifpresent"><span class="std std-ref">redirectToNoTrailingSlashIfPresent</span></a></td>
+<td>If the request path ends with a slash, redirects to the same uri without
+trailing slash in the path</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="path-directives/redirectToTrailingSlashIfMissing.html#redirecttotrailingslashifmissing"><span class="std std-ref">redirectToTrailingSlashIfMissing</span></a></td>
+<td>If the request path doesn't end with a slash, redirects to the same uri with
+trailing slash in the path</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="route-directives/reject.html#reject"><span class="std std-ref">reject</span></a></td>
+<td>Rejects the request with the given rejections</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="misc-directives/rejectEmptyResponse.html#rejectemptyresponse"><span class="std std-ref">rejectEmptyResponse</span></a></td>
+<td>Converts responses with an empty entity into (empty) rejections</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="coding-directives/requestEncodedWith.html#requestencodedwith"><span class="std std-ref">requestEncodedWith</span></a></td>
+<td>Rejects the request with an <code class="docutils literal"><span class="pre">UnsupportedRequestEncodingRejection</span></code> if its
+encoding doesn't match the given one</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="misc-directives/requestEntityEmpty.html#requestentityempty"><span class="std std-ref">requestEntityEmpty</span></a></td>
+<td>Rejects if the request entity is non-empty</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="misc-directives/requestEntityPresent.html#requestentitypresent"><span class="std std-ref">requestEntityPresent</span></a></td>
+<td>Rejects with a <code class="docutils literal"><span class="pre">RequestEntityExpectedRejection</span></code> if the request entity is
+empty</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="respond-with-directives/respondWithDefaultHeader.html#respondwithdefaultheader"><span class="std std-ref">respondWithDefaultHeader</span></a></td>
+<td>Adds a given response header if the response doesn't already contain a
+header with the same name</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="respond-with-directives/respondWithDefaultHeaders.html#respondwithdefaultheaders"><span class="std std-ref">respondWithDefaultHeaders</span></a></td>
+<td>Adds the subset of the given headers to the response which doesn't already
+have a header with the respective name present in the response</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="respond-with-directives/respondWithHeader.html#respondwithheader"><span class="std std-ref">respondWithHeader</span></a></td>
+<td>Unconditionally adds a given header to the outgoing response</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="respond-with-directives/respondWithHeaders.html#respondwithheaders"><span class="std std-ref">respondWithHeaders</span></a></td>
+<td>Unconditionally adds the given headers to the outgoing response</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="coding-directives/responseEncodingAccepted.html#responseencodingaccepted"><span class="std std-ref">responseEncodingAccepted</span></a></td>
+<td>Rejects the request with an <code class="docutils literal"><span class="pre">UnacceptedResponseEncodingRejection</span></code> if the
+given response encoding is not accepted by the client</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="scheme-directives/scheme.html#scheme"><span class="std std-ref">scheme</span></a></td>
+<td>Rejects all requests whose URI scheme doesn't match the given one</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="misc-directives/selectPreferredLanguage.html#selectpreferredlanguage"><span class="std std-ref">selectPreferredLanguage</span></a></td>
+<td>Inspects the request's <code class="docutils literal"><span class="pre">Accept-Language</span></code> header and determines, which of
+a given set of language alternatives is preferred by the client</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="cookie-directives/setCookie.html#setcookie"><span class="std std-ref">setCookie</span></a></td>
+<td>Adds a <code class="docutils literal"><span class="pre">Set-Cookie</span></code> response header with the given cookies</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/textract.html#textract"><span class="std std-ref">textract</span></a></td>
+<td>Extracts a number of values using a <code class="docutils literal"><span class="pre">RequestContext</span> <span class="pre">⇒</span> <span class="pre">Tuple</span></code> function</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/tprovide.html#tprovide"><span class="std std-ref">tprovide</span></a></td>
+<td>Injects a given tuple of values into a directive</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="file-upload-directives/uploadedFile.html#uploadedfile"><span class="std std-ref">uploadedFile</span></a></td>
+<td>Streams one uploaded file from a multipart request to a file on disk</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="misc-directives/validate.html#validate"><span class="std std-ref">validate</span></a></td>
+<td>Checks a given condition before running its inner route</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="timeout-directives/withoutRequestTimeout.html#withoutrequesttimeout"><span class="std std-ref">withoutRequestTimeout</span></a></td>
+<td>Disables <a class="reference internal" href="../../common/timeouts.html#request-timeout-scala"><span class="std std-ref">request timeouts</span></a> for a given route.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="misc-directives/withoutSizeLimit.html#withoutsizelimit"><span class="std std-ref">withoutSizeLimit</span></a></td>
+<td>Skips request entity size check</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/withExecutionContext.html#withexecutioncontext"><span class="std std-ref">withExecutionContext</span></a></td>
+<td>Runs its inner route with the given alternative <code class="docutils literal"><span class="pre">ExecutionContext</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic-directives/withMaterializer.html#withmaterializer"><span class="std std-ref">withMaterializer</span></a></td>
+<td>Runs its inner route with the given alternative <code class="docutils literal"><span class="pre">Materializer</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/withLog.html#withlog"><span class="std std-ref">withLog</span></a></td>
+<td>Runs its inner route with the given alternative <code class="docutils literal"><span class="pre">LoggingAdapter</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="range-directives/withRangeSupport.html#withrangesupport"><span class="std std-ref">withRangeSupport</span></a></td>
+<td>Adds <code class="docutils literal"><span class="pre">Accept-Ranges:</span> <span class="pre">bytes</span></code> to responses to GET requests, produces partial
+responses if the initial request contained a valid <code class="docutils literal"><span class="pre">Range</span></code> header</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="timeout-directives/withRequestTimeout.html#withrequesttimeout"><span class="std std-ref">withRequestTimeout</span></a></td>
+<td>Configures the <a class="reference internal" href="../../common/timeouts.html#request-timeout-scala"><span class="std std-ref">request timeouts</span></a> for a given route.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="timeout-directives/withRequestTimeoutResponse.html#withrequesttimeoutresponse"><span class="std std-ref">withRequestTimeoutResponse</span></a></td>
+<td>Prepares the <code class="docutils literal"><span class="pre">HttpResponse</span></code> that is emitted if a request timeout is triggered.
+<code class="docutils literal"><span class="pre">RequestContext</span> <span class="pre">=&gt;</span> <span class="pre">RequestContext</span></code> function</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic-directives/withSettings.html#withsettings"><span class="std std-ref">withSettings</span></a></td>
+<td>Runs its inner route with the given alternative <code class="docutils literal"><span class="pre">RoutingSettings</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="misc-directives/withSizeLimit.html#withsizelimit"><span class="std std-ref">withSizeLimit</span></a></td>
+<td>Applies request entity size check</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+          <div class="span3"><p class="contents-title">Contents</p>
+              <div id="scroller-anchor">
+                <div id="scroller">
+                  <div id="toc"></div>
+                </div>
+              </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  <div class="container">
+    <ul>
+      <li><h5>Akka</h5></li>
+      <li><a href="http://akka.io/docs">Documentation</a></li>
+      <li><a href="http://doc.akka.io/docs/akka/current/additional/faq.html">FAQ</a></li>
+      <li><a href="http://akka.io/downloads">Downloads</a></li>
+      <li><a href="http://akka.io/news">News</a></li>
+      <li><a href="http://letitcrash.com">Blog</a></li>
+    </ul>
+    <ul>
+      <li><h5>Contribute</h5></li>
+      <li><a href="http://akka.io/community">Community Projects</a></li>
+      <li><a href="http://github.com/akka/akka">Source Code</a></li>
+      <li><a href="http://groups.google.com/group/akka-user">Mailing List</a></li>
+      <li><a href="http://doc.akka.io/docs/akka/current/project/issue-tracking.html">Report a Bug</a></li>
+    </ul>
+    <ul>
+      <li><h5>Company</h5></li>
+      <li><a href="http://www.lightbend.com/how/subscription">Commercial Support</a></li>
+      <li><a href="http://akka.io/team">Team</a></li>
+      <li><a href="mailto:info@lightbend.com">Contact</a></li>
+    </ul>
+    <ul>
+      <li><img src="../../../../_static/akka_icon_reverse.svg" align="center"/></li>
+    </ul>
+  </div>
+  <div class="container copyright">
+    <p style="float: left;">
+      © 2015 <a href="http://www.lightbend.com/">Lightbend Inc.</a> <span class="license">Akka is Open Source and available under the Apache 2 License.</span>
+    </p>
+    <p style="float: right; font-size: 12px;">
+      Last updated: Aug 19, 2016
+    </p>
+  </div>
+</div>
+<script type="text/javascript">
+  var $toc = $('#toc');
+  $toc.toc();
+
+  // show clickable section sign when section header hovered:
+  $('.section h2,.section h3,.section h4,.section h5').each(function(i, el) {
+      var $el = $(el);
+      $el.prepend($("<a class='section-marker' href='#" + $el.attr("id") + "'>&sect;</a>"))
+  });
+</script>
+
+<!-- Algolia docs search -->
+<script type="text/javascript">
+  var version = DOCUMENTATION_OPTIONS.VERSION;
+
+  var lang = "scala";
+  var path = window.location.pathname;
+  if (path.includes("/java/") || path.includes("java.html")) lang = "java";
+
+  console.log("Search configured for:", lang, "@", version);
+
+  docsearch({
+    apiKey: '543bad5ad786495d9ccd445ed34ed082',
+    indexName: 'akka_io',
+    inputSelector: '#search',
+    algoliaOptions: {
+      hitsPerPage: 5,
+      facetFilters: '[' + '["language:' + lang + '","language:general"]' + ',"version:' + version + '"]'
+    }
+  });
+
+  // set up "/" as global shortcut for focusing on search
+  $(document).keypress(function (event) {
+    if (event.keyCode == 47) {
+      $("#q").focus();
+      return false; // swallow key event, otherwise the / char would be input into the search box
+    }
+  });
+</script>
+
+  
+
+  </body>
+</html>

@@ -1,0 +1,1702 @@
+cogroup X
+4310 | { "_id" : { "$oid" : "5870947d6dd3d30a92ad3414"} , "partkey" : 4310 , "name" : "coral cream violet mint brown" , "mfgr" : "Manufacturer#4" , "brand" : "Brand#42" , "type" : "ECONOMY PLATED NICKEL" , "size" : 42 , "container" : "LG BAG" , "retailprice" : 1214.31 , "comment" : "iously bold acc"}
+============== Stream num [1] =================
+    [T_1] cogroup-cache-count: 159 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5160
+    [T_3] join-hit data: 656 ms
+    [T_2] create missKey (subt): 761 ms
+    [T_4] create query + get data + create new RDD: 328 ms
+    [T_5] create cachedPRDD: 434 ms
+    >> joined_miss count: 2840
+    [T_6] join - miss data: 441 ms
+    >> output data: 8000
+    [T_7] union output data: 57 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 15 ms
+    [T_9] stream: 1841 ms
+    >> streaming data all: 8000
+    [time] total: 1841 ms
+    >> throughput: 4345
+============== Stream num [2] =================
+    [T_1] cogroup-cache-count: 51 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 49
+    [T_3] join-hit data: 279 ms
+    [T_2] create missKey (subt): 339 ms
+    [T_4] create query + get data + create new RDD: 10 ms
+    [T_5] create cachedPRDD: 244 ms
+    >> joined_miss count: 26
+    [T_6] join - miss data: 251 ms
+    >> output data: 75
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 724 ms
+    >> streaming data all: 8075
+    [time] total: 2565 ms
+    >> throughput: 3148
+============== Stream num [3] =================
+    [T_1] cogroup-cache-count: 143 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5057
+    [T_3] join-hit data: 221 ms
+    [T_2] create missKey (subt): 313 ms
+    [T_4] create query + get data + create new RDD: 194 ms
+    >> joined_miss count: 2868
+    [T_6] join - miss data: 260 ms
+    [T_5] create cachedPRDD: 357 ms
+    >> output data: 7925
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1117 ms
+    >> streaming data all: 16000
+    [time] total: 3682 ms
+    >> throughput: 4345
+============== Stream num [4] =================
+    [T_1] cogroup-cache-count: 115 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5056
+    [T_3] join-hit data: 196 ms
+    [T_2] create missKey (subt): 248 ms
+    [T_4] create query + get data + create new RDD: 157 ms
+    [T_5] create cachedPRDD: 284 ms
+    >> joined_miss count: 2944
+    [T_6] join - miss data: 311 ms
+    >> output data: 8000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 11 ms
+    [T_9] stream: 917 ms
+    >> streaming data all: 24000
+    [time] total: 4599 ms
+    >> throughput: 5218
+============== Stream num [5] =================
+    [T_1] cogroup-cache-count: 104 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5161
+    [T_3] join-hit data: 191 ms
+    [T_2] create missKey (subt): 254 ms
+    [T_4] create query + get data + create new RDD: 248 ms
+    [T_5] create cachedPRDD: 242 ms
+    >> joined_miss count: 2839
+    [T_6] join - miss data: 268 ms
+    >> output data: 8000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 973 ms
+    >> streaming data all: 32000
+    [time] total: 5572 ms
+    >> throughput: 5743
+============== Stream num [6] =================
+    [T_1] cogroup-cache-count: 125 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5139
+    [T_3] join-hit data: 200 ms
+    [T_2] create missKey (subt): 247 ms
+    [T_4] create query + get data + create new RDD: 169 ms
+    [T_5] create cachedPRDD: 280 ms
+    >> joined_miss count: 2861
+    [T_6] join - miss data: 303 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 933 ms
+    >> streaming data all: 40000
+    [time] total: 6505 ms
+    >> throughput: 6149
+============== Stream num [7] =================
+    [T_1] cogroup-cache-count: 101 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5178
+    [T_3] join-hit data: 236 ms
+    [T_2] create missKey (subt): 354 ms
+    [T_4] create query + get data + create new RDD: 239 ms
+    [T_5] create cachedPRDD: 277 ms
+    >> joined_miss count: 2822
+    [T_6] join - miss data: 337 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 1122 ms
+    >> streaming data all: 48000
+    [time] total: 7627 ms
+    >> throughput: 6293
+============== Stream num [8] =================
+    [T_1] cogroup-cache-count: 106 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5254
+    [T_3] join-hit data: 141 ms
+    [T_2] create missKey (subt): 192 ms
+    [T_4] create query + get data + create new RDD: 231 ms
+    [T_5] create cachedPRDD: 251 ms
+    >> joined_miss count: 2746
+    [T_6] join - miss data: 271 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 880 ms
+    >> streaming data all: 56000
+    [time] total: 8507 ms
+    >> throughput: 6582
+============== Stream num [9] =================
+    [T_1] cogroup-cache-count: 90 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5209
+    [T_3] join-hit data: 218 ms
+    [T_2] create missKey (subt): 295 ms
+    [T_4] create query + get data + create new RDD: 234 ms
+    [T_5] create cachedPRDD: 240 ms
+    >> joined_miss count: 2791
+    [T_6] join - miss data: 273 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 976 ms
+    >> streaming data all: 64000
+    [time] total: 9483 ms
+    >> throughput: 6748
+============== Stream num [10] =================
+    [T_1] cogroup-cache-count: 95 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5195
+    [T_3] join-hit data: 223 ms
+    [T_2] create missKey (subt): 264 ms
+    [T_4] create query + get data + create new RDD: 242 ms
+    [T_5] create cachedPRDD: 252 ms
+    >> joined_miss count: 2805
+    [T_6] join - miss data: 274 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 946 ms
+    >> streaming data all: 72000
+    [time] total: 10429 ms
+    >> throughput: 6903
+============== Stream num [11] =================
+    [T_1] cogroup-cache-count: 94 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5227
+    [T_3] join-hit data: 223 ms
+    [T_2] create missKey (subt): 282 ms
+    [T_4] create query + get data + create new RDD: 240 ms
+    [T_5] create cachedPRDD: 257 ms
+    >> joined_miss count: 2773
+    [T_6] join - miss data: 287 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 986 ms
+    >> streaming data all: 80000
+    [time] total: 11415 ms
+    >> throughput: 7008
+============== Stream num [12] =================
+    [T_1] cogroup-cache-count: 95 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5290
+    [T_3] join-hit data: 194 ms
+    [T_2] create missKey (subt): 257 ms
+    [T_4] create query + get data + create new RDD: 263 ms
+    [T_5] create cachedPRDD: 326 ms
+    >> joined_miss count: 2710
+    [T_6] join - miss data: 353 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 1051 ms
+    >> streaming data all: 88000
+    [time] total: 12466 ms
+    >> throughput: 7059
+============== Stream num [13] =================
+    [T_1] cogroup-cache-count: 84 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5307
+    [T_3] join-hit data: 120 ms
+    [T_2] create missKey (subt): 150 ms
+    [T_4] create query + get data + create new RDD: 218 ms
+    [T_5] create cachedPRDD: 267 ms
+    >> joined_miss count: 2693
+    [T_6] join - miss data: 291 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 12 ms
+    [T_9] stream: 817 ms
+    >> streaming data all: 96000
+    [time] total: 13283 ms
+    >> throughput: 7227
+============== Stream num [14] =================
+    [T_1] cogroup-cache-count: 85 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5298
+    [T_3] join-hit data: 196 ms
+    [T_2] create missKey (subt): 257 ms
+    [T_4] create query + get data + create new RDD: 141 ms
+    [T_5] create cachedPRDD: 245 ms
+    >> joined_miss count: 2702
+    [T_6] join - miss data: 278 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 858 ms
+    >> streaming data all: 104000
+    [time] total: 14141 ms
+    >> throughput: 7354
+============== Stream num [15] =================
+    [T_1] cogroup-cache-count: 91 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5314
+    [T_3] join-hit data: 235 ms
+    [T_2] create missKey (subt): 283 ms
+    [T_4] create query + get data + create new RDD: 187 ms
+    [T_5] create cachedPRDD: 263 ms
+    >> joined_miss count: 2686
+    [T_6] join - miss data: 285 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 8 ms
+    [T_9] stream: 915 ms
+    >> streaming data all: 112000
+    [time] total: 15056 ms
+    >> throughput: 7438
+============== Stream num [16] =================
+    [T_1] cogroup-cache-count: 86 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5334
+    [T_3] join-hit data: 163 ms
+    [T_2] create missKey (subt): 213 ms
+    [T_4] create query + get data + create new RDD: 187 ms
+    [T_5] create cachedPRDD: 230 ms
+    >> joined_miss count: 2666
+    [T_6] join - miss data: 255 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 826 ms
+    >> streaming data all: 120000
+    [time] total: 15882 ms
+    >> throughput: 7555
+============== Stream num [17] =================
+    [T_1] cogroup-cache-count: 82 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5357
+    [T_3] join-hit data: 176 ms
+    [T_2] create missKey (subt): 237 ms
+    [T_4] create query + get data + create new RDD: 208 ms
+    [T_5] create cachedPRDD: 235 ms
+    >> joined_miss count: 2643
+    [T_6] join - miss data: 264 ms
+    >> output data: 8000
+    [T_7] union output data: 16 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 870 ms
+    >> streaming data all: 128000
+    [time] total: 16752 ms
+    >> throughput: 7640
+============== Stream num [18] =================
+    [T_1] cogroup-cache-count: 89 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5323
+    [T_3] join-hit data: 228 ms
+    [T_2] create missKey (subt): 263 ms
+    [T_4] create query + get data + create new RDD: 208 ms
+    [T_5] create cachedPRDD: 242 ms
+    >> joined_miss count: 2677
+    [T_6] join - miss data: 262 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 920 ms
+    >> streaming data all: 136000
+    [time] total: 17672 ms
+    >> throughput: 7695
+============== Stream num [19] =================
+    [T_1] cogroup-cache-count: 27 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 614
+    [T_3] join-hit data: 169 ms
+    [T_2] create missKey (subt): 215 ms
+    [T_4] create query + get data + create new RDD: 16 ms
+    [T_5] create cachedPRDD: 242 ms
+    >> joined_miss count: 303
+    [T_6] join - miss data: 256 ms
+    >> output data: 917
+    [T_7] union output data: 33 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 600 ms
+    >> streaming data all: 136917
+    [time] total: 18272 ms
+    >> throughput: 7493
+============== Stream num [20] =================
+    [T_1] cogroup-cache-count: 90 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 4771
+    [T_3] join-hit data: 187 ms
+    [T_2] create missKey (subt): 229 ms
+    [T_4] create query + get data + create new RDD: 95 ms
+    [T_5] create cachedPRDD: 285 ms
+    >> joined_miss count: 2312
+    [T_6] join - miss data: 303 ms
+    >> output data: 7083
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 788 ms
+    >> streaming data all: 144000
+    [time] total: 19060 ms
+    >> throughput: 7555
+============== Stream num [21] =================
+    [T_1] cogroup-cache-count: 85 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5352
+    [T_3] join-hit data: 139 ms
+    [T_2] create missKey (subt): 179 ms
+    [T_4] create query + get data + create new RDD: 205 ms
+    [T_5] create cachedPRDD: 273 ms
+    >> joined_miss count: 2648
+    [T_6] join - miss data: 309 ms
+    >> output data: 8000
+    [T_7] union output data: 41 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 867 ms
+    >> streaming data all: 152000
+    [time] total: 19927 ms
+    >> throughput: 7627
+============== Stream num [22] =================
+    [T_1] cogroup-cache-count: 76 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5396
+    [T_3] join-hit data: 113 ms
+    [T_2] create missKey (subt): 163 ms
+    [T_4] create query + get data + create new RDD: 201 ms
+    [T_5] create cachedPRDD: 258 ms
+    >> joined_miss count: 2604
+    [T_6] join - miss data: 276 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 8 ms
+    [T_9] stream: 795 ms
+    >> streaming data all: 160000
+    [time] total: 20722 ms
+    >> throughput: 7721
+============== Stream num [23] =================
+    [T_1] cogroup-cache-count: 93 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5362
+    [T_3] join-hit data: 173 ms
+    [T_2] create missKey (subt): 217 ms
+    [T_4] create query + get data + create new RDD: 202 ms
+    [T_5] create cachedPRDD: 255 ms
+    >> joined_miss count: 2638
+    [T_6] join - miss data: 275 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 859 ms
+    >> streaming data all: 168000
+    [time] total: 21581 ms
+    >> throughput: 7784
+============== Stream num [24] =================
+    [T_1] cogroup-cache-count: 84 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5378
+    [T_3] join-hit data: 145 ms
+    [T_2] create missKey (subt): 233 ms
+    [T_4] create query + get data + create new RDD: 200 ms
+    [T_5] create cachedPRDD: 251 ms
+    >> joined_miss count: 2622
+    [T_6] join - miss data: 268 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 859 ms
+    >> streaming data all: 176000
+    [time] total: 22440 ms
+    >> throughput: 7843
+============== Stream num [25] =================
+    [T_1] cogroup-cache-count: 83 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5408
+    [T_3] join-hit data: 107 ms
+    [T_2] create missKey (subt): 137 ms
+    [T_4] create query + get data + create new RDD: 114 ms
+    >> joined_miss count: 2592
+    [T_6] join - miss data: 232 ms
+    [T_5] create cachedPRDD: 353 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 763 ms
+    >> streaming data all: 184000
+    [time] total: 23203 ms
+    >> throughput: 7930
+============== Stream num [26] =================
+    [T_1] cogroup-cache-count: 93 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5407
+    [T_3] join-hit data: 204 ms
+    [T_2] create missKey (subt): 269 ms
+    [T_4] create query + get data + create new RDD: 199 ms
+    [T_5] create cachedPRDD: 295 ms
+    >> joined_miss count: 2593
+    [T_6] join - miss data: 314 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 14 ms
+    [T_9] stream: 962 ms
+    >> streaming data all: 192000
+    [time] total: 24165 ms
+    >> throughput: 7945
+============== Stream num [27] =================
+    [T_1] cogroup-cache-count: 123 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5372
+    [T_3] join-hit data: 177 ms
+    [T_2] create missKey (subt): 220 ms
+    [T_4] create query + get data + create new RDD: 129 ms
+    [T_5] create cachedPRDD: 260 ms
+    >> joined_miss count: 2628
+    [T_6] join - miss data: 291 ms
+    >> output data: 8000
+    [T_7] union output data: 16 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 830 ms
+    >> streaming data all: 200000
+    [time] total: 24995 ms
+    >> throughput: 8001
+============== Stream num [28] =================
+    [T_1] cogroup-cache-count: 77 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5410
+    [T_3] join-hit data: 176 ms
+    [T_2] create missKey (subt): 202 ms
+    [T_4] create query + get data + create new RDD: 198 ms
+    [T_5] create cachedPRDD: 227 ms
+    >> joined_miss count: 2590
+    [T_6] join - miss data: 253 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 792 ms
+    >> streaming data all: 208000
+    [time] total: 25787 ms
+    >> throughput: 8066
+============== Stream num [29] =================
+    [T_1] cogroup-cache-count: 81 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5350
+    [T_3] join-hit data: 140 ms
+    [T_2] create missKey (subt): 202 ms
+    [T_4] create query + get data + create new RDD: 221 ms
+    [T_5] create cachedPRDD: 253 ms
+    >> joined_miss count: 2650
+    [T_6] join - miss data: 275 ms
+    >> output data: 8000
+    [T_7] union output data: 22 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 860 ms
+    >> streaming data all: 216000
+    [time] total: 26647 ms
+    >> throughput: 8105
+============== Stream num [30] =================
+    [T_1] cogroup-cache-count: 84 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5316
+    [T_3] join-hit data: 134 ms
+    [T_2] create missKey (subt): 170 ms
+    [T_4] create query + get data + create new RDD: 214 ms
+    [T_5] create cachedPRDD: 262 ms
+    >> joined_miss count: 2684
+    [T_6] join - miss data: 281 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 833 ms
+    >> streaming data all: 224000
+    [time] total: 27480 ms
+    >> throughput: 8151
+============== Stream num [31] =================
+    [T_1] cogroup-cache-count: 91 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5490
+    [T_3] join-hit data: 183 ms
+    [T_2] create missKey (subt): 233 ms
+    [T_4] create query + get data + create new RDD: 207 ms
+    [T_5] create cachedPRDD: 256 ms
+    >> joined_miss count: 2510
+    [T_6] join - miss data: 275 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 879 ms
+    >> streaming data all: 232000
+    [time] total: 28359 ms
+    >> throughput: 8180
+============== Stream num [32] =================
+    [T_1] cogroup-cache-count: 89 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5484
+    [T_3] join-hit data: 202 ms
+    [T_2] create missKey (subt): 229 ms
+    [T_4] create query + get data + create new RDD: 190 ms
+    [T_5] create cachedPRDD: 236 ms
+    >> joined_miss count: 2516
+    [T_6] join - miss data: 268 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 848 ms
+    >> streaming data all: 240000
+    [time] total: 29207 ms
+    >> throughput: 8217
+============== Stream num [33] =================
+    [T_1] cogroup-cache-count: 76 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5497
+    [T_3] join-hit data: 143 ms
+    [T_2] create missKey (subt): 184 ms
+    [T_4] create query + get data + create new RDD: 190 ms
+    [T_5] create cachedPRDD: 275 ms
+    >> joined_miss count: 2503
+    [T_6] join - miss data: 303 ms
+    >> output data: 8000
+    [T_7] union output data: 18 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 820 ms
+    >> streaming data all: 248000
+    [time] total: 30027 ms
+    >> throughput: 8259
+============== Stream num [34] =================
+    [T_1] cogroup-cache-count: 91 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5479
+    [T_3] join-hit data: 166 ms
+    [T_2] create missKey (subt): 205 ms
+    [T_4] create query + get data + create new RDD: 192 ms
+    [T_5] create cachedPRDD: 221 ms
+    >> joined_miss count: 2521
+    [T_6] join - miss data: 245 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 809 ms
+    >> streaming data all: 256000
+    [time] total: 30836 ms
+    >> throughput: 8301
+============== Stream num [35] =================
+    [T_1] cogroup-cache-count: 65 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 745
+    [T_3] join-hit data: 209 ms
+    [T_2] create missKey (subt): 249 ms
+    [T_4] create query + get data + create new RDD: 10 ms
+    [T_5] create cachedPRDD: 241 ms
+    >> joined_miss count: 360
+    [T_6] join - miss data: 250 ms
+    >> output data: 1105
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 632 ms
+    >> streaming data all: 257105
+    [time] total: 31468 ms
+    >> throughput: 8170
+============== Stream num [36] =================
+    [T_1] cogroup-cache-count: 69 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 4740
+    [T_3] join-hit data: 198 ms
+    [T_2] create missKey (subt): 247 ms
+    [T_4] create query + get data + create new RDD: 160 ms
+    [T_5] create cachedPRDD: 235 ms
+    >> joined_miss count: 2155
+    [T_6] join - miss data: 260 ms
+    >> output data: 6895
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 807 ms
+    >> streaming data all: 264000
+    [time] total: 32275 ms
+    >> throughput: 8179
+============== Stream num [37] =================
+    [T_1] cogroup-cache-count: 88 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5511
+    [T_3] join-hit data: 216 ms
+    [T_2] create missKey (subt): 257 ms
+    [T_4] create query + get data + create new RDD: 189 ms
+    [T_5] create cachedPRDD: 265 ms
+    >> joined_miss count: 2489
+    [T_6] join - miss data: 286 ms
+    >> output data: 8000
+    [T_7] union output data: 16 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 886 ms
+    >> streaming data all: 272000
+    [time] total: 33161 ms
+    >> throughput: 8202
+============== Stream num [38] =================
+    [T_1] cogroup-cache-count: 77 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5538
+    [T_3] join-hit data: 108 ms
+    [T_2] create missKey (subt): 147 ms
+    [T_4] create query + get data + create new RDD: 181 ms
+    [T_5] create cachedPRDD: 259 ms
+    >> joined_miss count: 2462
+    [T_6] join - miss data: 319 ms
+    >> output data: 8000
+    [T_7] union output data: 37 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 808 ms
+    >> streaming data all: 280000
+    [time] total: 33969 ms
+    >> throughput: 8242
+============== Stream num [39] =================
+    [T_1] cogroup-cache-count: 60 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5532
+    [T_3] join-hit data: 168 ms
+    [T_2] create missKey (subt): 212 ms
+    [T_4] create query + get data + create new RDD: 183 ms
+    [T_5] create cachedPRDD: 240 ms
+    >> joined_miss count: 2468
+    [T_6] join - miss data: 262 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 791 ms
+    >> streaming data all: 288000
+    [time] total: 34760 ms
+    >> throughput: 8285
+============== Stream num [40] =================
+    [T_1] cogroup-cache-count: 75 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5550
+    [T_3] join-hit data: 221 ms
+    [T_2] create missKey (subt): 228 ms
+    [T_4] create query + get data + create new RDD: 183 ms
+    [T_5] create cachedPRDD: 222 ms
+    >> joined_miss count: 2450
+    [T_6] join - miss data: 240 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 802 ms
+    >> streaming data all: 296000
+    [time] total: 35562 ms
+    >> throughput: 8323
+============== Stream num [41] =================
+    [T_1] cogroup-cache-count: 84 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5529
+    [T_3] join-hit data: 130 ms
+    [T_2] create missKey (subt): 180 ms
+    [T_4] create query + get data + create new RDD: 183 ms
+    [T_5] create cachedPRDD: 227 ms
+    >> joined_miss count: 2471
+    [T_6] join - miss data: 254 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 790 ms
+    >> streaming data all: 304000
+    [time] total: 36352 ms
+    >> throughput: 8362
+============== Stream num [42] =================
+    [T_1] cogroup-cache-count: 83 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5532
+    [T_3] join-hit data: 175 ms
+    [T_2] create missKey (subt): 218 ms
+    [T_4] create query + get data + create new RDD: 199 ms
+    [T_5] create cachedPRDD: 242 ms
+    >> joined_miss count: 2468
+    [T_6] join - miss data: 261 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 832 ms
+    >> streaming data all: 312000
+    [time] total: 37184 ms
+    >> throughput: 8390
+============== Stream num [43] =================
+    [T_1] cogroup-cache-count: 78 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5596
+    [T_3] join-hit data: 96 ms
+    [T_2] create missKey (subt): 133 ms
+    [T_4] create query + get data + create new RDD: 178 ms
+    >> joined_miss count: 2404
+    [T_6] join - miss data: 171 ms
+    [T_5] create cachedPRDD: 275 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 726 ms
+    >> streaming data all: 320000
+    [time] total: 37910 ms
+    >> throughput: 8441
+============== Stream num [44] =================
+    [T_1] cogroup-cache-count: 90 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5539
+    [T_3] join-hit data: 149 ms
+    [T_2] create missKey (subt): 216 ms
+    [T_4] create query + get data + create new RDD: 183 ms
+    >> joined_miss count: 2461
+    [T_6] join - miss data: 178 ms
+    [T_5] create cachedPRDD: 276 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 847 ms
+    >> streaming data all: 328000
+    [time] total: 38757 ms
+    >> throughput: 8462
+============== Stream num [45] =================
+    [T_1] cogroup-cache-count: 90 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5592
+    [T_3] join-hit data: 175 ms
+    [T_2] create missKey (subt): 213 ms
+    [T_4] create query + get data + create new RDD: 123 ms
+    [T_5] create cachedPRDD: 253 ms
+    >> joined_miss count: 2408
+    [T_6] join - miss data: 269 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 765 ms
+    >> streaming data all: 336000
+    [time] total: 39522 ms
+    >> throughput: 8501
+============== Stream num [46] =================
+    [T_1] cogroup-cache-count: 102 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5518
+    [T_3] join-hit data: 198 ms
+    [T_2] create missKey (subt): 241 ms
+    [T_4] create query + get data + create new RDD: 186 ms
+    [T_5] create cachedPRDD: 247 ms
+    >> joined_miss count: 2482
+    [T_6] join - miss data: 264 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 870 ms
+    >> streaming data all: 344000
+    [time] total: 40392 ms
+    >> throughput: 8516
+============== Stream num [47] =================
+    [T_1] cogroup-cache-count: 79 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5610
+    [T_3] join-hit data: 121 ms
+    [T_2] create missKey (subt): 165 ms
+    [T_4] create query + get data + create new RDD: 175 ms
+    [T_5] create cachedPRDD: 239 ms
+    >> joined_miss count: 2390
+    [T_6] join - miss data: 258 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 747 ms
+    >> streaming data all: 352000
+    [time] total: 41139 ms
+    >> throughput: 8556
+============== Stream num [48] =================
+    [T_1] cogroup-cache-count: 81 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5539
+    [T_3] join-hit data: 99 ms
+    [T_2] create missKey (subt): 134 ms
+    [T_4] create query + get data + create new RDD: 140 ms
+    [T_5] create cachedPRDD: 192 ms
+    >> joined_miss count: 2461
+    [T_6] join - miss data: 209 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 650 ms
+    >> streaming data all: 360000
+    [time] total: 41789 ms
+    >> throughput: 8614
+============== Stream num [49] =================
+    [T_1] cogroup-cache-count: 71 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5553
+    [T_3] join-hit data: 122 ms
+    [T_2] create missKey (subt): 151 ms
+    [T_4] create query + get data + create new RDD: 196 ms
+    [T_5] create cachedPRDD: 205 ms
+    >> joined_miss count: 2447
+    [T_6] join - miss data: 223 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 703 ms
+    >> streaming data all: 368000
+    [time] total: 42492 ms
+    >> throughput: 8660
+============== Stream num [50] =================
+    [T_1] cogroup-cache-count: 80 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5596
+    [T_3] join-hit data: 98 ms
+    [T_2] create missKey (subt): 133 ms
+    [T_4] create query + get data + create new RDD: 174 ms
+    [T_5] create cachedPRDD: 188 ms
+    >> joined_miss count: 2404
+    [T_6] join - miss data: 205 ms
+    >> output data: 8000
+    [T_7] union output data: 19 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 658 ms
+    >> streaming data all: 376000
+    [time] total: 43150 ms
+    >> throughput: 8713
+============== Stream num [51] =================
+    [T_1] cogroup-cache-count: 59 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5628
+    [T_3] join-hit data: 171 ms
+    [T_2] create missKey (subt): 212 ms
+    [T_4] create query + get data + create new RDD: 171 ms
+    [T_5] create cachedPRDD: 240 ms
+    >> joined_miss count: 2372
+    [T_6] join - miss data: 255 ms
+    >> output data: 8000
+    [T_7] union output data: 38 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 786 ms
+    >> streaming data all: 384000
+    [time] total: 43936 ms
+    >> throughput: 8739
+============== Stream num [52] =================
+    [T_1] cogroup-cache-count: 71 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5595
+    [T_3] join-hit data: 138 ms
+    [T_2] create missKey (subt): 166 ms
+    [T_4] create query + get data + create new RDD: 180 ms
+    [T_5] create cachedPRDD: 196 ms
+    >> joined_miss count: 2405
+    [T_6] join - miss data: 217 ms
+    >> output data: 8000
+    [T_7] union output data: 41 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 721 ms
+    >> streaming data all: 392000
+    [time] total: 44657 ms
+    >> throughput: 8778
+============== Stream num [53] =================
+    [T_1] cogroup-cache-count: 66 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5607
+    [T_3] join-hit data: 108 ms
+    [T_2] create missKey (subt): 138 ms
+    [T_4] create query + get data + create new RDD: 176 ms
+    [T_5] create cachedPRDD: 239 ms
+    >> joined_miss count: 2393
+    [T_6] join - miss data: 257 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 700 ms
+    >> streaming data all: 400000
+    [time] total: 45357 ms
+    >> throughput: 8818
+============== Stream num [54] =================
+    [T_1] cogroup-cache-count: 80 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5617
+    [T_3] join-hit data: 120 ms
+    [T_2] create missKey (subt): 145 ms
+    [T_4] create query + get data + create new RDD: 149 ms
+    >> joined_miss count: 2383
+    [T_6] join - miss data: 180 ms
+    [T_5] create cachedPRDD: 229 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 682 ms
+    >> streaming data all: 408000
+    [time] total: 46039 ms
+    >> throughput: 8862
+============== Stream num [55] =================
+    [T_1] cogroup-cache-count: 71 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5631
+    [T_3] join-hit data: 86 ms
+    [T_2] create missKey (subt): 112 ms
+    [T_4] create query + get data + create new RDD: 183 ms
+    [T_5] create cachedPRDD: 262 ms
+    >> joined_miss count: 2369
+    [T_6] join - miss data: 294 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 721 ms
+    >> streaming data all: 416000
+    [time] total: 46760 ms
+    >> throughput: 8896
+============== Stream num [56] =================
+    [T_1] cogroup-cache-count: 87 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5658
+    [T_3] join-hit data: 119 ms
+    [T_2] create missKey (subt): 149 ms
+    [T_4] create query + get data + create new RDD: 172 ms
+    [T_5] create cachedPRDD: 292 ms
+    >> joined_miss count: 2342
+    [T_6] join - miss data: 309 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 779 ms
+    >> streaming data all: 424000
+    [time] total: 47539 ms
+    >> throughput: 8918
+============== Stream num [57] =================
+    [T_1] cogroup-cache-count: 77 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5672
+    [T_3] join-hit data: 122 ms
+    [T_2] create missKey (subt): 146 ms
+    [T_4] create query + get data + create new RDD: 172 ms
+    >> joined_miss count: 2328
+    [T_6] join - miss data: 186 ms
+    [T_5] create cachedPRDD: 272 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 728 ms
+    >> streaming data all: 432000
+    [time] total: 48267 ms
+    >> throughput: 8950
+============== Stream num [58] =================
+    [T_1] cogroup-cache-count: 72 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5683
+    [T_3] join-hit data: 88 ms
+    [T_2] create missKey (subt): 119 ms
+    [T_4] create query + get data + create new RDD: 166 ms
+    >> joined_miss count: 2317
+    [T_6] join - miss data: 148 ms
+    [T_5] create cachedPRDD: 222 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 644 ms
+    >> streaming data all: 440000
+    [time] total: 48911 ms
+    >> throughput: 8995
+============== Stream num [59] =================
+    [T_1] cogroup-cache-count: 62 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5600
+    [T_3] join-hit data: 212 ms
+    [T_2] create missKey (subt): 249 ms
+    [T_4] create query + get data + create new RDD: 172 ms
+    [T_5] create cachedPRDD: 290 ms
+    >> joined_miss count: 2400
+    [T_6] join - miss data: 303 ms
+    >> output data: 8000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 856 ms
+    >> streaming data all: 448000
+    [time] total: 49767 ms
+    >> throughput: 9001
+============== Stream num [60] =================
+    [T_1] cogroup-cache-count: 78 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5627
+    [T_3] join-hit data: 222 ms
+    [T_2] create missKey (subt): 252 ms
+    [T_4] create query + get data + create new RDD: 175 ms
+    >> joined_miss count: 2373
+    [T_6] join - miss data: 167 ms
+    [T_5] create cachedPRDD: 280 ms
+    >> output data: 8000
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 874 ms
+    >> streaming data all: 456000
+    [time] total: 50641 ms
+    >> throughput: 9004
+============== Stream num [61] =================
+    [T_1] cogroup-cache-count: 80 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 2737
+    [T_3] join-hit data: 186 ms
+    [T_2] create missKey (subt): 220 ms
+    [T_4] create query + get data + create new RDD: 46 ms
+    [T_5] create cachedPRDD: 269 ms
+    >> joined_miss count: 1044
+    [T_6] join - miss data: 279 ms
+    >> output data: 3781
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 688 ms
+    >> streaming data all: 459781
+    [time] total: 51329 ms
+    >> throughput: 8957
+============== Stream num [62] =================
+    [T_1] cogroup-cache-count: 61 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 2987
+    [T_3] join-hit data: 186 ms
+    [T_2] create missKey (subt): 222 ms
+    [T_4] create query + get data + create new RDD: 64 ms
+    [T_5] create cachedPRDD: 258 ms
+    >> joined_miss count: 1232
+    [T_6] join - miss data: 269 ms
+    >> output data: 4219
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 677 ms
+    >> streaming data all: 464000
+    [time] total: 52006 ms
+    >> throughput: 8922
+============== Stream num [63] =================
+    [T_1] cogroup-cache-count: 63 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5736
+    [T_3] join-hit data: 199 ms
+    [T_2] create missKey (subt): 235 ms
+    [T_4] create query + get data + create new RDD: 159 ms
+    [T_5] create cachedPRDD: 255 ms
+    >> joined_miss count: 2264
+    [T_6] join - miss data: 271 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 800 ms
+    >> streaming data all: 472000
+    [time] total: 52806 ms
+    >> throughput: 8938
+============== Stream num [64] =================
+    [T_1] cogroup-cache-count: 79 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5732
+    [T_3] join-hit data: 129 ms
+    [T_2] create missKey (subt): 163 ms
+    [T_4] create query + get data + create new RDD: 162 ms
+    [T_5] create cachedPRDD: 236 ms
+    >> joined_miss count: 2268
+    [T_6] join - miss data: 246 ms
+    >> output data: 8000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 740 ms
+    >> streaming data all: 480000
+    [time] total: 53546 ms
+    >> throughput: 8964
+============== Stream num [65] =================
+    [T_1] cogroup-cache-count: 82 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5661
+    [T_3] join-hit data: 129 ms
+    [T_2] create missKey (subt): 173 ms
+    [T_4] create query + get data + create new RDD: 186 ms
+    >> joined_miss count: 2339
+    [T_6] join - miss data: 252 ms
+    [T_5] create cachedPRDD: 325 ms
+    >> output data: 8000
+    [T_7] union output data: 36 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 849 ms
+    >> streaming data all: 488000
+    [time] total: 54395 ms
+    >> throughput: 8971
+============== Stream num [66] =================
+    [T_1] cogroup-cache-count: 79 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5698
+    [T_3] join-hit data: 166 ms
+    [T_2] create missKey (subt): 200 ms
+    [T_4] create query + get data + create new RDD: 165 ms
+    >> joined_miss count: 2302
+    [T_6] join - miss data: 186 ms
+    [T_5] create cachedPRDD: 282 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 802 ms
+    >> streaming data all: 496000
+    [time] total: 55197 ms
+    >> throughput: 8985
+============== Stream num [67] =================
+    [T_1] cogroup-cache-count: 89 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5658
+    [T_3] join-hit data: 192 ms
+    [T_2] create missKey (subt): 228 ms
+    [T_4] create query + get data + create new RDD: 166 ms
+    >> joined_miss count: 2342
+    [T_6] join - miss data: 198 ms
+    [T_5] create cachedPRDD: 322 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 880 ms
+    >> streaming data all: 504000
+    [time] total: 56077 ms
+    >> throughput: 8987
+============== Stream num [68] =================
+    [T_1] cogroup-cache-count: 81 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5688
+    [T_3] join-hit data: 201 ms
+    [T_2] create missKey (subt): 237 ms
+    [T_4] create query + get data + create new RDD: 165 ms
+    [T_5] create cachedPRDD: 268 ms
+    >> joined_miss count: 2312
+    [T_6] join - miss data: 284 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 839 ms
+    >> streaming data all: 512000
+    [time] total: 56916 ms
+    >> throughput: 8995
+============== Stream num [69] =================
+    [T_1] cogroup-cache-count: 87 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5659
+    [T_3] join-hit data: 209 ms
+    [T_2] create missKey (subt): 244 ms
+    [T_4] create query + get data + create new RDD: 161 ms
+    [T_5] create cachedPRDD: 280 ms
+    >> joined_miss count: 2341
+    [T_6] join - miss data: 310 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 876 ms
+    >> streaming data all: 520000
+    [time] total: 57792 ms
+    >> throughput: 8997
+============== Stream num [70] =================
+    [T_1] cogroup-cache-count: 78 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5727
+    [T_3] join-hit data: 105 ms
+    [T_2] create missKey (subt): 131 ms
+    [T_4] create query + get data + create new RDD: 158 ms
+    [T_5] create cachedPRDD: 215 ms
+    >> joined_miss count: 2273
+    [T_6] join - miss data: 234 ms
+    >> output data: 8000
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 684 ms
+    >> streaming data all: 528000
+    [time] total: 58476 ms
+    >> throughput: 9029
+============== Stream num [71] =================
+    [T_1] cogroup-cache-count: 86 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5722
+    [T_3] join-hit data: 125 ms
+    [T_2] create missKey (subt): 159 ms
+    [T_4] create query + get data + create new RDD: 173 ms
+    [T_5] create cachedPRDD: 241 ms
+    >> joined_miss count: 2278
+    [T_6] join - miss data: 258 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 752 ms
+    >> streaming data all: 536000
+    [time] total: 59228 ms
+    >> throughput: 9049
+============== Stream num [72] =================
+    [T_1] cogroup-cache-count: 79 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5699
+    [T_3] join-hit data: 130 ms
+    [T_2] create missKey (subt): 163 ms
+    [T_4] create query + get data + create new RDD: 161 ms
+    >> joined_miss count: 2301
+    [T_6] join - miss data: 159 ms
+    [T_5] create cachedPRDD: 223 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 700 ms
+    >> streaming data all: 544000
+    [time] total: 59928 ms
+    >> throughput: 9077
+============== Stream num [73] =================
+    [T_1] cogroup-cache-count: 73 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5701
+    [T_3] join-hit data: 105 ms
+    [T_2] create missKey (subt): 142 ms
+    [T_4] create query + get data + create new RDD: 164 ms
+    [T_5] create cachedPRDD: 221 ms
+    >> joined_miss count: 2299
+    [T_6] join - miss data: 235 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 688 ms
+    >> streaming data all: 552000
+    [time] total: 60616 ms
+    >> throughput: 9106
+============== Stream num [74] =================
+    [T_1] cogroup-cache-count: 79 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5713
+    [T_3] join-hit data: 98 ms
+    [T_2] create missKey (subt): 123 ms
+    [T_4] create query + get data + create new RDD: 164 ms
+    >> joined_miss count: 2287
+    [T_6] join - miss data: 197 ms
+    [T_5] create cachedPRDD: 313 ms
+    >> output data: 8000
+    [T_7] union output data: 22 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 750 ms
+    >> streaming data all: 560000
+    [time] total: 61366 ms
+    >> throughput: 9125
+============== Stream num [75] =================
+    [T_1] cogroup-cache-count: 89 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5695
+    [T_3] join-hit data: 228 ms
+    [T_2] create missKey (subt): 265 ms
+    [T_4] create query + get data + create new RDD: 164 ms
+    [T_5] create cachedPRDD: 274 ms
+    >> joined_miss count: 2305
+    [T_6] join - miss data: 291 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 882 ms
+    >> streaming data all: 568000
+    [time] total: 62248 ms
+    >> throughput: 9124
+============== Stream num [76] =================
+    [T_1] cogroup-cache-count: 90 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5780
+    [T_3] join-hit data: 206 ms
+    [T_2] create missKey (subt): 270 ms
+    [T_4] create query + get data + create new RDD: 98 ms
+    [T_5] create cachedPRDD: 270 ms
+    >> joined_miss count: 2220
+    [T_6] join - miss data: 287 ms
+    >> output data: 8000
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 822 ms
+    >> streaming data all: 576000
+    [time] total: 63070 ms
+    >> throughput: 9132
+============== Stream num [77] =================
+    [T_1] cogroup-cache-count: 80 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5731
+    [T_3] join-hit data: 177 ms
+    [T_2] create missKey (subt): 180 ms
+    [T_4] create query + get data + create new RDD: 180 ms
+    [T_5] create cachedPRDD: 322 ms
+    >> joined_miss count: 2269
+    [T_6] join - miss data: 337 ms
+    >> output data: 8000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 857 ms
+    >> streaming data all: 584000
+    [time] total: 63927 ms
+    >> throughput: 9135
+============== Stream num [78] =================
+    [T_1] cogroup-cache-count: 102 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5704
+    [T_3] join-hit data: 155 ms
+    [T_2] create missKey (subt): 179 ms
+    [T_4] create query + get data + create new RDD: 162 ms
+    [T_5] create cachedPRDD: 297 ms
+    >> joined_miss count: 2296
+    [T_6] join - miss data: 335 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 851 ms
+    >> streaming data all: 592000
+    [time] total: 64778 ms
+    >> throughput: 9138
+============== Stream num [79] =================
+    [T_1] cogroup-cache-count: 86 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5772
+    [T_3] join-hit data: 214 ms
+    [T_2] create missKey (subt): 253 ms
+    [T_4] create query + get data + create new RDD: 157 ms
+    [T_5] create cachedPRDD: 329 ms
+    >> joined_miss count: 2228
+    [T_6] join - miss data: 345 ms
+    >> output data: 8000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 916 ms
+    >> streaming data all: 600000
+    [time] total: 65694 ms
+    >> throughput: 9133
+============== Stream num [80] =================
+    [T_1] cogroup-cache-count: 74 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 2913
+    [T_3] join-hit data: 234 ms
+    [T_2] create missKey (subt): 264 ms
+    [T_4] create query + get data + create new RDD: 44 ms
+    [T_5] create cachedPRDD: 264 ms
+    >> joined_miss count: 1087
+    [T_6] join - miss data: 275 ms
+    >> output data: 4000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 723 ms
+    >> streaming data all: 604000
+    [time] total: 66417 ms
+    >> throughput: 9094
+============== Stream num [81] =================
+    [T_1] cogroup-cache-count: 63 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 2885
+    [T_3] join-hit data: 189 ms
+    [T_2] create missKey (subt): 236 ms
+    [T_4] create query + get data + create new RDD: 53 ms
+    [T_5] create cachedPRDD: 305 ms
+    >> joined_miss count: 1115
+    [T_6] join - miss data: 329 ms
+    >> output data: 4000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 756 ms
+    >> streaming data all: 608000
+    [time] total: 67173 ms
+    >> throughput: 9051
+============== Stream num [82] =================
+    [T_1] cogroup-cache-count: 69 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5755
+    [T_3] join-hit data: 103 ms
+    [T_2] create missKey (subt): 126 ms
+    [T_4] create query + get data + create new RDD: 163 ms
+    >> joined_miss count: 2245
+    [T_6] join - miss data: 183 ms
+    [T_5] create cachedPRDD: 300 ms
+    >> output data: 8000
+    [T_7] union output data: 56 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 752 ms
+    >> streaming data all: 616000
+    [time] total: 67925 ms
+    >> throughput: 9068
+============== Stream num [83] =================
+    [T_1] cogroup-cache-count: 64 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5830
+    [T_3] join-hit data: 91 ms
+    [T_2] create missKey (subt): 132 ms
+    [T_4] create query + get data + create new RDD: 151 ms
+    [T_5] create cachedPRDD: 256 ms
+    >> joined_miss count: 2170
+    [T_6] join - miss data: 271 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 693 ms
+    >> streaming data all: 624000
+    [time] total: 68618 ms
+    >> throughput: 9093
+============== Stream num [84] =================
+    [T_1] cogroup-cache-count: 70 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5754
+    [T_3] join-hit data: 150 ms
+    [T_2] create missKey (subt): 182 ms
+    [T_4] create query + get data + create new RDD: 159 ms
+    >> joined_miss count: 2246
+    [T_6] join - miss data: 187 ms
+    [T_5] create cachedPRDD: 254 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 743 ms
+    >> streaming data all: 632000
+    [time] total: 69361 ms
+    >> throughput: 9111
+============== Stream num [85] =================
+    [T_1] cogroup-cache-count: 69 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5733
+    [T_3] join-hit data: 209 ms
+    [T_2] create missKey (subt): 235 ms
+    [T_4] create query + get data + create new RDD: 162 ms
+    >> joined_miss count: 2267
+    [T_6] join - miss data: 191 ms
+    [T_5] create cachedPRDD: 281 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 841 ms
+    >> streaming data all: 640000
+    [time] total: 70202 ms
+    >> throughput: 9116
+============== Stream num [86] =================
+    [T_1] cogroup-cache-count: 77 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5751
+    [T_3] join-hit data: 185 ms
+    [T_2] create missKey (subt): 216 ms
+    [T_4] create query + get data + create new RDD: 118 ms
+    [T_5] create cachedPRDD: 264 ms
+    >> joined_miss count: 2249
+    [T_6] join - miss data: 280 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 767 ms
+    >> streaming data all: 648000
+    [time] total: 70969 ms
+    >> throughput: 9130
+============== Stream num [87] =================
+    [T_1] cogroup-cache-count: 86 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5762
+    [T_3] join-hit data: 216 ms
+    [T_2] create missKey (subt): 256 ms
+    [T_4] create query + get data + create new RDD: 182 ms
+    >> joined_miss count: 2238
+    [T_6] join - miss data: 208 ms
+    [T_5] create cachedPRDD: 294 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 895 ms
+    >> streaming data all: 656000
+    [time] total: 71864 ms
+    >> throughput: 9128
+============== Stream num [88] =================
+    [T_1] cogroup-cache-count: 78 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5780
+    [T_3] join-hit data: 142 ms
+    [T_2] create missKey (subt): 169 ms
+    [T_4] create query + get data + create new RDD: 154 ms
+    [T_5] create cachedPRDD: 278 ms
+    >> joined_miss count: 2220
+    [T_6] join - miss data: 293 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 773 ms
+    >> streaming data all: 664000
+    [time] total: 72637 ms
+    >> throughput: 9141
+============== Stream num [89] =================
+    [T_1] cogroup-cache-count: 85 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5803
+    [T_3] join-hit data: 165 ms
+    [T_2] create missKey (subt): 198 ms
+    [T_4] create query + get data + create new RDD: 114 ms
+    >> joined_miss count: 2197
+    [T_6] join - miss data: 208 ms
+    [T_5] create cachedPRDD: 297 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 774 ms
+    >> streaming data all: 672000
+    [time] total: 73411 ms
+    >> throughput: 9153
+============== Stream num [90] =================
+    [T_1] cogroup-cache-count: 78 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5806
+    [T_3] join-hit data: 116 ms
+    [T_2] create missKey (subt): 156 ms
+    [T_4] create query + get data + create new RDD: 156 ms
+    [T_5] create cachedPRDD: 246 ms
+    >> joined_miss count: 2194
+    [T_6] join - miss data: 263 ms
+    >> output data: 8000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 734 ms
+    >> streaming data all: 680000
+    [time] total: 74145 ms
+    >> throughput: 9171
+============== Stream num [91] =================
+    [T_1] cogroup-cache-count: 95 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5770
+    [T_3] join-hit data: 212 ms
+    [T_2] create missKey (subt): 215 ms
+    [T_4] create query + get data + create new RDD: 158 ms
+    >> joined_miss count: 2230
+    [T_6] join - miss data: 193 ms
+    [T_5] create cachedPRDD: 281 ms
+    >> output data: 8000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 831 ms
+    >> streaming data all: 688000
+    [time] total: 74976 ms
+    >> throughput: 9176
+============== Stream num [92] =================
+    [T_1] cogroup-cache-count: 78 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5769
+    [T_3] join-hit data: 191 ms
+    [T_2] create missKey (subt): 224 ms
+    [T_4] create query + get data + create new RDD: 164 ms
+    [T_5] create cachedPRDD: 278 ms
+    >> joined_miss count: 2231
+    [T_6] join - miss data: 295 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 840 ms
+    >> streaming data all: 696000
+    [time] total: 75816 ms
+    >> throughput: 9180
+============== Stream num [93] =================
+    [T_1] cogroup-cache-count: 88 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5742
+    [T_3] join-hit data: 265 ms
+    [T_2] create missKey (subt): 307 ms
+    [T_4] create query + get data + create new RDD: 113 ms
+    >> joined_miss count: 2258
+    [T_6] join - miss data: 177 ms
+    [T_5] create cachedPRDD: 249 ms
+    >> output data: 8000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 842 ms
+    >> streaming data all: 704000
+    [time] total: 76658 ms
+    >> throughput: 9183
+============== Stream num [94] =================
+    [T_1] cogroup-cache-count: 76 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5782
+    [T_3] join-hit data: 108 ms
+    [T_2] create missKey (subt): 142 ms
+    [T_4] create query + get data + create new RDD: 121 ms
+    [T_5] create cachedPRDD: 214 ms
+    >> joined_miss count: 2218
+    [T_6] join - miss data: 231 ms
+    >> output data: 8000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 648 ms
+    >> streaming data all: 712000
+    [time] total: 77306 ms
+    >> throughput: 9210
+============== Stream num [95] =================
+    [T_1] cogroup-cache-count: 70 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5793
+    [T_3] join-hit data: 93 ms
+    [T_2] create missKey (subt): 127 ms
+    [T_4] create query + get data + create new RDD: 158 ms
+    >> joined_miss count: 2207
+    [T_6] join - miss data: 172 ms
+    [T_5] create cachedPRDD: 300 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 734 ms
+    >> streaming data all: 720000
+    [time] total: 78040 ms
+    >> throughput: 9226
+============== Stream num [96] =================
+    [T_1] cogroup-cache-count: 86 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5802
+    [T_3] join-hit data: 118 ms
+    [T_2] create missKey (subt): 148 ms
+    [T_4] create query + get data + create new RDD: 97 ms
+    >> joined_miss count: 2198
+    [T_6] join - miss data: 228 ms
+    [T_5] create cachedPRDD: 351 ms
+    >> output data: 8000
+    [T_7] union output data: 44 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 775 ms
+    >> streaming data all: 728000
+    [time] total: 78815 ms
+    >> throughput: 9236
+============== Stream num [97] =================
+    [T_1] cogroup-cache-count: 71 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5808
+    [T_3] join-hit data: 147 ms
+    [T_2] create missKey (subt): 195 ms
+    [T_4] create query + get data + create new RDD: 151 ms
+    [T_5] create cachedPRDD: 268 ms
+    >> joined_miss count: 2192
+    [T_6] join - miss data: 286 ms
+    >> output data: 8000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 788 ms
+    >> streaming data all: 736000
+    [time] total: 79603 ms
+    >> throughput: 9245
+============== Stream num [98] =================
+    [T_1] cogroup-cache-count: 84 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5868
+    [T_3] join-hit data: 236 ms
+    [T_2] create missKey (subt): 272 ms
+    [T_4] create query + get data + create new RDD: 143 ms
+    [T_5] create cachedPRDD: 285 ms
+    >> joined_miss count: 2132
+    [T_6] join - miss data: 303 ms
+    >> output data: 8000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 882 ms
+    >> streaming data all: 744000
+    [time] total: 80485 ms
+    >> throughput: 9243
+============== Stream num [99] =================
+    [T_1] cogroup-cache-count: 77 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5737
+    [T_3] join-hit data: 116 ms
+    [T_2] create missKey (subt): 142 ms
+    [T_4] create query + get data + create new RDD: 163 ms
+    [T_5] create cachedPRDD: 209 ms
+    >> joined_miss count: 2263
+    [T_6] join - miss data: 225 ms
+    >> output data: 8000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 696 ms
+    >> streaming data all: 752000
+    [time] total: 81181 ms
+    >> throughput: 9263
+============== Stream num [100] =================
+    [T_1] cogroup-cache-count: 81 ms
+Some(org.apache.spark.HashPartitioner@c)
+    >> joined Hit count: 5772
+    [T_3] join-hit data: 97 ms
+    [T_2] create missKey (subt): 132 ms
+    [T_4] create query + get data + create new RDD: 175 ms
+    [T_5] create cachedPRDD: 251 ms
+    >> joined_miss count: 2228
+    [T_6] join - miss data: 269 ms
+    >> output data: 8000
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 738 ms
+    >> streaming data all: 760000
+    [time] total: 81919 ms
+    >> throughput: 9277

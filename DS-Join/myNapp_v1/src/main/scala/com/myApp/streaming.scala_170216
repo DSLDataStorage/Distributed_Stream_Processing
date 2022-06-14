@@ -1,0 +1,518 @@
+import org.apache.spark._
+import org.apache.spark.streaming._
+import org.apache.spark.HashPartitioner
+import org.apache.spark.RangePartitioner
+import org.apache.spark.streaming.kafka._
+import org.apache.spark.storage.StorageLevel
+
+import com.mongodb.casbah.Imports.MongoDBObject
+import com.mongodb.casbah.Imports.MongoClient
+import com.mongodb.casbah.Imports.DBObject
+
+import scala.concurrent.{Await, Future}
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration._
+
+import scala.util.control.Breaks._
+
+import akka.actor._
+
+object Streaming{	
+	
+		
+	def main(args: Array[String]){
+		//val conf = new SparkConf().setMaster("spark://192.168.0.241:7077").setAppName("myApp")
+		val conf = new SparkConf().setMaster("mesos://192.168.0.241:5050")
+										//.setMaster("mesos://192.168.0.241:7077")
+										.setAppName("myApp")
+										//.registerKryoClasses(Array(classOf[MyClass]))
+										//.set("spark.executor.uri", "http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz")
+		
+		val sc = new SparkContext(conf)
+		
+		var isFirst = 1 // if 1, first
+		var flag = 1
+		
+		var printON: Boolean = false
+		var printTime: Boolean = false
+		var streamCount = 1
+		
+
+		var isCogroup = true
+		if(args(0) == "cog"){
+			isCogroup = true
+		}else if(args(0) == "js"){
+			isCogroup = false
+		}
+
+
+		var isREx = false
+		var missedCache = false
+		
+		//var partition_num = 8
+		var partition_num = args(1).toInt
+		var syncMissedTmp = false
+		var syncMissedRDD = false
+		
+		var cachedPRDD: org.apache.spark.rdd.RDD[(Int, String)] = null
+		var t: org.apache.spark.rdd.RDD[(Int, String)] = null
+		var t2: org.apache.spark.rdd.RDD[(Int, String)] = null
+		var missedPRDD: org.apache.spark.rdd.RDD[(Int, String)] = null
+		var LRUKey: org.apache.spark.rdd.RDD[(Int, Int)] = null
+		var LRUKey2: org.apache.spark.rdd.RDD[(Int, Int)] = null
+		//var LRUKey: Array[String] = null
+		var joinedPRDD_hit: org.apache.spark.rdd.RDD[(Int, (String, String))] = null
+		var joinedPRDD_missed: org.apache.spark.rdd.RDD[(Int, (String, String))] = null
+		var cog: org.apache.spark.rdd.RDD[(Int, (Iterable[String], Iterable[String]))] = null
+		var loj: org.apache.spark.rdd.RDD[(Int, (String, Option[String]))] = null
+		var missedTmp: org.apache.spark.rdd.RDD[(Int, (Iterable[String], Iterable[String]))] = null
+		var missedKeys: org.apache.spark.rdd.RDD[Int] = null
+		var cachedDataCount: Long = 0
+
+
+		val ssc = new StreamingContext(sc, Seconds(1))
+		val stream = ssc.socketTextStream("192.168.0.243", 9999)
+		val stream2 = ssc.socketTextStream("192.168.0.243", 9998)
+		val stream3 = ssc.socketTextStream("192.168.0.243", 9997)
+		val stream4 = ssc.socketTextStream("192.168.0.243", 9996)/*
+		val stream5 = ssc.socketTextStream("192.168.0.243", 9995)
+		val stream6 = ssc.socketTextStream("192.168.0.243", 9994)
+		val stream7 = ssc.socketTextStream("192.168.0.243", 9993)
+		val stream8 = ssc.socketTextStream("192.168.0.243", 9992)*//*
+		val stream9 = ssc.socketTextStream("192.168.0.243", 9991)
+		val stream10 = ssc.socketTextStream("192.168.0.243", 9990)
+		val stream11 = ssc.socketTextStream("192.168.0.243", 9989)
+		val stream12 = ssc.socketTextStream("192.168.0.243", 9988)
+		val stream13 = ssc.socketTextStream("192.168.0.243", 9987)
+		val stream14 = ssc.socketTextStream("192.168.0.243", 9986)
+		val stream15 = ssc.socketTextStream("192.168.0.243", 9985)
+		val stream16 = ssc.socketTextStream("192.168.0.243", 9984)*/
+		
+		var streamAll = stream.union(stream2).union(stream3).union(stream4)
+						//.union(stream5).union(stream6).union(stream7).union(stream8)
+						//.union(stream9).union(stream10).union(stream11).union(stream12)
+						//.union(stream13).union(stream14).union(stream15).union(stream16)
+
+		val mongoClient = MongoClient("192.168.0.242", 27020)
+		val db = mongoClient("n4s10000r")
+		val coll = db("part")
+		
+		var streaming_data_all: Int = 0
+		var time_all = 0		
+				
+		var hashP = new HashPartitioner(partition_num)
+		
+		if(isCogroup){
+			println("cogroup, partition: " + partition_num)
+		}else{
+			println("join-subt, partition: " + partition_num)
+		}
+
+		//var xxx = sc.textFile("file:///home/user/spark/part-00000", 16)
+		var xxx = sc.textFile("file:///home/user/spark/cached40k.tbl", 32)
+		var test = xxx.map({s=>var k = s.split('|'); (k(0), k(1))})
+		cachedPRDD = xxx.map({s=>var k = s.split('|'); var k2 = k(0).split(' '); (k2(0).toInt, k(1).toString)}).partitionBy(hashP)
+		cachedPRDD.cache
+		cachedDataCount = cachedPRDD.count
+		cachedDataCount
+		
+		streamAll.foreachRDD({ rdd =>
+			if(!rdd.isEmpty()){
+////
+				//if(streamCount == 501){
+				//	Thread sleep(10000000)
+				//}				
+				
+				val tStart = System.currentTimeMillis
+				var compSign = 1
+				var missCount: Long = 0
+				var missKeyCount: Long = 0
+				
+				println()
+				println("Start|Stream num: " + streamCount)
+				
+				var t0 = System.currentTimeMillis
+				
+				/* Discretize the input stream into RDDs */								
+				//var inputPRDD = rdd.map{ s=>  var tmp = s.split("\""); (tmp.lift(3).get.toInt, s) }
+				var inputPRDD = rdd.map{ s=>  var tmp = s.split('|'); (tmp.lift(1).get.toInt, s) }
+				//println(inputPRDD.first)
+				
+				if(isCogroup){
+					cog = inputPRDD.cogroup(cachedPRDD).filter{s=>(!s._2._1.isEmpty)}
+					cog.cache
+					cog.count
+				}else{
+					inputPRDD.cache
+					inputPRDD.count
+				}
+				
+				var t1 = System.currentTimeMillis
+				println("time|1|cogroup (input-cached): " + (t1 - t0) + " ms")
+									
+				/* hit data join */
+				val b = new Thread(){
+					override def run = {
+						var t0 = System.currentTimeMillis
+						
+						if(isCogroup){
+							var r1 = cog.filter{s=> (!s._2._2.isEmpty)}.map{case(x,(y,z)) => ((x,z.head),y.toList)}
+							joinedPRDD_hit = r1.flatMapValues(s=>s).map({case((x,y),z)=>(x,(y,z))})
+							
+							
+						
+						}else{
+							joinedPRDD_hit = inputPRDD.join(cachedPRDD)
+							
+						}
+												
+						joinedPRDD_hit.cache
+						//joinedPRDD_hit.count
+						println("data|joined Hit count: " + joinedPRDD_hit.count)				
+						
+						var t1 = System.currentTimeMillis
+						println("time|3|join-hit data: " + (t1 - t0) + " ms")
+
+
+						if(isCogroup){
+							t0 = System.currentTimeMillis
+
+							/*var flag = true
+							while(flag){
+								this.synchronized{
+									if(syncMissedTmp == true){
+										flag = false
+										syncMissedTmp = false
+									}
+								}
+							}*/
+
+							//missedPRDD = missedTmp.map{case(x,(y,z))=>(x,y.toList)}.flatMapValues(s=>s).partitionBy(hashP)
+							missedPRDD = cog.filter{x=> x._2._2.isEmpty}.map{case(x,(y,z))=>(x,y.toList)}.flatMapValues(s=>s).partitionBy(hashP)
+							missedPRDD.cache
+							missedPRDD.count
+
+							
+							this.synchronized{
+								syncMissedRDD = true
+							}
+							t1 = System.currentTimeMillis
+							println("time|9|create MissedRDD: " + (t1 - t0) + " ms")
+						}
+
+					}
+				}
+				b.start()				
+
+				
+				/* miss data join */
+				val f = Future{ // for missed data
+					
+					
+					
+					var t0 = System.currentTimeMillis
+					
+					/* subtractByKey */
+					if(isCogroup){			
+						missedTmp = cog.filter{x=> x._2._2.isEmpty}
+						missKeyCount = missedTmp.cache.count
+
+						/*
+						this.synchronized{
+							syncMissedTmp = true
+						}*/				
+						
+						missedKeys = missedTmp.keys
+						missedKeys.cache
+						
+					}else{
+						missedPRDD = inputPRDD.subtractByKey(cachedPRDD, hashP)
+						missedPRDD.cache
+						missedKeys = missedPRDD.keys.distinct	
+						missKeyCount = missedKeys.count
+					}
+					
+					missKeyCount
+										
+					var t1 = System.currentTimeMillis	
+					//println("    >> missKey count: " + missKeyCount)
+					println("time|2|create missedKeys (subt): " + (t1 - t0) + " ms")
+					
+				
+					t0 = System.currentTimeMillis
+					var itemCount = missKeyCount / 4
+					
+					if(printON)	println(">> make query")
+
+					/* generate queries using missedRDD */
+					var qList: List[com.mongodb.casbah.commons.Imports.DBObject] = null
+					var qList2: List[com.mongodb.casbah.commons.Imports.DBObject] = null
+					var qList3: List[com.mongodb.casbah.commons.Imports.DBObject] = null
+					var qList4: List[com.mongodb.casbah.commons.Imports.DBObject] = null
+				
+					var count = 0
+
+					missedKeys.collect.foreach{ s => var tmp = MongoDBObject("partkey" -> s); 
+						if(count == 0){ qList = List(tmp) }
+						else if(count == itemCount){qList2 = List(tmp)}
+						else if(count == itemCount*2){qList3 = List(tmp)}
+						else if(count == itemCount*3){qList4 = List(tmp)}
+						else if(count < itemCount){qList = qList:+tmp}
+						else if(count > itemCount && count < itemCount*2){qList2 = qList2:+tmp}
+						else if(count > itemCount*2 && count < itemCount*3){qList3 = qList3:+tmp}
+						else{ qList4 = qList4 :+ tmp }; 
+					count = count + 1 }
+					
+					//missKey.unpersist()
+					
+					/*
+					var q = MongoDBObject("$or" -> qList)
+					var q2 = MongoDBObject("$or" -> qList2)
+					var q3 = MongoDBObject("$or" -> qList3)
+					var q4 = MongoDBObject("$or" -> qList4)
+					
+					var documents = coll.find(q)
+					var documents2 = coll.find(q2)
+					var documents3 = coll.find(q3)
+					var documents4 = coll.find(q4)
+					*/
+					
+					//t1 = System.currentTimeMillis
+					//println("    [T_5] create query: " + (t1 - t0) + " ms")
+					
+					//t0 = System.currentTimeMillis
+					//t1 = System.currentTimeMillis
+					//println("[TIME] get data from mongodb: " + (t1 - t0) + " ms")
+					
+					/* execute generated queries */
+					/*
+					var tmp: Array[String] = None
+					var tmp2: Array[String] = None
+					var tmp3: Array[String] = None
+					var tmp4: Array[String] = None
+					*/
+					var tmp = Array("a")
+					var tmp2 = Array("a")
+					var tmp3 = Array("a")
+					var tmp4 = Array("a")
+					
+					val queryThread1 = new Thread(){
+						override def run = {
+							var q = MongoDBObject("$or" -> qList)
+							coll.find(q).foreach(s => tmp = tmp:+ s.toString)			
+							//documents.foreach(s => tmp = tmp:+ s.toString)
+						}
+					}
+				
+					val queryThread2 = new Thread(){
+						override def run = {
+							var q2 = MongoDBObject("$or" -> qList2)
+							coll.find(q2).foreach(s => tmp2 = tmp2:+ s.toString)
+							//documents2.foreach(s => tmp2 = tmp2:+ s.toString)
+						}
+					}				
+					
+					val queryThread3 = new Thread(){
+						override def run = {
+							var q3 = MongoDBObject("$or" -> qList3)
+							coll.find(q3).foreach(s => tmp3 = tmp3:+ s.toString)
+							//documents3.foreach(s => tmp3 = tmp3:+ s.toString)
+						}
+					}
+					
+					queryThread1.start
+					queryThread2.start
+					queryThread3.start
+
+					var q4 = MongoDBObject("$or" -> qList4)
+					coll.find(q4).foreach(s => tmp4 = tmp4:+ s.toString)
+					//documents4.foreach(s => tmp3 = tmp3:+ s.toString)
+					//var done = false
+					
+					queryThread1.join()
+					queryThread2.join()
+					queryThread3.join()
+					
+					
+					//var tmpAll = tmp.union(tmp2).union(tmp3).union(tmp4)					
+					var tmpAll = tmp.drop(1).union(tmp2.drop(1)).union(tmp3.drop(1)).union(tmp4.drop(1))					
+					//println("    [T6] get data from mongodb using cursor: " + (t1 - t0) + " ms")
+
+					
+					
+					/* transform query results to RDD */
+					//t0 = System.currentTimeMillis
+					var DB_RDD = sc.parallelize(tmpAll)
+					//var DB_PRDD = DB_RDD.map{ s=> {var tmpAll=s.split(" "); (tmpAll.lift(10).get.toInt, s) } }
+					var DB_PRDD = DB_RDD.map{ s=> {var tmpAll=s.split(" "); (tmpAll.lift(10).get.toInt, s) } }//.partitionBy(hashP)
+					//DB_PRDD.persist.count
+					
+					t1 = System.currentTimeMillis
+					println("time|4|create query + get data + create new RDD: " + (t1 - t0) + " ms")
+
+	
+					/* cache management */
+					val cacheThread = new Thread(){
+						override def run = {
+							
+							var t0 = System.currentTimeMillis
+							if(cachedDataCount > 50000){
+								t = cachedPRDD.sample(false, 0.05).union(DB_PRDD).partitionBy(hashP)
+							}else{
+								t = cachedPRDD.union(DB_PRDD).partitionBy(hashP)
+							}
+							cachedDataCount = t.cache.count
+							//cachedDataCount = t.persist(StorageLevel.MEMORY_ONLY_SER).count
+							//cachedDataCount = t.persist(StorageLevel.OFF_HEAP).count
+							cachedPRDD.unpersist()
+							cachedPRDD = t	
+							
+							println("data|cachedData: " + cachedDataCount)
+							var t1 = System.currentTimeMillis
+							println("time|6|create cachedPRDD: " + (t1 - t0) + " ms")
+							
+							//if(printON)	println(">> cachedPRDD count: " + cachedPRDD.count)
+							
+							//else cachedPRDD.count
+							/* --------------------------------------------------------------------------------- */
+							
+							/* reorganization
+							t0 = System.currentTimeMillis
+							if(isFirst){						
+								LRUKey = missKey.map(s => (s, streamCount))
+								
+								//LRUKey.take(10).foreach(println)
+							}else{
+								//LRUKey.take(10).foreach(println)
+								
+								LRUKey = LRUKey.subtractByKey(inputPRDD)
+								//LRUKey = LRUKey.sortBy(s => s._2)
+								
+								LRUKey = LRUKey.union(inputPRDD.keys.distinct.map(s => (s,streamCount)))
+								LRUKey.repartition(16)
+							}
+							LRUKey.persist
+							
+							
+							//LRUKey.take(10).foreach(println)
+							
+							if(printON)	println(">> LRUKey count: " + LRUKey.count)
+							else LRUKey.count
+							t1 = System.currentTimeMillis
+							if(printTime)println("[TIME] create LRUKeyPRDD: " + (t1 - t0) + " ms")
+							*/
+							
+							/*//if(sumCache > 10000){
+							if(LRUKey.count > 10000){
+								println(">> caching change")
+								//var subCount = LRUKey.count.toInt - 10000
+								LRUKey = LRUKey.sortBy(s => s._2)
+								var rmCount = newPRDD.count.toInt
+								var rmData = sc.parallelize(LRUKey.take(rmCount))
+
+							
+								cachedPRDD = cachedPRDD.subtractByKey(rmData)
+								//LRUKey = sc.parallelize(LRUKey.collect.drop(subCount))
+							
+							}*/
+							/* --------------------------------------------------------------------------------- */
+						}
+					}
+					
+					cacheThread.start
+					
+					/* join missed data */
+					t0 = System.currentTimeMillis
+					
+					if(isCogroup){
+						var flag = true
+						while(flag){
+							this.synchronized{
+								if(syncMissedRDD == true){								
+									flag = false
+									syncMissedRDD = false
+								}
+							}
+						}
+					}
+					
+
+					joinedPRDD_missed = missedPRDD.join(DB_PRDD)
+					
+					//if(!isREx){
+					joinedPRDD_missed.cache
+					var joinedPRDD_missed_count = joinedPRDD_missed.count
+					println("data|joined_miss count: " + joinedPRDD_missed_count)
+					//}				
+					
+					missedPRDD.unpersist()
+					t1 = System.currentTimeMillis
+					println("time|5|join - miss data: " + (t1 - t0) + " ms")
+
+					cacheThread.join()
+				} // Future
+
+
+				// start Future f (missed data join)
+				t0 = System.currentTimeMillis
+				val n =Await.result(f, scala.concurrent.duration.Duration.Inf)
+				t1 = System.currentTimeMillis
+				
+				b.join() // hit thread
+				
+				var outputCount: Long = 0
+							
+							
+				/* union (joinedRDD_hit, joinedRDD_missed) */
+				t0 = System.currentTimeMillis					
+				outputCount = joinedPRDD_hit.union(joinedPRDD_missed).count								
+				println("data|output data: " + outputCount)				
+				t1 = System.currentTimeMillis
+				println("time|7|union output data: " + (t1 - t0) + " ms")			
+				
+				
+				streamCount = streamCount + 1
+				//t0 = System.currentTimeMillis
+				
+				/* unpersist */
+				if(isCogroup){
+					cog.unpersist()
+					missedTmp.unpersist()
+				}else{
+					inputPRDD.unpersist()
+				}
+								
+				rdd.unpersist()
+				
+				isFirst = 0
+				//t1 = System.currentTimeMillis
+				//println("    [T_8] unpersist(join-hit/miss, input or cogroup): " + (t1 - t0) + " ms")
+				
+				val tEnd = System.currentTimeMillis
+				println("time|8|stream: " + (tEnd - tStart) + " ms")
+				
+				streaming_data_all = streaming_data_all + outputCount.toInt
+				println("data|streaming data all: " + streaming_data_all)
+				
+				var timetmp: Int = tEnd.toInt - tStart.toInt
+				time_all = time_all + timetmp
+				
+				println("time|a|total: " + time_all + " ms")
+				
+				var throughput = streaming_data_all * 1000 / time_all
+				println("END|throughput: " + throughput)
+
+				joinedPRDD_hit.unpersist()
+				joinedPRDD_missed.unpersist()
+			}
+		})
+		
+		ssc.start()
+		ssc.awaitTermination()
+	}
+	
+	
+}
+
+
+

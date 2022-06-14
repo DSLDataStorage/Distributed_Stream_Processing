@@ -1,0 +1,550 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>transport - akka.remote.transport</title>
+          <meta name="description" content="transport - akka.remote.transport" />
+          <meta name="keywords" content="transport akka.remote.transport" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'akka.remote.transport.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="akka">akka</a>.<a href="../package.html" class="extype" name="akka.remote">remote</a></p>
+        <h1>transport</h1><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transport</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph1" viewBox="0.00 0.00 960.00 220.00" height="220pt" width="960pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 216)" class="graph" id="graph0"><polygon points="-4,4 -4,-216 956,-216 956,4 -4,4" stroke="white" fill="white"></polygon><!-- node0 --><g class="node trait" id="graph1_0"><g id="a_trait|graph1_0"><a xlink:title="akka.remote.transport.TransportAdapterProvider" xlink:href="TransportAdapterProvider.html#inheritance-diagram"><polygon points="213.25,-212 54.75,-212 54.75,-186 213.25,-186 213.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="67" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="86.7695" text-anchor="start">TransportAdapterProvider</text></a></g></g><!-- node3 --><g class="node class" id="graph1_3"><g id="a_class|graph1_3"><a xlink:title="akka.remote.transport.ThrottlerProvider" xlink:href="ThrottlerProvider.html#inheritance-diagram"><polygon points="118.25,-150 -0.25,-150 -0.25,-124 118.25,-124 118.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="31.877" text-anchor="start">ThrottlerProvider</text></a></g></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph1_0_3"><g id="a_inheritance|graph1_0_3"><a xlink:title="ThrottlerProvider is a subtype of TransportAdapterProvider"><path d="M114.695,-182.556C102.08,-172.464 85.8395,-159.472 74.1548,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="113.825,-184.101 118.823,-185.858 116.011,-181.368 113.825,-184.101" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node class" id="graph1_7"><g id="a_class|graph1_7"><a xlink:title="akka.remote.transport.FailureInjectorProvider" xlink:href="FailureInjectorProvider.html#inheritance-diagram"><polygon points="281.25,-150 136.75,-150 136.75,-124 281.25,-124 281.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="149" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="168.813" text-anchor="start">FailureInjectorProvider</text></a></g></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph1_0_7"><g id="a_inheritance|graph1_0_7"><a xlink:title="FailureInjectorProvider is a subtype of TransportAdapterProvider"><path d="M153.305,-182.556C165.92,-172.464 182.16,-159.472 193.845,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="151.989,-181.368 149.177,-185.858 154.175,-184.101 151.989,-181.368" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node1 --><g class="node trait" id="graph1_1"><g id="a_trait|graph1_1"><a xlink:title="akka.remote.transport.Transport" xlink:href="Transport.html#inheritance-diagram"><polygon points="406.25,-212 319.75,-212 319.75,-186 406.25,-186 406.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="332" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="351.9" text-anchor="start">Transport</text></a></g></g><!-- node4 --><g class="node class" id="graph1_4"><g id="a_class|graph1_4"><a xlink:title="akka.remote.transport.TestTransport" xlink:href="TestTransport.html#inheritance-diagram"><polygon points="404.25,-150 299.75,-150 299.75,-124 404.25,-124 404.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="312" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="331.73" text-anchor="start">TestTransport</text></a></g></g><!-- node1&#45;&gt;node4 --><g class="edge inheritance" id="graph1_1_4"><g id="a_inheritance|graph1_1_4"><a xlink:title="TestTransport is a subtype of Transport"><path d="M359.825,-180.683C358.031,-170.896 355.832,-158.903 354.223,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="358.151,-181.256 360.774,-185.858 361.594,-180.624 358.151,-181.256" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node11 --><g class="node class" id="graph1_11"><g id="a_class|graph1_11"><a xlink:title="akka.remote.transport.AbstractTransportAdapter" xlink:href="AbstractTransportAdapter.html#inheritance-diagram"><polygon points="581,-150 423,-150 423,-124 581,-124 581,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="435" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="454.548" text-anchor="start">AbstractTransportAdapter</text></a></g></g><!-- node1&#45;&gt;node11 --><g class="edge inheritance" id="graph1_1_11"><g id="a_inheritance|graph1_1_11"><a xlink:title="AbstractTransportAdapter is a subtype of Transport"><path d="M395.768,-183.856C419.524,-173.601 451.316,-159.878 473.913,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="395.026,-182.27 391.129,-185.858 396.413,-185.483 395.026,-182.27" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node2 --><g class="node class" id="graph1_2"><g id="a_class|graph1_2"><a xlink:title="akka.remote.transport.ThrottlerTransportAdapter" xlink:href="ThrottlerTransportAdapter.html#inheritance-diagram"><polygon points="581.25,-26 422.75,-26 422.75,-0 581.25,-0 581.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="435" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="454.772" text-anchor="start">ThrottlerTransportAdapter</text></a></g></g><!-- node5 --><g class="node class" id="graph1_5"><g id="a_class|graph1_5"><a xlink:title="akka.remote.transport.TestAssociationHandle" xlink:href="TestAssociationHandle.html#inheritance-diagram"><polygon points="952.25,-150 807.75,-150 807.75,-124 952.25,-124 952.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="820" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="839.527" text-anchor="start">TestAssociationHandle</text></a></g></g><!-- node6 --><g class="node trait" id="graph1_6"><g id="a_trait|graph1_6"><a xlink:title="akka.remote.transport.SchemeAugmenter" xlink:href="SchemeAugmenter.html#inheritance-diagram"><polygon points="636,-212 506,-212 506,-186 636,-186 636,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="518" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="537.811" text-anchor="start">SchemeAugmenter</text></a></g></g><!-- node10 --><g class="node class" id="graph1_10"><g id="a_class|graph1_10"><a xlink:title="akka.remote.transport.AbstractTransportAdapterHandle" xlink:href="AbstractTransportAdapterHandle.html#inheritance-diagram"><polygon points="789,-150 599,-150 599,-124 789,-124 789,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="611" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="630.703" text-anchor="start">AbstractTransportAdapterHandle</text></a></g></g><!-- node6&#45;&gt;node10 --><g class="edge inheritance" id="graph1_6_10"><g id="a_inheritance|graph1_6_10"><a xlink:title="AbstractTransportAdapterHandle is a subtype of SchemeAugmenter"><path d="M600.523,-183.599C621.486,-173.373 649.317,-159.797 669.146,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="599.617,-182.093 595.891,-185.858 601.152,-185.239 599.617,-182.093" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6&#45;&gt;node11 --><g class="edge inheritance" id="graph1_6_11"><g id="a_inheritance|graph1_6_11"><a xlink:title="AbstractTransportAdapter is a subtype of SchemeAugmenter"><path d="M553.24,-182.556C541.634,-172.464 526.692,-159.472 515.942,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="552.115,-183.898 557.037,-185.858 554.412,-181.257 552.115,-183.898" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node trait" id="graph1_8"><g id="a_trait|graph1_8"><a xlink:title="akka.remote.transport.AssociationHandle" xlink:href="AssociationHandle.html#inheritance-diagram"><polygon points="850.25,-212 723.75,-212 723.75,-186 850.25,-186 850.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="736" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="755.697" text-anchor="start">AssociationHandle</text></a></g></g><!-- node8&#45;&gt;node5 --><g class="edge inheritance" id="graph1_8_5"><g id="a_inheritance|graph1_8_5"><a xlink:title="TestAssociationHandle is a subtype of AssociationHandle"><path d="M810.126,-183.08C825.878,-172.917 846.467,-159.634 861.208,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="809.073,-181.677 805.82,-185.858 810.97,-184.618 809.073,-181.677" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8&#45;&gt;node10 --><g class="edge inheritance" id="graph1_8_10"><g id="a_inheritance|graph1_8_10"><a xlink:title="AbstractTransportAdapterHandle is a subtype of AssociationHandle"><path d="M763.874,-183.08C748.122,-172.917 727.533,-159.634 712.792,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="763.03,-184.618 768.18,-185.858 764.927,-181.677 763.03,-184.618" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node class" id="graph1_9"><g id="a_class|graph1_9"><a xlink:title="akka.remote.transport.ActorTransportAdapter" xlink:href="ActorTransportAdapter.html#inheritance-diagram"><polygon points="574.25,-88 429.75,-88 429.75,-62 574.25,-62 574.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-81" x="442" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="461.718" text-anchor="start">ActorTransportAdapter</text></a></g></g><!-- node9&#45;&gt;node2 --><g class="edge inheritance" id="graph1_9_2"><g id="a_inheritance|graph1_9_2"><a xlink:title="ThrottlerTransportAdapter is a subtype of ActorTransportAdapter"><path d="M502,-56.6826C502,-46.8961 502,-34.9026 502,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="500.25,-56.8581 502,-61.8581 503.75,-56.8581 500.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node11&#45;&gt;node9 --><g class="edge inheritance" id="graph1_11_9"><g id="a_inheritance|graph1_11_9"><a xlink:title="ActorTransportAdapter is a subtype of AbstractTransportAdapter"><path d="M502,-118.683C502,-108.896 502,-96.9026 502,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="500.25,-118.858 502,-123.858 503.75,-118.858 500.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.remote.transport.AbstractTransportAdapter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractTransportAdapterextendsTransportwithSchemeAugmenter"></a>
+      <a id="AbstractTransportAdapter:AbstractTransportAdapter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractTransportAdapter.html"><span class="name">AbstractTransportAdapter</span></a><span class="result"> extends <a href="Transport.html" class="extype" name="akka.remote.transport.Transport">Transport</a> with <a href="SchemeAugmenter.html" class="extype" name="akka.remote.transport.SchemeAugmenter">SchemeAugmenter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@AbstractTransportAdapterextendsTransportwithSchemeAugmenter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An adapter that wraps a transport and provides interception
+</p>
+    </li><li name="akka.remote.transport.AbstractTransportAdapterHandle" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractTransportAdapterHandleextendsAssociationHandlewithSchemeAugmenter"></a>
+      <a id="AbstractTransportAdapterHandle:AbstractTransportAdapterHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractTransportAdapterHandle.html"><span class="name">AbstractTransportAdapterHandle</span></a><span class="result"> extends <a href="AssociationHandle.html" class="extype" name="akka.remote.transport.AssociationHandle">AssociationHandle</a> with <a href="SchemeAugmenter.html" class="extype" name="akka.remote.transport.SchemeAugmenter">SchemeAugmenter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@AbstractTransportAdapterHandleextendsAssociationHandlewithSchemeAugmenter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.ActorTransportAdapter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ActorTransportAdapterextendsAbstractTransportAdapter"></a>
+      <a id="ActorTransportAdapter:ActorTransportAdapter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorTransportAdapter.html"><span class="name">ActorTransportAdapter</span></a><span class="result"> extends <a href="AbstractTransportAdapter.html" class="extype" name="akka.remote.transport.AbstractTransportAdapter">AbstractTransportAdapter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@ActorTransportAdapterextendsAbstractTransportAdapter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.ActorTransportAdapterManager" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ActorTransportAdapterManagerextendsActorwithRequiresMessageQueue[akka.dispatch.UnboundedMessageQueueSemantics]"></a>
+      <a id="ActorTransportAdapterManager:ActorTransportAdapterManager"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorTransportAdapterManager.html"><span class="name">ActorTransportAdapterManager</span></a><span class="result"> extends <a href="../../actor/Actor.html" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../dispatch/RequiresMessageQueue.html" class="extype" name="akka.dispatch.RequiresMessageQueue">RequiresMessageQueue</a>[<a href="../../dispatch/UnboundedMessageQueueSemantics.html" class="extype" name="akka.dispatch.UnboundedMessageQueueSemantics">UnboundedMessageQueueSemantics</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@ActorTransportAdapterManagerextendsActorwithRequiresMessageQueue[akka.dispatch.UnboundedMessageQueueSemantics]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.AkkaProtocolException" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AkkaProtocolExceptionextendsAkkaExceptionwithOnlyCauseStackTrace"></a>
+      <a id="AkkaProtocolException:AkkaProtocolException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AkkaProtocolException.html"><span class="name">AkkaProtocolException</span></a><span class="result"> extends <a href="../../AkkaException.html" class="extype" name="akka.AkkaException">AkkaException</a> with <a href="../../OnlyCauseStackTrace.html" class="extype" name="akka.OnlyCauseStackTrace">OnlyCauseStackTrace</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@AkkaProtocolExceptionextendsAkkaExceptionwithOnlyCauseStackTrace" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.remote.transport.AssociationHandle" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AssociationHandleextendsAnyRef"></a>
+      <a id="AssociationHandle:AssociationHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AssociationHandle.html"><span class="name">AssociationHandle</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@AssociationHandleextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An SPI layer for abstracting over logical links (associations) created by a <a href="Transport.html" class="extype" name="akka.remote.transport.Transport">akka.remote.transport.Transport</a>.</p><div class="fullcomment"><div class="comment cmt"><p>An SPI layer for abstracting over logical links (associations) created by a <a href="Transport.html" class="extype" name="akka.remote.transport.Transport">akka.remote.transport.Transport</a>.
+Handles are responsible for providing an API for sending and receiving from the underlying channel.</p><p>To register a listener for processing incoming payload data, the listener must be registered by completing the Promise
+returned by <a href="AssociationHandle.html#readHandlerPromise:scala.concurrent.Promise[akka.remote.transport.AssociationHandle.HandleEventListener]" class="extmbr" name="akka.remote.transport.AssociationHandle#readHandlerPromise">akka.remote.transport.AssociationHandle#readHandlerPromise</a>. Incoming data is not processed until
+this registration takes place.
+</p></div></div>
+    </li><li name="akka.remote.transport.FailureInjectorException" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FailureInjectorExceptionextendsAkkaExceptionwithNoStackTracewithProductwithSerializable"></a>
+      <a id="FailureInjectorException:FailureInjectorException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FailureInjectorException.html"><span class="name">FailureInjectorException</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../AkkaException.html" class="extype" name="akka.AkkaException">AkkaException</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.util.control.NoStackTrace" class="extype" target="_top">NoStackTrace</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@FailureInjectorExceptionextendsAkkaExceptionwithNoStackTracewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.remote.transport.FailureInjectorProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FailureInjectorProviderextendsTransportAdapterProvider"></a>
+      <a id="FailureInjectorProvider:FailureInjectorProvider"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FailureInjectorProvider.html"><span class="name">FailureInjectorProvider</span></a><span class="result"> extends <a href="TransportAdapterProvider.html" class="extype" name="akka.remote.transport.TransportAdapterProvider">TransportAdapterProvider</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@FailureInjectorProviderextendsTransportAdapterProvider" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.HandshakeInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HandshakeInfoextendsProductwithSerializable"></a>
+      <a id="HandshakeInfo:HandshakeInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HandshakeInfo.html"><span class="name">HandshakeInfo</span></a><span class="params">(<span name="origin">origin: <a href="../../actor/Address.html" class="extype" name="akka.actor.Address">Address</a></span>, <span name="uid">uid: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="cookie">cookie: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@HandshakeInfoextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.SchemeAugmenter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SchemeAugmenterextendsAnyRef"></a>
+      <a id="SchemeAugmenter:SchemeAugmenter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SchemeAugmenter.html"><span class="name">SchemeAugmenter</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@SchemeAugmenterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.TestAssociationHandle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestAssociationHandleextendsAssociationHandlewithProductwithSerializable"></a>
+      <a id="TestAssociationHandle:TestAssociationHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TestAssociationHandle.html"><span class="name">TestAssociationHandle</span></a><span class="params">(<span name="localAddress">localAddress: <a href="../../actor/Address.html" class="extype" name="akka.actor.Address">Address</a></span>, <span name="remoteAddress">remoteAddress: <a href="../../actor/Address.html" class="extype" name="akka.actor.Address">Address</a></span>, <span name="transport">transport: <a href="TestTransport.html" class="extype" name="akka.remote.transport.TestTransport">TestTransport</a></span>, <span name="inbound">inbound: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="AssociationHandle.html" class="extype" name="akka.remote.transport.AssociationHandle">AssociationHandle</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@TestAssociationHandleextendsAssociationHandlewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.TestTransport" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TestTransportextendsTransport"></a>
+      <a id="TestTransport:TestTransport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TestTransport.html"><span class="name">TestTransport</span></a><span class="result"> extends <a href="Transport.html" class="extype" name="akka.remote.transport.Transport">Transport</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@TestTransportextendsTransport" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Transport implementation to be used for testing.</p><div class="fullcomment"><div class="comment cmt"><p>Transport implementation to be used for testing.</p><p>The TestTransport is basically a shared memory between actor systems. The TestTransport could be programmed to
+emulate different failure modes of a Transport implementation. TestTransport keeps a log of the activities it was
+requested to do. This class is not optimized for performance and MUST not be used as an in-memory transport in
+production systems.
+</p></div></div>
+    </li><li name="akka.remote.transport.ThrottlerProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ThrottlerProviderextendsTransportAdapterProvider"></a>
+      <a id="ThrottlerProvider:ThrottlerProvider"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ThrottlerProvider.html"><span class="name">ThrottlerProvider</span></a><span class="result"> extends <a href="TransportAdapterProvider.html" class="extype" name="akka.remote.transport.TransportAdapterProvider">TransportAdapterProvider</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@ThrottlerProviderextendsTransportAdapterProvider" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.ThrottlerTransportAdapter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ThrottlerTransportAdapterextendsActorTransportAdapter"></a>
+      <a id="ThrottlerTransportAdapter:ThrottlerTransportAdapter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ThrottlerTransportAdapter.html"><span class="name">ThrottlerTransportAdapter</span></a><span class="result"> extends <a href="ActorTransportAdapter.html" class="extype" name="akka.remote.transport.ActorTransportAdapter">ActorTransportAdapter</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@ThrottlerTransportAdapterextendsActorTransportAdapter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.Transport" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TransportextendsAnyRef"></a>
+      <a id="Transport:Transport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Transport.html"><span class="name">Transport</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@TransportextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An SPI layer for implementing asynchronous transport mechanisms.</p><div class="fullcomment"><div class="comment cmt"><p>An SPI layer for implementing asynchronous transport mechanisms. The Transport is responsible for initializing the
+underlying transmission mechanism and setting up logical links between transport entities.</p><p>Transport implementations that are loaded dynamically by the remoting must have a constructor that accepts a
+<span class="extype" name="com.typesafe.config.Config">com.typesafe.config.Config</span> and an <a href="../../actor/ExtendedActorSystem.html" class="extype" name="akka.actor.ExtendedActorSystem">akka.actor.ExtendedActorSystem</a> as parameters.
+</p></div></div>
+    </li><li name="akka.remote.transport.TransportAdapterProvider" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TransportAdapterProviderextendsAnyRef"></a>
+      <a id="TransportAdapterProvider:TransportAdapterProvider"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TransportAdapterProvider.html"><span class="name">TransportAdapterProvider</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@TransportAdapterProviderextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.TransportAdapters" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TransportAdaptersextendsExtension"></a>
+      <a id="TransportAdapters:TransportAdapters"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TransportAdapters.html"><span class="name">TransportAdapters</span></a><span class="result"> extends <a href="../../actor/Extension.html" class="extype" name="akka.actor.Extension">Extension</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@TransportAdaptersextendsExtension" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="akka.remote.transport.ActorTransportAdapter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorTransportAdapter"></a>
+      <a id="ActorTransportAdapter:ActorTransportAdapter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorTransportAdapter$.html"><span class="name">ActorTransportAdapter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@ActorTransportAdapter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.AssociationHandle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AssociationHandle"></a>
+      <a id="AssociationHandle:AssociationHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AssociationHandle$.html"><span class="name">AssociationHandle</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@AssociationHandle" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.AssociationRegistry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AssociationRegistry"></a>
+      <a id="AssociationRegistry:AssociationRegistry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AssociationRegistry$.html"><span class="name">AssociationRegistry</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@AssociationRegistry" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.TestTransport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestTransport"></a>
+      <a id="TestTransport:TestTransport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TestTransport$.html"><span class="name">TestTransport</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@TestTransport" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.ThrottlerTransportAdapter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ThrottlerTransportAdapter"></a>
+      <a id="ThrottlerTransportAdapter:ThrottlerTransportAdapter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ThrottlerTransportAdapter$.html"><span class="name">ThrottlerTransportAdapter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@ThrottlerTransportAdapter" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.Transport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Transport"></a>
+      <a id="Transport:Transport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Transport$.html"><span class="name">Transport</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@Transport" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.TransportAdaptersExtension" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TransportAdaptersExtension"></a>
+      <a id="TransportAdaptersExtension:TransportAdaptersExtension"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TransportAdaptersExtension$.html"><span class="name">TransportAdaptersExtension</span></a><span class="result"> extends <a href="../../actor/ExtensionId.html" class="extype" name="akka.actor.ExtensionId">ExtensionId</a>[<a href="TransportAdapters.html" class="extype" name="akka.remote.transport.TransportAdapters">TransportAdapters</a>] with <a href="../../actor/ExtensionIdProvider.html" class="extype" name="akka.actor.ExtensionIdProvider">ExtensionIdProvider</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@TransportAdaptersExtension" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.remote.transport.netty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="netty"></a>
+      <a id="netty:netty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="netty/package.html"><span class="name">netty</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.remote.transport.package@netty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

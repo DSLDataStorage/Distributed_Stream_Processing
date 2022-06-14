@@ -1,0 +1,965 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>fusing - akka.stream.impl.fusing</title>
+          <meta name="description" content="fusing - akka.stream.impl.fusing" />
+          <meta name="keywords" content="fusing akka.stream.impl.fusing" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'akka.stream.impl.fusing.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="akka">akka</a>.<a href="../../package.html" class="extype" name="akka.stream">stream</a>.<a href="../package.html" class="extype" name="akka.stream.impl">impl</a></p>
+        <h1>fusing</h1><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fusing</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.stream.impl.fusing.ActorGraphInterpreter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorGraphInterpreterextendsActorwithActorLogging"></a>
+      <a id="ActorGraphInterpreter:ActorGraphInterpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorGraphInterpreter.html"><span class="name">ActorGraphInterpreter</span></a><span class="result"> extends <a href="../../../actor/Actor.html" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../../actor/ActorLogging.html" class="extype" name="akka.actor.ActorLogging">ActorLogging</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@ActorGraphInterpreterextendsActorwithActorLogging" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Batch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Batch[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable"></a>
+      <a id="Batch[In,Out]:Batch[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Batch.html"><span class="name">Batch</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="params">(<span name="max">max: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="costFn">costFn: (<span class="extype" name="akka.stream.impl.fusing.Batch.In">In</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="seed">seed: (<span class="extype" name="akka.stream.impl.fusing.Batch.In">In</span>) ⇒ <span class="extype" name="akka.stream.impl.fusing.Batch.Out">Out</span></span>, <span name="aggregate">aggregate: (<span class="extype" name="akka.stream.impl.fusing.Batch.Out">Out</span>, <span class="extype" name="akka.stream.impl.fusing.Batch.In">In</span>) ⇒ <span class="extype" name="akka.stream.impl.fusing.Batch.Out">Out</span></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Batch.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.Batch.Out">Out</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Batch[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Buffer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Buffer[T]extendsDetachedStage[T,T]withProductwithSerializable"></a>
+      <a id="Buffer[T]:Buffer[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Buffer.html"><span class="name">Buffer</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="size">size: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="overflowStrategy">overflowStrategy: <a href="../../OverflowStrategy.html" class="extype" name="akka.stream.OverflowStrategy">OverflowStrategy</a></span>)</span><span class="result"> extends <a href="../../stage/DetachedStage.html" class="extype" name="akka.stream.stage.DetachedStage">DetachedStage</a>[<span class="extype" name="akka.stream.impl.fusing.Buffer.T">T</span>, <span class="extype" name="akka.stream.impl.fusing.Buffer.T">T</span>] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Buffer[T]extendsDetachedStage[T,T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Collect" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Collect[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable"></a>
+      <a id="Collect[In,Out]:Collect[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Collect.html"><span class="name">Collect</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="params">(<span name="pf">pf: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<span class="extype" name="akka.stream.impl.fusing.Collect.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.Collect.Out">Out</span>]</span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Collect.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.Collect.Out">Out</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Collect[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Delay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Delay[T]extendsGraphStages.SimpleLinearGraphStage[T]"></a>
+      <a id="Delay[T]:Delay[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Delay.html"><span class="name">Delay</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.Delay.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Delay[T]extendsGraphStages.SimpleLinearGraphStage[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.fusing.Drop" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Drop[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable"></a>
+      <a id="Drop[T]:Drop[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Drop.html"><span class="name">Drop</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="count">count: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.Drop.T">T</span>] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Drop[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.DropWhile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DropWhile[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable"></a>
+      <a id="DropWhile[T]:DropWhile[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DropWhile.html"><span class="name">DropWhile</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: (<span class="extype" name="akka.stream.impl.fusing.DropWhile.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.DropWhile.T">T</span>, <span class="extype" name="akka.stream.impl.fusing.DropWhile.T">T</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@DropWhile[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.DropWithin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DropWithin[T]extendsGraphStages.SimpleLinearGraphStage[T]"></a>
+      <a id="DropWithin[T]:DropWithin[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DropWithin.html"><span class="name">DropWithin</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.DropWithin.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@DropWithin[T]extendsGraphStages.SimpleLinearGraphStage[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.fusing.Expand" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Expand[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]"></a>
+      <a id="Expand[In,Out]:Expand[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Expand.html"><span class="name">Expand</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Expand.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.Expand.Out">Out</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Expand[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Filter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Filter[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable"></a>
+      <a id="Filter[T]:Filter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Filter.html"><span class="name">Filter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: (<span class="extype" name="akka.stream.impl.fusing.Filter.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.Filter.T">T</span>] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Filter[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.FlattenMerge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FlattenMerge[T,M]extendsGraphStage[akka.stream.FlowShape[akka.stream.Graph[akka.stream.SourceShape[T],M],T]]"></a>
+      <a id="FlattenMerge[T,M]:FlattenMerge[T,M]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FlattenMerge.html"><span class="name">FlattenMerge</span></a><span class="tparams">[<span name="T">T</span>, <span name="M">M</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<a href="../../Graph.html" class="extype" name="akka.stream.Graph">Graph</a>[<a href="../../SourceShape.html" class="extype" name="akka.stream.SourceShape">SourceShape</a>[<span class="extype" name="akka.stream.impl.fusing.FlattenMerge.T">T</span>], <span class="extype" name="akka.stream.impl.fusing.FlattenMerge.M">M</span>], <span class="extype" name="akka.stream.impl.fusing.FlattenMerge.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@FlattenMerge[T,M]extendsGraphStage[akka.stream.FlowShape[akka.stream.Graph[akka.stream.SourceShape[T],M],T]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Fold" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Fold[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable"></a>
+      <a id="Fold[In,Out]:Fold[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Fold.html"><span class="name">Fold</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="params">(<span name="zero">zero: <span class="extype" name="akka.stream.impl.fusing.Fold.Out">Out</span></span>, <span name="f">f: (<span class="extype" name="akka.stream.impl.fusing.Fold.Out">Out</span>, <span class="extype" name="akka.stream.impl.fusing.Fold.In">In</span>) ⇒ <span class="extype" name="akka.stream.impl.fusing.Fold.Out">Out</span></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Fold.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.Fold.Out">Out</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Fold[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.FoldAsync" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FoldAsync[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]"></a>
+      <a id="FoldAsync[In,Out]:FoldAsync[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FoldAsync.html"><span class="name">FoldAsync</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.FoldAsync.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.FoldAsync.Out">Out</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@FoldAsync[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.GraphInterpreter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GraphInterpreterextendsAnyRef"></a>
+      <a id="GraphInterpreter:GraphInterpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphInterpreter.html"><span class="name">GraphInterpreter</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GraphInterpreterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API</p><div class="fullcomment"><div class="comment cmt"><p>INTERNAL API</p><p>From an external viewpoint, the GraphInterpreter takes an assembly of graph processing stages encoded as a
+<a href="GraphInterpreter$$GraphAssembly.html" class="extype" name="akka.stream.impl.fusing.GraphInterpreter.GraphAssembly">GraphInterpreter#GraphAssembly</a> object and provides facilities to execute and interact with this assembly.
+The lifecycle of the Interpreter is roughly the following:</p><ul><li>Boundary logics are attached via <span class="extype" name="attachDownstreamBoundary()">attachDownstreamBoundary()</span> and <span class="extype" name="attachUpstreamBoundary()">attachUpstreamBoundary()</span></li><li><span class="extype" name="init()">init()</span> is called</li><li><span class="extype" name="execute()">execute()</span> is called whenever there is need for execution, providing an upper limit on the processed events</li><li><span class="extype" name="finish()">finish()</span> is called before the interpreter is disposed, preferably after <a href="GraphInterpreter.html#isCompleted:Boolean" class="extmbr" name="akka.stream.impl.fusing.GraphInterpreter#isCompleted">isCompleted</a> returned true, although
+   in abort cases this is not strictly necessary</li></ul><p>The <span class="extype" name="execute()">execute()</span> method of the interpreter accepts an upper bound on the events it will process. After this limit
+is reached or there are no more pending events to be processed, the call returns. It is possible to inspect
+if there are unprocessed events left via the <a href="GraphInterpreter.html#isSuspended:Boolean" class="extmbr" name="akka.stream.impl.fusing.GraphInterpreter#isSuspended">isSuspended</a> method. <a href="GraphInterpreter.html#isCompleted:Boolean" class="extmbr" name="akka.stream.impl.fusing.GraphInterpreter#isCompleted">isCompleted</a> returns true once all stages
+reported completion inside the interpreter.</p><p>The internal architecture of the interpreter is based on the usage of arrays and optimized for reducing allocations
+on the hot paths.</p><p>One of the basic abstractions inside the interpreter is the <a href="GraphInterpreter$$Connection.html" class="extype" name="akka.stream.impl.fusing.GraphInterpreter.Connection">akka.stream.impl.fusing.GraphInterpreter.Connection</a>.
+A connection represents an output-input port pair (an analogue for a connected RS Publisher-Subscriber pair).
+The Connection object contains all the necessary data for the interpreter to pass elements, demand, completion
+or errors across the Connection.
+In particular</p><ul><li>portStates contains a bitfield that tracks the states of the ports (output-input) corresponding to this
+   connection. This bitfield is used to decode the event that is in-flight.</li><li>connectionSlot contains a potential element or exception that accompanies the
+   event encoded in the portStates bitfield</li><li>inHandler contains the <span class="extype" name="InHandler">InHandler</span> instance that handles the events corresponding
+   to the input port of the connection</li><li>outHandler contains the <span class="extype" name="OutHandler">OutHandler</span> instance that handles the events corresponding
+   to the output port of the connection</li></ul><p>On top of the Connection table there is an eventQueue, represented as a circular buffer of Connections. The queue
+contains the Connections that have pending events to be processed. The pending event itself is encoded
+in the portState bitfield of the Connection. This implies that there can be only one event in flight for a given
+Connection, which is true in almost all cases, except a complete-after-push or fail-after-push which has to
+be decoded accordingly.</p><p>The layout of the portState bitfield is the following:</p><p>            |- state machn.-| Only one bit is hot among these bits
+ 64  32  16 | 8   4   2   1 |
++---+---+---|---+---+---+---|
+  |   |   |   |   |   |   |
+  |   |   |   |   |   |   |  From the following flags only one is active in any given time. These bits encode
+  |   |   |   |   |   |   |  state machine states, and they are &quot;moved&quot; around using XOR masks to keep other bits
+  |   |   |   |   |   |   |  intact.
+  |   |   |   |   |   |   |
+  |   |   |   |   |   |   +- InReady:  The input port is ready to be pulled
+  |   |   |   |   |   +----- Pulling:  A pull is active, but have not arrived yet (queued)
+  |   |   |   |   +--------- Pushing:  A push is active, but have not arrived yet (queued)
+  |   |   |   +------------- OutReady: The output port is ready to be pushed
+  |   |   |
+  |   |   +----------------- InClosed:  The input port is closed and will not receive any events.
+  |   |                                 A push might be still in flight which will be then processed first.
+  |   +--------------------- OutClosed: The output port is closed and will not receive any events.
+  +------------------------- InFailed:  Always set in conjunction with InClosed. Indicates that the close event
+                                        is a failure</p><p>Sending an event is usually the following sequence:</p><ul><li>An action is requested by a stage logic (push, pull, complete, etc.)</li><li>the state machine in portStates is transitioned from a ready state to a pending event</li><li>the affected Connection is enqueued</li></ul><p>Receiving an event is usually the following sequence:</p><ul><li>the Connection to be processed is dequeued</li><li>the type of the event is determined from the bits set on portStates</li><li>the state machine in portStates is transitioned to a ready state</li><li>using the inHandlers/outHandlers table the corresponding callback is called on the stage logic.</li></ul><p>Because of the FIFO construction of the queue the interpreter is fair, i.e. a pending event is always executed
+after a bounded number of other events. This property, together with suspendability means that even infinite cycles can
+be modeled, or even dissolved (if preempted and a &quot;stealing&quot; external event is injected; for example the non-cycle
+edge of a balance is pulled, dissolving the original cycle).
+</p></div></div>
+    </li><li name="akka.stream.impl.fusing.GraphInterpreterShell" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GraphInterpreterShellextendsAnyRef"></a>
+      <a id="GraphInterpreterShell:GraphInterpreterShell"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphInterpreterShell.html"><span class="name">GraphInterpreterShell</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GraphInterpreterShellextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.GraphModule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GraphModuleextendsStreamLayout.AtomicModulewithProductwithSerializable"></a>
+      <a id="GraphModule:GraphModule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphModule.html"><span class="name">GraphModule</span></a><span class="params">(<span name="assembly">assembly: <a href="GraphInterpreter$$GraphAssembly.html" class="extype" name="akka.stream.impl.fusing.GraphInterpreter.GraphAssembly">GraphAssembly</a></span>, <span name="shape">shape: <a href="../../Shape.html" class="extype" name="akka.stream.Shape">Shape</a></span>, <span name="attributes">attributes: <a href="../../Attributes.html" class="extype" name="akka.stream.Attributes">Attributes</a></span>, <span name="matValIDs">matValIDs: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="../StreamLayout$$Module.html" class="extype" name="akka.stream.impl.StreamLayout.Module">Module</a>]</span>)</span><span class="result"> extends <a href="../StreamLayout$$AtomicModule.html" class="extype" name="akka.stream.impl.StreamLayout.AtomicModule">AtomicModule</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GraphModuleextendsStreamLayout.AtomicModulewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.GraphStageModule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GraphStageModuleextendsStreamLayout.AtomicModulewithProductwithSerializable"></a>
+      <a id="GraphStageModule:GraphStageModule"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphStageModule.html"><span class="name">GraphStageModule</span></a><span class="params">(<span name="shape">shape: <a href="../../Shape.html" class="extype" name="akka.stream.Shape">Shape</a></span>, <span name="attributes">attributes: <a href="../../Attributes.html" class="extype" name="akka.stream.Attributes">Attributes</a></span>, <span name="stage">stage: <a href="../../stage/GraphStageWithMaterializedValue.html" class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue">GraphStageWithMaterializedValue</a>[<a href="../../Shape.html" class="extype" name="akka.stream.Shape">Shape</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>)</span><span class="result"> extends <a href="../StreamLayout$$AtomicModule.html" class="extype" name="akka.stream.impl.StreamLayout.AtomicModule">AtomicModule</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GraphStageModuleextendsStreamLayout.AtomicModulewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.GroupBy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GroupBy[T,K]extendsGraphStage[akka.stream.FlowShape[T,akka.stream.scaladsl.Source[T,akka.NotUsed]]]"></a>
+      <a id="GroupBy[T,K]:GroupBy[T,K]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GroupBy.html"><span class="name">GroupBy</span></a><span class="tparams">[<span name="T">T</span>, <span name="K">K</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.GroupBy.T">T</span>, <a href="../../scaladsl/Source.html" class="extype" name="akka.stream.scaladsl.Source">Source</a>[<span class="extype" name="akka.stream.impl.fusing.GroupBy.T">T</span>, <a href="../../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GroupBy[T,K]extendsGraphStage[akka.stream.FlowShape[T,akka.stream.scaladsl.Source[T,akka.NotUsed]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Grouped" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Grouped[T]extendsGraphStage[akka.stream.FlowShape[T,scala.collection.immutable.Seq[T]]]withProductwithSerializable"></a>
+      <a id="Grouped[T]:Grouped[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Grouped.html"><span class="name">Grouped</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Grouped.T">T</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<span class="extype" name="akka.stream.impl.fusing.Grouped.T">T</span>]]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Grouped[T]extendsGraphStage[akka.stream.FlowShape[T,scala.collection.immutable.Seq[T]]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.GroupedWithin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GroupedWithin[T]extendsGraphStage[akka.stream.FlowShape[T,scala.collection.immutable.Seq[T]]]"></a>
+      <a id="GroupedWithin[T]:GroupedWithin[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GroupedWithin.html"><span class="name">GroupedWithin</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.GroupedWithin.T">T</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<span class="extype" name="akka.stream.impl.fusing.GroupedWithin.T">T</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GroupedWithin[T]extendsGraphStage[akka.stream.FlowShape[T,scala.collection.immutable.Seq[T]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.fusing.Intersperse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Intersperse[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable"></a>
+      <a id="Intersperse[T]:Intersperse[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Intersperse.html"><span class="name">Intersperse</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="start">start: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="akka.stream.impl.fusing.Intersperse.T">T</span>]</span>, <span name="inject">inject: <span class="extype" name="akka.stream.impl.fusing.Intersperse.T">T</span></span>, <span name="end">end: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="akka.stream.impl.fusing.Intersperse.T">T</span>]</span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Intersperse.T">T</span>, <span class="extype" name="akka.stream.impl.fusing.Intersperse.T">T</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Intersperse[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.LimitWeighted" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LimitWeighted[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable"></a>
+      <a id="LimitWeighted[T]:LimitWeighted[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LimitWeighted.html"><span class="name">LimitWeighted</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="costFn">costFn: (<span class="extype" name="akka.stream.impl.fusing.LimitWeighted.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.LimitWeighted.T">T</span>, <span class="extype" name="akka.stream.impl.fusing.LimitWeighted.T">T</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@LimitWeighted[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Log" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Log[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable"></a>
+      <a id="Log[T]:Log[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Log.html"><span class="name">Log</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="extract">extract: (<span class="extype" name="akka.stream.impl.fusing.Log.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>, <span name="logAdapter">logAdapter: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="../../../event/LoggingAdapter.html" class="extype" name="akka.event.LoggingAdapter">LoggingAdapter</a>]</span>)</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.Log.T">T</span>] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Log[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Map" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Map[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable"></a>
+      <a id="Map[In,Out]:Map[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Map.html"><span class="name">Map</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="akka.stream.impl.fusing.Map.In">In</span>) ⇒ <span class="extype" name="akka.stream.impl.fusing.Map.Out">Out</span></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Map.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.Map.Out">Out</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Map[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.MapAsync" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapAsync[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable"></a>
+      <a id="MapAsync[In,Out]:MapAsync[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MapAsync.html"><span class="name">MapAsync</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="params">(<span name="parallelism">parallelism: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="f">f: (<span class="extype" name="akka.stream.impl.fusing.MapAsync.In">In</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<span class="extype" name="akka.stream.impl.fusing.MapAsync.Out">Out</span>]</span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.MapAsync.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.MapAsync.Out">Out</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@MapAsync[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.MapAsyncUnordered" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapAsyncUnordered[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable"></a>
+      <a id="MapAsyncUnordered[In,Out]:MapAsyncUnordered[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MapAsyncUnordered.html"><span class="name">MapAsyncUnordered</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="params">(<span name="parallelism">parallelism: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="f">f: (<span class="extype" name="akka.stream.impl.fusing.MapAsyncUnordered.In">In</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<span class="extype" name="akka.stream.impl.fusing.MapAsyncUnordered.Out">Out</span>]</span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.MapAsyncUnordered.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.MapAsyncUnordered.Out">Out</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@MapAsyncUnordered[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.PrefixAndTail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PrefixAndTail[T]extendsGraphStage[akka.stream.FlowShape[T,(scala.collection.immutable.Seq[T],akka.stream.scaladsl.Source[T,akka.NotUsed])]]"></a>
+      <a id="PrefixAndTail[T]:PrefixAndTail[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PrefixAndTail.html"><span class="name">PrefixAndTail</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.PrefixAndTail.T">T</span>, (<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<span class="extype" name="akka.stream.impl.fusing.PrefixAndTail.T">T</span>], <a href="../../scaladsl/Source.html" class="extype" name="akka.stream.scaladsl.Source">Source</a>[<span class="extype" name="akka.stream.impl.fusing.PrefixAndTail.T">T</span>, <a href="../../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>])]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@PrefixAndTail[T]extendsGraphStage[akka.stream.FlowShape[T,(scala.collection.immutable.Seq[T],akka.stream.scaladsl.Source[T,akka.NotUsed])]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Recover" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Recover[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable"></a>
+      <a id="Recover[T]:Recover[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Recover.html"><span class="name">Recover</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="pf">pf: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<span class="extype" name="scala.Throwable">Throwable</span>, <span class="extype" name="akka.stream.impl.fusing.Recover.T">T</span>]</span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Recover.T">T</span>, <span class="extype" name="akka.stream.impl.fusing.Recover.T">T</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Recover[T]extendsGraphStage[akka.stream.FlowShape[T,T]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.RecoverWith" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecoverWith[T,M]extendsGraphStages.SimpleLinearGraphStage[T]"></a>
+      <a id="RecoverWith[T,M]:RecoverWith[T,M]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RecoverWith.html"><span class="name">RecoverWith</span></a><span class="tparams">[<span name="T">T</span>, <span name="M">M</span>]</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.RecoverWith.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@RecoverWith[T,M]extendsGraphStages.SimpleLinearGraphStage[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.fusing.Reduce" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Reduce[T]extendsGraphStages.SimpleLinearGraphStage[T]"></a>
+      <a id="Reduce[T]:Reduce[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Reduce.html"><span class="name">Reduce</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.Reduce.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Reduce[T]extendsGraphStages.SimpleLinearGraphStage[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Scan" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Scan[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable"></a>
+      <a id="Scan[In,Out]:Scan[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Scan.html"><span class="name">Scan</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="params">(<span name="zero">zero: <span class="extype" name="akka.stream.impl.fusing.Scan.Out">Out</span></span>, <span name="f">f: (<span class="extype" name="akka.stream.impl.fusing.Scan.Out">Out</span>, <span class="extype" name="akka.stream.impl.fusing.Scan.In">In</span>) ⇒ <span class="extype" name="akka.stream.impl.fusing.Scan.Out">Out</span></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Scan.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.Scan.Out">Out</span>]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Scan[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Sliding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Sliding[T]extendsGraphStage[akka.stream.FlowShape[T,scala.collection.immutable.Seq[T]]]withProductwithSerializable"></a>
+      <a id="Sliding[T]:Sliding[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Sliding.html"><span class="name">Sliding</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="step">step: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Sliding.T">T</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<span class="extype" name="akka.stream.impl.fusing.Sliding.T">T</span>]]] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Sliding[T]extendsGraphStage[akka.stream.FlowShape[T,scala.collection.immutable.Seq[T]]]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Split" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Split[T]extendsGraphStage[akka.stream.FlowShape[T,akka.stream.scaladsl.Source[T,akka.NotUsed]]]"></a>
+      <a id="Split[T]:Split[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Split.html"><span class="name">Split</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.Split.T">T</span>, <a href="../../scaladsl/Source.html" class="extype" name="akka.stream.scaladsl.Source">Source</a>[<span class="extype" name="akka.stream.impl.fusing.Split.T">T</span>, <a href="../../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Split[T]extendsGraphStage[akka.stream.FlowShape[T,akka.stream.scaladsl.Source[T,akka.NotUsed]]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.StatefulMapConcat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StatefulMapConcat[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]"></a>
+      <a id="StatefulMapConcat[In,Out]:StatefulMapConcat[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StatefulMapConcat.html"><span class="name">StatefulMapConcat</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../FlowShape.html" class="extype" name="akka.stream.FlowShape">FlowShape</a>[<span class="extype" name="akka.stream.impl.fusing.StatefulMapConcat.In">In</span>, <span class="extype" name="akka.stream.impl.fusing.StatefulMapConcat.Out">Out</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@StatefulMapConcat[In,Out]extendsGraphStage[akka.stream.FlowShape[In,Out]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.SubSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubSink[T]extendsGraphStage[akka.stream.SinkShape[T]]"></a>
+      <a id="SubSink[T]:SubSink[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SubSink.html"><span class="name">SubSink</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../SinkShape.html" class="extype" name="akka.stream.SinkShape">SinkShape</a>[<span class="extype" name="akka.stream.impl.fusing.SubSink.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@SubSink[T]extendsGraphStage[akka.stream.SinkShape[T]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.SubSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubSource[T]extendsGraphStage[akka.stream.SourceShape[T]]"></a>
+      <a id="SubSource[T]:SubSource[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SubSource.html"><span class="name">SubSource</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../../SourceShape.html" class="extype" name="akka.stream.SourceShape">SourceShape</a>[<span class="extype" name="akka.stream.impl.fusing.SubSource.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@SubSource[T]extendsGraphStage[akka.stream.SourceShape[T]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.SupervisedGraphStageLogic" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SupervisedGraphStageLogicextendsGraphStageLogic"></a>
+      <a id="SupervisedGraphStageLogic:SupervisedGraphStageLogic"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SupervisedGraphStageLogic.html"><span class="name">SupervisedGraphStageLogic</span></a><span class="result"> extends <a href="../../stage/GraphStageLogic.html" class="extype" name="akka.stream.stage.GraphStageLogic">GraphStageLogic</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@SupervisedGraphStageLogicextendsGraphStageLogic" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Take" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Take[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable"></a>
+      <a id="Take[T]:Take[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Take.html"><span class="name">Take</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="count">count: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.Take.T">T</span>] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Take[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.TakeWhile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TakeWhile[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable"></a>
+      <a id="TakeWhile[T]:TakeWhile[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TakeWhile.html"><span class="name">TakeWhile</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: (<span class="extype" name="akka.stream.impl.fusing.TakeWhile.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.TakeWhile.T">T</span>] with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@TakeWhile[T]extendsGraphStages.SimpleLinearGraphStage[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.TakeWithin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TakeWithin[T]extendsGraphStages.SimpleLinearGraphStage[T]"></a>
+      <a id="TakeWithin[T]:TakeWithin[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TakeWithin.html"><span class="name">TakeWithin</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.fusing.TakeWithin.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@TakeWithin[T]extendsGraphStages.SimpleLinearGraphStage[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="akka.stream.impl.fusing.ActorGraphInterpreter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorGraphInterpreter"></a>
+      <a id="ActorGraphInterpreter:ActorGraphInterpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorGraphInterpreter$.html"><span class="name">ActorGraphInterpreter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@ActorGraphInterpreter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.GraphInterpreter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GraphInterpreter"></a>
+      <a id="GraphInterpreter:GraphInterpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphInterpreter$.html"><span class="name">GraphInterpreter</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GraphInterpreter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API</p><div class="fullcomment"><div class="comment cmt"><p>INTERNAL API</p><p>(See the class for the documentation of the internals)
+</p></div></div>
+    </li><li name="akka.stream.impl.fusing.GraphStages" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GraphStages"></a>
+      <a id="GraphStages:GraphStages"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphStages$.html"><span class="name">GraphStages</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@GraphStages" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.Split" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Split"></a>
+      <a id="Split:Split"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Split$.html"><span class="name">Split</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@Split" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.SubSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubSink"></a>
+      <a id="SubSink:SubSink"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SubSink$.html"><span class="name">SubSink</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@SubSink" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.fusing.SubSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubSource"></a>
+      <a id="SubSource:SubSource"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SubSource$.html"><span class="name">SubSource</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.stream.impl.fusing.package@SubSource" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

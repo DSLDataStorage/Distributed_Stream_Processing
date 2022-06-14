@@ -1,0 +1,692 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>stage - akka.stream.stage</title>
+          <meta name="description" content="stage - akka.stream.stage" />
+          <meta name="keywords" content="stage akka.stream.stage" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'akka.stream.stage.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="akka">akka</a>.<a href="../package.html" class="extype" name="akka.stream">stream</a></p>
+        <h1>stage</h1><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stage</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph1" viewBox="0.00 0.00 1763.00 220.00" height="220pt" width="1763pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 216)" class="graph" id="graph0"><polygon points="-4,4 -4,-216 1759,-216 1759,4 -4,4" stroke="white" fill="white"></polygon><!-- node0 --><g class="node trait" id="graph1_0"><g id="a_trait|graph1_0"><a xlink:title="akka.stream.stage.UpstreamDirective" xlink:href="UpstreamDirective.html#inheritance-diagram"><polygon points="126.25,-88 -0.25,-88 -0.25,-62 126.25,-62 126.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-81" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="31.9902" text-anchor="start">UpstreamDirective</text></a></g></g><!-- node14 --><g class="node class" id="graph1_14"><g id="a_class|graph1_14"><a xlink:title="akka.stream.stage.FreeDirective" xlink:href="FreeDirective.html#inheritance-diagram"><polygon points="341,-26 237,-26 237,-0 341,-0 341,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="249" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="268.882" text-anchor="start">FreeDirective</text></a></g></g><!-- node0&#45;&gt;node14 --><g class="edge inheritance" id="graph1_0_14"><g id="a_inheritance|graph1_0_14"><a xlink:title="FreeDirective is a subtype of UpstreamDirective"><path d="M113.623,-60.5602C152.604,-50.2114 206.006,-36.0339 243.61,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="112.846,-58.9558 108.463,-61.9303 113.744,-62.3386 112.846,-58.9558" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node1 --><g class="node class" id="graph1_1"><g id="a_class|graph1_1"><a xlink:title="akka.stream.stage.TimerGraphStageLogic" xlink:href="TimerGraphStageLogic.html#inheritance-diagram"><polygon points="653.25,-150 506.75,-150 506.75,-124 653.25,-124 653.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="519" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="538.604" text-anchor="start">TimerGraphStageLogic</text></a></g></g><!-- node2 --><g class="node trait" id="graph1_2"><g id="a_trait|graph1_2"><a xlink:title="akka.stream.stage.TerminationDirective" xlink:href="TerminationDirective.html#inheritance-diagram"><polygon points="279.25,-88 144.75,-88 144.75,-62 279.25,-62 279.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-81" x="157" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="176.818" text-anchor="start">TerminationDirective</text></a></g></g><!-- node2&#45;&gt;node14 --><g class="edge inheritance" id="graph1_2_14"><g id="a_inheritance|graph1_2_14"><a xlink:title="FreeDirective is a subtype of TerminationDirective"><path d="M231.819,-58.5563C244.771,-48.4643 261.445,-35.4716 273.441,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="230.45,-57.4044 227.582,-61.8581 232.602,-60.1652 230.45,-57.4044" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node trait" id="graph1_3"><g id="a_trait|graph1_3"><a xlink:title="akka.stream.stage.SyncDirective" xlink:href="SyncDirective.html#inheritance-diagram"><polygon points="296.25,-150 191.75,-150 191.75,-124 296.25,-124 296.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="204" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="223.547" text-anchor="start">SyncDirective</text></a></g></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph1_3_0"><g id="a_inheritance|graph1_3_0"><a xlink:title="UpstreamDirective is a subtype of SyncDirective"><path d="M202.47,-122.233C171.311,-111.904 129.07,-97.9016 99.2643,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="202.075,-123.946 207.372,-123.858 203.177,-120.624 202.075,-123.946" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3&#45;&gt;node2 --><g class="edge inheritance" id="graph1_3_2"><g id="a_inheritance|graph1_3_2"><a xlink:title="TerminationDirective is a subtype of SyncDirective"><path d="M235.053,-119.224C229.782,-109.341 223.235,-97.0652 218.466,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="233.627,-120.27 237.524,-123.858 236.715,-118.623 233.627,-120.27" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15 --><g class="node trait" id="graph1_15"><g id="a_trait|graph1_15"><a xlink:title="akka.stream.stage.DownstreamDirective" xlink:href="DownstreamDirective.html#inheritance-diagram"><polygon points="436.25,-88 297.75,-88 297.75,-62 436.25,-62 436.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-81" x="310" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="329.599" text-anchor="start">DownstreamDirective</text></a></g></g><!-- node3&#45;&gt;node15 --><g class="edge inheritance" id="graph1_3_15"><g id="a_inheritance|graph1_3_15"><a xlink:title="DownstreamDirective is a subtype of SyncDirective"><path d="M273.523,-121.599C294.486,-111.373 322.317,-97.7968 342.146,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="272.617,-120.093 268.891,-123.858 274.152,-123.239 272.617,-120.093" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph1_4"><g id="a_class|graph1_4"><a xlink:title="akka.stream.stage.StatefulStage" xlink:href="StatefulStage.html#inheritance-diagram"><polygon points="715,-26 575,-26 575,-0 715,-0 715,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="587" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="606.803" text-anchor="start">StatefulStage[In, Out]</text></a></g></g><!-- node5 --><g class="node trait" id="graph1_5"><g id="a_trait|graph1_5"><a xlink:title="akka.stream.stage.Stage" xlink:href="Stage.html#inheritance-diagram"><polygon points="857,-212 751,-212 751,-186 857,-186 857,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="763" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="782.759" text-anchor="start">Stage[In, Out]</text></a></g></g><!-- node21 --><g class="node class" id="graph1_21"><g id="a_class|graph1_21"><a xlink:title="akka.stream.stage.AbstractStage" xlink:href="AbstractStage.html#inheritance-diagram"><polygon points="936.25,-150 671.75,-150 671.75,-124 936.25,-124 936.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="684" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="703.789" text-anchor="start">AbstractStage[In, Out, PushD, PullD, Ctx, LifeCtx]</text></a></g></g><!-- node5&#45;&gt;node21 --><g class="edge inheritance" id="graph1_5_21"><g id="a_inheritance|graph1_5_21"><a xlink:title="AbstractStage[In, Out, PushD, PullD, Ctx, LifeCtx] is a subtype of Stage[In, Out]"><path d="M804,-180.683C804,-170.896 804,-158.903 804,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="802.25,-180.858 804,-185.858 805.75,-180.858 802.25,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node class" id="graph1_6"><g id="a_class|graph1_6"><a xlink:title="akka.stream.stage.PushStage" xlink:href="PushStage.html#inheritance-diagram"><polygon points="862.25,-26 733.75,-26 733.75,-0 862.25,-0 862.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19" x="746" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="765.862" text-anchor="start">PushStage[In, Out]</text></a></g></g><!-- node7 --><g class="node class" id="graph1_7"><g id="a_class|graph1_7"><a xlink:title="akka.stream.stage.PushPullStage" xlink:href="PushPullStage.html#inheritance-diagram"><polygon points="794.25,-88 649.75,-88 649.75,-62 794.25,-62 794.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-81" x="662" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="681.525" text-anchor="start">PushPullStage[In, Out]</text></a></g></g><!-- node7&#45;&gt;node4 --><g class="edge inheritance" id="graph1_7_4"><g id="a_inheritance|graph1_7_4"><a xlink:title="StatefulStage[In, Out] is a subtype of PushPullStage[In, Out]"><path d="M702.181,-58.5563C689.229,-48.4643 672.555,-35.4716 660.559,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="701.398,-60.1652 706.418,-61.8581 703.55,-57.4044 701.398,-60.1652" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7&#45;&gt;node6 --><g class="edge inheritance" id="graph1_7_6"><g id="a_inheritance|graph1_7_6"><a xlink:title="PushStage[In, Out] is a subtype of PushPullStage[In, Out]"><path d="M741.562,-58.5563C754.345,-48.4643 770.803,-35.4716 782.643,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="740.22,-57.3863 737.38,-61.8581 742.389,-60.1334 740.22,-57.3863" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node trait" id="graph1_8"><g id="a_trait|graph1_8"><a xlink:title="akka.stream.stage.OutHandler" xlink:href="OutHandler.html#inheritance-diagram"><polygon points="1090.25,-212 995.75,-212 995.75,-186 1090.25,-186 1090.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="1008" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="1027.54" text-anchor="start">OutHandler</text></a></g></g><!-- node22 --><g class="node class" id="graph1_22"><g id="a_class|graph1_22"><a xlink:title="akka.stream.stage.AbstractOutHandler" xlink:href="AbstractOutHandler.html#inheritance-diagram"><polygon points="1087,-150 955,-150 955,-124 1087,-124 1087,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="967" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="986.702" text-anchor="start">AbstractOutHandler</text></a></g></g><!-- node8&#45;&gt;node22 --><g class="edge inheritance" id="graph1_8_22"><g id="a_inheritance|graph1_8_22"><a xlink:title="AbstractOutHandler is a subtype of OutHandler"><path d="M1036.75,-180.954C1033.14,-171.118 1028.69,-158.984 1025.45,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="1035.18,-181.766 1038.55,-185.858 1038.47,-180.561 1035.18,-181.766" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node23 --><g class="node class" id="graph1_23"><g id="a_class|graph1_23"><a xlink:title="akka.stream.stage.AbstractInOutHandler" xlink:href="AbstractInOutHandler.html#inheritance-diagram"><polygon points="1245,-150 1105,-150 1105,-124 1245,-124 1245,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="1117" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="1136.53" text-anchor="start">AbstractInOutHandler</text></a></g></g><!-- node8&#45;&gt;node23 --><g class="edge inheritance" id="graph1_8_23"><g id="a_inheritance|graph1_8_23"><a xlink:title="AbstractInOutHandler is a subtype of OutHandler"><path d="M1074.4,-183.727C1096.93,-173.487 1126.96,-159.837 1148.33,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="1073.54,-182.196 1069.71,-185.858 1074.99,-185.382 1073.54,-182.196" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node trait" id="graph1_9"><g id="a_trait|graph1_9"><a xlink:title="akka.stream.stage.LifecycleContext" xlink:href="LifecycleContext.html#inheritance-diagram"><polygon points="1514,-212 1396,-212 1396,-186 1514,-186 1514,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="1408" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="1427.93" text-anchor="start">LifecycleContext</text></a></g></g><!-- node19 --><g class="node trait" id="graph1_19"><g id="a_trait|graph1_19"><a xlink:title="akka.stream.stage.Context" xlink:href="Context.html#inheritance-diagram"><polygon points="1505,-150 1405,-150 1405,-124 1505,-124 1505,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="1417" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="1436.54" text-anchor="start">Context[Out]</text></a></g></g><!-- node9&#45;&gt;node19 --><g class="edge inheritance" id="graph1_9_19"><g id="a_inheritance|graph1_9_19"><a xlink:title="Context[Out] is a subtype of LifecycleContext"><path d="M1455,-180.683C1455,-170.896 1455,-158.903 1455,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="1453.25,-180.858 1455,-185.858 1456.75,-180.858 1453.25,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node10 --><g class="node trait" id="graph1_10"><g id="a_trait|graph1_10"><a xlink:title="akka.stream.stage.InHandler" xlink:href="InHandler.html#inheritance-diagram"><polygon points="1294,-212 1206,-212 1206,-186 1294,-186 1294,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="1218" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="1237.93" text-anchor="start">InHandler</text></a></g></g><!-- node10&#45;&gt;node23 --><g class="edge inheritance" id="graph1_10_23"><g id="a_inheritance|graph1_10_23"><a xlink:title="AbstractInOutHandler is a subtype of InHandler"><path d="M1230.7,-182.556C1218.08,-172.464 1201.84,-159.472 1190.15,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="1229.83,-184.101 1234.82,-185.858 1232.01,-181.368 1229.83,-184.101" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node24 --><g class="node class" id="graph1_24"><g id="a_class|graph1_24"><a xlink:title="akka.stream.stage.AbstractInHandler" xlink:href="AbstractInHandler.html#inheritance-diagram"><polygon points="1387,-150 1263,-150 1263,-124 1387,-124 1387,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="1275" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="1294.59" text-anchor="start">AbstractInHandler</text></a></g></g><!-- node10&#45;&gt;node24 --><g class="edge inheritance" id="graph1_10_24"><g id="a_inheritance|graph1_10_24"><a xlink:title="AbstractInHandler is a subtype of InHandler"><path d="M1269.3,-182.556C1281.92,-172.464 1298.16,-159.472 1309.85,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="1267.99,-181.368 1265.18,-185.858 1270.17,-184.101 1267.99,-181.368" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node11 --><g class="node class" id="graph1_11"><g id="a_class|graph1_11"><a xlink:title="akka.stream.stage.GraphStageWithMaterializedValue" xlink:href="GraphStageWithMaterializedValue.html#inheritance-diagram"><polygon points="1755.25,-212 1532.75,-212 1532.75,-186 1755.25,-186 1755.25,-212" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-205" x="1545" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="1564.72" text-anchor="start">GraphStageWithMaterializedValue[S, M]</text></a></g></g><!-- node13 --><g class="node class" id="graph1_13"><g id="a_class|graph1_13"><a xlink:title="akka.stream.stage.GraphStage" xlink:href="GraphStage.html#inheritance-diagram"><polygon points="1699,-150 1589,-150 1589,-124 1699,-124 1699,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-143" x="1601" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="1620.53" text-anchor="start">GraphStage[S]</text></a></g></g><!-- node11&#45;&gt;node13 --><g class="edge inheritance" id="graph1_11_13"><g id="a_inheritance|graph1_11_13"><a xlink:title="GraphStage[S] is a subtype of GraphStageWithMaterializedValue[S, M]"><path d="M1644,-180.683C1644,-170.896 1644,-158.903 1644,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="1642.25,-180.858 1644,-185.858 1645.75,-180.858 1642.25,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node12 --><g class="node class" id="graph1_12"><g id="a_class|graph1_12"><a xlink:title="akka.stream.stage.GraphStageLogic" xlink:href="GraphStageLogic.html#inheritance-diagram"><polygon points="641,-212 519,-212 519,-186 641,-186 641,-212" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-205" x="531" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="550.695" text-anchor="start">GraphStageLogic</text></a></g></g><!-- node12&#45;&gt;node1 --><g class="edge inheritance" id="graph1_12_1"><g id="a_inheritance|graph1_12_1"><a xlink:title="TimerGraphStageLogic is a subtype of GraphStageLogic"><path d="M580,-180.683C580,-170.896 580,-158.903 580,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="578.25,-180.858 580,-185.858 581.75,-180.858 578.25,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node14 --><g class="edge inheritance" id="graph1_15_14"><g id="a_inheritance|graph1_15_14"><a xlink:title="FreeDirective is a subtype of DownstreamDirective"><path d="M346.923,-58.5563C333.804,-48.4643 316.913,-35.4716 304.761,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="346.185,-60.1966 351.216,-61.8581 348.319,-57.4224 346.185,-60.1966" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node16 --><g class="node trait" id="graph1_16"><g id="a_trait|graph1_16"><a xlink:title="akka.stream.stage.Directive" xlink:href="Directive.html#inheritance-diagram"><polygon points="348.25,-212 265.75,-212 265.75,-186 348.25,-186 348.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-205" x="278" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-194.75" x="297.663" text-anchor="start">Directive</text></a></g></g><!-- node16&#45;&gt;node3 --><g class="edge inheritance" id="graph1_16_3"><g id="a_inheritance|graph1_16_3"><a xlink:title="SyncDirective is a subtype of Directive"><path d="M290.507,-182.292C279.951,-172.239 266.46,-159.39 256.73,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="289.423,-183.677 294.251,-185.858 291.837,-181.143 289.423,-183.677" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node20 --><g class="node trait" id="graph1_20"><g id="a_trait|graph1_20"><a xlink:title="akka.stream.stage.AsyncDirective" xlink:href="AsyncDirective.html#inheritance-diagram"><polygon points="488,-150 378,-150 378,-124 488,-124 488,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-143" x="390" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="409.547" text-anchor="start">AsyncDirective</text></a></g></g><!-- node16&#45;&gt;node20 --><g class="edge inheritance" id="graph1_16_20"><g id="a_inheritance|graph1_16_20"><a xlink:title="AsyncDirective is a subtype of Directive"><path d="M337.243,-183.599C358.718,-173.373 387.227,-159.797 407.54,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="336.26,-182.128 332.498,-185.858 337.765,-185.288 336.26,-182.128" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node17 --><g class="node class" id="graph1_17"><g id="a_class|graph1_17"><a xlink:title="akka.stream.stage.DetachedStage" xlink:href="DetachedStage.html#inheritance-diagram"><polygon points="961.25,-88 812.75,-88 812.75,-62 961.25,-62 961.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-81" x="825" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="844.855" text-anchor="start">DetachedStage[In, Out]</text></a></g></g><!-- node18 --><g class="node trait" id="graph1_18"><g id="a_trait|graph1_18"><a xlink:title="akka.stream.stage.DetachedContext" xlink:href="DetachedContext.html#inheritance-diagram"><polygon points="1526.25,-88 1383.75,-88 1383.75,-62 1526.25,-62 1526.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-81" x="1396" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="1415.64" text-anchor="start">DetachedContext[Out]</text></a></g></g><!-- node19&#45;&gt;node18 --><g class="edge inheritance" id="graph1_19_18"><g id="a_inheritance|graph1_19_18"><a xlink:title="DetachedContext[Out] is a subtype of Context[Out]"><path d="M1455,-118.683C1455,-108.896 1455,-96.9026 1455,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1453.25,-118.858 1455,-123.858 1456.75,-118.858 1453.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node20&#45;&gt;node14 --><g class="edge inheritance" id="graph1_20_14"><g id="a_inheritance|graph1_20_14"><a xlink:title="FreeDirective is a subtype of AsyncDirective"><path d="M442.216,-119.224C449.726,-103.035 457.263,-78.6034 445,-62 421.347,-29.9751 376.668,-18.6444 341.167,-14.939" stroke="#d4d4d4" fill="none"></path><polygon points="440.523,-118.704 439.908,-123.966 443.67,-120.236 440.523,-118.704" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node21&#45;&gt;node7 --><g class="edge inheritance" id="graph1_21_7"><g id="a_inheritance|graph1_21_7"><a xlink:title="PushPullStage[In, Out] is a subtype of AbstractStage[In, Out, PushD, PullD, Ctx, LifeCtx]"><path d="M783.252,-120.819C769.41,-110.691 751.456,-97.5529 738.569,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="782.337,-122.318 787.406,-123.858 784.404,-119.493 782.337,-122.318" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node21&#45;&gt;node17 --><g class="edge inheritance" id="graph1_21_17"><g id="a_inheritance|graph1_21_17"><a xlink:title="DetachedStage[In, Out] is a subtype of AbstractStage[In, Out, PushD, PullD, Ctx, LifeCtx]"><path d="M825.001,-120.819C839.011,-110.691 857.185,-97.5529 870.229,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="823.823,-119.511 820.796,-123.858 825.874,-122.347 823.823,-119.511" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.stream.stage.AbstractInHandler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractInHandlerextendsInHandler"></a>
+      <a id="AbstractInHandler:AbstractInHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractInHandler.html"><span class="name">AbstractInHandler</span></a><span class="result"> extends <a href="InHandler.html" class="extype" name="akka.stream.stage.InHandler">InHandler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@AbstractInHandlerextendsInHandler" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Java API: callbacks for an input port where termination logic is predefined
+(completing when upstream completes, failing when upstream fails).</p>
+    </li><li name="akka.stream.stage.AbstractInOutHandler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractInOutHandlerextendsInHandlerwithOutHandler"></a>
+      <a id="AbstractInOutHandler:AbstractInOutHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractInOutHandler.html"><span class="name">AbstractInOutHandler</span></a><span class="result"> extends <a href="InHandler.html" class="extype" name="akka.stream.stage.InHandler">InHandler</a> with <a href="OutHandler.html" class="extype" name="akka.stream.stage.OutHandler">OutHandler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@AbstractInOutHandlerextendsInHandlerwithOutHandler" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Java API: callback combination for output and input ports where termination logic is predefined
+(completing when upstream completes, failing when upstream fails, completing when downstream cancels).</p>
+    </li><li name="akka.stream.stage.AbstractOutHandler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AbstractOutHandlerextendsOutHandler"></a>
+      <a id="AbstractOutHandler:AbstractOutHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractOutHandler.html"><span class="name">AbstractOutHandler</span></a><span class="result"> extends <a href="OutHandler.html" class="extype" name="akka.stream.stage.OutHandler">OutHandler</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@AbstractOutHandlerextendsOutHandler" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Java API: callbacks for an output port where termination logic is predefined
+(completing when downstream cancels).</p>
+    </li><li name="akka.stream.stage.AsyncCallback" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AsyncCallback[T]extendsAnyRef"></a>
+      <a id="AsyncCallback[T]:AsyncCallback[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AsyncCallback.html"><span class="name">AsyncCallback</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@AsyncCallback[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An asynchronous callback holder that is attached to a <a href="GraphStageLogic.html" class="extype" name="akka.stream.stage.GraphStageLogic">GraphStageLogic</a>.</p><div class="fullcomment"><div class="comment cmt"><p>An asynchronous callback holder that is attached to a <a href="GraphStageLogic.html" class="extype" name="akka.stream.stage.GraphStageLogic">GraphStageLogic</a>.
+Invoking <a href="AsyncCallback.html#invoke(t:T):Unit" class="extmbr" name="akka.stream.stage.AsyncCallback#invoke">AsyncCallback#invoke</a> will eventually lead to the registered handler
+being called.
+</p></div></div>
+    </li><li name="akka.stream.stage.AsyncDirective" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AsyncDirectiveextendsDirective"></a>
+      <a id="AsyncDirective:AsyncDirective"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AsyncDirective.html"><span class="name">AsyncDirective</span></a><span class="result"> extends <a href="Directive.html" class="extype" name="akka.stream.stage.Directive">Directive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@AsyncDirectiveextendsDirective" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.Context" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Context[Out]extendsLifecycleContext"></a>
+      <a id="Context[Out]:Context[Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Context.html"><span class="name">Context</span></a><span class="tparams">[<span name="Out">Out</span>]</span><span class="result"> extends <a href="LifecycleContext.html" class="extype" name="akka.stream.stage.LifecycleContext">LifecycleContext</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@Context[Out]extendsLifecycleContext" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Passed to the callback methods of <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a> and <a href="StatefulStage.html" class="extype" name="akka.stream.stage.StatefulStage">StatefulStage</a>.</p>
+    </li><li name="akka.stream.stage.DetachedContext" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DetachedContext[Out]extendsContext[Out]"></a>
+      <a id="DetachedContext[Out]:DetachedContext[Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DetachedContext.html"><span class="name">DetachedContext</span></a><span class="tparams">[<span name="Out">Out</span>]</span><span class="result"> extends <a href="Context.html" class="extype" name="akka.stream.stage.Context">Context</a>[<span class="extype" name="akka.stream.stage.DetachedContext.Out">Out</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@DetachedContext[Out]extendsContext[Out]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Passed to the callback methods of <a href="DetachedStage.html" class="extype" name="akka.stream.stage.DetachedStage">DetachedStage</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Passed to the callback methods of <a href="DetachedStage.html" class="extype" name="akka.stream.stage.DetachedStage">DetachedStage</a>.</p><p><span class="extype" name="#hold">#hold</span> stops execution and at the same time putting the stage in a holding state.
+If the stage is in a holding state it contains one absorbed signal, therefore in
+this state the only possible command to call is <a href="DetachedContext.html#pushAndPull(elem:Out):akka.stream.stage.FreeDirective" class="extmbr" name="akka.stream.stage.DetachedContext#pushAndPull">#pushAndPull</a> which results in two
+events making the balance right again: 1 hold + 1 external event = 2 external event
+</p></div></div>
+    </li><li name="akka.stream.stage.Directive" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DirectiveextendsAnyRef"></a>
+      <a id="Directive:Directive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Directive.html"><span class="name">Directive</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@DirectiveextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Return type from <a href="Context.html" class="extype" name="akka.stream.stage.Context">Context</a> methods.</p>
+    </li><li name="akka.stream.stage.DownstreamDirective" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DownstreamDirectiveextendsSyncDirective"></a>
+      <a id="DownstreamDirective:DownstreamDirective"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DownstreamDirective.html"><span class="name">DownstreamDirective</span></a><span class="result"> extends <a href="SyncDirective.html" class="extype" name="akka.stream.stage.SyncDirective">SyncDirective</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@DownstreamDirectiveextendsSyncDirective" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.FreeDirective" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FreeDirectiveextendsUpstreamDirectivewithDownstreamDirectivewithTerminationDirectivewithAsyncDirective"></a>
+      <a id="FreeDirective:FreeDirective"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FreeDirective.html"><span class="name">FreeDirective</span></a><span class="result"> extends <a href="UpstreamDirective.html" class="extype" name="akka.stream.stage.UpstreamDirective">UpstreamDirective</a> with <a href="DownstreamDirective.html" class="extype" name="akka.stream.stage.DownstreamDirective">DownstreamDirective</a> with <a href="TerminationDirective.html" class="extype" name="akka.stream.stage.TerminationDirective">TerminationDirective</a> with <a href="AsyncDirective.html" class="extype" name="akka.stream.stage.AsyncDirective">AsyncDirective</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@FreeDirectiveextendsUpstreamDirectivewithDownstreamDirectivewithTerminationDirectivewithAsyncDirective" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.GraphStage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="GraphStage[S&lt;:akka.stream.Shape]extendsGraphStageWithMaterializedValue[S,akka.NotUsed]"></a>
+      <a id="GraphStage[S&lt;:Shape]:GraphStage[S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphStage.html"><span class="name">GraphStage</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../Shape.html" class="extype" name="akka.stream.Shape">Shape</a></span>]</span><span class="result"> extends <a href="GraphStageWithMaterializedValue.html" class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue">GraphStageWithMaterializedValue</a>[<span class="extype" name="akka.stream.stage.GraphStage.S">S</span>, <a href="../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@GraphStage[S&lt;:akka.stream.Shape]extendsGraphStageWithMaterializedValue[S,akka.NotUsed]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A GraphStage represents a reusable graph stream processing stage.</p><div class="fullcomment"><div class="comment cmt"><p>A GraphStage represents a reusable graph stream processing stage. A GraphStage consists of a <a href="GraphStage.html#Shape=S@scala.annotation.unchecked.uncheckedVariance" class="extmbr" name="akka.stream.stage.GraphStage.Shape">Shape</a> which describes
+its input and output ports and a factory function that creates a <a href="GraphStageLogic.html" class="extype" name="akka.stream.stage.GraphStageLogic">GraphStageLogic</a> which implements the processing
+logic that ties the ports together.
+</p></div></div>
+    </li><li name="akka.stream.stage.GraphStageLogic" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="GraphStageLogicextendsAnyRef"></a>
+      <a id="GraphStageLogic:GraphStageLogic"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphStageLogic.html"><span class="name">GraphStageLogic</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@GraphStageLogicextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the processing logic behind a <a href="GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Represents the processing logic behind a <a href="GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>. Roughly speaking, a subclass of <a href="GraphStageLogic.html" class="extype" name="akka.stream.stage.GraphStageLogic">GraphStageLogic</a> is a
+collection of the following parts:
+ * A set of <a href="InHandler.html" class="extype" name="akka.stream.stage.InHandler">InHandler</a> and <a href="OutHandler.html" class="extype" name="akka.stream.stage.OutHandler">OutHandler</a> instances and their assignments to the <a href="../Inlet.html" class="extype" name="akka.stream.Inlet">Inlet</a>s and <a href="../Outlet.html" class="extype" name="akka.stream.Outlet">Outlet</a>s
+   of the enclosing <a href="GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>
+ * Possible mutable state, accessible from the <a href="InHandler.html" class="extype" name="akka.stream.stage.InHandler">InHandler</a> and <a href="OutHandler.html" class="extype" name="akka.stream.stage.OutHandler">OutHandler</a> callbacks, but not from anywhere
+   else (as such access would not be thread-safe)
+ * The lifecycle hooks <span class="extype" name="preStart()">preStart()</span> and <span class="extype" name="postStop()">postStop()</span>
+ * Methods for performing stream processing actions, like pulling or pushing elements</p><p> The stage logic is always once all its input and output ports have been closed, i.e. it is not possible to
+ keep the stage alive for further processing once it does not have any open ports. This can be changed by
+ overriding <code>keepGoingAfterAllPortsClosed</code> to return true.
+</p></div></div>
+    </li><li name="akka.stream.stage.GraphStageWithMaterializedValue" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GraphStageWithMaterializedValue[+S&lt;:akka.stream.Shape,+M]extendsGraph[S,M]"></a>
+      <a id="GraphStageWithMaterializedValue[+S&lt;:Shape,+M]:GraphStageWithMaterializedValue[S,M]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphStageWithMaterializedValue.html"><span class="name">GraphStageWithMaterializedValue</span></a><span class="tparams">[<span name="S">+S &lt;: <a href="../Shape.html" class="extype" name="akka.stream.Shape">Shape</a></span>, <span name="M">+M</span>]</span><span class="result"> extends <a href="../Graph.html" class="extype" name="akka.stream.Graph">Graph</a>[<span class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue.S">S</span>, <span class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue.M">M</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@GraphStageWithMaterializedValue[+S&lt;:akka.stream.Shape,+M]extendsGraph[S,M]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.InHandler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InHandlerextendsAnyRef"></a>
+      <a id="InHandler:InHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InHandler.html"><span class="name">InHandler</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@InHandlerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Collection of callbacks for an input port of a <a href="GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>
+</p>
+    </li><li name="akka.stream.stage.LifecycleContext" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LifecycleContextextendsAnyRef"></a>
+      <a id="LifecycleContext:LifecycleContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LifecycleContext.html"><span class="name">LifecycleContext</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@LifecycleContextextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.OutHandler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OutHandlerextendsAnyRef"></a>
+      <a id="OutHandler:OutHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="OutHandler.html"><span class="name">OutHandler</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@OutHandlerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Collection of callbacks for an output port of a <a href="GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>
+</p>
+    </li><li name="akka.stream.stage.StageState" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StageState[In,Out]extendsAnyRef"></a>
+      <a id="StageState[In,Out]:StageState[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StageState.html"><span class="name">StageState</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@StageState[In,Out]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The behavior of <a href="StatefulStage.html" class="extype" name="akka.stream.stage.StatefulStage">StatefulStage</a> is defined by these two methods, which
+has the same semantics as corresponding methods in <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a>.</p>
+    </li><li name="akka.stream.stage.SyncDirective" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SyncDirectiveextendsDirective"></a>
+      <a id="SyncDirective:SyncDirective"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SyncDirective.html"><span class="name">SyncDirective</span></a><span class="result"> extends <a href="Directive.html" class="extype" name="akka.stream.stage.Directive">Directive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@SyncDirectiveextendsDirective" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.TerminationDirective" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TerminationDirectiveextendsSyncDirective"></a>
+      <a id="TerminationDirective:TerminationDirective"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TerminationDirective.html"><span class="name">TerminationDirective</span></a><span class="result"> extends <a href="SyncDirective.html" class="extype" name="akka.stream.stage.SyncDirective">SyncDirective</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@TerminationDirectiveextendsSyncDirective" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.TimerGraphStageLogic" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TimerGraphStageLogicextendsGraphStageLogic"></a>
+      <a id="TimerGraphStageLogic:TimerGraphStageLogic"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TimerGraphStageLogic.html"><span class="name">TimerGraphStageLogic</span></a><span class="result"> extends <a href="GraphStageLogic.html" class="extype" name="akka.stream.stage.GraphStageLogic">GraphStageLogic</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@TimerGraphStageLogicextendsGraphStageLogic" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.UpstreamDirective" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UpstreamDirectiveextendsSyncDirective"></a>
+      <a id="UpstreamDirective:UpstreamDirective"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UpstreamDirective.html"><span class="name">UpstreamDirective</span></a><span class="result"> extends <a href="SyncDirective.html" class="extype" name="akka.stream.stage.SyncDirective">SyncDirective</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@UpstreamDirectiveextendsSyncDirective" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.stage.AbstractStage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AbstractStage[-In,Out,PushD&lt;:akka.stream.stage.Directive,PullD&lt;:akka.stream.stage.Directive,Ctx&lt;:akka.stream.stage.Context[Out],LifeCtx&lt;:akka.stream.stage.LifecycleContext]extendsStage[In,Out]"></a>
+      <a id="AbstractStage[-In,Out,PushD&lt;:Directive,PullD&lt;:Directive,Ctx&lt;:Context[Out],LifeCtx&lt;:LifecycleContext]:AbstractStage[In,Out,PushD,PullD,Ctx,LifeCtx]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractStage.html"><span class="name deprecated" title="Deprecated: (Since version 2.4.2) Please use GraphStage instead.">AbstractStage</span></a><span class="tparams">[<span name="In">-In</span>, <span name="Out">Out</span>, <span name="PushD">PushD &lt;: <a href="Directive.html" class="extype" name="akka.stream.stage.Directive">Directive</a></span>, <span name="PullD">PullD &lt;: <a href="Directive.html" class="extype" name="akka.stream.stage.Directive">Directive</a></span>, <span name="Ctx">Ctx &lt;: <a href="Context.html" class="extype" name="akka.stream.stage.Context">Context</a>[<span class="extype" name="akka.stream.stage.AbstractStage.Out">Out</span>]</span>, <span name="LifeCtx">LifeCtx &lt;: <a href="LifecycleContext.html" class="extype" name="akka.stream.stage.LifecycleContext">LifecycleContext</a></span>]</span><span class="result"> extends <a href="Stage.html" class="extype" name="akka.stream.stage.Stage">Stage</a>[<span class="extype" name="akka.stream.stage.AbstractStage.In">In</span>, <span class="extype" name="akka.stream.stage.AbstractStage.Out">Out</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@AbstractStage[-In,Out,PushD&lt;:akka.stream.stage.Directive,PullD&lt;:akka.stream.stage.Directive,Ctx&lt;:akka.stream.stage.Context[Out],LifeCtx&lt;:akka.stream.stage.LifecycleContext]extendsStage[In,Out]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4.2)</i> Please use GraphStage instead.</p></dd></dl></div>
+    </li><li name="akka.stream.stage.DetachedStage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DetachedStage[In,Out]extendsAbstractStage[In,Out,akka.stream.stage.UpstreamDirective,akka.stream.stage.DownstreamDirective,akka.stream.stage.DetachedContext[Out],akka.stream.stage.LifecycleContext]"></a>
+      <a id="DetachedStage[In,Out]:DetachedStage[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DetachedStage.html"><span class="name deprecated" title="Deprecated: (Since version 2.4.2) Please use GraphStage instead.">DetachedStage</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="AbstractStage.html" class="extype" name="akka.stream.stage.AbstractStage">AbstractStage</a>[<span class="extype" name="akka.stream.stage.DetachedStage.In">In</span>, <span class="extype" name="akka.stream.stage.DetachedStage.Out">Out</span>, <a href="UpstreamDirective.html" class="extype" name="akka.stream.stage.UpstreamDirective">UpstreamDirective</a>, <a href="DownstreamDirective.html" class="extype" name="akka.stream.stage.DownstreamDirective">DownstreamDirective</a>, <a href="DetachedContext.html" class="extype" name="akka.stream.stage.DetachedContext">DetachedContext</a>[<span class="extype" name="akka.stream.stage.DetachedStage.Out">Out</span>], <a href="LifecycleContext.html" class="extype" name="akka.stream.stage.LifecycleContext">LifecycleContext</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@DetachedStage[In,Out]extendsAbstractStage[In,Out,akka.stream.stage.UpstreamDirective,akka.stream.stage.DownstreamDirective,akka.stream.stage.DetachedContext[Out],akka.stream.stage.LifecycleContext]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><code>DetachedStage</code> can be used to implement operations similar to <a href="../scaladsl/FlowOps.html#buffer(size:Int,overflowStrategy:akka.stream.OverflowStrategy):FlowOps.this.Repr[Out]" class="extmbr" name="akka.stream.scaladsl.FlowOps#buffer">buffer</a>,
+<a href="../scaladsl/FlowOps.html#expand[U](extrapolate:Out=&gt;Iterator[U]):FlowOps.this.Repr[U]" class="extmbr" name="akka.stream.scaladsl.FlowOps#expand">expand</a> and <a href="../scaladsl/FlowOps.html#conflate[O2&gt;:Out](aggregate:(O2,O2)=&gt;O2):FlowOps.this.Repr[O2]" class="extmbr" name="akka.stream.scaladsl.FlowOps#conflate">conflate</a>.</p><div class="fullcomment"><div class="comment cmt"><p><code>DetachedStage</code> can be used to implement operations similar to <a href="../scaladsl/FlowOps.html#buffer(size:Int,overflowStrategy:akka.stream.OverflowStrategy):FlowOps.this.Repr[Out]" class="extmbr" name="akka.stream.scaladsl.FlowOps#buffer">buffer</a>,
+<a href="../scaladsl/FlowOps.html#expand[U](extrapolate:Out=&gt;Iterator[U]):FlowOps.this.Repr[U]" class="extmbr" name="akka.stream.scaladsl.FlowOps#expand">expand</a> and <a href="../scaladsl/FlowOps.html#conflate[O2&gt;:Out](aggregate:(O2,O2)=&gt;O2):FlowOps.this.Repr[O2]" class="extmbr" name="akka.stream.scaladsl.FlowOps#conflate">conflate</a>.</p><p><code>DetachedStage</code> implementations are boundaries between 1-bounded regions. This means that they need to enforce the
+&quot;exactly one&quot; property both on their upstream and downstream regions. As a consequence a <code>DetachedStage</code> can never
+answer an <a href="DetachedStage.html#onPull(ctx:Ctx):PullD" class="extmbr" name="akka.stream.stage.DetachedStage#onPull">#onPull</a> with a <a href="Context.html#pull():akka.stream.stage.UpstreamDirective" class="extmbr" name="akka.stream.stage.Context#pull">Context#pull</a> or answer an <a href="DetachedStage.html#onPush(elem:In,ctx:Ctx):PushD" class="extmbr" name="akka.stream.stage.DetachedStage#onPush">#onPush</a> with a <a href="Context.html#push(elem:Out):akka.stream.stage.DownstreamDirective" class="extmbr" name="akka.stream.stage.Context#push">Context#push</a> since such an action
+would &quot;steal&quot; the event from one region (resulting in zero signals) and would inject it to the other region
+(resulting in two signals).</p><p>However, DetachedStages have the ability to call <span class="extype" name="akka.stream.stage.DetachedContext#hold">akka.stream.stage.DetachedContext#hold</span> as a response to
+<a href="DetachedStage.html#onPush(elem:In,ctx:Ctx):PushD" class="extmbr" name="akka.stream.stage.DetachedStage#onPush">#onPush</a> and <a href="DetachedStage.html#onPull(ctx:Ctx):PullD" class="extmbr" name="akka.stream.stage.DetachedStage#onPull">#onPull</a> which temporarily takes the signal off and
+stops execution, at the same time putting the stage in an <span class="extype" name="akka.stream.stage.DetachedContext#isHolding">akka.stream.stage.DetachedContext#isHolding</span> state.
+If the stage is in a holding state it contains one absorbed signal, therefore in this state the only possible
+command to call is <a href="DetachedContext.html#pushAndPull(elem:Out):akka.stream.stage.FreeDirective" class="extmbr" name="akka.stream.stage.DetachedContext#pushAndPull">akka.stream.stage.DetachedContext#pushAndPull</a> which results in two events making the
+balance right again: 1 hold + 1 external event = 2 external event</p><p>This mechanism allows synchronization between the upstream and downstream regions which otherwise can progress
+independently.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4.2)</i> Please use GraphStage instead.</p></dd><dt>See also</dt><dd><span class="cmt"><p><a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a></p></span></dd></dl></div>
+    </li><li name="akka.stream.stage.PushPullStage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PushPullStage[In,Out]extendsAbstractStage[In,Out,akka.stream.stage.SyncDirective,akka.stream.stage.SyncDirective,akka.stream.stage.Context[Out],akka.stream.stage.LifecycleContext]"></a>
+      <a id="PushPullStage[In,Out]:PushPullStage[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PushPullStage.html"><span class="name deprecated" title="Deprecated: (Since version 2.4.2) Please use GraphStage instead.">PushPullStage</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="AbstractStage.html" class="extype" name="akka.stream.stage.AbstractStage">AbstractStage</a>[<span class="extype" name="akka.stream.stage.PushPullStage.In">In</span>, <span class="extype" name="akka.stream.stage.PushPullStage.Out">Out</span>, <a href="SyncDirective.html" class="extype" name="akka.stream.stage.SyncDirective">SyncDirective</a>, <a href="SyncDirective.html" class="extype" name="akka.stream.stage.SyncDirective">SyncDirective</a>, <a href="Context.html" class="extype" name="akka.stream.stage.Context">Context</a>[<span class="extype" name="akka.stream.stage.PushPullStage.Out">Out</span>], <a href="LifecycleContext.html" class="extype" name="akka.stream.stage.LifecycleContext">LifecycleContext</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@PushPullStage[In,Out]extendsAbstractStage[In,Out,akka.stream.stage.SyncDirective,akka.stream.stage.SyncDirective,akka.stream.stage.Context[Out],akka.stream.stage.LifecycleContext]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><code>PushPullStage</code> implementations participate in 1-bounded regions.</p><div class="fullcomment"><div class="comment cmt"><p><code>PushPullStage</code> implementations participate in 1-bounded regions. For every external non-completion signal these
+stages produce *exactly one* push or pull signal.</p><p><a href="PushPullStage.html#onPush(elem:In,ctx:Ctx):PushD" class="extmbr" name="akka.stream.stage.PushPullStage#onPush">#onPush</a> is called when an element from upstream is available and there is demand from downstream, i.e.
+in <code>onPush</code> you are allowed to call <a href="Context.html#push(elem:Out):akka.stream.stage.DownstreamDirective" class="extmbr" name="akka.stream.stage.Context#push">Context#push</a> to emit one element downstream, or you can absorb the
+element by calling <a href="Context.html#pull():akka.stream.stage.UpstreamDirective" class="extmbr" name="akka.stream.stage.Context#pull">Context#pull</a>. Note that you can only emit zero or one element downstream from <code>onPull</code>.
+To emit more than one element you have to push the remaining elements from <a href="PushPullStage.html#onPull(ctx:Ctx):PullD" class="extmbr" name="akka.stream.stage.PushPullStage#onPull">#onPull</a>, one-by-one.
+<code>onPush</code> is not called again until <code>onPull</code> has requested more elements with <a href="Context.html#pull():akka.stream.stage.UpstreamDirective" class="extmbr" name="akka.stream.stage.Context#pull">Context#pull</a>.</p><p><a href="StatefulStage.html" class="extype" name="akka.stream.stage.StatefulStage">StatefulStage</a> has support for making it easy to emit more than one element from <code>onPush</code>.</p><p><a href="PushPullStage.html#onPull(ctx:Ctx):PullD" class="extmbr" name="akka.stream.stage.PushPullStage#onPull">#onPull</a> is called when there is demand from downstream, i.e. you are allowed to push one element
+downstream with <a href="Context.html#push(elem:Out):akka.stream.stage.DownstreamDirective" class="extmbr" name="akka.stream.stage.Context#push">Context#push</a>, or request elements from upstreams with <a href="Context.html#pull():akka.stream.stage.UpstreamDirective" class="extmbr" name="akka.stream.stage.Context#pull">Context#pull</a>. If you
+always perform transitive pull by calling <code>ctx.pull</code> from <code>onPull</code> you can use <a href="PushStage.html" class="extype" name="akka.stream.stage.PushStage">PushStage</a> instead of
+<code>PushPullStage</code>.</p><p>Stages are allowed to do early completion of downstream and cancel of upstream. This is done with <a href="Context.html#finish():akka.stream.stage.FreeDirective" class="extmbr" name="akka.stream.stage.Context#finish">Context#finish</a>,
+which is a combination of cancel/complete.</p><p>Since onComplete is not a backpressured signal it is sometimes preferable to push a final element and then
+immediately finish. This combination is exposed as <a href="Context.html#pushAndFinish(elem:Out):akka.stream.stage.DownstreamDirective" class="extmbr" name="akka.stream.stage.Context#pushAndFinish">Context#pushAndFinish</a> which enables stages to
+propagate completion events without waiting for an extra round of pull.</p><p>Another peculiarity is how to convert termination events (complete/failure) into elements. The problem
+here is that the termination events are not backpressured while elements are. This means that simply calling
+<a href="Context.html#push(elem:Out):akka.stream.stage.DownstreamDirective" class="extmbr" name="akka.stream.stage.Context#push">Context#push</a> as a response to <a href="PushPullStage.html#onUpstreamFinish(ctx:Ctx):akka.stream.stage.TerminationDirective" class="extmbr" name="akka.stream.stage.PushPullStage#onUpstreamFinish">#onUpstreamFinish</a> or <a href="PushPullStage.html#onUpstreamFailure(cause:Throwable,ctx:Ctx):akka.stream.stage.TerminationDirective" class="extmbr" name="akka.stream.stage.PushPullStage#onUpstreamFailure">#onUpstreamFailure</a> will very likely break boundedness
+and result in a buffer overflow somewhere. Therefore the only allowed command in this case is
+<a href="Context.html#absorbTermination():akka.stream.stage.TerminationDirective" class="extmbr" name="akka.stream.stage.Context#absorbTermination">Context#absorbTermination</a> which stops the propagation of the termination signal, and puts the stage in a
+<a href="Context.html#isFinishing:Boolean" class="extmbr" name="akka.stream.stage.Context#isFinishing">akka.stream.stage.Context#isFinishing</a> state. Depending on whether the stage has a pending pull signal it
+has not yet &quot;consumed&quot; by a push its <a href="PushPullStage.html#onPull(ctx:Ctx):PullD" class="extmbr" name="akka.stream.stage.PushPullStage#onPull">#onPull</a> handler might be called immediately or later. From
+<a href="PushPullStage.html#onPull(ctx:Ctx):PullD" class="extmbr" name="akka.stream.stage.PushPullStage#onPull">#onPull</a> final elements can be pushed before completing downstream with <a href="Context.html#finish():akka.stream.stage.FreeDirective" class="extmbr" name="akka.stream.stage.Context#finish">Context#finish</a> or
+<a href="Context.html#pushAndFinish(elem:Out):akka.stream.stage.DownstreamDirective" class="extmbr" name="akka.stream.stage.Context#pushAndFinish">Context#pushAndFinish</a>.</p><p><a href="StatefulStage.html" class="extype" name="akka.stream.stage.StatefulStage">StatefulStage</a> has support for making it easy to emit final elements.</p><p>All these rules are enforced by types and runtime checks where needed. Always return the <code>Directive</code>
+from the call to the <a href="Context.html" class="extype" name="akka.stream.stage.Context">Context</a> method, and do only call <a href="Context.html" class="extype" name="akka.stream.stage.Context">Context</a> commands once per callback.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4.2)</i> Please use GraphStage instead.</p></dd><dt>See also</dt><dd><span class="cmt"><p><a href="PushStage.html" class="extype" name="akka.stream.stage.PushStage">PushStage</a></p></span><span class="cmt"><p><a href="StatefulStage.html" class="extype" name="akka.stream.stage.StatefulStage">StatefulStage</a></p></span><span class="cmt"><p><a href="DetachedStage.html" class="extype" name="akka.stream.stage.DetachedStage">DetachedStage</a></p></span></dd></dl></div>
+    </li><li name="akka.stream.stage.PushStage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="PushStage[In,Out]extendsPushPullStage[In,Out]"></a>
+      <a id="PushStage[In,Out]:PushStage[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PushStage.html"><span class="name deprecated" title="Deprecated: (Since version 2.4.2) Please use GraphStage instead.">PushStage</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a>[<span class="extype" name="akka.stream.stage.PushStage.In">In</span>, <span class="extype" name="akka.stream.stage.PushStage.Out">Out</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@PushStage[In,Out]extendsPushPullStage[In,Out]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><code>PushStage</code> is a <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a> that always perform transitive pull by calling <code>ctx.pull</code> from <code>onPull</code>.</p><div class="fullcomment"><div class="comment cmt"><p><code>PushStage</code> is a <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a> that always perform transitive pull by calling <code>ctx.pull</code> from <code>onPull</code>.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4.2)</i> Please use GraphStage instead.</p></dd></dl></div>
+    </li><li name="akka.stream.stage.Stage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Stage[-In,+Out]extendsAnyRef"></a>
+      <a id="Stage[-In,+Out]:Stage[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Stage.html"><span class="name deprecated" title="Deprecated: (Since version 2.4.2) Please use GraphStage instead.">Stage</span></a><span class="tparams">[<span name="In">-In</span>, <span name="Out">+Out</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@Stage[-In,+Out]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">General interface for stream transformation.</p><div class="fullcomment"><div class="comment cmt"><p>General interface for stream transformation.</p><p>Custom <code>Stage</code> implementations are intended to be used with
+<a href="../scaladsl/FlowOps.html#transform[T](mkStage:()=&gt;akka.stream.stage.Stage[Out,T]):FlowOps.this.Repr[T]" class="extmbr" name="akka.stream.scaladsl.FlowOps#transform">akka.stream.scaladsl.FlowOps#transform</a> or
+<a href="../javadsl/Flow.html#transform[U](mkStage:akka.japi.function.Creator[akka.stream.stage.Stage[Out,U]]):akka.stream.javadsl.Flow[In,U,Mat]" class="extmbr" name="akka.stream.javadsl.Flow#transform">akka.stream.javadsl.Flow#transform</a> to extend the <code>Flow</code> API when there
+is no specialized operator that performs the transformation.</p><p>Custom implementations are subclasses of <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a> or
+<a href="DetachedStage.html" class="extype" name="akka.stream.stage.DetachedStage">DetachedStage</a>. Sometimes it is convenient to extend
+<a href="StatefulStage.html" class="extype" name="akka.stream.stage.StatefulStage">StatefulStage</a> for support of become like behavior.</p><p>It is possible to keep state in the concrete <code>Stage</code> instance with
+ordinary instance variables. The <code>Transformer</code> is executed by an actor and
+therefore you do not have to add any additional thread safety or memory
+visibility constructs to access the state from the callback methods.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4.2)</i> Please use GraphStage instead.</p></dd><dt>See also</dt><dd><span class="cmt"><p><a href="../javadsl/Flow.html#transform[U](mkStage:akka.japi.function.Creator[akka.stream.stage.Stage[Out,U]]):akka.stream.javadsl.Flow[In,U,Mat]" class="extmbr" name="akka.stream.javadsl.Flow#transform">akka.stream.javadsl.Flow#transform</a></p></span><span class="cmt"><p><a href="../scaladsl/Flow.html#transform[T](mkStage:()=&gt;akka.stream.stage.Stage[Out,T]):FlowOps.this.Repr[T]" class="extmbr" name="akka.stream.scaladsl.Flow#transform">akka.stream.scaladsl.Flow#transform</a></p></span></dd></dl></div>
+    </li><li name="akka.stream.stage.StatefulStage" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="StatefulStage[In,Out]extendsPushPullStage[In,Out]"></a>
+      <a id="StatefulStage[In,Out]:StatefulStage[In,Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StatefulStage.html"><span class="name deprecated" title="Deprecated: (Since version 2.0-M2) StatefulStage is deprecated, please use GraphStage instead.">StatefulStage</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>]</span><span class="result"> extends <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a>[<span class="extype" name="akka.stream.stage.StatefulStage.In">In</span>, <span class="extype" name="akka.stream.stage.StatefulStage.Out">Out</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@StatefulStage[In,Out]extendsPushPullStage[In,Out]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><code>StatefulStage</code> is a <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a> that provides convenience to make some things easier.</p><div class="fullcomment"><div class="comment cmt"><p><code>StatefulStage</code> is a <a href="PushPullStage.html" class="extype" name="akka.stream.stage.PushPullStage">PushPullStage</a> that provides convenience to make some things easier.</p><p>The behavior is defined in <a href="StageState.html" class="extype" name="akka.stream.stage.StageState">StageState</a> instances. The initial behavior is specified
+by subclass implementing the <a href="StatefulStage.html#initial:akka.stream.stage.StageState[In,Out]" class="extmbr" name="akka.stream.stage.StatefulStage#initial">#initial</a> method. The behavior can be changed by using <a href="StatefulStage.html#become(state:akka.stream.stage.StageState[In,Out]):Unit" class="extmbr" name="akka.stream.stage.StatefulStage#become">#become</a>.</p><p>Use <a href="StatefulStage.html#emit(iter:java.util.Iterator[Out],ctx:akka.stream.stage.Context[Out],nextState:akka.stream.stage.StageState[In,Out]):akka.stream.stage.SyncDirective" class="extmbr" name="akka.stream.stage.StatefulStage#emit">#emit</a> or <a href="StatefulStage.html#emitAndFinish(iter:java.util.Iterator[Out],ctx:akka.stream.stage.Context[Out]):akka.stream.stage.SyncDirective" class="extmbr" name="akka.stream.stage.StatefulStage#emitAndFinish">#emitAndFinish</a> to push more than one element from <a href="StageState.html#onPush(elem:In,ctx:akka.stream.stage.Context[Out]):akka.stream.stage.SyncDirective" class="extmbr" name="akka.stream.stage.StageState#onPush">StageState#onPush</a> or
+<a href="StageState.html#onPull(ctx:akka.stream.stage.Context[Out]):akka.stream.stage.SyncDirective" class="extmbr" name="akka.stream.stage.StageState#onPull">StageState#onPull</a>.</p><p>Use <a href="StatefulStage.html#terminationEmit(iter:java.util.Iterator[Out],ctx:akka.stream.stage.Context[Out]):akka.stream.stage.TerminationDirective" class="extmbr" name="akka.stream.stage.StatefulStage#terminationEmit">#terminationEmit</a> to push final elements from <a href="StatefulStage.html#onUpstreamFinish(ctx:akka.stream.stage.Context[Out]):akka.stream.stage.TerminationDirective" class="extmbr" name="akka.stream.stage.StatefulStage#onUpstreamFinish">#onUpstreamFinish</a> or <a href="StatefulStage.html#onUpstreamFailure(cause:Throwable,ctx:Ctx):akka.stream.stage.TerminationDirective" class="extmbr" name="akka.stream.stage.StatefulStage#onUpstreamFailure">#onUpstreamFailure</a>.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.0-M2)</i> StatefulStage is deprecated, please use GraphStage instead.</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="akka.stream.stage.AbstractStage" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AbstractStage"></a>
+      <a id="AbstractStage:AbstractStage"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractStage$.html"><span class="name">AbstractStage</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@AbstractStage" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.stage.GraphStageLogic" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GraphStageLogic"></a>
+      <a id="GraphStageLogic:GraphStageLogic"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GraphStageLogic$.html"><span class="name">GraphStageLogic</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.stage.package@GraphStageLogic" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

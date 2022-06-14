@@ -1,0 +1,937 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>impl - akka.stream.impl</title>
+          <meta name="description" content="impl - akka.stream.impl" />
+          <meta name="keywords" content="impl akka.stream.impl" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'akka.stream.impl.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="akka">akka</a>.<a href="../package.html" class="extype" name="akka.stream">stream</a></p>
+        <h1>impl</h1><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">impl</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph1" viewBox="0.00 0.00 1462.00 94.00" height="94pt" width="1462pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 90)" class="graph" id="graph0"><polygon points="-4,4 -4,-90 1458,-90 1458,4 -4,4" stroke="none" fill="white"></polygon><!-- node0 --><g class="node class" id="graph1_0"><g id="a_class|graph1_0"><a xlink:title="akka.stream.impl.SubscriberSource" xlink:href="SubscriberSource.html#inheritance-diagram"><polygon points="144,-25 0,-25 0,-0 144,-0 144,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="10" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="30.5322" text-anchor="start">SubscriberSource[Out]</text></a></g></g><!-- node1 --><g class="node class" id="graph1_1"><g id="a_class|graph1_1"><a xlink:title="akka.stream.impl.SubscriberSink" xlink:href="SubscriberSink.html#inheritance-diagram"><polygon points="922,-25 798,-25 798,-0 922,-0 922,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="808" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="828.537" text-anchor="start">SubscriberSink[In]</text></a></g></g><!-- node2 --><g class="node class" id="graph1_2"><g id="a_class|graph1_2"><a xlink:title="akka.stream.impl.SourceModule" xlink:href="SourceModule.html#inheritance-diagram"><polygon points="458,-86 306,-86 306,-61 458,-61 458,-86" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-80.5" x="316" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="336.919" text-anchor="start">SourceModule[Out, Mat]</text></a></g></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph1_2_0"><g id="a_inheritance|graph1_2_0"><a xlink:title="SubscriberSource[Out] is a subtype of SourceModule[Out, Mat]"><path d="M316.308,-59.9973C261.997,-49.6608 185.482,-35.0983 132.619,-25.0371" stroke="#d4d4d4" fill="none"></path><polygon points="316.254,-61.7684 321.493,-60.9841 316.908,-58.3301 316.254,-61.7684" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node5 --><g class="node class" id="graph1_5"><g id="a_class|graph1_5"><a xlink:title="akka.stream.impl.PublisherSource" xlink:href="PublisherSource.html#inheritance-diagram"><polygon points="300,-25 162,-25 162,-0 300,-0 300,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="172" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="192.586" text-anchor="start">PublisherSource[Out]</text></a></g></g><!-- node2&#45;&gt;node5 --><g class="edge inheritance" id="graph1_2_5"><g id="a_inheritance|graph1_2_5"><a xlink:title="PublisherSource[Out] is a subtype of SourceModule[Out, Mat]"><path d="M347.744,-59.1152C321.505,-48.8627 285.676,-34.8634 260.656,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="347.233,-60.7944 352.527,-60.9841 348.507,-57.5344 347.233,-60.7944" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node6 --><g class="node class" id="graph1_6"><g id="a_class|graph1_6"><a xlink:title="akka.stream.impl.MaybeSource" xlink:href="MaybeSource.html#inheritance-diagram"><polygon points="445.5,-25 318.5,-25 318.5,-0 445.5,-0 445.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="329" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="349.924" text-anchor="start">MaybeSource[Out]</text></a></g></g><!-- node2&#45;&gt;node6 --><g class="edge inheritance" id="graph1_2_6"><g id="a_inheritance|graph1_2_6"><a xlink:title="MaybeSource[Out] is a subtype of SourceModule[Out, Mat]"><path d="M382,-55.6874C382,-45.9173 382,-33.8534 382,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="380.25,-55.8435 382,-60.8435 383.75,-55.8435 380.25,-55.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node9 --><g class="node class" id="graph1_9"><g id="a_class|graph1_9"><a xlink:title="akka.stream.impl.ActorRefSource" xlink:href="ActorRefSource.html#inheritance-diagram"><polygon points="600,-25 464,-25 464,-0 600,-0 600,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="474" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="494.98" text-anchor="start">ActorRefSource[Out]</text></a></g></g><!-- node2&#45;&gt;node9 --><g class="edge inheritance" id="graph1_2_9"><g id="a_inheritance|graph1_2_9"><a xlink:title="ActorRefSource[Out] is a subtype of SourceModule[Out, Mat]"><path d="M416.029,-59.1152C442.095,-48.8627 477.686,-34.8634 502.54,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="415.29,-57.5253 411.278,-60.9841 416.571,-60.7825 415.29,-57.5253" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node11 --><g class="node class" id="graph1_11"><g id="a_class|graph1_11"><a xlink:title="akka.stream.impl.ActorPublisherSource" xlink:href="ActorPublisherSource.html#inheritance-diagram"><polygon points="780,-25 618,-25 618,-0 780,-0 780,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="628" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="648.917" text-anchor="start">ActorPublisherSource[Out]</text></a></g></g><!-- node2&#45;&gt;node11 --><g class="edge inheritance" id="graph1_2_11"><g id="a_inheritance|graph1_2_11"><a xlink:title="ActorPublisherSource[Out] is a subtype of SourceModule[Out, Mat]"><path d="M448.84,-60.0598C504.397,-49.7195 582.846,-35.1186 637.012,-25.0371" stroke="#d4d4d4" fill="none"></path><polygon points="448.469,-58.3487 443.873,-60.9841 449.109,-61.7896 448.469,-58.3487" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node3 --><g class="node class" id="graph1_3"><g id="a_class|graph1_3"><a xlink:title="akka.stream.impl.SinkModule" xlink:href="SinkModule.html#inheritance-diagram"><polygon points="1173,-86 1041,-86 1041,-61 1173,-61 1173,-86" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-80.5" x="1051" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="1071.92" text-anchor="start">SinkModule[In, Mat]</text></a></g></g><!-- node3&#45;&gt;node1 --><g class="edge inheritance" id="graph1_3_1"><g id="a_inheritance|graph1_3_1"><a xlink:title="SubscriberSink[In] is a subtype of SinkModule[In, Mat]"><path d="M1053.88,-59.8112C1010.73,-49.5039 950.371,-35.0865 908.51,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="1053.52,-61.5245 1058.79,-60.9841 1054.33,-58.1203 1053.52,-61.5245" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node4 --><g class="node class" id="graph1_4"><g id="a_class|graph1_4"><a xlink:title="akka.stream.impl.SinkholeSink" xlink:href="SinkholeSink.html#inheritance-diagram"><polygon points="1041.5,-25 940.5,-25 940.5,-0 1041.5,-0 1041.5,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="951" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="971.705" text-anchor="start">SinkholeSink</text></a></g></g><!-- node3&#45;&gt;node4 --><g class="edge inheritance" id="graph1_3_4"><g id="a_inheritance|graph1_3_4"><a xlink:title="SinkholeSink is a subtype of SinkModule[In, Mat]"><path d="M1079.69,-58.6096C1059.7,-48.4419 1032.88,-34.7994 1013.98,-25.1884" stroke="#d4d4d4" fill="none"></path><polygon points="1079.11,-60.2772 1084.36,-60.9841 1080.7,-57.1575 1079.11,-60.2772" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node7 --><g class="node class" id="graph1_7"><g id="a_class|graph1_7"><a xlink:title="akka.stream.impl.CancelSink" xlink:href="CancelSink.html#inheritance-diagram"><polygon points="1154,-25 1060,-25 1060,-0 1154,-0 1154,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="1070" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="1090.82" text-anchor="start">CancelSink</text></a></g></g><!-- node3&#45;&gt;node7 --><g class="edge inheritance" id="graph1_3_7"><g id="a_inheritance|graph1_3_7"><a xlink:title="CancelSink is a subtype of SinkModule[In, Mat]"><path d="M1107,-55.6874C1107,-45.9173 1107,-33.8534 1107,-25.1323" stroke="#d4d4d4" fill="none"></path><polygon points="1105.25,-55.8435 1107,-60.8435 1108.75,-55.8435 1105.25,-55.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node8 --><g class="node class" id="graph1_8"><g id="a_class|graph1_8"><a xlink:title="akka.stream.impl.ActorSubscriberSink" xlink:href="ActorSubscriberSink.html#inheritance-diagram"><polygon points="1320,-25 1172,-25 1172,-0 1320,-0 1320,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="1182" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="1202.87" text-anchor="start">ActorSubscriberSink[In]</text></a></g></g><!-- node3&#45;&gt;node8 --><g class="edge inheritance" id="graph1_3_8"><g id="a_inheritance|graph1_3_8"><a xlink:title="ActorSubscriberSink[In] is a subtype of SinkModule[In, Mat]"><path d="M1138.82,-58.9941C1162.86,-48.788 1195.53,-34.921 1218.46,-25.1884" stroke="#d4d4d4" fill="none"></path><polygon points="1138.05,-57.4196 1134.13,-60.9841 1139.42,-60.6414 1138.05,-57.4196" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node10 --><g class="node class" id="graph1_10"><g id="a_class|graph1_10"><a xlink:title="akka.stream.impl.ActorRefSink" xlink:href="ActorRefSink.html#inheritance-diagram"><polygon points="1454,-25 1338,-25 1338,-0 1454,-0 1454,-25" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-19.5" x="1348" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9.74951" x="1368.99" text-anchor="start">ActorRefSink[In]</text></a></g></g><!-- node3&#45;&gt;node10 --><g class="edge inheritance" id="graph1_3_10"><g id="a_inheritance|graph1_3_10"><a xlink:title="ActorRefSink[In] is a subtype of SinkModule[In, Mat]"><path d="M1168.54,-59.9365C1219.07,-49.6209 1290.06,-35.1271 1339.24,-25.0875" stroke="#d4d4d4" fill="none"></path><polygon points="1167.96,-58.2693 1163.41,-60.9841 1168.66,-61.6986 1167.96,-58.2693" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.stream.impl.ActorPublisher" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ActorPublisher[T]extendsPublisher[T]"></a>
+      <a id="ActorPublisher[T]:ActorPublisher[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorPublisher.html"><span class="name">ActorPublisher</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="org.reactivestreams.Publisher">Publisher</span>[<span class="extype" name="akka.stream.impl.ActorPublisher.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ActorPublisher[T]extendsPublisher[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API</p><div class="fullcomment"><div class="comment cmt"><p>INTERNAL API</p><p>When you instantiate this class, or its subclasses, you MUST send an ExposedPublisher message to the wrapped
+ActorRef! If you don't need to subclass, prefer the apply() method on the companion object which takes care of this.
+</p></div></div>
+    </li><li name="akka.stream.impl.ActorPublisherSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorPublisherSource[Out]extendsSourceModule[Out,akka.actor.ActorRef]"></a>
+      <a id="ActorPublisherSource[Out]:ActorPublisherSource[Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorPublisherSource.html"><span class="name">ActorPublisherSource</span></a><span class="tparams">[<span name="Out">Out</span>]</span><span class="result"> extends <a href="SourceModule.html" class="extype" name="akka.stream.impl.SourceModule">SourceModule</a>[<span class="extype" name="akka.stream.impl.ActorPublisherSource.Out">Out</span>, <a href="../../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ActorPublisherSource[Out]extendsSourceModule[Out,akka.actor.ActorRef]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+Creates and wraps an actor into <span class="extype" name="org.reactivestreams.Publisher">org.reactivestreams.Publisher</span> from the given <code>props</code>,
+which should be <a href="../../actor/Props.html" class="extype" name="akka.actor.Props">akka.actor.Props</a> for an <a href="../actor/ActorPublisher.html" class="extype" name="akka.stream.actor.ActorPublisher">akka.stream.actor.ActorPublisher</a>.</p>
+    </li><li name="akka.stream.impl.ActorRefSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorRefSink[In]extendsSinkModule[In,akka.NotUsed]"></a>
+      <a id="ActorRefSink[In]:ActorRefSink[In]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorRefSink.html"><span class="name">ActorRefSink</span></a><span class="tparams">[<span name="In">In</span>]</span><span class="result"> extends <a href="SinkModule.html" class="extype" name="akka.stream.impl.SinkModule">SinkModule</a>[<span class="extype" name="akka.stream.impl.ActorRefSink.In">In</span>, <a href="../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ActorRefSink[In]extendsSinkModule[In,akka.NotUsed]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.ActorRefSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorRefSource[Out]extendsSourceModule[Out,akka.actor.ActorRef]"></a>
+      <a id="ActorRefSource[Out]:ActorRefSource[Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorRefSource.html"><span class="name">ActorRefSource</span></a><span class="tparams">[<span name="Out">Out</span>]</span><span class="result"> extends <a href="SourceModule.html" class="extype" name="akka.stream.impl.SourceModule">SourceModule</a>[<span class="extype" name="akka.stream.impl.ActorRefSource.Out">Out</span>, <a href="../../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ActorRefSource[Out]extendsSourceModule[Out,akka.actor.ActorRef]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.ActorSubscriberSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorSubscriberSink[In]extendsSinkModule[In,akka.actor.ActorRef]"></a>
+      <a id="ActorSubscriberSink[In]:ActorSubscriberSink[In]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorSubscriberSink.html"><span class="name">ActorSubscriberSink</span></a><span class="tparams">[<span name="In">In</span>]</span><span class="result"> extends <a href="SinkModule.html" class="extype" name="akka.stream.impl.SinkModule">SinkModule</a>[<span class="extype" name="akka.stream.impl.ActorSubscriberSink.In">In</span>, <a href="../../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ActorSubscriberSink[In]extendsSinkModule[In,akka.actor.ActorRef]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+Creates and wraps an actor into <span class="extype" name="org.reactivestreams.Subscriber">org.reactivestreams.Subscriber</span> from the given <code>props</code>,
+which should be <a href="../../actor/Props.html" class="extype" name="akka.actor.Props">akka.actor.Props</a> for an <a href="../actor/ActorSubscriber.html" class="extype" name="akka.stream.actor.ActorSubscriber">akka.stream.actor.ActorSubscriber</a>.</p>
+    </li><li name="akka.stream.impl.CancelSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CancelSinkextendsSinkModule[Any,akka.NotUsed]"></a>
+      <a id="CancelSink:CancelSink"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CancelSink.html"><span class="name">CancelSink</span></a><span class="result"> extends <a href="SinkModule.html" class="extype" name="akka.stream.impl.SinkModule">SinkModule</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@CancelSinkextendsSinkModule[Any,akka.NotUsed]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+A sink that immediately cancels its upstream upon materialization.</p>
+    </li><li name="akka.stream.impl.ExtendedActorMaterializer" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ExtendedActorMaterializerextendsActorMaterializer"></a>
+      <a id="ExtendedActorMaterializer:ExtendedActorMaterializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtendedActorMaterializer.html"><span class="name">ExtendedActorMaterializer</span></a><span class="result"> extends <a href="../ActorMaterializer.html" class="extype" name="akka.stream.ActorMaterializer">ActorMaterializer</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ExtendedActorMaterializerextendsActorMaterializer" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">ExtendedActorMaterializer used by subtypes which materializer using GraphInterpreterShell
+</p>
+    </li><li name="akka.stream.impl.FanIn" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FanInextendsActorwithActorLoggingwithPump"></a>
+      <a id="FanIn:FanIn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FanIn.html"><span class="name">FanIn</span></a><span class="result"> extends <a href="../../actor/Actor.html" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../actor/ActorLogging.html" class="extype" name="akka.actor.ActorLogging">ActorLogging</a> with <span class="extype" name="akka.stream.impl.Pump">Pump</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@FanInextendsActorwithActorLoggingwithPump" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.FanOut" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FanOutextendsActorwithActorLoggingwithPump"></a>
+      <a id="FanOut:FanOut"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FanOut.html"><span class="name">FanOut</span></a><span class="result"> extends <a href="../../actor/Actor.html" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../actor/ActorLogging.html" class="extype" name="akka.actor.ActorLogging">ActorLogging</a> with <span class="extype" name="akka.stream.impl.Pump">Pump</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@FanOutextendsActorwithActorLoggingwithPump" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.FlowNames" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FlowNamesextendsExtension"></a>
+      <a id="FlowNames:FlowNames"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FlowNames.html"><span class="name">FlowNames</span></a><span class="result"> extends <a href="../../actor/Extension.html" class="extype" name="akka.actor.Extension">Extension</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@FlowNamesextendsExtension" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.HeadOptionStage" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HeadOptionStage[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],scala.concurrent.Future[Option[T]]]"></a>
+      <a id="HeadOptionStage[T]:HeadOptionStage[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HeadOptionStage.html"><span class="name">HeadOptionStage</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../stage/GraphStageWithMaterializedValue.html" class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue">GraphStageWithMaterializedValue</a>[<a href="../SinkShape.html" class="extype" name="akka.stream.SinkShape">SinkShape</a>[<span class="extype" name="akka.stream.impl.HeadOptionStage.T">T</span>], <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="akka.stream.impl.HeadOptionStage.T">T</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@HeadOptionStage[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],scala.concurrent.Future[Option[T]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.LastOptionStage" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LastOptionStage[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],scala.concurrent.Future[Option[T]]]"></a>
+      <a id="LastOptionStage[T]:LastOptionStage[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LastOptionStage.html"><span class="name">LastOptionStage</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../stage/GraphStageWithMaterializedValue.html" class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue">GraphStageWithMaterializedValue</a>[<a href="../SinkShape.html" class="extype" name="akka.stream.SinkShape">SinkShape</a>[<span class="extype" name="akka.stream.impl.LastOptionStage.T">T</span>], <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="akka.stream.impl.LastOptionStage.T">T</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@LastOptionStage[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],scala.concurrent.Future[Option[T]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.MaterializerSession" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MaterializerSessionextendsAnyRef"></a>
+      <a id="MaterializerSession:MaterializerSession"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MaterializerSession.html"><span class="name">MaterializerSession</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@MaterializerSessionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.MaybeSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaybeSource[Out]extendsSourceModule[Out,scala.concurrent.Promise[Option[Out]]]"></a>
+      <a id="MaybeSource[Out]:MaybeSource[Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MaybeSource.html"><span class="name">MaybeSource</span></a><span class="tparams">[<span name="Out">Out</span>]</span><span class="result"> extends <a href="SourceModule.html" class="extype" name="akka.stream.impl.SourceModule">SourceModule</a>[<span class="extype" name="akka.stream.impl.MaybeSource.Out">Out</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Promise" class="extype" target="_top">Promise</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="akka.stream.impl.MaybeSource.Out">Out</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@MaybeSource[Out]extendsSourceModule[Out,scala.concurrent.Promise[Option[Out]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.ProcessorModule" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ProcessorModule[In,Out,Mat]extendsStreamLayout.AtomicModulewithProductwithSerializable"></a>
+      <a id="ProcessorModule[In,Out,Mat]:ProcessorModule[In,Out,Mat]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ProcessorModule.html"><span class="name">ProcessorModule</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>, <span name="Mat">Mat</span>]</span><span class="params">(<span name="createProcessor">createProcessor: () ⇒ (<span class="extype" name="org.reactivestreams.Processor">Processor</span>[<span class="extype" name="akka.stream.impl.ProcessorModule.In">In</span>, <span class="extype" name="akka.stream.impl.ProcessorModule.Out">Out</span>], <span class="extype" name="akka.stream.impl.ProcessorModule.Mat">Mat</span>)</span>, <span name="attributes">attributes: <a href="../Attributes.html" class="extype" name="akka.stream.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="../../package.html">DefaultAttributes.processor</a></span></span></span>)</span><span class="result"> extends <a href="StreamLayout$$AtomicModule.html" class="extype" name="akka.stream.impl.StreamLayout.AtomicModule">AtomicModule</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ProcessorModule[In,Out,Mat]extendsStreamLayout.AtomicModulewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.PublisherSource" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PublisherSource[Out]extendsSourceModule[Out,akka.NotUsed]"></a>
+      <a id="PublisherSource[Out]:PublisherSource[Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PublisherSource.html"><span class="name">PublisherSource</span></a><span class="tparams">[<span name="Out">Out</span>]</span><span class="result"> extends <a href="SourceModule.html" class="extype" name="akka.stream.impl.SourceModule">SourceModule</a>[<span class="extype" name="akka.stream.impl.PublisherSource.Out">Out</span>, <a href="../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@PublisherSource[Out]extendsSourceModule[Out,akka.NotUsed]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+Construct a transformation starting with given publisher.</p><div class="fullcomment"><div class="comment cmt"><p>INTERNAL API
+Construct a transformation starting with given publisher. The transformation steps
+are executed by a series of <span class="extype" name="org.reactivestreams.Processor">org.reactivestreams.Processor</span> instances
+that mediate the flow of elements downstream and the propagation of
+back-pressure upstream.
+</p></div></div>
+    </li><li name="akka.stream.impl.QueueSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QueueSink[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],akka.stream.scaladsl.SinkQueueWithCancel[T]]"></a>
+      <a id="QueueSink[T]:QueueSink[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="QueueSink.html"><span class="name">QueueSink</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../stage/GraphStageWithMaterializedValue.html" class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue">GraphStageWithMaterializedValue</a>[<a href="../SinkShape.html" class="extype" name="akka.stream.SinkShape">SinkShape</a>[<span class="extype" name="akka.stream.impl.QueueSink.T">T</span>], <a href="../scaladsl/SinkQueueWithCancel.html" class="extype" name="akka.stream.scaladsl.SinkQueueWithCancel">SinkQueueWithCancel</a>[<span class="extype" name="akka.stream.impl.QueueSink.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@QueueSink[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],akka.stream.scaladsl.SinkQueueWithCancel[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.QueueSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QueueSource[T]extendsGraphStageWithMaterializedValue[akka.stream.SourceShape[T],akka.stream.scaladsl.SourceQueueWithComplete[T]]"></a>
+      <a id="QueueSource[T]:QueueSource[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="QueueSource.html"><span class="name">QueueSource</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../stage/GraphStageWithMaterializedValue.html" class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue">GraphStageWithMaterializedValue</a>[<a href="../SourceShape.html" class="extype" name="akka.stream.SourceShape">SourceShape</a>[<span class="extype" name="akka.stream.impl.QueueSource.T">T</span>], <a href="../scaladsl/SourceQueueWithComplete.html" class="extype" name="akka.stream.scaladsl.SourceQueueWithComplete">SourceQueueWithComplete</a>[<span class="extype" name="akka.stream.impl.QueueSource.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@QueueSource[T]extendsGraphStageWithMaterializedValue[akka.stream.SourceShape[T],akka.stream.scaladsl.SourceQueueWithComplete[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.SeqActorName" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SeqActorNameextendsAnyRef"></a>
+      <a id="SeqActorName:SeqActorName"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SeqActorName.html"><span class="name">SeqActorName</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SeqActorNameextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+As discussed in https://github.com/akka/akka/issues/16613</p><div class="fullcomment"><div class="comment cmt"><p>INTERNAL API
+As discussed in https://github.com/akka/akka/issues/16613</p><p>Generator of sequentially numbered actor names.
+Pulled out from HTTP internals, most often used used by streams which materialize actors directly
+</p></div></div>
+    </li><li name="akka.stream.impl.SeqStage" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SeqStage[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],scala.concurrent.Future[scala.collection.immutable.Seq[T]]]"></a>
+      <a id="SeqStage[T]:SeqStage[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SeqStage.html"><span class="name">SeqStage</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../stage/GraphStageWithMaterializedValue.html" class="extype" name="akka.stream.stage.GraphStageWithMaterializedValue">GraphStageWithMaterializedValue</a>[<a href="../SinkShape.html" class="extype" name="akka.stream.SinkShape">SinkShape</a>[<span class="extype" name="akka.stream.impl.SeqStage.T">T</span>], <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<span class="extype" name="akka.stream.impl.SeqStage.T">T</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SeqStage[T]extendsGraphStageWithMaterializedValue[akka.stream.SinkShape[T],scala.concurrent.Future[scala.collection.immutable.Seq[T]]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.SinkModule" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SinkModule[-In,Mat]extendsStreamLayout.AtomicModule"></a>
+      <a id="SinkModule[-In,Mat]:SinkModule[In,Mat]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SinkModule.html"><span class="name">SinkModule</span></a><span class="tparams">[<span name="In">-In</span>, <span name="Mat">Mat</span>]</span><span class="result"> extends <a href="StreamLayout$$AtomicModule.html" class="extype" name="akka.stream.impl.StreamLayout.AtomicModule">AtomicModule</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SinkModule[-In,Mat]extendsStreamLayout.AtomicModule" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.SinkQueueAdapter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SinkQueueAdapter[T]extendsSinkQueueWithCancel[T]"></a>
+      <a id="SinkQueueAdapter[T]:SinkQueueAdapter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SinkQueueAdapter.html"><span class="name">SinkQueueAdapter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../javadsl/SinkQueueWithCancel.html" class="extype" name="akka.stream.javadsl.SinkQueueWithCancel">SinkQueueWithCancel</a>[<span class="extype" name="akka.stream.impl.SinkQueueAdapter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SinkQueueAdapter[T]extendsSinkQueueWithCancel[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.SinkholeSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SinkholeSinkextendsSinkModule[Any,scala.concurrent.Future[akka.Done]]"></a>
+      <a id="SinkholeSink:SinkholeSink"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SinkholeSink.html"><span class="name">SinkholeSink</span></a><span class="result"> extends <a href="SinkModule.html" class="extype" name="akka.stream.impl.SinkModule">SinkModule</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<a href="../../Done.html" class="extype" name="akka.Done">Done</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SinkholeSinkextendsSinkModule[Any,scala.concurrent.Future[akka.Done]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+Attaches a subscriber to this stream which will just discard all received
+elements.</p>
+    </li><li name="akka.stream.impl.SourceModule" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SourceModule[+Out,+Mat]extendsStreamLayout.AtomicModule"></a>
+      <a id="SourceModule[+Out,+Mat]:SourceModule[Out,Mat]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SourceModule.html"><span class="name">SourceModule</span></a><span class="tparams">[<span name="Out">+Out</span>, <span name="Mat">+Mat</span>]</span><span class="result"> extends <a href="StreamLayout$$AtomicModule.html" class="extype" name="akka.stream.impl.StreamLayout.AtomicModule">AtomicModule</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SourceModule[+Out,+Mat]extendsStreamLayout.AtomicModule" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.SourceQueueAdapter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SourceQueueAdapter[T]extendsSourceQueueWithComplete[T]"></a>
+      <a id="SourceQueueAdapter[T]:SourceQueueAdapter[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SourceQueueAdapter.html"><span class="name">SourceQueueAdapter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../javadsl/SourceQueueWithComplete.html" class="extype" name="akka.stream.javadsl.SourceQueueWithComplete">SourceQueueWithComplete</a>[<span class="extype" name="akka.stream.impl.SourceQueueAdapter.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SourceQueueAdapter[T]extendsSourceQueueWithComplete[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.StreamSupervisor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StreamSupervisorextendsActor"></a>
+      <a id="StreamSupervisor:StreamSupervisor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StreamSupervisor.html"><span class="name">StreamSupervisor</span></a><span class="result"> extends <a href="../../actor/Actor.html" class="extype" name="akka.actor.Actor">Actor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@StreamSupervisorextendsActor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.SubFlowImpl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubFlowImpl[In,Out,Mat,F[+_],C]extendsSubFlow[Out,Mat,F,C]"></a>
+      <a id="SubFlowImpl[In,Out,Mat,F[+_],C]:SubFlowImpl[In,Out,Mat,F,C]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SubFlowImpl.html"><span class="name">SubFlowImpl</span></a><span class="tparams">[<span name="In">In</span>, <span name="Out">Out</span>, <span name="Mat">Mat</span>, <span name="F">F<span class="tparams">[<span name="_">+_</span>]</span></span>, <span name="C">C</span>]</span><span class="result"> extends <a href="../scaladsl/SubFlow.html" class="extype" name="akka.stream.scaladsl.SubFlow">SubFlow</a>[<span class="extype" name="akka.stream.impl.SubFlowImpl.Out">Out</span>, <span class="extype" name="akka.stream.impl.SubFlowImpl.Mat">Mat</span>, <span class="extype" name="akka.stream.impl.SubFlowImpl.F">F</span>, <span class="extype" name="akka.stream.impl.SubFlowImpl.C">C</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SubFlowImpl[In,Out,Mat,F[+_],C]extendsSubFlow[Out,Mat,F,C]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.SubscriberSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubscriberSink[In]extendsSinkModule[In,akka.NotUsed]"></a>
+      <a id="SubscriberSink[In]:SubscriberSink[In]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SubscriberSink.html"><span class="name">SubscriberSink</span></a><span class="tparams">[<span name="In">In</span>]</span><span class="result"> extends <a href="SinkModule.html" class="extype" name="akka.stream.impl.SinkModule">SinkModule</a>[<span class="extype" name="akka.stream.impl.SubscriberSink.In">In</span>, <a href="../../NotUsed.html" class="extype" name="akka.NotUsed">NotUsed</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SubscriberSink[In]extendsSinkModule[In,akka.NotUsed]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+Attaches a subscriber to this stream.</p>
+    </li><li name="akka.stream.impl.SubscriberSource" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SubscriberSource[Out]extendsSourceModule[Out,org.reactivestreams.Subscriber[Out]]"></a>
+      <a id="SubscriberSource[Out]:SubscriberSource[Out]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SubscriberSource.html"><span class="name">SubscriberSource</span></a><span class="tparams">[<span name="Out">Out</span>]</span><span class="result"> extends <a href="SourceModule.html" class="extype" name="akka.stream.impl.SourceModule">SourceModule</a>[<span class="extype" name="akka.stream.impl.SubscriberSource.Out">Out</span>, <span class="extype" name="org.reactivestreams.Subscriber">Subscriber</span>[<span class="extype" name="akka.stream.impl.SubscriberSource.Out">Out</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SubscriberSource[Out]extendsSourceModule[Out,org.reactivestreams.Subscriber[Out]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+Holds a <code>Subscriber</code> representing the input side of the flow.</p><div class="fullcomment"><div class="comment cmt"><p>INTERNAL API
+Holds a <code>Subscriber</code> representing the input side of the flow.
+The <code>Subscriber</code> can later be connected to an upstream <code>Publisher</code>.
+</p></div></div>
+    </li><li name="akka.stream.impl.Throttle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Throttle[T]extendsGraphStages.SimpleLinearGraphStage[T]"></a>
+      <a id="Throttle[T]:Throttle[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Throttle.html"><span class="name">Throttle</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="fusing/GraphStages$$SimpleLinearGraphStage.html" class="extype" name="akka.stream.impl.fusing.GraphStages.SimpleLinearGraphStage">SimpleLinearGraphStage</a>[<span class="extype" name="akka.stream.impl.Throttle.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@Throttle[T]extendsGraphStages.SimpleLinearGraphStage[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.UnfoldResourceSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnfoldResourceSource[T,S]extendsGraphStage[akka.stream.SourceShape[T]]"></a>
+      <a id="UnfoldResourceSource[T,S]:UnfoldResourceSource[T,S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnfoldResourceSource.html"><span class="name">UnfoldResourceSource</span></a><span class="tparams">[<span name="T">T</span>, <span name="S">S</span>]</span><span class="result"> extends <a href="../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../SourceShape.html" class="extype" name="akka.stream.SourceShape">SourceShape</a>[<span class="extype" name="akka.stream.impl.UnfoldResourceSource.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@UnfoldResourceSource[T,S]extendsGraphStage[akka.stream.SourceShape[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.UnfoldResourceSourceAsync" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnfoldResourceSourceAsync[T,S]extendsGraphStage[akka.stream.SourceShape[T]]"></a>
+      <a id="UnfoldResourceSourceAsync[T,S]:UnfoldResourceSourceAsync[T,S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnfoldResourceSourceAsync.html"><span class="name">UnfoldResourceSourceAsync</span></a><span class="tparams">[<span name="T">T</span>, <span name="S">S</span>]</span><span class="result"> extends <a href="../stage/GraphStage.html" class="extype" name="akka.stream.stage.GraphStage">GraphStage</a>[<a href="../SourceShape.html" class="extype" name="akka.stream.SourceShape">SourceShape</a>[<span class="extype" name="akka.stream.impl.UnfoldResourceSourceAsync.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@UnfoldResourceSourceAsync[T,S]extendsGraphStage[akka.stream.SourceShape[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="akka.stream.impl.ActorPublisher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorPublisher"></a>
+      <a id="ActorPublisher:ActorPublisher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ActorPublisher$.html"><span class="name">ActorPublisher</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@ActorPublisher" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.FanIn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FanIn"></a>
+      <a id="FanIn:FanIn"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FanIn$.html"><span class="name">FanIn</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@FanIn" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.FanOut" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FanOut"></a>
+      <a id="FanOut:FanOut"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FanOut$.html"><span class="name">FanOut</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@FanOut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.FlowNames" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FlowNames"></a>
+      <a id="FlowNames:FlowNames"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FlowNames$.html"><span class="name">FlowNames</span></a><span class="result"> extends <a href="../../actor/ExtensionId.html" class="extype" name="akka.actor.ExtensionId">ExtensionId</a>[<a href="FlowNames.html" class="extype" name="akka.stream.impl.FlowNames">FlowNames</a>] with <a href="../../actor/ExtensionIdProvider.html" class="extype" name="akka.actor.ExtensionIdProvider">ExtensionIdProvider</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@FlowNames" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.MaterializerSession" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaterializerSession"></a>
+      <a id="MaterializerSession:MaterializerSession"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MaterializerSession$.html"><span class="name">MaterializerSession</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@MaterializerSession" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INERNAL API
+</p>
+    </li><li name="akka.stream.impl.SeqActorName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SeqActorName"></a>
+      <a id="SeqActorName:SeqActorName"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SeqActorName$.html"><span class="name">SeqActorName</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SeqActorName" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.Stages" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Stages"></a>
+      <a id="Stages:Stages"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Stages$.html"><span class="name">Stages</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@Stages" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.StreamLayout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StreamLayout"></a>
+      <a id="StreamLayout:StreamLayout"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StreamLayout$.html"><span class="name">StreamLayout</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@StreamLayout" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.StreamSubscriptionTimeoutSupport" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StreamSubscriptionTimeoutSupport"></a>
+      <a id="StreamSubscriptionTimeoutSupport:StreamSubscriptionTimeoutSupport"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StreamSubscriptionTimeoutSupport$.html"><span class="name">StreamSubscriptionTimeoutSupport</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@StreamSubscriptionTimeoutSupport" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.StreamSupervisor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StreamSupervisor"></a>
+      <a id="StreamSupervisor:StreamSupervisor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StreamSupervisor$.html"><span class="name">StreamSupervisor</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@StreamSupervisor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API
+</p>
+    </li><li name="akka.stream.impl.SubFlowImpl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubFlowImpl"></a>
+      <a id="SubFlowImpl:SubFlowImpl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SubFlowImpl$.html"><span class="name">SubFlowImpl</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@SubFlowImpl" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.Timers" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Timers"></a>
+      <a id="Timers:Timers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Timers$.html"><span class="name">Timers</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@Timers" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">INTERNAL API</p><div class="fullcomment"><div class="comment cmt"><p>INTERNAL API</p><p>Various stages for controlling timeouts on IO related streams (although not necessarily).</p><p>The common theme among the processing stages here that</p><ul><li>they wait for certain event or events to happen</li><li>they have a timer that may fire before these events</li><li>if the timer fires before the event happens, these stages all fail the stream</li><li>otherwise, these streams do not interfere with the element flow, ordinary completion or failure
+</li></ul></div></div>
+    </li><li name="akka.stream.impl.fusing" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fusing"></a>
+      <a id="fusing:fusing"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="fusing/package.html"><span class="name">fusing</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@fusing" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.stream.impl.io" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="io"></a>
+      <a id="io:io"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="io/package.html"><span class="name">io</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#akka.stream.impl.package@io" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

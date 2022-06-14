@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: casbah-commons
+Implementation-Version: 3.1.1
+Specification-Vendor: org.mongodb
+Specification-Title: casbah-commons
+Implementation-Vendor-Id: org.mongodb
+Specification-Version: 3.1.1
+Implementation-Vendor: org.mongodb
+

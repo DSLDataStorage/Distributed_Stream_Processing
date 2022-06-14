@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/DS_join_step1/src/main/scala/streaming.scala:207:5: not found: value outputPRDD[0m
+[0m[[0m[31merror[0m] [0m[0m				outputPRDD = inputPRDD.join(cachedPRDD)[0m
+[0m[[0m[31merror[0m] [0m[0m				^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/DS_join_step1/src/main/scala/streaming.scala:208:5: not found: value outputPRDD[0m
+[0m[[0m[31merror[0m] [0m[0m				outputPRDD.count()	[0m
+[0m[[0m[31merror[0m] [0m[0m				^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/DS_join_step1/src/main/scala/streaming.scala:209:5: not found: value outputPRDD[0m
+[0m[[0m[31merror[0m] [0m[0m				outputPRDD.foreach(s=>[0m
+[0m[[0m[31merror[0m] [0m[0m				^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

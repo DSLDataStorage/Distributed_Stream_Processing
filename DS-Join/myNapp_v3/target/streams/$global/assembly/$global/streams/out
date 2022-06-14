@@ -1,0 +1,22 @@
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: slf4j-api-1.6.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: casbah-core_2.11-2.8.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: mongo-java-driver-2.13.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: casbah-query_2.11-2.8.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: nscala-time_2.11-1.0.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: casbah-gridfs_2.11-2.8.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: casbah-commons_2.11-2.8.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: joda-time-2.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: joda-convert-1.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-library-2.11.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mCalculate mappings...[0m
+[0m[[0m[0mdebug[0m] [0m[0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging files...[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/joda-time/joda-time/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/joda-time/joda-time/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.joda/joda-convert/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.joda/joda-convert/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.properties' with strategy 'discard'[0m
+[0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.xml' with strategy 'discard'[0m
+[0m[[0m[0minfo[0m] [0m[0mStrategy 'discard' was applied to 7 files (Run the task at debug level to see details)[0m
+[0m[[0m[0minfo[0m] [0m[0mAssembly up to date: /home/user/spark-2.1.0-bin-hadoop2.7/myNapp_v3/target/scala-2.11/myApp-assembly-1.0.jar[0m

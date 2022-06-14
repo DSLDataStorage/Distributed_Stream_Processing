@@ -1,0 +1,278 @@
+import org.apache.spark._
+import org.apache.spark.streaming._
+
+import com.mongodb.casbah.Imports._
+
+object Streaming{	
+	def main(args: Array[String]){
+		val conf = new SparkConf().setMaster("spark://NameNode:7077").setAppName("myApp")
+		val sc = new SparkContext(conf)
+		var flag = 0 // if 0, cachedPRDD == null
+		var streamCount = 1
+		var cachedPRDD: org.apache.spark.rdd.RDD[(String, String)] = null
+		var missPRDD: org.apache.spark.rdd.RDD[(String, String)] = null
+		var LRUKey: org.apache.spark.rdd.RDD[String] = null
+		
+		val ssc = new StreamingContext(sc, Seconds(3))
+		val stream = ssc.socketTextStream("192.168.0.234", 9999)
+		
+		
+		
+		val mongoClient = MongoClient("192.168.0.235", 27020)
+		val db = mongoClient("s1000")
+		val coll = db("part")
+		
+		
+		
+		stream.foreachRDD({ rdd =>
+			val tStart = System.currentTimeMillis
+			
+			println("============== Stream num [" + streamCount + "] =================")
+			streamCount = streamCount + 1
+			//rdd.foreach(println)
+			var inputPRDD = rdd.map{  s=>  var tmp = s.split("\""); (tmp.lift(3).get, s) }
+			println(">> input RDD count: " + inputPRDD.count)
+			//inputPRDD.keys.take(10).foreach(println)
+			var missKey: org.apache.spark.rdd.RDD[String] = null
+			var cachedCount: Int = 0
+
+
+			val missThread = new Thread(new Runnable {
+				def run(){
+					if(flag == 0){
+						missKey = inputPRDD.keys.distinct
+						println(">> cached RDD count: none")
+						println(">> miss RDD count: all")	
+						LRUKey = missKey
+						//flag = 1
+					}
+					else{
+						cachedCount = cachedPRDD.count.toInt
+						println(">> cached RDD count: " + cachedCount)
+						missPRDD = inputPRDD.subtractByKey(cachedPRDD)
+						println(">> miss RDD count: " + missPRDD.count)
+						missKey = missPRDD.keys.distinct
+						LRUKey = LRUKey.subtract(missKey).union(missKey)
+					}
+				}
+			})
+			
+			println(">> start thread")
+			missThread.start
+			
+			println(">> created miss keys: " + missKey.count)
+			
+			var t0 = System.currentTimeMillis
+			
+			println(">> make query")
+			var qList: List[com.mongodb.casbah.commons.Imports.DBObject] = null
+			var count = 0						
+//			var inputQuery = " \"$or\" -> ("
+			missKey.collect.foreach{ s => var tmp = MongoDBObject("partkey" -> s.toInt); if(count == 0){ qList = List(tmp) }else{ qList = qList :+ tmp }; count = count + 1 }
+
+			println(">> query list: " + qList.length)
+			var q = MongoDBObject("$or" -> qList)
+			var documents = coll.find(q)
+			
+			var tmp = Array("a")
+			documents.foreach(s => tmp = tmp:+ s.toString)
+			var mongoRDD = sc.parallelize(tmp.drop(1))
+			var mongoPRDD = mongoRDD.map{ s=> {var tmp=s.split(" "); (tmp.lift(10).get, s) } }
+			//var mongoCount = mongoPRDD.persist.count
+			var mongoCount = mongoPRDD.count
+			println(">> mongoPRDD count: " + mongoCount)
+			var sumCache: Int = cachedCount.toInt + mongoCount.toInt
+
+			//if(sumCache > 10000){
+			if(LRUKey.count > 10000){
+				var subCount = LRUKey.count.toInt - 10000
+				var tmp2 = sc.parallelize(LRUKey.take(subCount)).map(s=>(s,1))
+			
+				cachedPRDD = cachedPRDD.subtractByKey(tmp2)
+				LRUKey = sc.parallelize(LRUKey.collect.drop(subCount))
+			
+			}
+			
+			if(flag == 0){
+				cachedPRDD = mongoPRDD
+			
+			}else{
+				cachedPRDD = cachedPRDD.union(mongoPRDD)
+			}
+			/* persist, partitioning */
+			
+			//cachedCount = cachedPRDD.persist.count
+			println(">> cachedPRDD count: " + cachedPRDD.persist.count)
+			
+			/*
+			if(cachedCount > 10000){
+				cachedPRDD.collect.
+				cachedPRDD.collect.drop(cachedCount-10000)
+				println(">> cachedPRDD count: " + cachedPRDD.count)
+			}*/
+			
+			
+			var joinedPRDD_hit = inputPRDD.join(cachedPRDD)
+			println(">> joinedPRDD_hit count: " + joinedPRDD_hit.count)
+			//println(">> joined: " + joinedPRDD_hit.first)
+			
+			if(flag == 1){
+				var joinedPRDD_miss = missPRDD.join(mongoPRDD)
+				println(">> joinedPRDD_miss count: " + joinedPRDD_miss.count)
+			}
+			flag = 1
+						
+			var t1 = System.currentTimeMillis
+			println(">> TIME: " + (t1 - t0) + " ms")
+			
+			val tEnd = System.currentTimeMillis
+			println(">> Whole Time: " + (tEnd - tStart) + " ms")
+		})
+		
+		
+		
+		
+		
+		
+		/*
+		var inputKey: org.apache.spark.rdd.RDD[String] = null
+		inputPRDD.foreachRDD( rdd =>
+			inputKey = rdd.keys
+		)
+		*/
+		
+		/*
+		var tmp: Array[String] = null
+		if(flag == 0) {
+			inputPRDD.foreachRDD( rdd =>
+				rdd.foreach( s => tmp = tmp :+ s.toString)
+			)
+		}*/
+		
+		
+/*    
+		val mongoClient = MongoClient("localhost", 27017)
+		//val db = mongoClient("zipf")
+		val db = mongoClient("zipf")
+		var coll = db("lineitem_1")
+		//val q1 = MongoDBObject("partkey" -> 1)
+		var documents = coll.find()
+		
+		//documents.foreach(println)
+		println("stream1: " + documents.count)
+		
+		var i = 1
+		//maxI = inputKey.count / 190 + 2
+		var maxI = 100
+		
+		val mongoClient2 = MongoClient("192.168.0.235", 27020)
+		val db2 = mongoClient2("s1000")
+		val coll2 = db2("part")
+		
+		
+		var tmp = Array("a")
+		documents.foreach(s => tmp = tmp:+ s.toString)
+		var inputRDD = sc.parallelize(tmp.drop(1))
+		var inputPRDD = inputRDD.map{ s=> {var tmp=s.split(" "); (tmp.lift(14).get, s) } }
+		var tmp1 = inputPRDD
+		var inputKey = inputPRDD.keys.distinct
+		
+		var qList: List[com.mongodb.casbah.commons.Imports.DBObject] = null
+		var count = 0
+		
+		
+		var t0 = System.currentTimeMillis
+		//while
+		var inputQuery = " \"$or\" -> ("			
+		inputKey.collect.foreach{ s => var tmp = MongoDBObject("partkey" -> s.toInt); if(count == 0){ qList = List(tmp) }else{ qList = qList :+ tmp }; count = count + 1 }
+		var t1 = System.currentTimeMillis
+		println("make query: " + (t1 - t0) + " ms")
+		
+		
+		t0 = System.currentTimeMillis
+		println(qList.length)
+		var q2 = MongoDBObject("$or" -> qList)
+			//println(q2)
+		documents = coll2.find(q2)
+		
+		tmp = Array("a")
+		documents.foreach(s => tmp = tmp:+ s.toString)
+		var mongoRDD = sc.parallelize(tmp.drop(1))
+		var mongoPRDD = mongoRDD.map{ s=> {var tmp=s.split(" "); (tmp.lift(10).get, s) } }
+		
+			
+		//}
+		
+				
+		//println("mongoRDD count: " + documents.count)
+		t1 = System.currentTimeMillis
+		println("mongo -> RDD " + (t1 - t0) + " ms")
+		
+		// input RDD
+		coll = db("lineitem_2")
+		documents = coll.find()
+		//println("stream2: " + documents.count)
+		
+		
+		tmp = Array("a")
+		documents.foreach(s => tmp = tmp:+ s.toString)
+		inputRDD = sc.parallelize(tmp.drop(1))
+		inputPRDD = inputRDD.map{ s=> {var tmp=s.split(" "); (tmp.lift(14).get, s) } }
+		var tmp2 = inputPRDD
+		inputKey = inputPRDD.keys.distinct
+		
+		qList = null
+		count = 0
+		
+		val cachedPRDD = mongoPRDD
+		//println("cachedRDD: " + cachedPRDD.count)
+		//println(cachedPRDD.first)
+		//println(inputPRDD.first)
+		val newRDD = inputPRDD.subtractByKey(cachedPRDD)
+		//println("newRDD: " + newRDD.count)
+		
+		t0 = System.currentTimeMillis
+		val joinedRDD = inputPRDD.join(cachedPRDD)
+		println("joinedRDD: " + joinedRDD.count)
+		val unionRDD = inputPRDD.union(newRDD)
+		println("unionRDD: " + unionRDD.count)
+		t1 = System.currentTimeMillis
+		println("join: " + (t1 - t0) + " ms")
+		
+		t0 = System.currentTimeMillis
+		var a = tmp1.join(cachedPRDD)
+		var b = tmp2.join(cachedPRDD)
+		var c = a.union(b)
+		//var last = tmp1.join(cachedPRDD).union(tmp2.join(cachedPRDD))
+		//println("last count: " + last.count)
+		
+		c.persist
+		println("last count: " + c.count)
+		
+		t1 = System.currentTimeMillis
+		println("time: " + (t1 - t0) + " ms")
+		c.unpersist()
+*/
+
+		/*
+		var t0 = System.currentTimeMillis
+		var t1 = System.currentTimeMillis
+		println((t1 - t0) + " ms")
+		*/
+		
+/*		val ssc = new StreamingContext(conf, Seconds(1))
+
+		val lines = ssc.socketTextStream("localhost", 9999)
+		val words = lines.flatMap(_.split(" "))
+		val pairs = words.map(word => (word, 1))
+		val wordCounts = pairs.reduceByKey(_ + _)
+		wordCounts.print()
+
+		ssc.start()
+		ssc.awaitTermination()
+*/
+
+		ssc.start()
+		ssc.awaitTermination()
+	}
+}

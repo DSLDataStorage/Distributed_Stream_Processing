@@ -1,0 +1,1733 @@
+cogroup O
+============== Stream num [1] =================
+    [T_1] cogroup-cache-count: 3 ms
+    [T_2] create missKey (subt): 696 ms
+    [T_4] create query + get data + create new RDD: 1571 ms
+    [T_5] create cachedPRDD: 541 ms
+    >> joined_miss count: 16000
+    [T_6] join - miss data: 637 ms
+    >> output data: 16000
+    [T_7] union output data: 78 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 11 ms
+    [T_9] stream: 3205 ms
+    >> streaming data all: 16000
+    [time] total: 3205 ms
+    >> throughput: 4992
+============== Stream num [2] =================
+    [T_1] cogroup-cache-count: 558 ms
+    [T_2] create missKey (subt): 108 ms
+    >> joined Hit count: 7813
+    [T_3] join-hit data: 173 ms
+    [T_4] create query + get data + create new RDD: 1287 ms
+    [T_5] create cachedPRDD: 297 ms
+    >> joined_miss count: 8187
+    [T_6] join - miss data: 344 ms
+    >> output data: 16000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 2485 ms
+    >> streaming data all: 32000
+    [time] total: 5690 ms
+    >> throughput: 5623
+============== Stream num [3] =================
+    [T_1] cogroup-cache-count: 282 ms
+    [T_2] create missKey (subt): 62 ms
+    >> joined Hit count: 8176
+    [T_3] join-hit data: 123 ms
+    [T_4] create query + get data + create new RDD: 1068 ms
+    [T_5] create cachedPRDD: 225 ms
+    >> joined_miss count: 7824
+    [T_6] join - miss data: 255 ms
+    >> output data: 16000
+    [T_7] union output data: 71 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 11 ms
+    [T_9] stream: 1904 ms
+    >> streaming data all: 48000
+    [time] total: 7594 ms
+    >> throughput: 6320
+============== Stream num [4] =================
+    [T_1] cogroup-cache-count: 302 ms
+    [T_2] create missKey (subt): 40 ms
+    >> joined Hit count: 8459
+    [T_3] join-hit data: 84 ms
+    [T_4] create query + get data + create new RDD: 959 ms
+    >> joined_miss count: 7541
+    [T_6] join - miss data: 221 ms
+    [T_5] create cachedPRDD: 256 ms
+    >> output data: 16000
+    [T_7] union output data: 53 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 11 ms
+    [T_9] stream: 1740 ms
+    >> streaming data all: 64000
+    [time] total: 9334 ms
+    >> throughput: 6856
+============== Stream num [5] =================
+    [T_1] cogroup-cache-count: 228 ms
+    [T_2] create missKey (subt): 32 ms
+    >> joined Hit count: 8926
+    [T_3] join-hit data: 94 ms
+    [T_4] create query + get data + create new RDD: 985 ms
+    [T_5] create cachedPRDD: 120 ms
+    >> joined_miss count: 7074
+    [T_6] join - miss data: 179 ms
+    >> output data: 16000
+    [T_7] union output data: 22 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1602 ms
+    >> streaming data all: 80000
+    [time] total: 10936 ms
+    >> throughput: 7315
+============== Stream num [6] =================
+    [T_1] cogroup-cache-count: 200 ms
+    [T_2] create missKey (subt): 39 ms
+    >> joined Hit count: 9067
+    [T_3] join-hit data: 130 ms
+    [T_4] create query + get data + create new RDD: 878 ms
+    [T_5] create cachedPRDD: 119 ms
+    >> joined_miss count: 6933
+    [T_6] join - miss data: 204 ms
+    >> output data: 16000
+    [T_7] union output data: 22 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1529 ms
+    >> streaming data all: 96000
+    [time] total: 12465 ms
+    >> throughput: 7701
+============== Stream num [7] =================
+    [T_1] cogroup-cache-count: 152 ms
+    [T_2] create missKey (subt): 45 ms
+    >> joined Hit count: 9279
+    [T_3] join-hit data: 85 ms
+    [T_4] create query + get data + create new RDD: 771 ms
+    [T_5] create cachedPRDD: 226 ms
+    >> joined_miss count: 6721
+    [T_6] join - miss data: 274 ms
+    >> output data: 16000
+    [T_7] union output data: 44 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 1391 ms
+    >> streaming data all: 112000
+    [time] total: 13856 ms
+    >> throughput: 8083
+============== Stream num [8] =================
+    [T_1] cogroup-cache-count: 183 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 9497
+    [T_3] join-hit data: 111 ms
+    [T_4] create query + get data + create new RDD: 787 ms
+    [T_5] create cachedPRDD: 166 ms
+    >> joined_miss count: 6503
+    [T_6] join - miss data: 211 ms
+    >> output data: 16000
+    [T_7] union output data: 41 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 1350 ms
+    >> streaming data all: 128000
+    [time] total: 15206 ms
+    >> throughput: 8417
+============== Stream num [9] =================
+    [T_1] cogroup-cache-count: 165 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 9609
+    [T_3] join-hit data: 75 ms
+    [T_4] create query + get data + create new RDD: 769 ms
+    [T_5] create cachedPRDD: 183 ms
+    >> joined_miss count: 6391
+    [T_6] join - miss data: 214 ms
+    >> output data: 16000
+    [T_7] union output data: 19 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 1301 ms
+    >> streaming data all: 144000
+    [time] total: 16507 ms
+    >> throughput: 8723
+============== Stream num [10] =================
+    [T_1] cogroup-cache-count: 178 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 9814
+    [T_3] join-hit data: 59 ms
+    [T_4] create query + get data + create new RDD: 656 ms
+    [T_5] create cachedPRDD: 131 ms
+    >> joined_miss count: 6186
+    [T_6] join - miss data: 162 ms
+    >> output data: 16000
+    [T_7] union output data: 32 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 1138 ms
+    >> streaming data all: 160000
+    [time] total: 17645 ms
+    >> throughput: 9067
+============== Stream num [11] =================
+    [T_1] cogroup-cache-count: 151 ms
+    [T_2] create missKey (subt): 49 ms
+    >> joined Hit count: 9965
+    [T_3] join-hit data: 76 ms
+    [T_4] create query + get data + create new RDD: 625 ms
+    [T_5] create cachedPRDD: 193 ms
+    >> joined_miss count: 6035
+    [T_6] join - miss data: 223 ms
+    >> output data: 16000
+    [T_7] union output data: 35 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 1158 ms
+    >> streaming data all: 176000
+    [time] total: 18803 ms
+    >> throughput: 9360
+============== Stream num [12] =================
+    [T_1] cogroup-cache-count: 170 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 10070
+    [T_3] join-hit data: 68 ms
+    [T_4] create query + get data + create new RDD: 604 ms
+    [T_5] create cachedPRDD: 178 ms
+    >> joined_miss count: 5930
+    [T_6] join - miss data: 189 ms
+    >> output data: 16000
+    [T_7] union output data: 40 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 8 ms
+    [T_9] stream: 1133 ms
+    >> streaming data all: 192000
+    [time] total: 19936 ms
+    >> throughput: 9630
+============== Stream num [13] =================
+    [T_1] cogroup-cache-count: 241 ms
+    [T_2] create missKey (subt): 45 ms
+    >> joined Hit count: 10164
+    [T_3] join-hit data: 83 ms
+    [T_4] create query + get data + create new RDD: 709 ms
+    [T_5] create cachedPRDD: 113 ms
+    >> joined_miss count: 5836
+    [T_6] join - miss data: 137 ms
+    >> output data: 16000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1240 ms
+    >> streaming data all: 208000
+    [time] total: 21176 ms
+    >> throughput: 9822
+============== Stream num [14] =================
+    [T_1] cogroup-cache-count: 188 ms
+    [T_2] create missKey (subt): 108 ms
+    >> joined Hit count: 10136
+    [T_3] join-hit data: 160 ms
+    [T_4] create query + get data + create new RDD: 581 ms
+    [T_5] create cachedPRDD: 142 ms
+    >> joined_miss count: 5864
+    [T_6] join - miss data: 161 ms
+    >> output data: 16000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 1197 ms
+    >> streaming data all: 224000
+    [time] total: 22373 ms
+    >> throughput: 10012
+============== Stream num [15] =================
+    [T_1] cogroup-cache-count: 180 ms
+    [T_2] create missKey (subt): 53 ms
+    >> joined Hit count: 10231
+    [T_3] join-hit data: 134 ms
+    [T_4] create query + get data + create new RDD: 559 ms
+    [T_5] create cachedPRDD: 160 ms
+    >> joined_miss count: 5769
+    [T_6] join - miss data: 182 ms
+    >> output data: 16000
+    [T_7] union output data: 35 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 8 ms
+    [T_9] stream: 1171 ms
+    >> streaming data all: 240000
+    [time] total: 23544 ms
+    >> throughput: 10193
+============== Stream num [16] =================
+    [T_1] cogroup-cache-count: 185 ms
+    [T_2] create missKey (subt): 63 ms
+    >> joined Hit count: 10296
+    [T_3] join-hit data: 142 ms
+    [T_4] create query + get data + create new RDD: 575 ms
+    >> joined_miss count: 5704
+    [T_6] join - miss data: 219 ms
+    [T_5] create cachedPRDD: 230 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 1222 ms
+    >> streaming data all: 256000
+    [time] total: 24766 ms
+    >> throughput: 10336
+============== Stream num [17] =================
+    [T_1] cogroup-cache-count: 207 ms
+    [T_2] create missKey (subt): 26 ms
+    >> joined Hit count: 10386
+    [T_3] join-hit data: 103 ms
+    [T_4] create query + get data + create new RDD: 546 ms
+    [T_5] create cachedPRDD: 138 ms
+    >> joined_miss count: 5614
+    [T_6] join - miss data: 204 ms
+    >> output data: 16000
+    [T_7] union output data: 33 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1151 ms
+    >> streaming data all: 272000
+    [time] total: 25917 ms
+    >> throughput: 10495
+============== Stream num [18] =================
+    [T_1] cogroup-cache-count: 168 ms
+    [T_2] create missKey (subt): 36 ms
+    >> joined Hit count: 10496
+    [T_3] join-hit data: 79 ms
+    [T_4] create query + get data + create new RDD: 662 ms
+    [T_5] create cachedPRDD: 134 ms
+    >> joined_miss count: 5504
+    [T_6] join - miss data: 218 ms
+    >> output data: 16000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1176 ms
+    >> streaming data all: 288000
+    [time] total: 27093 ms
+    >> throughput: 10630
+============== Stream num [19] =================
+    [T_1] cogroup-cache-count: 204 ms
+    [T_2] create missKey (subt): 26 ms
+    >> joined Hit count: 10555
+    [T_3] join-hit data: 80 ms
+    [T_4] create query + get data + create new RDD: 513 ms
+    [T_5] create cachedPRDD: 152 ms
+    >> joined_miss count: 5445
+    [T_6] join - miss data: 193 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 8 ms
+    [T_9] stream: 1052 ms
+    >> streaming data all: 304000
+    [time] total: 28145 ms
+    >> throughput: 10801
+============== Stream num [20] =================
+    [T_1] cogroup-cache-count: 174 ms
+    [T_2] create missKey (subt): 55 ms
+    >> joined Hit count: 10651
+    [T_3] join-hit data: 131 ms
+    [T_4] create query + get data + create new RDD: 535 ms
+    [T_5] create cachedPRDD: 127 ms
+    >> joined_miss count: 5349
+    [T_6] join - miss data: 152 ms
+    >> output data: 16000
+    [T_7] union output data: 62 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 8 ms
+    [T_9] stream: 1121 ms
+    >> streaming data all: 320000
+    [time] total: 29266 ms
+    >> throughput: 10934
+============== Stream num [21] =================
+    [T_1] cogroup-cache-count: 194 ms
+    [T_2] create missKey (subt): 38 ms
+    >> joined Hit count: 10723
+    [T_3] join-hit data: 103 ms
+    [T_4] create query + get data + create new RDD: 544 ms
+    [T_5] create cachedPRDD: 169 ms
+    >> joined_miss count: 5277
+    [T_6] join - miss data: 216 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1136 ms
+    >> streaming data all: 336000
+    [time] total: 30402 ms
+    >> throughput: 11051
+============== Stream num [22] =================
+    [T_1] cogroup-cache-count: 137 ms
+    [T_2] create missKey (subt): 29 ms
+    >> joined Hit count: 10646
+    [T_3] join-hit data: 81 ms
+    [T_4] create query + get data + create new RDD: 628 ms
+    [T_5] create cachedPRDD: 145 ms
+    >> joined_miss count: 5354
+    [T_6] join - miss data: 163 ms
+    >> output data: 16000
+    [T_7] union output data: 41 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 18 ms
+    [T_9] stream: 1129 ms
+    >> streaming data all: 352000
+    [time] total: 31531 ms
+    >> throughput: 11163
+============== Stream num [23] =================
+    [T_1] cogroup-cache-count: 161 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 10801
+    [T_3] join-hit data: 105 ms
+    [T_4] create query + get data + create new RDD: 483 ms
+    [T_5] create cachedPRDD: 116 ms
+    >> joined_miss count: 5199
+    [T_6] join - miss data: 198 ms
+    >> output data: 16000
+    [T_7] union output data: 50 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1051 ms
+    >> streaming data all: 368000
+    [time] total: 32582 ms
+    >> throughput: 11294
+============== Stream num [24] =================
+    [T_1] cogroup-cache-count: 162 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 10860
+    [T_3] join-hit data: 83 ms
+    [T_4] create query + get data + create new RDD: 446 ms
+    [T_5] create cachedPRDD: 146 ms
+    >> joined_miss count: 5140
+    [T_6] join - miss data: 158 ms
+    >> output data: 16000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 903 ms
+    >> streaming data all: 384000
+    [time] total: 33485 ms
+    >> throughput: 11467
+============== Stream num [25] =================
+    [T_1] cogroup-cache-count: 173 ms
+    [T_2] create missKey (subt): 35 ms
+    >> joined Hit count: 10856
+    [T_3] join-hit data: 78 ms
+    [T_4] create query + get data + create new RDD: 443 ms
+    [T_5] create cachedPRDD: 143 ms
+    >> joined_miss count: 5144
+    [T_6] join - miss data: 165 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 933 ms
+    >> streaming data all: 400000
+    [time] total: 34418 ms
+    >> throughput: 11621
+============== Stream num [26] =================
+    [T_1] cogroup-cache-count: 184 ms
+    [T_2] create missKey (subt): 30 ms
+    >> joined Hit count: 10837
+    [T_3] join-hit data: 81 ms
+    [T_4] create query + get data + create new RDD: 463 ms
+    >> joined_miss count: 5163
+    [T_6] join - miss data: 173 ms
+    [T_5] create cachedPRDD: 231 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1010 ms
+    >> streaming data all: 416000
+    [time] total: 35428 ms
+    >> throughput: 11742
+============== Stream num [27] =================
+    [T_1] cogroup-cache-count: 192 ms
+    [T_2] create missKey (subt): 29 ms
+    >> joined Hit count: 10764
+    [T_3] join-hit data: 59 ms
+    [T_4] create query + get data + create new RDD: 462 ms
+    [T_5] create cachedPRDD: 160 ms
+    >> joined_miss count: 5236
+    [T_6] join - miss data: 190 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 969 ms
+    >> streaming data all: 432000
+    [time] total: 36397 ms
+    >> throughput: 11869
+============== Stream num [28] =================
+    [T_1] cogroup-cache-count: 171 ms
+    [T_2] create missKey (subt): 29 ms
+    >> joined Hit count: 10959
+    [T_3] join-hit data: 69 ms
+    [T_4] create query + get data + create new RDD: 437 ms
+    [T_5] create cachedPRDD: 148 ms
+    >> joined_miss count: 5041
+    [T_6] join - miss data: 173 ms
+    >> output data: 16000
+    [T_7] union output data: 41 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 921 ms
+    >> streaming data all: 448000
+    [time] total: 37318 ms
+    >> throughput: 12004
+============== Stream num [29] =================
+    [T_1] cogroup-cache-count: 168 ms
+    [T_2] create missKey (subt): 24 ms
+    >> joined Hit count: 10984
+    [T_3] join-hit data: 50 ms
+    [T_4] create query + get data + create new RDD: 437 ms
+    [T_5] create cachedPRDD: 121 ms
+    >> joined_miss count: 5016
+    [T_6] join - miss data: 228 ms
+    >> output data: 16000
+    [T_7] union output data: 39 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 974 ms
+    >> streaming data all: 464000
+    [time] total: 38292 ms
+    >> throughput: 12117
+============== Stream num [30] =================
+    [T_1] cogroup-cache-count: 192 ms
+    [T_2] create missKey (subt): 23 ms
+    >> joined Hit count: 11014
+    [T_3] join-hit data: 57 ms
+    [T_4] create query + get data + create new RDD: 441 ms
+    [T_5] create cachedPRDD: 155 ms
+    >> joined_miss count: 4986
+    [T_6] join - miss data: 172 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 932 ms
+    >> streaming data all: 480000
+    [time] total: 39224 ms
+    >> throughput: 12237
+============== Stream num [31] =================
+    [T_1] cogroup-cache-count: 197 ms
+    [T_2] create missKey (subt): 47 ms
+    >> joined Hit count: 11046
+    [T_3] join-hit data: 85 ms
+    [T_4] create query + get data + create new RDD: 428 ms
+    [T_5] create cachedPRDD: 128 ms
+    >> joined_miss count: 4954
+    [T_6] join - miss data: 153 ms
+    >> output data: 16000
+    [T_7] union output data: 18 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 911 ms
+    >> streaming data all: 496000
+    [time] total: 40135 ms
+    >> throughput: 12358
+============== Stream num [32] =================
+    [T_1] cogroup-cache-count: 250 ms
+    [T_2] create missKey (subt): 47 ms
+    >> joined Hit count: 11136
+    [T_3] join-hit data: 99 ms
+    [T_4] create query + get data + create new RDD: 404 ms
+    [T_5] create cachedPRDD: 199 ms
+    >> joined_miss count: 4864
+    [T_6] join - miss data: 336 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1128 ms
+    >> streaming data all: 512000
+    [time] total: 41263 ms
+    >> throughput: 12408
+============== Stream num [33] =================
+    [T_1] cogroup-cache-count: 158 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 11099
+    [T_3] join-hit data: 107 ms
+    [T_4] create query + get data + create new RDD: 429 ms
+    [T_5] create cachedPRDD: 124 ms
+    >> joined_miss count: 4901
+    [T_6] join - miss data: 204 ms
+    >> output data: 16000
+    [T_7] union output data: 35 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 977 ms
+    >> streaming data all: 528000
+    [time] total: 42240 ms
+    >> throughput: 12500
+============== Stream num [34] =================
+    [T_1] cogroup-cache-count: 187 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 11105
+    [T_3] join-hit data: 79 ms
+    [T_4] create query + get data + create new RDD: 431 ms
+    [T_5] create cachedPRDD: 135 ms
+    >> joined_miss count: 4895
+    [T_6] join - miss data: 160 ms
+    >> output data: 16000
+    [T_7] union output data: 36 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 921 ms
+    >> streaming data all: 544000
+    [time] total: 43161 ms
+    >> throughput: 12603
+============== Stream num [35] =================
+    [T_1] cogroup-cache-count: 185 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 11216
+    [T_3] join-hit data: 118 ms
+    [T_4] create query + get data + create new RDD: 520 ms
+    [T_5] create cachedPRDD: 149 ms
+    >> joined_miss count: 4784
+    [T_6] join - miss data: 165 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 12 ms
+    [T_9] stream: 1091 ms
+    >> streaming data all: 560000
+    [time] total: 44252 ms
+    >> throughput: 12654
+============== Stream num [36] =================
+    [T_1] cogroup-cache-count: 180 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 11191
+    [T_3] join-hit data: 61 ms
+    [T_4] create query + get data + create new RDD: 403 ms
+    [T_5] create cachedPRDD: 155 ms
+    >> joined_miss count: 4809
+    [T_6] join - miss data: 179 ms
+    >> output data: 16000
+    [T_7] union output data: 38 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 890 ms
+    >> streaming data all: 576000
+    [time] total: 45142 ms
+    >> throughput: 12759
+============== Stream num [37] =================
+    [T_1] cogroup-cache-count: 147 ms
+    [T_2] create missKey (subt): 22 ms
+    >> joined Hit count: 11251
+    [T_3] join-hit data: 41 ms
+    [T_4] create query + get data + create new RDD: 376 ms
+    [T_5] create cachedPRDD: 123 ms
+    >> joined_miss count: 4749
+    [T_6] join - miss data: 207 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 877 ms
+    >> streaming data all: 592000
+    [time] total: 46019 ms
+    >> throughput: 12864
+============== Stream num [38] =================
+    [T_1] cogroup-cache-count: 161 ms
+    [T_2] create missKey (subt): 49 ms
+    >> joined Hit count: 11275
+    [T_3] join-hit data: 78 ms
+    [T_4] create query + get data + create new RDD: 384 ms
+    >> joined_miss count: 4725
+    [T_6] join - miss data: 139 ms
+    [T_5] create cachedPRDD: 167 ms
+    >> output data: 16000
+    [T_7] union output data: 21 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 832 ms
+    >> streaming data all: 608000
+    [time] total: 46851 ms
+    >> throughput: 12977
+============== Stream num [39] =================
+    [T_1] cogroup-cache-count: 192 ms
+    [T_2] create missKey (subt): 23 ms
+    >> joined Hit count: 11231
+    [T_3] join-hit data: 63 ms
+    [T_4] create query + get data + create new RDD: 399 ms
+    >> joined_miss count: 4769
+    [T_6] join - miss data: 168 ms
+    [T_5] create cachedPRDD: 199 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 8 ms
+    [T_9] stream: 929 ms
+    >> streaming data all: 624000
+    [time] total: 47780 ms
+    >> throughput: 13059
+============== Stream num [40] =================
+    [T_1] cogroup-cache-count: 181 ms
+    [T_2] create missKey (subt): 22 ms
+    >> joined Hit count: 11385
+    [T_3] join-hit data: 47 ms
+    [T_4] create query + get data + create new RDD: 499 ms
+    [T_5] create cachedPRDD: 176 ms
+    >> joined_miss count: 4615
+    [T_6] join - miss data: 256 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1052 ms
+    >> streaming data all: 640000
+    [time] total: 48832 ms
+    >> throughput: 13106
+============== Stream num [41] =================
+    [T_1] cogroup-cache-count: 162 ms
+    [T_2] create missKey (subt): 22 ms
+    >> joined Hit count: 11317
+    [T_3] join-hit data: 44 ms
+    [T_4] create query + get data + create new RDD: 391 ms
+    [T_5] create cachedPRDD: 224 ms
+    >> joined_miss count: 4683
+    [T_6] join - miss data: 316 ms
+    >> output data: 16000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 980 ms
+    >> streaming data all: 656000
+    [time] total: 49812 ms
+    >> throughput: 13169
+============== Stream num [42] =================
+    [T_1] cogroup-cache-count: 179 ms
+    [T_2] create missKey (subt): 29 ms
+    >> joined Hit count: 11308
+    [T_3] join-hit data: 117 ms
+    [T_4] create query + get data + create new RDD: 395 ms
+    [T_5] create cachedPRDD: 130 ms
+    >> joined_miss count: 4692
+    [T_6] join - miss data: 150 ms
+    >> output data: 16000
+    [T_7] union output data: 42 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 930 ms
+    >> streaming data all: 672000
+    [time] total: 50742 ms
+    >> throughput: 13243
+============== Stream num [43] =================
+    [T_1] cogroup-cache-count: 179 ms
+    [T_2] create missKey (subt): 43 ms
+    >> joined Hit count: 11311
+    [T_3] join-hit data: 124 ms
+    [T_4] create query + get data + create new RDD: 388 ms
+    [T_5] create cachedPRDD: 158 ms
+    >> joined_miss count: 4689
+    [T_6] join - miss data: 184 ms
+    >> output data: 16000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 9 ms
+    [T_9] stream: 949 ms
+    >> streaming data all: 688000
+    [time] total: 51691 ms
+    >> throughput: 13309
+============== Stream num [44] =================
+    [T_1] cogroup-cache-count: 178 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 11431
+    [T_3] join-hit data: 56 ms
+    [T_4] create query + get data + create new RDD: 370 ms
+    >> joined_miss count: 4569
+    [T_6] join - miss data: 155 ms
+    [T_5] create cachedPRDD: 156 ms
+    >> output data: 16000
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 831 ms
+    >> streaming data all: 704000
+    [time] total: 52522 ms
+    >> throughput: 13403
+============== Stream num [45] =================
+    [T_1] cogroup-cache-count: 196 ms
+    [T_2] create missKey (subt): 34 ms
+    >> joined Hit count: 11296
+    [T_3] join-hit data: 115 ms
+    [T_4] create query + get data + create new RDD: 382 ms
+    >> joined_miss count: 4704
+    [T_6] join - miss data: 288 ms
+    [T_5] create cachedPRDD: 316 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1082 ms
+    >> streaming data all: 720000
+    [time] total: 53604 ms
+    >> throughput: 13431
+============== Stream num [46] =================
+    [T_1] cogroup-cache-count: 167 ms
+    [T_2] create missKey (subt): 21 ms
+    >> joined Hit count: 11408
+    [T_3] join-hit data: 44 ms
+    [T_4] create query + get data + create new RDD: 368 ms
+    [T_5] create cachedPRDD: 151 ms
+    >> joined_miss count: 4592
+    [T_6] join - miss data: 220 ms
+    >> output data: 16000
+    [T_7] union output data: 33 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 883 ms
+    >> streaming data all: 736000
+    [time] total: 54487 ms
+    >> throughput: 13507
+============== Stream num [47] =================
+    [T_1] cogroup-cache-count: 163 ms
+    [T_2] create missKey (subt): 34 ms
+    >> joined Hit count: 11362
+    [T_3] join-hit data: 102 ms
+    [T_4] create query + get data + create new RDD: 494 ms
+    [T_5] create cachedPRDD: 143 ms
+    >> joined_miss count: 4638
+    [T_6] join - miss data: 194 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1026 ms
+    >> streaming data all: 752000
+    [time] total: 55513 ms
+    >> throughput: 13546
+============== Stream num [48] =================
+    [T_1] cogroup-cache-count: 264 ms
+    [T_2] create missKey (subt): 37 ms
+    >> joined Hit count: 11462
+    [T_3] join-hit data: 90 ms
+    [T_4] create query + get data + create new RDD: 350 ms
+    [T_5] create cachedPRDD: 177 ms
+    >> joined_miss count: 4538
+    [T_6] join - miss data: 195 ms
+    >> output data: 16000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 963 ms
+    >> streaming data all: 768000
+    [time] total: 56476 ms
+    >> throughput: 13598
+============== Stream num [49] =================
+    [T_1] cogroup-cache-count: 185 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 11412
+    [T_3] join-hit data: 79 ms
+    [T_4] create query + get data + create new RDD: 389 ms
+    [T_5] create cachedPRDD: 151 ms
+    >> joined_miss count: 4588
+    [T_6] join - miss data: 165 ms
+    >> output data: 16000
+    [T_7] union output data: 51 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 890 ms
+    >> streaming data all: 784000
+    [time] total: 57366 ms
+    >> throughput: 13666
+============== Stream num [50] =================
+    [T_1] cogroup-cache-count: 147 ms
+    [T_2] create missKey (subt): 25 ms
+    >> joined Hit count: 11471
+    [T_3] join-hit data: 45 ms
+    [T_4] create query + get data + create new RDD: 350 ms
+    [T_5] create cachedPRDD: 181 ms
+    >> joined_miss count: 4529
+    [T_6] join - miss data: 205 ms
+    >> output data: 16000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 810 ms
+    >> streaming data all: 800000
+    [time] total: 58176 ms
+    >> throughput: 13751
+============== Stream num [51] =================
+    [T_1] cogroup-cache-count: 197 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 11450
+    [T_3] join-hit data: 74 ms
+    [T_4] create query + get data + create new RDD: 351 ms
+    >> joined_miss count: 4550
+    [T_6] join - miss data: 133 ms
+    [T_5] create cachedPRDD: 171 ms
+    >> output data: 16000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 821 ms
+    >> streaming data all: 816000
+    [time] total: 58997 ms
+    >> throughput: 13831
+============== Stream num [52] =================
+    [T_1] cogroup-cache-count: 285 ms
+    [T_2] create missKey (subt): 47 ms
+    >> joined Hit count: 11453
+    [T_3] join-hit data: 91 ms
+    [T_4] create query + get data + create new RDD: 493 ms
+    [T_5] create cachedPRDD: 179 ms
+    >> joined_miss count: 4547
+    [T_6] join - miss data: 199 ms
+    >> output data: 16000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1122 ms
+    >> streaming data all: 832000
+    [time] total: 60119 ms
+    >> throughput: 13839
+============== Stream num [53] =================
+    [T_1] cogroup-cache-count: 251 ms
+    [T_2] create missKey (subt): 34 ms
+    >> joined Hit count: 11469
+    [T_3] join-hit data: 88 ms
+    [T_4] create query + get data + create new RDD: 481 ms
+    [T_5] create cachedPRDD: 155 ms
+    >> joined_miss count: 4531
+    [T_6] join - miss data: 167 ms
+    >> output data: 16000
+    [T_7] union output data: 28 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1016 ms
+    >> streaming data all: 848000
+    [time] total: 61135 ms
+    >> throughput: 13870
+============== Stream num [54] =================
+    [T_1] cogroup-cache-count: 195 ms
+    [T_2] create missKey (subt): 37 ms
+    >> joined Hit count: 11547
+    [T_3] join-hit data: 68 ms
+    [T_4] create query + get data + create new RDD: 341 ms
+    >> joined_miss count: 4453
+    [T_6] join - miss data: 156 ms
+    [T_5] create cachedPRDD: 226 ms
+    >> output data: 16000
+    [T_7] union output data: 39 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 888 ms
+    >> streaming data all: 864000
+    [time] total: 62023 ms
+    >> throughput: 13930
+============== Stream num [55] =================
+    [T_1] cogroup-cache-count: 212 ms
+    [T_2] create missKey (subt): 73 ms
+    >> joined Hit count: 11485
+    [T_3] join-hit data: 110 ms
+    [T_4] create query + get data + create new RDD: 485 ms
+    [T_5] create cachedPRDD: 197 ms
+    >> joined_miss count: 4515
+    [T_6] join - miss data: 218 ms
+    >> output data: 16000
+    [T_7] union output data: 37 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 1093 ms
+    >> streaming data all: 880000
+    [time] total: 63116 ms
+    >> throughput: 13942
+============== Stream num [56] =================
+    [T_1] cogroup-cache-count: 238 ms
+    [T_2] create missKey (subt): 58 ms
+    >> joined Hit count: 11553
+    [T_3] join-hit data: 127 ms
+    [T_4] create query + get data + create new RDD: 331 ms
+    >> joined_miss count: 4447
+    [T_6] join - miss data: 281 ms
+    [T_5] create cachedPRDD: 306 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1069 ms
+    >> streaming data all: 896000
+    [time] total: 64185 ms
+    >> throughput: 13959
+============== Stream num [57] =================
+    [T_1] cogroup-cache-count: 153 ms
+    [T_2] create missKey (subt): 31 ms
+    >> joined Hit count: 11562
+    [T_3] join-hit data: 121 ms
+    [T_4] create query + get data + create new RDD: 353 ms
+    [T_5] create cachedPRDD: 175 ms
+    >> joined_miss count: 4438
+    [T_6] join - miss data: 187 ms
+    >> output data: 16000
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 886 ms
+    >> streaming data all: 912000
+    [time] total: 65071 ms
+    >> throughput: 14015
+============== Stream num [58] =================
+    [T_1] cogroup-cache-count: 175 ms
+    [T_2] create missKey (subt): 22 ms
+    >> joined Hit count: 11628
+    [T_3] join-hit data: 45 ms
+    [T_4] create query + get data + create new RDD: 339 ms
+    >> joined_miss count: 4372
+    [T_6] join - miss data: 154 ms
+    [T_5] create cachedPRDD: 202 ms
+    >> output data: 16000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 825 ms
+    >> streaming data all: 928000
+    [time] total: 65896 ms
+    >> throughput: 14082
+============== Stream num [59] =================
+    [T_1] cogroup-cache-count: 188 ms
+    [T_2] create missKey (subt): 22 ms
+    >> joined Hit count: 11633
+    [T_3] join-hit data: 49 ms
+    [T_4] create query + get data + create new RDD: 462 ms
+    [T_5] create cachedPRDD: 159 ms
+    >> joined_miss count: 4367
+    [T_6] join - miss data: 172 ms
+    >> output data: 16000
+    [T_7] union output data: 45 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 956 ms
+    >> streaming data all: 944000
+    [time] total: 66852 ms
+    >> throughput: 14120
+============== Stream num [60] =================
+    [T_1] cogroup-cache-count: 195 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 11589
+    [T_3] join-hit data: 102 ms
+    [T_4] create query + get data + create new RDD: 336 ms
+    >> joined_miss count: 4411
+    [T_6] join - miss data: 191 ms
+    [T_5] create cachedPRDD: 294 ms
+    >> output data: 16000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 940 ms
+    >> streaming data all: 960000
+    [time] total: 67792 ms
+    >> throughput: 14160
+============== Stream num [61] =================
+    [T_1] cogroup-cache-count: 259 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 11533
+    [T_3] join-hit data: 80 ms
+    [T_4] create query + get data + create new RDD: 487 ms
+    [T_5] create cachedPRDD: 197 ms
+    >> joined_miss count: 4467
+    [T_6] join - miss data: 202 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1066 ms
+    >> streaming data all: 976000
+    [time] total: 68858 ms
+    >> throughput: 14174
+============== Stream num [62] =================
+    [T_1] cogroup-cache-count: 206 ms
+    [T_2] create missKey (subt): 32 ms
+    >> joined Hit count: 11565
+    [T_3] join-hit data: 71 ms
+    [T_4] create query + get data + create new RDD: 439 ms
+    [T_5] create cachedPRDD: 153 ms
+    >> joined_miss count: 4435
+    [T_6] join - miss data: 201 ms
+    >> output data: 16000
+    [T_7] union output data: 33 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 977 ms
+    >> streaming data all: 992000
+    [time] total: 69835 ms
+    >> throughput: 14204
+============== Stream num [63] =================
+    [T_1] cogroup-cache-count: 163 ms
+    [T_2] create missKey (subt): 37 ms
+    >> joined Hit count: 11538
+    [T_3] join-hit data: 76 ms
+    [T_4] create query + get data + create new RDD: 391 ms
+    >> joined_miss count: 4462
+    [T_6] join - miss data: 352 ms
+    [T_5] create cachedPRDD: 360 ms
+    >> output data: 16000
+    [T_7] union output data: 68 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 28 ms
+    [T_9] stream: 1098 ms
+    >> streaming data all: 1008000
+    [time] total: 70933 ms
+    >> throughput: 14210
+============== Stream num [64] =================
+    [T_1] cogroup-cache-count: 228 ms
+    [T_2] create missKey (subt): 38 ms
+    >> joined Hit count: 11387
+    [T_3] join-hit data: 97 ms
+    [T_4] create query + get data + create new RDD: 463 ms
+    [T_5] create cachedPRDD: 158 ms
+    >> joined_miss count: 4613
+    [T_6] join - miss data: 170 ms
+    >> output data: 16000
+    [T_7] union output data: 24 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1024 ms
+    >> streaming data all: 1024000
+    [time] total: 71957 ms
+    >> throughput: 14230
+============== Stream num [65] =================
+    [T_1] cogroup-cache-count: 216 ms
+    [T_2] create missKey (subt): 30 ms
+    >> joined Hit count: 11675
+    [T_3] join-hit data: 77 ms
+    [T_4] create query + get data + create new RDD: 446 ms
+    [T_5] create cachedPRDD: 187 ms
+    >> joined_miss count: 4325
+    [T_6] join - miss data: 268 ms
+    >> output data: 16000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1046 ms
+    >> streaming data all: 1040000
+    [time] total: 73003 ms
+    >> throughput: 14245
+============== Stream num [66] =================
+    [T_1] cogroup-cache-count: 193 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 10913
+    [T_3] join-hit data: 72 ms
+    [T_4] create query + get data + create new RDD: 430 ms
+    >> joined_miss count: 4098
+    [T_6] join - miss data: 190 ms
+    [T_5] create cachedPRDD: 246 ms
+    >> output data: 15011
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 981 ms
+    >> streaming data all: 1055011
+    [time] total: 73984 ms
+    >> throughput: 14259
+============== Stream num [67] =================
+    [T_1] cogroup-cache-count: 170 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 9428
+    [T_3] join-hit data: 108 ms
+    [T_4] create query + get data + create new RDD: 341 ms
+    >> joined_miss count: 3561
+    [T_6] join - miss data: 156 ms
+    [T_5] create cachedPRDD: 195 ms
+    >> output data: 12989
+    [T_7] union output data: 22 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 869 ms
+    >> streaming data all: 1068000
+    [time] total: 74853 ms
+    >> throughput: 14267
+============== Stream num [68] =================
+    [T_1] cogroup-cache-count: 199 ms
+    [T_2] create missKey (subt): 23 ms
+    >> joined Hit count: 9508
+    [T_3] join-hit data: 63 ms
+    [T_4] create query + get data + create new RDD: 321 ms
+    [T_5] create cachedPRDD: 213 ms
+    >> joined_miss count: 3547
+    [T_6] join - miss data: 222 ms
+    >> output data: 13055
+    [T_7] union output data: 38 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 873 ms
+    >> streaming data all: 1081055
+    [time] total: 75726 ms
+    >> throughput: 14275
+============== Stream num [69] =================
+    [T_1] cogroup-cache-count: 253 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 8824
+    [T_3] join-hit data: 77 ms
+    [T_4] create query + get data + create new RDD: 277 ms
+    >> joined_miss count: 3246
+    [T_6] join - miss data: 310 ms
+    [T_5] create cachedPRDD: 360 ms
+    >> output data: 12070
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1004 ms
+    >> streaming data all: 1093125
+    [time] total: 76730 ms
+    >> throughput: 14246
+============== Stream num [70] =================
+    [T_1] cogroup-cache-count: 186 ms
+    [T_2] create missKey (subt): 41 ms
+    >> joined Hit count: 7988
+    [T_3] join-hit data: 120 ms
+    [T_4] create query + get data + create new RDD: 152 ms
+    >> joined_miss count: 2977
+    [T_6] join - miss data: 265 ms
+    [T_5] create cachedPRDD: 293 ms
+    >> output data: 10965
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 819 ms
+    >> streaming data all: 1104090
+    [time] total: 77549 ms
+    >> throughput: 14237
+============== Stream num [71] =================
+    [T_1] cogroup-cache-count: 159 ms
+    [T_2] create missKey (subt): 24 ms
+    >> joined Hit count: 11606
+    [T_3] join-hit data: 70 ms
+    [T_4] create query + get data + create new RDD: 378 ms
+    >> joined_miss count: 4304
+    [T_6] join - miss data: 176 ms
+    [T_5] create cachedPRDD: 179 ms
+    >> output data: 15910
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 840 ms
+    >> streaming data all: 1120000
+    [time] total: 78389 ms
+    >> throughput: 14287
+============== Stream num [72] =================
+    [T_1] cogroup-cache-count: 190 ms
+    [T_2] create missKey (subt): 35 ms
+    >> joined Hit count: 11709
+    [T_3] join-hit data: 76 ms
+    [T_4] create query + get data + create new RDD: 332 ms
+    >> joined_miss count: 4291
+    [T_6] join - miss data: 159 ms
+    [T_5] create cachedPRDD: 226 ms
+    >> output data: 16000
+    [T_7] union output data: 22 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 852 ms
+    >> streaming data all: 1136000
+    [time] total: 79241 ms
+    >> throughput: 14336
+============== Stream num [73] =================
+    [T_1] cogroup-cache-count: 220 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 11691
+    [T_3] join-hit data: 151 ms
+    [T_4] create query + get data + create new RDD: 320 ms
+    >> joined_miss count: 4309
+    [T_6] join - miss data: 306 ms
+    [T_5] create cachedPRDD: 336 ms
+    >> output data: 16000
+    [T_7] union output data: 35 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1096 ms
+    >> streaming data all: 1152000
+    [time] total: 80337 ms
+    >> throughput: 14339
+============== Stream num [74] =================
+    [T_1] cogroup-cache-count: 184 ms
+    [T_2] create missKey (subt): 52 ms
+    >> joined Hit count: 11632
+    [T_3] join-hit data: 85 ms
+    [T_4] create query + get data + create new RDD: 400 ms
+    >> joined_miss count: 4368
+    [T_6] join - miss data: 173 ms
+    [T_5] create cachedPRDD: 255 ms
+    >> output data: 16000
+    [T_7] union output data: 36 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 992 ms
+    >> streaming data all: 1168000
+    [time] total: 81329 ms
+    >> throughput: 14361
+============== Stream num [75] =================
+    [T_1] cogroup-cache-count: 171 ms
+    [T_2] create missKey (subt): 26 ms
+    >> joined Hit count: 11728
+    [T_3] join-hit data: 89 ms
+    [T_4] create query + get data + create new RDD: 437 ms
+    >> joined_miss count: 4272
+    [T_6] join - miss data: 137 ms
+    [T_5] create cachedPRDD: 186 ms
+    >> output data: 16000
+    [T_7] union output data: 23 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 948 ms
+    >> streaming data all: 1184000
+    [time] total: 82277 ms
+    >> throughput: 14390
+============== Stream num [76] =================
+    [T_1] cogroup-cache-count: 258 ms
+    [T_2] create missKey (subt): 29 ms
+    >> joined Hit count: 11695
+    [T_3] join-hit data: 83 ms
+    [T_4] create query + get data + create new RDD: 458 ms
+    [T_5] create cachedPRDD: 209 ms
+    >> joined_miss count: 4305
+    [T_6] join - miss data: 241 ms
+    >> output data: 16000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1068 ms
+    >> streaming data all: 1200000
+    [time] total: 83345 ms
+    >> throughput: 14397
+============== Stream num [77] =================
+    [T_1] cogroup-cache-count: 167 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 11721
+    [T_3] join-hit data: 48 ms
+    [T_4] create query + get data + create new RDD: 601 ms
+    [T_5] create cachedPRDD: 170 ms
+    >> joined_miss count: 4279
+    [T_6] join - miss data: 172 ms
+    >> output data: 16000
+    [T_7] union output data: 26 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1047 ms
+    >> streaming data all: 1216000
+    [time] total: 84392 ms
+    >> throughput: 14408
+============== Stream num [78] =================
+    [T_1] cogroup-cache-count: 304 ms
+    [T_2] create missKey (subt): 36 ms
+    >> joined Hit count: 11836
+    [T_3] join-hit data: 85 ms
+    [T_4] create query + get data + create new RDD: 317 ms
+    >> joined_miss count: 4164
+    [T_6] join - miss data: 295 ms
+    [T_5] create cachedPRDD: 315 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 1047 ms
+    >> streaming data all: 1232000
+    [time] total: 85439 ms
+    >> throughput: 14419
+============== Stream num [79] =================
+    [T_1] cogroup-cache-count: 214 ms
+    [T_2] create missKey (subt): 27 ms
+    >> joined Hit count: 11795
+    [T_3] join-hit data: 71 ms
+    [T_4] create query + get data + create new RDD: 438 ms
+    [T_5] create cachedPRDD: 180 ms
+    >> joined_miss count: 4205
+    [T_6] join - miss data: 193 ms
+    >> output data: 16000
+    [T_7] union output data: 31 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 965 ms
+    >> streaming data all: 1248000
+    [time] total: 86404 ms
+    >> throughput: 14443
+============== Stream num [80] =================
+    [T_1] cogroup-cache-count: 271 ms
+    [T_2] create missKey (subt): 39 ms
+    >> joined Hit count: 11808
+    [T_3] join-hit data: 98 ms
+    [T_4] create query + get data + create new RDD: 300 ms
+    >> joined_miss count: 4192
+    [T_6] join - miss data: 184 ms
+    [T_5] create cachedPRDD: 305 ms
+    >> output data: 16000
+    [T_7] union output data: 36 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1001 ms
+    >> streaming data all: 1264000
+    [time] total: 87405 ms
+    >> throughput: 14461
+============== Stream num [81] =================
+    [T_1] cogroup-cache-count: 273 ms
+    [T_2] create missKey (subt): 42 ms
+    >> joined Hit count: 11877
+    [T_3] join-hit data: 91 ms
+    [T_4] create query + get data + create new RDD: 317 ms
+    >> joined_miss count: 4123
+    [T_6] join - miss data: 297 ms
+    [T_5] create cachedPRDD: 312 ms
+    >> output data: 16000
+    [T_7] union output data: 25 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 1020 ms
+    >> streaming data all: 1280000
+    [time] total: 88425 ms
+    >> throughput: 14475
+============== Stream num [82] =================
+    [T_1] cogroup-cache-count: 290 ms
+    [T_2] create missKey (subt): 41 ms
+    >> joined Hit count: 11784
+    [T_3] join-hit data: 92 ms
+    [T_4] create query + get data + create new RDD: 428 ms
+    >> joined_miss count: 4216
+    [T_6] join - miss data: 144 ms
+    [T_5] create cachedPRDD: 238 ms
+    >> output data: 16000
+    [T_7] union output data: 41 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 1094 ms
+    >> streaming data all: 1296000
+    [time] total: 89519 ms
+    >> throughput: 14477
+============== Stream num [83] =================
+    [T_1] cogroup-cache-count: 211 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 11756
+    [T_3] join-hit data: 67 ms
+    [T_4] create query + get data + create new RDD: 432 ms
+    [T_5] create cachedPRDD: 231 ms
+    >> joined_miss count: 4244
+    [T_6] join - miss data: 232 ms
+    >> output data: 16000
+    [T_7] union output data: 35 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 992 ms
+    >> streaming data all: 1312000
+    [time] total: 90511 ms
+    >> throughput: 14495
+============== Stream num [84] =================
+    [T_1] cogroup-cache-count: 169 ms
+    [T_2] create missKey (subt): 30 ms
+    >> joined Hit count: 11776
+    [T_3] join-hit data: 53 ms
+    [T_4] create query + get data + create new RDD: 316 ms
+    [T_5] create cachedPRDD: 181 ms
+    >> joined_miss count: 4224
+    [T_6] join - miss data: 185 ms
+    >> output data: 16000
+    [T_7] union output data: 29 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 786 ms
+    >> streaming data all: 1328000
+    [time] total: 91297 ms
+    >> throughput: 14545
+============== Stream num [85] =================
+    [T_1] cogroup-cache-count: 269 ms
+    [T_2] create missKey (subt): 106 ms
+    >> joined Hit count: 11822
+    [T_3] join-hit data: 134 ms
+    [T_4] create query + get data + create new RDD: 378 ms
+    >> joined_miss count: 4178
+    [T_6] join - miss data: 143 ms
+    [T_5] create cachedPRDD: 194 ms
+    >> output data: 16000
+    [T_7] union output data: 50 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 17 ms
+    [T_9] stream: 1065 ms
+    >> streaming data all: 1344000
+    [time] total: 92362 ms
+    >> throughput: 14551
+============== Stream num [86] =================
+    [T_1] cogroup-cache-count: 184 ms
+    [T_2] create missKey (subt): 37 ms
+    >> joined Hit count: 11816
+    [T_3] join-hit data: 84 ms
+    [T_4] create query + get data + create new RDD: 434 ms
+    >> joined_miss count: 4184
+    [T_6] join - miss data: 175 ms
+    [T_5] create cachedPRDD: 176 ms
+    >> output data: 16000
+    [T_7] union output data: 32 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 7 ms
+    [T_9] stream: 913 ms
+    >> streaming data all: 1360000
+    [time] total: 93275 ms
+    >> throughput: 14580
+============== Stream num [87] =================
+    [T_1] cogroup-cache-count: 207 ms
+    [T_2] create missKey (subt): 26 ms
+    >> joined Hit count: 11871
+    [T_3] join-hit data: 57 ms
+    [T_4] create query + get data + create new RDD: 333 ms
+    >> joined_miss count: 4129
+    [T_6] join - miss data: 188 ms
+    [T_5] create cachedPRDD: 201 ms
+    >> output data: 16000
+    [T_7] union output data: 33 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 855 ms
+    >> streaming data all: 1376000
+    [time] total: 94130 ms
+    >> throughput: 14618
+============== Stream num [88] =================
+    [T_1] cogroup-cache-count: 266 ms
+    [T_2] create missKey (subt): 35 ms
+    >> joined Hit count: 11789
+    [T_3] join-hit data: 115 ms
+    [T_4] create query + get data + create new RDD: 452 ms
+    >> joined_miss count: 4211
+    [T_6] join - miss data: 171 ms
+    [T_5] create cachedPRDD: 178 ms
+    >> output data: 16000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 1074 ms
+    >> streaming data all: 1392000
+    [time] total: 95204 ms
+    >> throughput: 14621
+============== Stream num [89] =================
+    [T_1] cogroup-cache-count: 224 ms
+    [T_2] create missKey (subt): 35 ms
+    >> joined Hit count: 11917
+    [T_3] join-hit data: 140 ms
+    [T_4] create query + get data + create new RDD: 287 ms
+    >> joined_miss count: 4083
+    [T_6] join - miss data: 142 ms
+    [T_5] create cachedPRDD: 220 ms
+    >> output data: 16000
+    [T_7] union output data: 40 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 943 ms
+    >> streaming data all: 1408000
+    [time] total: 96147 ms
+    >> throughput: 14644
+============== Stream num [90] =================
+    [T_1] cogroup-cache-count: 209 ms
+    [T_2] create missKey (subt): 42 ms
+    >> joined Hit count: 11928
+    [T_3] join-hit data: 127 ms
+    [T_4] create query + get data + create new RDD: 389 ms
+    >> joined_miss count: 4072
+    [T_6] join - miss data: 203 ms
+    [T_5] create cachedPRDD: 209 ms
+    >> output data: 16000
+    [T_7] union output data: 40 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1011 ms
+    >> streaming data all: 1424000
+    [time] total: 97158 ms
+    >> throughput: 14656
+============== Stream num [91] =================
+    [T_1] cogroup-cache-count: 234 ms
+    [T_2] create missKey (subt): 30 ms
+    >> joined Hit count: 11858
+    [T_3] join-hit data: 75 ms
+    [T_4] create query + get data + create new RDD: 387 ms
+    >> joined_miss count: 4142
+    [T_6] join - miss data: 189 ms
+    [T_5] create cachedPRDD: 241 ms
+    >> output data: 16000
+    [T_7] union output data: 38 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 998 ms
+    >> streaming data all: 1440000
+    [time] total: 98156 ms
+    >> throughput: 14670
+============== Stream num [92] =================
+    [T_1] cogroup-cache-count: 207 ms
+    [T_2] create missKey (subt): 35 ms
+    >> joined Hit count: 11890
+    [T_3] join-hit data: 85 ms
+    [T_4] create query + get data + create new RDD: 364 ms
+    >> joined_miss count: 4110
+    [T_6] join - miss data: 284 ms
+    [T_5] create cachedPRDD: 329 ms
+    >> output data: 16000
+    [T_7] union output data: 112 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 10 ms
+    [T_9] stream: 1120 ms
+    >> streaming data all: 1456000
+    [time] total: 99276 ms
+    >> throughput: 14666
+============== Stream num [93] =================
+    [T_1] cogroup-cache-count: 240 ms
+    [T_2] create missKey (subt): 36 ms
+    >> joined Hit count: 11927
+    [T_3] join-hit data: 82 ms
+    [T_4] create query + get data + create new RDD: 382 ms
+    >> joined_miss count: 4073
+    [T_6] join - miss data: 258 ms
+    [T_5] create cachedPRDD: 286 ms
+    >> output data: 16000
+    [T_7] union output data: 32 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1038 ms
+    >> streaming data all: 1472000
+    [time] total: 100314 ms
+    >> throughput: 14673
+============== Stream num [94] =================
+    [T_1] cogroup-cache-count: 245 ms
+    [T_2] create missKey (subt): 32 ms
+    >> joined Hit count: 11905
+    [T_3] join-hit data: 81 ms
+    [T_4] create query + get data + create new RDD: 421 ms
+    >> joined_miss count: 4095
+    [T_6] join - miss data: 156 ms
+    [T_5] create cachedPRDD: 294 ms
+    >> output data: 16000
+    [T_7] union output data: 32 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1107 ms
+    >> streaming data all: 1488000
+    [time] total: 101421 ms
+    >> throughput: 14671
+============== Stream num [95] =================
+    [T_1] cogroup-cache-count: 189 ms
+    [T_2] create missKey (subt): 46 ms
+    >> joined Hit count: 11865
+    [T_3] join-hit data: 94 ms
+    [T_4] create query + get data + create new RDD: 286 ms
+    >> joined_miss count: 4135
+    [T_6] join - miss data: 192 ms
+    [T_5] create cachedPRDD: 210 ms
+    >> output data: 16000
+    [T_7] union output data: 37 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 831 ms
+    >> streaming data all: 1504000
+    [time] total: 102252 ms
+    >> throughput: 14708
+============== Stream num [96] =================
+    [T_1] cogroup-cache-count: 193 ms
+    [T_2] create missKey (subt): 32 ms
+    >> joined Hit count: 11920
+    [T_3] join-hit data: 69 ms
+    [T_4] create query + get data + create new RDD: 303 ms
+    >> joined_miss count: 4080
+    [T_6] join - miss data: 175 ms
+    [T_5] create cachedPRDD: 180 ms
+    >> output data: 16000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 786 ms
+    >> streaming data all: 1520000
+    [time] total: 103038 ms
+    >> throughput: 14751
+============== Stream num [97] =================
+    [T_1] cogroup-cache-count: 255 ms
+    [T_2] create missKey (subt): 46 ms
+    >> joined Hit count: 7107
+    [T_3] join-hit data: 88 ms
+    [T_4] create query + get data + create new RDD: 182 ms
+    >> joined_miss count: 2477
+    [T_6] join - miss data: 152 ms
+    [T_5] create cachedPRDD: 295 ms
+    >> output data: 9584
+    [T_7] union output data: 37 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 848 ms
+    >> streaming data all: 1529584
+    [time] total: 103886 ms
+    >> throughput: 14723
+============== Stream num [98] =================
+    [T_1] cogroup-cache-count: 312 ms
+    [T_2] create missKey (subt): 38 ms
+    >> joined Hit count: 7819
+    [T_3] join-hit data: 83 ms
+    [T_4] create query + get data + create new RDD: 183 ms
+    >> joined_miss count: 2597
+    [T_6] join - miss data: 303 ms
+    [T_5] create cachedPRDD: 324 ms
+    >> output data: 10416
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 3 ms
+    [T_9] stream: 920 ms
+    >> streaming data all: 1540000
+    [time] total: 104806 ms
+    >> throughput: 14693
+============== Stream num [99] =================
+    [T_1] cogroup-cache-count: 255 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 11719
+    [T_3] join-hit data: 85 ms
+    [T_4] create query + get data + create new RDD: 434 ms
+    >> joined_miss count: 4016
+    [T_6] join - miss data: 168 ms
+    [T_5] create cachedPRDD: 217 ms
+    >> output data: 15735
+    [T_7] union output data: 76 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1080 ms
+    >> streaming data all: 1555735
+    [time] total: 105886 ms
+    >> throughput: 14692
+============== Stream num [100] =================
+    [T_1] cogroup-cache-count: 270 ms
+    [T_2] create missKey (subt): 76 ms
+    >> joined Hit count: 9093
+    [T_3] join-hit data: 125 ms
+    [T_4] create query + get data + create new RDD: 286 ms
+    >> joined_miss count: 3172
+    [T_6] join - miss data: 259 ms
+    [T_5] create cachedPRDD: 299 ms
+    >> output data: 12265
+    [T_7] union output data: 33 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 1011 ms
+    >> streaming data all: 1568000
+    [time] total: 106897 ms
+    >> throughput: 14668
+============== Stream num [101] =================
+    [T_1] cogroup-cache-count: 213 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 11904
+    [T_3] join-hit data: 80 ms
+    [T_4] create query + get data + create new RDD: 280 ms
+    >> joined_miss count: 4096
+    [T_6] join - miss data: 187 ms
+    [T_5] create cachedPRDD: 188 ms
+    >> output data: 16000
+    [T_7] union output data: 27 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 804 ms
+    >> streaming data all: 1584000
+    [time] total: 107701 ms
+    >> throughput: 14707
+============== Stream num [102] =================
+    [T_1] cogroup-cache-count: 243 ms
+    [T_2] create missKey (subt): 28 ms
+    >> joined Hit count: 11802
+    [T_3] join-hit data: 62 ms
+    [T_4] create query + get data + create new RDD: 298 ms
+    >> joined_miss count: 4198
+    [T_6] join - miss data: 142 ms
+    [T_5] create cachedPRDD: 205 ms
+    >> output data: 16000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 865 ms
+    >> streaming data all: 1600000
+    [time] total: 108566 ms
+    >> throughput: 14737
+============== Stream num [103] =================
+    [T_1] cogroup-cache-count: 224 ms
+    [T_2] create missKey (subt): 91 ms
+    >> joined Hit count: 11930
+    [T_3] join-hit data: 128 ms
+    [T_4] create query + get data + create new RDD: 418 ms
+    >> joined_miss count: 4070
+    [T_6] join - miss data: 144 ms
+    [T_5] create cachedPRDD: 369 ms
+    >> output data: 16000
+    [T_7] union output data: 35 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1237 ms
+    >> streaming data all: 1616000
+    [time] total: 109803 ms
+    >> throughput: 14717
+============== Stream num [104] =================
+    [T_1] cogroup-cache-count: 309 ms
+    [T_2] create missKey (subt): 45 ms
+    >> joined Hit count: 11931
+    [T_3] join-hit data: 132 ms
+    [T_4] create query + get data + create new RDD: 285 ms
+    >> joined_miss count: 4069
+    [T_6] join - miss data: 156 ms
+    [T_5] create cachedPRDD: 207 ms
+    >> output data: 16000
+    [T_7] union output data: 34 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 4 ms
+    [T_9] stream: 1000 ms
+    >> streaming data all: 1632000
+    [time] total: 110803 ms
+    >> throughput: 14728
+============== Stream num [105] =================
+    [T_1] cogroup-cache-count: 220 ms
+    [T_2] create missKey (subt): 53 ms
+    >> joined Hit count: 11956
+    [T_3] join-hit data: 154 ms
+    [T_4] create query + get data + create new RDD: 434 ms
+    >> joined_miss count: 4044
+    [T_6] join - miss data: 204 ms
+    [T_5] create cachedPRDD: 211 ms
+    >> output data: 16000
+    [T_7] union output data: 47 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1098 ms
+    >> streaming data all: 1648000
+    [time] total: 111901 ms
+    >> throughput: 14727
+============== Stream num [106] =================
+    [T_1] cogroup-cache-count: 189 ms
+    [T_2] create missKey (subt): 52 ms
+    >> joined Hit count: 11811
+    [T_3] join-hit data: 96 ms
+    [T_4] create query + get data + create new RDD: 301 ms
+    >> joined_miss count: 4189
+    [T_6] join - miss data: 195 ms
+    [T_5] create cachedPRDD: 207 ms
+    >> output data: 16000
+    [T_7] union output data: 30 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 837 ms
+    >> streaming data all: 1664000
+    [time] total: 112738 ms
+    >> throughput: 14759
+============== Stream num [107] =================
+    [T_1] cogroup-cache-count: 204 ms
+    [T_2] create missKey (subt): 33 ms
+    >> joined Hit count: 11947
+    [T_3] join-hit data: 127 ms
+    [T_4] create query + get data + create new RDD: 445 ms
+    >> joined_miss count: 4053
+    [T_6] join - miss data: 155 ms
+    [T_5] create cachedPRDD: 237 ms
+    >> output data: 16000
+    [T_7] union output data: 40 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 6 ms
+    [T_9] stream: 1087 ms
+    >> streaming data all: 1680000
+    [time] total: 113825 ms
+    >> throughput: 14759
+============== Stream num [108] =================
+    [T_1] cogroup-cache-count: 343 ms
+    [T_2] create missKey (subt): 36 ms
+    >> joined Hit count: 12016
+    [T_3] join-hit data: 102 ms
+    [T_4] create query + get data + create new RDD: 266 ms
+    >> joined_miss count: 3984
+    [T_6] join - miss data: 148 ms
+    [T_5] create cachedPRDD: 239 ms
+    >> output data: 16000
+    [T_7] union output data: 33 ms
+    [T_8] unpersist(join-hit/miss, input or cogroup): 5 ms
+    [T_9] stream: 1029 ms
+    >> streaming data all: 1696000
+    [time] total: 114854 ms
+    >> throughput: 14766
+============== Stream num [109] =================
+    [T_1] cogroup-cache-count: 304 ms
+    [T_2] create missKey (subt): 56 ms
+    >> joined Hit count: 11924
+    [T_3] join-hit data: 107 ms
+    [T_4] create query + get data + create new RDD: 292 ms

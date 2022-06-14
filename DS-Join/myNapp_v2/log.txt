@@ -1,0 +1,2720 @@
+============== Stream num [1] =================
+>> input data: 4000
+[TIME] create inputPRDD: 261 ms
+[TIME] create missPRDD: 26 ms
+[TIME] create query: 498 ms
+[TIME] get data from mongodb using cursor: 2193 ms
+[TIME] create newPRDD: 134 ms
+[Thread_2 : TIME] 2324 ms
+[TIME] union output data: 646 ms
+>> output data: 4000
+[Time] total: 3291 ms
+============== Stream num [2] =================
+>> input data: 4000
+[TIME] create inputPRDD: 73 ms
+[TIME] create missPRDD: 237 ms
+[TIME] create query: 302 ms
+[TIME] join - hit data: 274 ms
+[Thread_1 : TIME] 274 ms
+[TIME] get data from mongodb using cursor: 1629 ms
+[TIME] create newPRDD: 61 ms
+[TIME] join - miss data: 166 ms
+[Thread_2 : TIME] 1823 ms
+[TIME] union output data: 156 ms
+>> output data: 4000
+[Time] total: 2337 ms
+============== Stream num [3] =================
+>> input data: 4000
+[TIME] create inputPRDD: 60 ms
+[TIME] create missPRDD: 533 ms
+[TIME] join - hit data: 218 ms
+[Thread_1 : TIME] 218 ms
+[TIME] create query: 234 ms
+[TIME] get data from mongodb using cursor: 1419 ms
+[TIME] create newPRDD: 59 ms
+[TIME] join - miss data: 139 ms
+[Thread_2 : TIME] 1613 ms
+[TIME] union output data: 92 ms
+>> output data: 4000
+[Time] total: 2306 ms
+============== Stream num [4] =================
+>> input data: 4000
+[TIME] create inputPRDD: 62 ms
+[TIME] create missPRDD: 407 ms
+[TIME] join - hit data: 133 ms
+[Thread_1 : TIME] 133 ms
+[TIME] create query: 172 ms
+[TIME] get data from mongodb using cursor: 1344 ms
+[TIME] create newPRDD: 41 ms
+[TIME] join - miss data: 132 ms
+[Thread_2 : TIME] 1517 ms
+[TIME] union output data: 93 ms
+>> output data: 4000
+[Time] total: 2082 ms
+============== Stream num [5] =================
+>> input data: 4000
+[TIME] create inputPRDD: 49 ms
+[TIME] create missPRDD: 341 ms
+[TIME] join - hit data: 116 ms
+[Thread_1 : TIME] 116 ms
+[TIME] create query: 174 ms
+[TIME] get data from mongodb using cursor: 1228 ms
+[TIME] create newPRDD: 36 ms
+[TIME] join - miss data: 100 ms
+[Thread_2 : TIME] 1364 ms
+[TIME] union output data: 107 ms
+>> output data: 4000
+[Time] total: 1868 ms
+============== Stream num [6] =================
+>> input data: 4000
+[TIME] create inputPRDD: 48 ms
+[TIME] create missPRDD: 248 ms
+[TIME] join - hit data: 151 ms
+[Thread_1 : TIME] 151 ms
+[TIME] create query: 236 ms
+[TIME] get data from mongodb using cursor: 1264 ms
+[TIME] create newPRDD: 42 ms
+[TIME] join - miss data: 96 ms
+[Thread_2 : TIME] 1403 ms
+[TIME] union output data: 86 ms
+>> output data: 4000
+[Time] total: 1788 ms
+============== Stream num [7] =================
+>> input data: 4000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 225 ms
+[TIME] join - hit data: 110 ms
+[Thread_1 : TIME] 110 ms
+[TIME] create query: 212 ms
+[TIME] get data from mongodb using cursor: 1180 ms
+[TIME] create newPRDD: 34 ms
+[TIME] join - miss data: 95 ms
+[Thread_2 : TIME] 1309 ms
+[TIME] union output data: 88 ms
+>> output data: 4000
+[Time] total: 1668 ms
+============== Stream num [8] =================
+>> input data: 7062
+[TIME] create inputPRDD: 56 ms
+[TIME] create missPRDD: 203 ms
+[TIME] join - hit data: 115 ms
+[Thread_1 : TIME] 115 ms
+[TIME] create query: 290 ms
+[TIME] get data from mongodb using cursor: 3814 ms
+[TIME] create newPRDD: 36 ms
+[TIME] join - miss data: 91 ms
+[Thread_2 : TIME] 3941 ms
+[TIME] union output data: 97 ms
+>> output data: 7062
+[Time] total: 4299 ms
+============== Stream num [9] =================
+>> input data: 4938
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 223 ms
+[TIME] join - hit data: 96 ms
+[Thread_1 : TIME] 96 ms
+[TIME] create query: 199 ms
+[TIME] get data from mongodb using cursor: 1705 ms
+[TIME] create newPRDD: 29 ms
+[TIME] join - miss data: 87 ms
+[Thread_2 : TIME] 1822 ms
+[TIME] union output data: 88 ms
+>> output data: 4938
+[Time] total: 2175 ms
+============== Stream num [10] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 230 ms
+[TIME] join - hit data: 125 ms
+[Thread_1 : TIME] 125 ms
+[TIME] create query: 189 ms
+[TIME] get data from mongodb using cursor: 1103 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 98 ms
+[Thread_2 : TIME] 1227 ms
+[TIME] union output data: 109 ms
+>> output data: 4000
+[Time] total: 1603 ms
+============== Stream num [11] =================
+>> input data: 4000
+[TIME] create inputPRDD: 62 ms
+[TIME] create missPRDD: 240 ms
+[TIME] join - hit data: 139 ms
+[Thread_1 : TIME] 139 ms
+[TIME] create query: 160 ms
+[TIME] get data from mongodb using cursor: 1100 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 91 ms
+[Thread_2 : TIME] 1217 ms
+[TIME] union output data: 110 ms
+>> output data: 4000
+[Time] total: 1631 ms
+============== Stream num [12] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 246 ms
+[TIME] join - hit data: 107 ms
+[Thread_1 : TIME] 107 ms
+[TIME] create query: 186 ms
+[TIME] get data from mongodb using cursor: 1126 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 177 ms
+[Thread_2 : TIME] 1330 ms
+[TIME] union output data: 88 ms
+>> output data: 4000
+[Time] total: 1707 ms
+============== Stream num [13] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 226 ms
+[TIME] join - hit data: 102 ms
+[Thread_1 : TIME] 102 ms
+[TIME] create query: 172 ms
+[TIME] get data from mongodb using cursor: 1062 ms
+[TIME] create newPRDD: 24 ms
+[TIME] join - miss data: 101 ms
+[Thread_2 : TIME] 1178 ms
+[TIME] union output data: 103 ms
+>> output data: 4000
+[Time] total: 1559 ms
+============== Stream num [14] =================
+>> input data: 4000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 270 ms
+[TIME] join - hit data: 99 ms
+[Thread_1 : TIME] 99 ms
+[TIME] create query: 149 ms
+[TIME] get data from mongodb using cursor: 1030 ms
+[TIME] create newPRDD: 27 ms
+[TIME] join - miss data: 95 ms
+[Thread_2 : TIME] 1152 ms
+[TIME] union output data: 108 ms
+>> output data: 4000
+[Time] total: 1577 ms
+============== Stream num [15] =================
+>> input data: 4000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 221 ms
+[TIME] join - hit data: 105 ms
+[Thread_1 : TIME] 105 ms
+[TIME] create query: 167 ms
+[TIME] get data from mongodb using cursor: 1092 ms
+[TIME] create newPRDD: 32 ms
+[TIME] join - miss data: 101 ms
+[Thread_2 : TIME] 1226 ms
+[TIME] union output data: 86 ms
+>> output data: 4000
+[Time] total: 1578 ms
+============== Stream num [16] =================
+>> input data: 4000
+[TIME] create inputPRDD: 55 ms
+[TIME] create missPRDD: 240 ms
+[TIME] join - hit data: 134 ms
+[Thread_1 : TIME] 134 ms
+[TIME] create query: 175 ms
+[TIME] get data from mongodb using cursor: 1045 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 110 ms
+[Thread_2 : TIME] 1180 ms
+[TIME] union output data: 100 ms
+>> output data: 4000
+[Time] total: 1578 ms
+============== Stream num [17] =================
+>> input data: 4000
+[TIME] create inputPRDD: 58 ms
+[TIME] create missPRDD: 243 ms
+[TIME] join - hit data: 120 ms
+[Thread_1 : TIME] 120 ms
+[TIME] create query: 179 ms
+[TIME] get data from mongodb using cursor: 1015 ms
+[TIME] create newPRDD: 35 ms
+[TIME] join - miss data: 147 ms
+[Thread_2 : TIME] 1197 ms
+[TIME] union output data: 92 ms
+>> output data: 4000
+[Time] total: 1593 ms
+============== Stream num [18] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 239 ms
+[TIME] join - hit data: 118 ms
+[Thread_1 : TIME] 118 ms
+[TIME] create query: 170 ms
+[TIME] get data from mongodb using cursor: 982 ms
+[TIME] create newPRDD: 31 ms
+[TIME] join - miss data: 125 ms
+[Thread_2 : TIME] 1138 ms
+[TIME] union output data: 109 ms
+>> output data: 4000
+[Time] total: 1523 ms
+============== Stream num [19] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 335 ms
+[TIME] join - hit data: 119 ms
+[Thread_1 : TIME] 119 ms
+[TIME] create query: 173 ms
+[TIME] get data from mongodb using cursor: 1017 ms
+[TIME] create newPRDD: 22 ms
+[TIME] join - miss data: 119 ms
+[Thread_2 : TIME] 1158 ms
+[TIME] union output data: 103 ms
+>> output data: 4000
+[Time] total: 1634 ms
+============== Stream num [20] =================
+>> input data: 4000
+[TIME] create inputPRDD: 69 ms
+[TIME] create missPRDD: 261 ms
+[TIME] join - hit data: 100 ms
+[Thread_1 : TIME] 100 ms
+[TIME] create query: 139 ms
+[TIME] get data from mongodb using cursor: 890 ms
+[TIME] create newPRDD: 46 ms
+[TIME] join - miss data: 141 ms
+[Thread_2 : TIME] 1077 ms
+[TIME] union output data: 109 ms
+>> output data: 4000
+[Time] total: 1519 ms
+============== Stream num [21] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 346 ms
+[TIME] join - hit data: 130 ms
+[Thread_1 : TIME] 130 ms
+[TIME] create query: 172 ms
+[TIME] get data from mongodb using cursor: 952 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 110 ms
+[Thread_2 : TIME] 1085 ms
+[TIME] union output data: 127 ms
+>> output data: 4000
+[Time] total: 1600 ms
+============== Stream num [22] =================
+>> input data: 4000
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 340 ms
+[TIME] join - hit data: 113 ms
+[Thread_1 : TIME] 113 ms
+[TIME] create query: 183 ms
+[TIME] get data from mongodb using cursor: 997 ms
+[TIME] create newPRDD: 27 ms
+[TIME] join - miss data: 117 ms
+[Thread_2 : TIME] 1140 ms
+[TIME] union output data: 97 ms
+>> output data: 4000
+[Time] total: 1616 ms
+============== Stream num [23] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 260 ms
+[TIME] join - hit data: 118 ms
+[Thread_1 : TIME] 118 ms
+[TIME] create query: 182 ms
+[TIME] get data from mongodb using cursor: 933 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 98 ms
+[Thread_2 : TIME] 1054 ms
+[TIME] union output data: 127 ms
+>> output data: 4000
+[Time] total: 1480 ms
+============== Stream num [24] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 241 ms
+[TIME] join - hit data: 126 ms
+[Thread_1 : TIME] 126 ms
+[TIME] create query: 172 ms
+[TIME] get data from mongodb using cursor: 913 ms
+[TIME] create newPRDD: 25 ms
+[TIME] join - miss data: 109 ms
+[Thread_2 : TIME] 1048 ms
+[TIME] union output data: 130 ms
+>> output data: 4000
+[Time] total: 1459 ms
+============== Stream num [25] =================
+>> input data: 7086
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 229 ms
+[TIME] join - hit data: 117 ms
+[Thread_1 : TIME] 117 ms
+[TIME] create query: 228 ms
+[TIME] get data from mongodb using cursor: 2660 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 97 ms
+[Thread_2 : TIME] 2780 ms
+[TIME] union output data: 184 ms
+>> output data: 7086
+[Time] total: 3233 ms
+============== Stream num [26] =================
+>> input data: 4914
+[TIME] create inputPRDD: 76 ms
+[TIME] create missPRDD: 271 ms
+[TIME] join - hit data: 102 ms
+[Thread_1 : TIME] 102 ms
+[TIME] create query: 153 ms
+[TIME] get data from mongodb using cursor: 1195 ms
+[TIME] create newPRDD: 24 ms
+[TIME] join - miss data: 109 ms
+[Thread_2 : TIME] 1328 ms
+[TIME] union output data: 178 ms
+>> output data: 4914
+[Time] total: 1854 ms
+============== Stream num [27] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 262 ms
+[TIME] join - hit data: 131 ms
+[Thread_1 : TIME] 131 ms
+[TIME] create query: 167 ms
+[TIME] get data from mongodb using cursor: 875 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 108 ms
+[Thread_2 : TIME] 1009 ms
+[TIME] union output data: 118 ms
+>> output data: 4000
+[Time] total: 1425 ms
+============== Stream num [28] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 234 ms
+[TIME] join - hit data: 122 ms
+[Thread_1 : TIME] 122 ms
+[TIME] create query: 159 ms
+[TIME] get data from mongodb using cursor: 886 ms
+[TIME] create newPRDD: 22 ms
+[TIME] join - miss data: 107 ms
+[Thread_2 : TIME] 1016 ms
+[TIME] union output data: 115 ms
+>> output data: 4000
+[Time] total: 1401 ms
+============== Stream num [29] =================
+>> input data: 4000
+[TIME] create inputPRDD: 30 ms
+[TIME] create missPRDD: 247 ms
+[TIME] join - hit data: 148 ms
+[Thread_1 : TIME] 148 ms
+[TIME] create query: 195 ms
+[TIME] get data from mongodb using cursor: 855 ms
+[TIME] create newPRDD: 24 ms
+[TIME] join - miss data: 112 ms
+[Thread_2 : TIME] 991 ms
+[TIME] union output data: 133 ms
+>> output data: 4000
+[Time] total: 1405 ms
+============== Stream num [30] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 263 ms
+[TIME] join - hit data: 133 ms
+[Thread_1 : TIME] 133 ms
+[TIME] create query: 165 ms
+[TIME] get data from mongodb using cursor: 798 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 122 ms
+[Thread_2 : TIME] 943 ms
+[TIME] union output data: 140 ms
+>> output data: 4000
+[Time] total: 1388 ms
+============== Stream num [31] =================
+>> input data: 4000
+[TIME] create inputPRDD: 56 ms
+[TIME] create missPRDD: 316 ms
+[TIME] join - hit data: 114 ms
+[Thread_1 : TIME] 114 ms
+[TIME] create query: 162 ms
+[TIME] get data from mongodb using cursor: 836 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 117 ms
+[Thread_2 : TIME] 975 ms
+[TIME] union output data: 141 ms
+>> output data: 4000
+[Time] total: 1491 ms
+============== Stream num [32] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 258 ms
+[TIME] join - hit data: 115 ms
+[Thread_1 : TIME] 115 ms
+[TIME] create query: 151 ms
+[TIME] get data from mongodb using cursor: 808 ms
+[TIME] create newPRDD: 30 ms
+[TIME] join - miss data: 115 ms
+[Thread_2 : TIME] 953 ms
+[TIME] union output data: 99 ms
+>> output data: 4000
+[Time] total: 1352 ms
+============== Stream num [33] =================
+>> input data: 4000
+[TIME] create inputPRDD: 45 ms
+[TIME] create missPRDD: 263 ms
+[TIME] join - hit data: 115 ms
+[Thread_1 : TIME] 115 ms
+[TIME] create query: 147 ms
+[TIME] get data from mongodb using cursor: 776 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 151 ms
+[Thread_2 : TIME] 950 ms
+[TIME] union output data: 117 ms
+>> output data: 4000
+[Time] total: 1377 ms
+============== Stream num [34] =================
+>> input data: 4000
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 417 ms
+[TIME] create query: 182 ms
+[TIME] join - hit data: 321 ms
+[Thread_1 : TIME] 321 ms
+[TIME] get data from mongodb using cursor: 834 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 132 ms
+[Thread_2 : TIME] 985 ms
+[TIME] union output data: 138 ms
+>> output data: 4000
+[Time] total: 1580 ms
+============== Stream num [35] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 277 ms
+[TIME] join - hit data: 151 ms
+[Thread_1 : TIME] 151 ms
+[TIME] create query: 186 ms
+[TIME] get data from mongodb using cursor: 850 ms
+[TIME] create newPRDD: 31 ms
+[TIME] join - miss data: 118 ms
+[Thread_2 : TIME] 1000 ms
+[TIME] union output data: 140 ms
+>> output data: 4000
+[Time] total: 1461 ms
+============== Stream num [36] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 427 ms
+[TIME] join - hit data: 148 ms
+[Thread_1 : TIME] 148 ms
+[TIME] create query: 182 ms
+[TIME] get data from mongodb using cursor: 796 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 118 ms
+[Thread_2 : TIME] 936 ms
+[TIME] union output data: 133 ms
+>> output data: 4000
+[Time] total: 1541 ms
+============== Stream num [37] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 314 ms
+[TIME] join - hit data: 142 ms
+[Thread_1 : TIME] 142 ms
+[TIME] create query: 164 ms
+[TIME] get data from mongodb using cursor: 754 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 123 ms
+[Thread_2 : TIME] 897 ms
+[TIME] union output data: 237 ms
+>> output data: 4000
+[Time] total: 1493 ms
+============== Stream num [38] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 320 ms
+[TIME] join - hit data: 147 ms
+[Thread_1 : TIME] 147 ms
+[TIME] create query: 195 ms
+[TIME] get data from mongodb using cursor: 827 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 120 ms
+[Thread_2 : TIME] 968 ms
+[TIME] union output data: 166 ms
+>> output data: 4000
+[Time] total: 1492 ms
+============== Stream num [39] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 270 ms
+[TIME] join - hit data: 144 ms
+[Thread_1 : TIME] 144 ms
+[TIME] create query: 172 ms
+[TIME] get data from mongodb using cursor: 770 ms
+[TIME] create newPRDD: 38 ms
+[TIME] join - miss data: 121 ms
+[Thread_2 : TIME] 929 ms
+[TIME] union output data: 221 ms
+>> output data: 4000
+[Time] total: 1466 ms
+============== Stream num [40] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 285 ms
+[TIME] join - hit data: 143 ms
+[Thread_1 : TIME] 143 ms
+[TIME] create query: 168 ms
+[TIME] get data from mongodb using cursor: 777 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 130 ms
+[Thread_2 : TIME] 928 ms
+[TIME] union output data: 151 ms
+>> output data: 4000
+[Time] total: 1411 ms
+============== Stream num [41] =================
+>> input data: 4000
+[TIME] create inputPRDD: 68 ms
+[TIME] create missPRDD: 305 ms
+[TIME] join - hit data: 119 ms
+[Thread_1 : TIME] 119 ms
+[TIME] create query: 169 ms
+[TIME] get data from mongodb using cursor: 775 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 124 ms
+[Thread_2 : TIME] 919 ms
+[TIME] union output data: 170 ms
+>> output data: 4000
+[Time] total: 1466 ms
+============== Stream num [42] =================
+>> input data: 8000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 443 ms
+[TIME] join - hit data: 148 ms
+[Thread_1 : TIME] 148 ms
+[TIME] create query: 241 ms
+[TIME] get data from mongodb using cursor: 2783 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 114 ms
+[Thread_2 : TIME] 2918 ms
+[TIME] union output data: 153 ms
+>> output data: 8000
+[Time] total: 3561 ms
+============== Stream num [43] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 426 ms
+[TIME] join - hit data: 136 ms
+[Thread_1 : TIME] 136 ms
+[TIME] create query: 184 ms
+[TIME] get data from mongodb using cursor: 770 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 147 ms
+[Thread_2 : TIME] 936 ms
+[TIME] union output data: 150 ms
+>> output data: 4000
+[Time] total: 1551 ms
+============== Stream num [44] =================
+>> input data: 4000
+[TIME] create inputPRDD: 31 ms
+[TIME] create missPRDD: 323 ms
+[TIME] join - hit data: 148 ms
+[Thread_1 : TIME] 148 ms
+[TIME] create query: 164 ms
+[TIME] get data from mongodb using cursor: 742 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 102 ms
+[Thread_2 : TIME] 866 ms
+[TIME] union output data: 338 ms
+>> output data: 4000
+[Time] total: 1560 ms
+============== Stream num [45] =================
+>> input data: 4000
+[TIME] create inputPRDD: 50 ms
+[TIME] create missPRDD: 318 ms
+[TIME] join - hit data: 125 ms
+[Thread_1 : TIME] 125 ms
+[TIME] create query: 168 ms
+[TIME] get data from mongodb using cursor: 707 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 138 ms
+[Thread_2 : TIME] 865 ms
+[TIME] union output data: 138 ms
+>> output data: 4000
+[Time] total: 1375 ms
+============== Stream num [46] =================
+>> input data: 4000
+[TIME] create inputPRDD: 33 ms
+[TIME] create missPRDD: 301 ms
+[TIME] join - hit data: 154 ms
+[Thread_1 : TIME] 154 ms
+[TIME] create query: 216 ms
+[TIME] get data from mongodb using cursor: 778 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 127 ms
+[Thread_2 : TIME] 925 ms
+[TIME] union output data: 151 ms
+>> output data: 4000
+[Time] total: 1411 ms
+============== Stream num [47] =================
+>> input data: 4000
+[TIME] create inputPRDD: 46 ms
+[TIME] create missPRDD: 329 ms
+[TIME] join - hit data: 135 ms
+[Thread_1 : TIME] 135 ms
+[TIME] create query: 163 ms
+[TIME] get data from mongodb using cursor: 723 ms
+[TIME] create newPRDD: 29 ms
+[TIME] join - miss data: 146 ms
+[Thread_2 : TIME] 898 ms
+[TIME] union output data: 150 ms
+>> output data: 4000
+[Time] total: 1425 ms
+============== Stream num [48] =================
+>> input data: 4000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 534 ms
+[TIME] join - hit data: 136 ms
+[Thread_1 : TIME] 136 ms
+[TIME] create query: 185 ms
+[TIME] get data from mongodb using cursor: 737 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 139 ms
+[Thread_2 : TIME] 897 ms
+[TIME] union output data: 146 ms
+>> output data: 4000
+[Time] total: 1623 ms
+============== Stream num [49] =================
+>> input data: 4000
+[TIME] create inputPRDD: 32 ms
+[TIME] create missPRDD: 370 ms
+[TIME] join - hit data: 171 ms
+[Thread_1 : TIME] 171 ms
+[TIME] create query: 188 ms
+[TIME] get data from mongodb using cursor: 779 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 125 ms
+[Thread_2 : TIME] 923 ms
+[TIME] union output data: 146 ms
+>> output data: 4000
+[Time] total: 1473 ms
+============== Stream num [50] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 443 ms
+[TIME] join - hit data: 149 ms
+[Thread_1 : TIME] 149 ms
+[TIME] create query: 164 ms
+[TIME] get data from mongodb using cursor: 722 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 138 ms
+[Thread_2 : TIME] 879 ms
+[TIME] union output data: 163 ms
+>> output data: 4000
+[Time] total: 1529 ms
+============== Stream num [51] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 268 ms
+[TIME] join - hit data: 141 ms
+[Thread_1 : TIME] 141 ms
+[TIME] create query: 173 ms
+[TIME] get data from mongodb using cursor: 737 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 125 ms
+[Thread_2 : TIME] 880 ms
+[TIME] union output data: 107 ms
+>> output data: 4000
+[Time] total: 1298 ms
+============== Stream num [52] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 302 ms
+[TIME] join - hit data: 150 ms
+[Thread_1 : TIME] 150 ms
+[TIME] create query: 181 ms
+[TIME] get data from mongodb using cursor: 722 ms
+[TIME] create newPRDD: 211 ms
+[TIME] join - miss data: 129 ms
+[Thread_2 : TIME] 1062 ms
+[TIME] union output data: 134 ms
+>> output data: 4000
+[Time] total: 1538 ms
+============== Stream num [53] =================
+>> input data: 4000
+[TIME] create inputPRDD: 63 ms
+[TIME] create missPRDD: 286 ms
+[TIME] join - hit data: 171 ms
+[Thread_1 : TIME] 171 ms
+[TIME] create query: 214 ms
+[TIME] get data from mongodb using cursor: 725 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 141 ms
+[Thread_2 : TIME] 886 ms
+[TIME] union output data: 184 ms
+>> output data: 4000
+[Time] total: 1422 ms
+============== Stream num [54] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 444 ms
+[TIME] join - hit data: 184 ms
+[Thread_1 : TIME] 184 ms
+[TIME] create query: 237 ms
+[TIME] get data from mongodb using cursor: 793 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 149 ms
+[Thread_2 : TIME] 964 ms
+[TIME] union output data: 162 ms
+>> output data: 4000
+[Time] total: 1612 ms
+============== Stream num [55] =================
+>> input data: 4000
+[TIME] create inputPRDD: 30 ms
+[TIME] create missPRDD: 319 ms
+[TIME] join - hit data: 167 ms
+[Thread_1 : TIME] 167 ms
+[TIME] create query: 222 ms
+[TIME] get data from mongodb using cursor: 745 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 147 ms
+[Thread_2 : TIME] 912 ms
+[TIME] union output data: 265 ms
+>> output data: 4000
+[Time] total: 1528 ms
+============== Stream num [56] =================
+>> input data: 4000
+[TIME] create inputPRDD: 33 ms
+[TIME] create missPRDD: 308 ms
+[TIME] join - hit data: 150 ms
+[Thread_1 : TIME] 150 ms
+[TIME] create query: 197 ms
+[TIME] get data from mongodb using cursor: 765 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 145 ms
+[Thread_2 : TIME] 930 ms
+[TIME] union output data: 160 ms
+>> output data: 4000
+[Time] total: 1433 ms
+============== Stream num [57] =================
+>> input data: 4000
+[TIME] create inputPRDD: 50 ms
+[TIME] create missPRDD: 328 ms
+[TIME] join - hit data: 186 ms
+[Thread_1 : TIME] 186 ms
+[TIME] create query: 232 ms
+[TIME] get data from mongodb using cursor: 741 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 137 ms
+[Thread_2 : TIME] 896 ms
+[TIME] union output data: 174 ms
+>> output data: 4000
+[Time] total: 1451 ms
+============== Stream num [58] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 251 ms
+[TIME] join - hit data: 132 ms
+[Thread_1 : TIME] 132 ms
+[TIME] create query: 162 ms
+[TIME] get data from mongodb using cursor: 711 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 113 ms
+[Thread_2 : TIME] 845 ms
+[TIME] union output data: 127 ms
+>> output data: 4000
+[Time] total: 1264 ms
+============== Stream num [59] =================
+>> input data: 8000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 301 ms
+[TIME] join - hit data: 266 ms
+[Thread_1 : TIME] 266 ms
+[TIME] create query: 394 ms
+[TIME] get data from mongodb using cursor: 2594 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 123 ms
+[Thread_2 : TIME] 2737 ms
+[TIME] union output data: 277 ms
+>> output data: 8000
+[Time] total: 3357 ms
+============== Stream num [60] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 300 ms
+[TIME] join - hit data: 166 ms
+[Thread_1 : TIME] 166 ms
+[TIME] create query: 197 ms
+[TIME] get data from mongodb using cursor: 734 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 159 ms
+[Thread_2 : TIME] 911 ms
+[TIME] union output data: 160 ms
+>> output data: 4000
+[Time] total: 1409 ms
+============== Stream num [61] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 325 ms
+[TIME] join - hit data: 153 ms
+[Thread_1 : TIME] 153 ms
+[TIME] create query: 218 ms
+[TIME] get data from mongodb using cursor: 722 ms
+[TIME] create newPRDD: 37 ms
+[TIME] join - miss data: 141 ms
+[Thread_2 : TIME] 899 ms
+[TIME] union output data: 148 ms
+>> output data: 4000
+[Time] total: 1411 ms
+============== Stream num [62] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 493 ms
+[TIME] join - hit data: 148 ms
+[Thread_1 : TIME] 148 ms
+[TIME] create query: 221 ms
+[TIME] get data from mongodb using cursor: 734 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 154 ms
+[Thread_2 : TIME] 898 ms
+[TIME] union output data: 176 ms
+>> output data: 4000
+[Time] total: 1619 ms
+============== Stream num [63] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 309 ms
+[TIME] join - hit data: 173 ms
+[Thread_1 : TIME] 173 ms
+[TIME] create query: 230 ms
+[TIME] get data from mongodb using cursor: 766 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 159 ms
+[Thread_2 : TIME] 946 ms
+[TIME] union output data: 284 ms
+>> output data: 4000
+[Time] total: 1580 ms
+============== Stream num [64] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 320 ms
+[TIME] join - hit data: 146 ms
+[Thread_1 : TIME] 146 ms
+[TIME] create query: 204 ms
+[TIME] get data from mongodb using cursor: 724 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 184 ms
+[Thread_2 : TIME] 929 ms
+[TIME] union output data: 174 ms
+>> output data: 4000
+[Time] total: 1468 ms
+============== Stream num [65] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 331 ms
+[TIME] join - hit data: 188 ms
+[Thread_1 : TIME] 188 ms
+[TIME] create query: 214 ms
+[TIME] get data from mongodb using cursor: 712 ms
+[TIME] create newPRDD: 28 ms
+[TIME] join - miss data: 160 ms
+[Thread_2 : TIME] 901 ms
+[TIME] union output data: 179 ms
+>> output data: 4000
+[Time] total: 1455 ms
+============== Stream num [66] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 487 ms
+[TIME] join - hit data: 160 ms
+[Thread_1 : TIME] 160 ms
+[TIME] create query: 222 ms
+[TIME] get data from mongodb using cursor: 722 ms
+[TIME] create newPRDD: 28 ms
+[TIME] join - miss data: 148 ms
+[Thread_2 : TIME] 900 ms
+[TIME] union output data: 176 ms
+>> output data: 4000
+[Time] total: 1606 ms
+============== Stream num [67] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 473 ms
+[TIME] join - hit data: 163 ms
+[Thread_1 : TIME] 163 ms
+[TIME] create query: 187 ms
+[TIME] get data from mongodb using cursor: 666 ms
+[TIME] create newPRDD: 22 ms
+[TIME] join - miss data: 151 ms
+[Thread_2 : TIME] 840 ms
+[TIME] union output data: 264 ms
+>> output data: 4000
+[Time] total: 1618 ms
+============== Stream num [68] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 418 ms
+[TIME] join - hit data: 170 ms
+[Thread_1 : TIME] 170 ms
+[TIME] create query: 199 ms
+[TIME] get data from mongodb using cursor: 751 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 163 ms
+[Thread_2 : TIME] 932 ms
+[TIME] union output data: 173 ms
+>> output data: 4000
+[Time] total: 1563 ms
+============== Stream num [69] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 345 ms
+[TIME] join - hit data: 166 ms
+[Thread_1 : TIME] 166 ms
+[TIME] create query: 185 ms
+[TIME] get data from mongodb using cursor: 719 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 162 ms
+[Thread_2 : TIME] 906 ms
+[TIME] union output data: 166 ms
+>> output data: 4000
+[Time] total: 1464 ms
+============== Stream num [70] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 350 ms
+[TIME] join - hit data: 161 ms
+[Thread_1 : TIME] 161 ms
+[TIME] create query: 222 ms
+[TIME] get data from mongodb using cursor: 702 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 155 ms
+[Thread_2 : TIME] 883 ms
+[TIME] union output data: 189 ms
+>> output data: 4000
+[Time] total: 1459 ms
+============== Stream num [71] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 368 ms
+[TIME] join - hit data: 144 ms
+[Thread_1 : TIME] 144 ms
+[TIME] create query: 210 ms
+[TIME] get data from mongodb using cursor: 653 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 157 ms
+[Thread_2 : TIME] 829 ms
+[TIME] union output data: 411 ms
+>> output data: 4000
+[Time] total: 1645 ms
+============== Stream num [72] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 352 ms
+[TIME] create query: 209 ms
+[TIME] join - hit data: 339 ms
+[Thread_1 : TIME] 339 ms
+[TIME] get data from mongodb using cursor: 690 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 181 ms
+[Thread_2 : TIME] 889 ms
+[TIME] union output data: 170 ms
+>> output data: 4000
+[Time] total: 1453 ms
+============== Stream num [73] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 320 ms
+[TIME] join - hit data: 179 ms
+[Thread_1 : TIME] 179 ms
+[TIME] create query: 209 ms
+[TIME] get data from mongodb using cursor: 710 ms
+[TIME] create newPRDD: 38 ms
+[TIME] join - miss data: 161 ms
+[Thread_2 : TIME] 909 ms
+[TIME] union output data: 189 ms
+>> output data: 4000
+[Time] total: 1458 ms
+============== Stream num [74] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 363 ms
+[TIME] join - hit data: 199 ms
+[Thread_1 : TIME] 199 ms
+[TIME] create query: 228 ms
+[TIME] get data from mongodb using cursor: 676 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 180 ms
+[Thread_2 : TIME] 874 ms
+[TIME] union output data: 177 ms
+>> output data: 4000
+[Time] total: 1460 ms
+============== Stream num [75] =================
+>> input data: 8000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 305 ms
+[TIME] join - hit data: 169 ms
+[Thread_1 : TIME] 169 ms
+[TIME] create query: 250 ms
+[TIME] get data from mongodb using cursor: 2220 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 137 ms
+[Thread_2 : TIME] 2379 ms
+[TIME] union output data: 260 ms
+>> output data: 8000
+[Time] total: 2997 ms
+============== Stream num [76] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 346 ms
+[TIME] join - hit data: 192 ms
+[Thread_1 : TIME] 192 ms
+[TIME] create query: 225 ms
+[TIME] get data from mongodb using cursor: 689 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 173 ms
+[Thread_2 : TIME] 883 ms
+[TIME] union output data: 183 ms
+>> output data: 4000
+[Time] total: 1450 ms
+============== Stream num [77] =================
+>> input data: 4000
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 505 ms
+[TIME] join - hit data: 296 ms
+[Thread_1 : TIME] 296 ms
+[TIME] create query: 345 ms
+[TIME] get data from mongodb using cursor: 791 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 185 ms
+[Thread_2 : TIME] 995 ms
+[TIME] union output data: 178 ms
+>> output data: 4000
+[Time] total: 1718 ms
+============== Stream num [78] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 330 ms
+[TIME] join - hit data: 182 ms
+[Thread_1 : TIME] 182 ms
+[TIME] create query: 237 ms
+[TIME] get data from mongodb using cursor: 711 ms
+[TIME] create newPRDD: 28 ms
+[TIME] join - miss data: 171 ms
+[Thread_2 : TIME] 910 ms
+[TIME] union output data: 190 ms
+>> output data: 4000
+[Time] total: 1474 ms
+============== Stream num [79] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 378 ms
+[TIME] join - hit data: 184 ms
+[Thread_1 : TIME] 184 ms
+[TIME] create query: 241 ms
+[TIME] get data from mongodb using cursor: 722 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 179 ms
+[Thread_2 : TIME] 916 ms
+[TIME] union output data: 283 ms
+>> output data: 4000
+[Time] total: 1619 ms
+============== Stream num [80] =================
+>> input data: 4000
+[TIME] create inputPRDD: 32 ms
+[TIME] create missPRDD: 374 ms
+[TIME] join - hit data: 185 ms
+[Thread_1 : TIME] 185 ms
+[TIME] create query: 247 ms
+[TIME] get data from mongodb using cursor: 730 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 183 ms
+[Thread_2 : TIME] 934 ms
+[TIME] union output data: 185 ms
+>> output data: 4000
+[Time] total: 1527 ms
+============== Stream num [81] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 354 ms
+[TIME] join - hit data: 186 ms
+[Thread_1 : TIME] 186 ms
+[TIME] create query: 213 ms
+[TIME] get data from mongodb using cursor: 653 ms
+[TIME] create newPRDD: 32 ms
+[TIME] join - miss data: 175 ms
+[Thread_2 : TIME] 861 ms
+[TIME] union output data: 196 ms
+>> output data: 4000
+[Time] total: 1451 ms
+============== Stream num [82] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 407 ms
+[TIME] join - hit data: 198 ms
+[Thread_1 : TIME] 198 ms
+[TIME] create query: 272 ms
+[TIME] get data from mongodb using cursor: 746 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 177 ms
+[Thread_2 : TIME] 941 ms
+[TIME] union output data: 200 ms
+>> output data: 4000
+[Time] total: 1588 ms
+============== Stream num [83] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 523 ms
+[TIME] join - hit data: 270 ms
+[Thread_1 : TIME] 270 ms
+[TIME] create query: 319 ms
+[TIME] get data from mongodb using cursor: 733 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 342 ms
+[Thread_2 : TIME] 1092 ms
+[TIME] union output data: 194 ms
+>> output data: 4000
+[Time] total: 1853 ms
+============== Stream num [84] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 334 ms
+[TIME] join - hit data: 181 ms
+[Thread_1 : TIME] 181 ms
+[TIME] create query: 234 ms
+[TIME] get data from mongodb using cursor: 648 ms
+[TIME] create newPRDD: 25 ms
+[TIME] join - miss data: 183 ms
+[Thread_2 : TIME] 856 ms
+[TIME] union output data: 192 ms
+>> output data: 4000
+[Time] total: 1419 ms
+============== Stream num [85] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 382 ms
+[TIME] join - hit data: 171 ms
+[Thread_1 : TIME] 171 ms
+[TIME] create query: 251 ms
+[TIME] get data from mongodb using cursor: 714 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 178 ms
+[Thread_2 : TIME] 913 ms
+[TIME] union output data: 199 ms
+>> output data: 4000
+[Time] total: 1538 ms
+============== Stream num [86] =================
+>> input data: 4000
+[TIME] create inputPRDD: 33 ms
+[TIME] create missPRDD: 367 ms
+[TIME] join - hit data: 326 ms
+[Thread_1 : TIME] 326 ms
+[TIME] create query: 378 ms
+[TIME] get data from mongodb using cursor: 807 ms
+[TIME] create newPRDD: 137 ms
+[TIME] join - miss data: 174 ms
+[Thread_2 : TIME] 1118 ms
+[TIME] union output data: 202 ms
+>> output data: 4000
+[Time] total: 1724 ms
+============== Stream num [87] =================
+>> input data: 4000
+[TIME] create inputPRDD: 32 ms
+[TIME] create missPRDD: 359 ms
+[TIME] join - hit data: 310 ms
+[Thread_1 : TIME] 310 ms
+[TIME] create query: 340 ms
+[TIME] get data from mongodb using cursor: 783 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 147 ms
+[Thread_2 : TIME] 948 ms
+[TIME] union output data: 301 ms
+>> output data: 4000
+[Time] total: 1642 ms
+============== Stream num [88] =================
+>> input data: 4000
+[TIME] create inputPRDD: 33 ms
+[TIME] create missPRDD: 357 ms
+[TIME] join - hit data: 200 ms
+[Thread_1 : TIME] 200 ms
+[TIME] create query: 257 ms
+[TIME] get data from mongodb using cursor: 707 ms
+[TIME] create newPRDD: 22 ms
+[TIME] join - miss data: 176 ms
+[Thread_2 : TIME] 905 ms
+[TIME] union output data: 185 ms
+>> output data: 4000
+[Time] total: 1481 ms
+============== Stream num [89] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 383 ms
+[TIME] join - hit data: 183 ms
+[Thread_1 : TIME] 183 ms
+[TIME] create query: 229 ms
+[TIME] get data from mongodb using cursor: 712 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 173 ms
+[Thread_2 : TIME] 903 ms
+[TIME] union output data: 223 ms
+>> output data: 4000
+[Time] total: 1546 ms
+============== Stream num [90] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 344 ms
+[TIME] join - hit data: 209 ms
+[Thread_1 : TIME] 209 ms
+[TIME] create query: 221 ms
+[TIME] get data from mongodb using cursor: 662 ms
+[TIME] create newPRDD: 26 ms
+[TIME] join - miss data: 187 ms
+[Thread_2 : TIME] 875 ms
+[TIME] union output data: 275 ms
+>> output data: 4000
+[Time] total: 1537 ms
+============== Stream num [91] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 397 ms
+[TIME] join - hit data: 156 ms
+[Thread_1 : TIME] 156 ms
+[TIME] create query: 210 ms
+[TIME] get data from mongodb using cursor: 664 ms
+[TIME] create newPRDD: 27 ms
+[TIME] join - miss data: 117 ms
+[Thread_2 : TIME] 808 ms
+[TIME] union output data: 260 ms
+>> output data: 4000
+[Time] total: 1502 ms
+============== Stream num [92] =================
+>> input data: 8000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 448 ms
+[TIME] join - hit data: 171 ms
+[Thread_1 : TIME] 171 ms
+[TIME] create query: 283 ms
+[TIME] get data from mongodb using cursor: 2115 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 133 ms
+[Thread_2 : TIME] 2272 ms
+[TIME] union output data: 189 ms
+>> output data: 8000
+[Time] total: 2948 ms
+============== Stream num [93] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 453 ms
+[TIME] join - hit data: 332 ms
+[Thread_1 : TIME] 332 ms
+[TIME] create query: 371 ms
+[TIME] get data from mongodb using cursor: 808 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 184 ms
+[Thread_2 : TIME] 1012 ms
+[TIME] union output data: 190 ms
+>> output data: 4000
+[Time] total: 1697 ms
+============== Stream num [94] =================
+>> input data: 4000
+[TIME] create inputPRDD: 48 ms
+[TIME] create missPRDD: 394 ms
+[TIME] join - hit data: 179 ms
+[Thread_1 : TIME] 179 ms
+[TIME] create query: 268 ms
+[TIME] get data from mongodb using cursor: 692 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 329 ms
+[Thread_2 : TIME] 1038 ms
+[TIME] union output data: 212 ms
+>> output data: 4000
+[Time] total: 1695 ms
+============== Stream num [95] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 400 ms
+[TIME] join - hit data: 217 ms
+[Thread_1 : TIME] 217 ms
+[TIME] create query: 243 ms
+[TIME] get data from mongodb using cursor: 695 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 190 ms
+[Thread_2 : TIME] 903 ms
+[TIME] union output data: 254 ms
+>> output data: 4000
+[Time] total: 1595 ms
+============== Stream num [96] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 388 ms
+[TIME] join - hit data: 174 ms
+[Thread_1 : TIME] 174 ms
+[TIME] create query: 249 ms
+[TIME] get data from mongodb using cursor: 651 ms
+[TIME] create newPRDD: 32 ms
+[TIME] join - miss data: 182 ms
+[Thread_2 : TIME] 866 ms
+[TIME] union output data: 263 ms
+>> output data: 4000
+[Time] total: 1561 ms
+============== Stream num [97] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 342 ms
+[TIME] join - hit data: 206 ms
+[Thread_1 : TIME] 206 ms
+[TIME] create query: 260 ms
+[TIME] get data from mongodb using cursor: 678 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 164 ms
+[Thread_2 : TIME] 860 ms
+[TIME] union output data: 178 ms
+>> output data: 4000
+[Time] total: 1420 ms
+============== Stream num [98] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 494 ms
+[TIME] join - hit data: 210 ms
+[Thread_1 : TIME] 210 ms
+[TIME] create query: 240 ms
+[TIME] get data from mongodb using cursor: 698 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 200 ms
+[Thread_2 : TIME] 916 ms
+[TIME] union output data: 209 ms
+>> output data: 4000
+[Time] total: 1657 ms
+============== Stream num [99] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 511 ms
+[TIME] join - hit data: 208 ms
+[Thread_1 : TIME] 208 ms
+[TIME] create query: 269 ms
+[TIME] get data from mongodb using cursor: 700 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 189 ms
+[Thread_2 : TIME] 909 ms
+[TIME] union output data: 208 ms
+>> output data: 4000
+[Time] total: 1670 ms
+============== Stream num [100] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 530 ms
+[TIME] join - hit data: 237 ms
+[Thread_1 : TIME] 237 ms
+[TIME] create query: 255 ms
+[TIME] get data from mongodb using cursor: 658 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 345 ms
+[Thread_2 : TIME] 1021 ms
+[TIME] union output data: 215 ms
+>> output data: 4000
+[Time] total: 1808 ms
+============== Stream num [101] =================
+>> input data: 4000
+[TIME] create inputPRDD: 51 ms
+[TIME] create missPRDD: 535 ms
+[TIME] join - hit data: 172 ms
+[Thread_1 : TIME] 172 ms
+[TIME] create query: 261 ms
+[TIME] get data from mongodb using cursor: 688 ms
+[TIME] create newPRDD: 24 ms
+[TIME] join - miss data: 188 ms
+[Thread_2 : TIME] 901 ms
+[TIME] union output data: 208 ms
+>> output data: 4000
+[Time] total: 1697 ms
+============== Stream num [102] =================
+>> input data: 4000
+[TIME] create inputPRDD: 32 ms
+[TIME] create missPRDD: 391 ms
+[TIME] join - hit data: 176 ms
+[Thread_1 : TIME] 176 ms
+[TIME] create query: 250 ms
+[TIME] get data from mongodb using cursor: 659 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 218 ms
+[Thread_2 : TIME] 896 ms
+[TIME] union output data: 229 ms
+>> output data: 4000
+[Time] total: 1549 ms
+============== Stream num [103] =================
+>> input data: 4000
+[TIME] create inputPRDD: 46 ms
+[TIME] create missPRDD: 383 ms
+[TIME] join - hit data: 205 ms
+[Thread_1 : TIME] 205 ms
+[TIME] create query: 264 ms
+[TIME] get data from mongodb using cursor: 712 ms
+[TIME] create newPRDD: 43 ms
+[TIME] join - miss data: 177 ms
+[Thread_2 : TIME] 931 ms
+[TIME] union output data: 381 ms
+>> output data: 4000
+[Time] total: 1743 ms
+============== Stream num [104] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 540 ms
+[TIME] join - hit data: 205 ms
+[Thread_1 : TIME] 205 ms
+[TIME] create query: 267 ms
+[TIME] get data from mongodb using cursor: 673 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 168 ms
+[Thread_2 : TIME] 861 ms
+[TIME] union output data: 190 ms
+>> output data: 4000
+[Time] total: 1629 ms
+============== Stream num [105] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 420 ms
+[TIME] join - hit data: 208 ms
+[Thread_1 : TIME] 208 ms
+[TIME] create query: 258 ms
+[TIME] get data from mongodb using cursor: 702 ms
+[TIME] create newPRDD: 30 ms
+[TIME] join - miss data: 195 ms
+[Thread_2 : TIME] 927 ms
+[TIME] union output data: 213 ms
+>> output data: 4000
+[Time] total: 1596 ms
+============== Stream num [106] =================
+>> input data: 4000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 427 ms
+[TIME] join - hit data: 220 ms
+[Thread_1 : TIME] 220 ms
+[TIME] create query: 273 ms
+[TIME] get data from mongodb using cursor: 720 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 215 ms
+[Thread_2 : TIME] 954 ms
+[TIME] union output data: 382 ms
+>> output data: 4000
+[Time] total: 1809 ms
+============== Stream num [107] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 424 ms
+[TIME] join - hit data: 203 ms
+[Thread_1 : TIME] 203 ms
+[TIME] create query: 261 ms
+[TIME] get data from mongodb using cursor: 665 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 203 ms
+[Thread_2 : TIME] 886 ms
+[TIME] union output data: 403 ms
+>> output data: 4000
+[Time] total: 1755 ms
+============== Stream num [108] =================
+>> input data: 8000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 379 ms
+[TIME] join - hit data: 197 ms
+[Thread_1 : TIME] 197 ms
+[TIME] create query: 281 ms
+[TIME] get data from mongodb using cursor: 1999 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 172 ms
+[Thread_2 : TIME] 2191 ms
+[TIME] union output data: 191 ms
+>> output data: 8000
+[Time] total: 2801 ms
+============== Stream num [109] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 432 ms
+[TIME] create query: 258 ms
+[TIME] join - hit data: 323 ms
+[Thread_1 : TIME] 323 ms
+[TIME] get data from mongodb using cursor: 670 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 233 ms
+[Thread_2 : TIME] 925 ms
+[TIME] union output data: 236 ms
+>> output data: 4000
+[Time] total: 1636 ms
+============== Stream num [110] =================
+>> input data: 4000
+[TIME] create inputPRDD: 31 ms
+[TIME] create missPRDD: 436 ms
+[TIME] join - hit data: 213 ms
+[Thread_1 : TIME] 213 ms
+[TIME] create query: 294 ms
+[TIME] get data from mongodb using cursor: 691 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 202 ms
+[Thread_2 : TIME] 914 ms
+[TIME] union output data: 234 ms
+>> output data: 4000
+[Time] total: 1618 ms
+============== Stream num [111] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 454 ms
+[TIME] join - hit data: 216 ms
+[Thread_1 : TIME] 216 ms
+[TIME] create query: 249 ms
+[TIME] get data from mongodb using cursor: 609 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 207 ms
+[Thread_2 : TIME] 837 ms
+[TIME] union output data: 384 ms
+>> output data: 4000
+[Time] total: 1719 ms
+============== Stream num [112] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 404 ms
+[TIME] join - hit data: 332 ms
+[Thread_1 : TIME] 332 ms
+[TIME] create query: 423 ms
+[TIME] get data from mongodb using cursor: 809 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 202 ms
+[Thread_2 : TIME] 1030 ms
+[TIME] union output data: 237 ms
+>> output data: 4000
+[Time] total: 1711 ms
+============== Stream num [113] =================
+>> input data: 4000
+[TIME] create inputPRDD: 30 ms
+[TIME] create missPRDD: 431 ms
+[TIME] join - hit data: 217 ms
+[Thread_1 : TIME] 217 ms
+[TIME] create query: 278 ms
+[TIME] get data from mongodb using cursor: 656 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 205 ms
+[Thread_2 : TIME] 882 ms
+[TIME] union output data: 236 ms
+>> output data: 4000
+[Time] total: 1580 ms
+============== Stream num [114] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 459 ms
+[TIME] create query: 233 ms
+[TIME] join - hit data: 331 ms
+[Thread_1 : TIME] 331 ms
+[TIME] get data from mongodb using cursor: 645 ms
+[TIME] create newPRDD: 36 ms
+[TIME] join - miss data: 213 ms
+[Thread_2 : TIME] 895 ms
+[TIME] union output data: 230 ms
+>> output data: 4000
+[Time] total: 1622 ms
+============== Stream num [115] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 463 ms
+[TIME] join - hit data: 392 ms
+[Thread_1 : TIME] 392 ms
+[TIME] create query: 464 ms
+[TIME] get data from mongodb using cursor: 848 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 225 ms
+[Thread_2 : TIME] 1093 ms
+[TIME] union output data: 240 ms
+>> output data: 4000
+[Time] total: 1838 ms
+============== Stream num [116] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 628 ms
+[TIME] join - hit data: 225 ms
+[Thread_1 : TIME] 225 ms
+[TIME] create query: 261 ms
+[TIME] get data from mongodb using cursor: 656 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 239 ms
+[Thread_2 : TIME] 912 ms
+[TIME] union output data: 240 ms
+>> output data: 4000
+[Time] total: 1825 ms
+============== Stream num [117] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 416 ms
+[TIME] join - hit data: 226 ms
+[Thread_1 : TIME] 226 ms
+[TIME] create query: 276 ms
+[TIME] get data from mongodb using cursor: 631 ms
+[TIME] create newPRDD: 33 ms
+[TIME] join - miss data: 209 ms
+[Thread_2 : TIME] 874 ms
+[TIME] union output data: 293 ms
+>> output data: 4000
+[Time] total: 1619 ms
+============== Stream num [118] =================
+>> input data: 4000
+[TIME] create inputPRDD: 29 ms
+[TIME] create missPRDD: 451 ms
+[TIME] join - hit data: 204 ms
+[Thread_1 : TIME] 204 ms
+[TIME] create query: 226 ms
+[TIME] get data from mongodb using cursor: 663 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 293 ms
+[Thread_2 : TIME] 975 ms
+[TIME] union output data: 365 ms
+>> output data: 4000
+[Time] total: 1822 ms
+============== Stream num [119] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 407 ms
+[TIME] join - hit data: 230 ms
+[Thread_1 : TIME] 230 ms
+[TIME] create query: 258 ms
+[TIME] get data from mongodb using cursor: 660 ms
+[TIME] create newPRDD: 34 ms
+[TIME] join - miss data: 215 ms
+[Thread_2 : TIME] 910 ms
+[TIME] union output data: 224 ms
+>> output data: 4000
+[Time] total: 1585 ms
+============== Stream num [120] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 422 ms
+[TIME] join - hit data: 246 ms
+[Thread_1 : TIME] 246 ms
+[TIME] create query: 326 ms
+[TIME] get data from mongodb using cursor: 709 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 226 ms
+[Thread_2 : TIME] 955 ms
+[TIME] union output data: 223 ms
+>> output data: 4000
+[Time] total: 1637 ms
+============== Stream num [121] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 547 ms
+[TIME] join - hit data: 239 ms
+[Thread_1 : TIME] 239 ms
+[TIME] create query: 270 ms
+[TIME] get data from mongodb using cursor: 665 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 241 ms
+[Thread_2 : TIME] 923 ms
+[TIME] union output data: 395 ms
+>> output data: 4000
+[Time] total: 1907 ms
+============== Stream num [122] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 586 ms
+[TIME] join - hit data: 199 ms
+[Thread_1 : TIME] 199 ms
+[TIME] create query: 285 ms
+[TIME] get data from mongodb using cursor: 663 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 217 ms
+[Thread_2 : TIME] 898 ms
+[TIME] union output data: 225 ms
+>> output data: 4000
+[Time] total: 1745 ms
+============== Stream num [123] =================
+>> input data: 4000
+[TIME] create inputPRDD: 46 ms
+[TIME] create missPRDD: 434 ms
+[TIME] join - hit data: 201 ms
+[Thread_1 : TIME] 201 ms
+[TIME] create query: 302 ms
+[TIME] get data from mongodb using cursor: 663 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 220 ms
+[Thread_2 : TIME] 900 ms
+[TIME] union output data: 405 ms
+>> output data: 4000
+[Time] total: 1786 ms
+============== Stream num [124] =================
+>> input data: 8000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 338 ms
+[TIME] create query: 282 ms
+[TIME] join - hit data: 332 ms
+[Thread_1 : TIME] 332 ms
+[TIME] get data from mongodb using cursor: 1896 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 150 ms
+[Thread_2 : TIME] 2065 ms
+[TIME] union output data: 234 ms
+>> output data: 8000
+[Time] total: 2676 ms
+============== Stream num [125] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 466 ms
+[TIME] join - hit data: 248 ms
+[Thread_1 : TIME] 248 ms
+[TIME] create query: 275 ms
+[TIME] get data from mongodb using cursor: 656 ms
+[TIME] create newPRDD: 22 ms
+[TIME] join - miss data: 228 ms
+[Thread_2 : TIME] 907 ms
+[TIME] union output data: 312 ms
+>> output data: 4000
+[Time] total: 1731 ms
+============== Stream num [126] =================
+>> input data: 4000
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 501 ms
+[TIME] join - hit data: 222 ms
+[Thread_1 : TIME] 222 ms
+[TIME] create query: 280 ms
+[TIME] get data from mongodb using cursor: 666 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 230 ms
+[Thread_2 : TIME] 914 ms
+[TIME] union output data: 406 ms
+>> output data: 4000
+[Time] total: 1860 ms
+============== Stream num [127] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 445 ms
+[TIME] join - hit data: 356 ms
+[Thread_1 : TIME] 356 ms
+[TIME] create query: 443 ms
+[TIME] get data from mongodb using cursor: 827 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 228 ms
+[Thread_2 : TIME] 1071 ms
+[TIME] union output data: 271 ms
+>> output data: 4000
+[Time] total: 1830 ms
+============== Stream num [128] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 439 ms
+[TIME] join - hit data: 216 ms
+[Thread_1 : TIME] 216 ms
+[TIME] create query: 283 ms
+[TIME] get data from mongodb using cursor: 680 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 222 ms
+[Thread_2 : TIME] 921 ms
+[TIME] union output data: 390 ms
+>> output data: 4000
+[Time] total: 1787 ms
+============== Stream num [129] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 471 ms
+[TIME] join - hit data: 395 ms
+[Thread_1 : TIME] 395 ms
+[TIME] create query: 479 ms
+[TIME] get data from mongodb using cursor: 857 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 226 ms
+[Thread_2 : TIME] 1102 ms
+[TIME] union output data: 264 ms
+>> output data: 4000
+[Time] total: 1880 ms
+============== Stream num [130] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 419 ms
+[TIME] join - hit data: 251 ms
+[Thread_1 : TIME] 251 ms
+[TIME] create query: 281 ms
+[TIME] get data from mongodb using cursor: 690 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 245 ms
+[Thread_2 : TIME] 955 ms
+[TIME] union output data: 245 ms
+>> output data: 4000
+[Time] total: 1659 ms
+============== Stream num [131] =================
+>> input data: 4000
+[TIME] create inputPRDD: 195 ms
+[TIME] create missPRDD: 442 ms
+[TIME] join - hit data: 251 ms
+[Thread_1 : TIME] 251 ms
+[TIME] create query: 275 ms
+[TIME] get data from mongodb using cursor: 639 ms
+[TIME] create newPRDD: 41 ms
+[TIME] join - miss data: 243 ms
+[Thread_2 : TIME] 923 ms
+[TIME] union output data: 251 ms
+>> output data: 4000
+[Time] total: 1813 ms
+============== Stream num [132] =================
+>> input data: 4000
+[TIME] create inputPRDD: 32 ms
+[TIME] create missPRDD: 413 ms
+[TIME] join - hit data: 220 ms
+[Thread_1 : TIME] 220 ms
+[TIME] create query: 292 ms
+[TIME] get data from mongodb using cursor: 720 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 309 ms
+[Thread_2 : TIME] 1046 ms
+[TIME] union output data: 299 ms
+>> output data: 4000
+[Time] total: 1793 ms
+============== Stream num [133] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 421 ms
+[TIME] join - hit data: 231 ms
+[Thread_1 : TIME] 231 ms
+[TIME] create query: 310 ms
+[TIME] get data from mongodb using cursor: 695 ms
+[TIME] create newPRDD: 166 ms
+[TIME] join - miss data: 243 ms
+[Thread_2 : TIME] 1103 ms
+[TIME] union output data: 242 ms
+>> output data: 4000
+[Time] total: 1807 ms
+============== Stream num [134] =================
+>> input data: 4000
+[TIME] create inputPRDD: 60 ms
+[TIME] create missPRDD: 430 ms
+[TIME] join - hit data: 259 ms
+[Thread_1 : TIME] 259 ms
+[TIME] create query: 294 ms
+[TIME] get data from mongodb using cursor: 690 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 239 ms
+[Thread_2 : TIME] 949 ms
+[TIME] union output data: 269 ms
+>> output data: 4000
+[Time] total: 1710 ms
+============== Stream num [135] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 565 ms
+[TIME] join - hit data: 304 ms
+[Thread_1 : TIME] 304 ms
+[TIME] create query: 412 ms
+[TIME] get data from mongodb using cursor: 754 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 240 ms
+[Thread_2 : TIME] 1011 ms
+[TIME] union output data: 287 ms
+>> output data: 4000
+[Time] total: 1907 ms
+============== Stream num [136] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 617 ms
+[TIME] join - hit data: 223 ms
+[Thread_1 : TIME] 223 ms
+[TIME] create query: 331 ms
+[TIME] get data from mongodb using cursor: 714 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 231 ms
+[Thread_2 : TIME] 959 ms
+[TIME] union output data: 275 ms
+>> output data: 4000
+[Time] total: 1898 ms
+============== Stream num [137] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 444 ms
+[TIME] join - hit data: 253 ms
+[Thread_1 : TIME] 253 ms
+[TIME] create query: 347 ms
+[TIME] get data from mongodb using cursor: 722 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 239 ms
+[Thread_2 : TIME] 979 ms
+[TIME] union output data: 400 ms
+>> output data: 4000
+[Time] total: 1865 ms
+============== Stream num [138] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 537 ms
+[TIME] join - hit data: 319 ms
+[Thread_1 : TIME] 319 ms
+[TIME] create query: 371 ms
+[TIME] get data from mongodb using cursor: 712 ms
+[TIME] create newPRDD: 45 ms
+[TIME] join - miss data: 240 ms
+[Thread_2 : TIME] 996 ms
+[TIME] union output data: 312 ms
+>> output data: 4000
+[Time] total: 1887 ms
+============== Stream num [139] =================
+>> input data: 4000
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 455 ms
+[TIME] join - hit data: 262 ms
+[Thread_1 : TIME] 262 ms
+[TIME] create query: 290 ms
+[TIME] get data from mongodb using cursor: 643 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 242 ms
+[Thread_2 : TIME] 903 ms
+[TIME] union output data: 292 ms
+>> output data: 4000
+[Time] total: 1689 ms
+============== Stream num [140] =================
+>> input data: 4000
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 445 ms
+[TIME] join - hit data: 222 ms
+[Thread_1 : TIME] 222 ms
+[TIME] create query: 236 ms
+[TIME] get data from mongodb using cursor: 625 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 163 ms
+[Thread_2 : TIME] 804 ms
+[TIME] union output data: 373 ms
+>> output data: 4000
+[Time] total: 1661 ms
+============== Stream num [141] =================
+>> input data: 8000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 384 ms
+[TIME] join - hit data: 317 ms
+[Thread_1 : TIME] 317 ms
+[TIME] create query: 428 ms
+[TIME] get data from mongodb using cursor: 2028 ms
+[TIME] create newPRDD: 35 ms
+[TIME] join - miss data: 161 ms
+[Thread_2 : TIME] 2223 ms
+[TIME] union output data: 387 ms
+>> output data: 8000
+[Time] total: 3037 ms
+============== Stream num [142] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 451 ms
+[TIME] join - hit data: 258 ms
+[Thread_1 : TIME] 258 ms
+[TIME] create query: 346 ms
+[TIME] get data from mongodb using cursor: 722 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 244 ms
+[Thread_2 : TIME] 983 ms
+[TIME] union output data: 261 ms
+>> output data: 4000
+[Time] total: 1736 ms
+============== Stream num [143] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 524 ms
+[TIME] join - hit data: 230 ms
+[Thread_1 : TIME] 230 ms
+[TIME] create query: 320 ms
+[TIME] get data from mongodb using cursor: 692 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 388 ms
+[Thread_2 : TIME] 1097 ms
+[TIME] union output data: 250 ms
+>> output data: 4000
+[Time] total: 1910 ms
+============== Stream num [144] =================
+>> input data: 4000
+[TIME] create inputPRDD: 32 ms
+[TIME] create missPRDD: 437 ms
+[TIME] join - hit data: 230 ms
+[Thread_1 : TIME] 230 ms
+[TIME] create query: 305 ms
+[TIME] get data from mongodb using cursor: 700 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 206 ms
+[Thread_2 : TIME] 925 ms
+[TIME] union output data: 385 ms
+>> output data: 4000
+[Time] total: 1782 ms
+============== Stream num [145] =================
+>> input data: 4000
+[TIME] create inputPRDD: 34 ms
+[TIME] create missPRDD: 471 ms
+[TIME] join - hit data: 283 ms
+[Thread_1 : TIME] 283 ms
+[TIME] create query: 294 ms
+[TIME] get data from mongodb using cursor: 664 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 262 ms
+[Thread_2 : TIME] 943 ms
+[TIME] union output data: 286 ms
+>> output data: 4000
+[Time] total: 1737 ms
+============== Stream num [146] =================
+>> input data: 4000
+[TIME] create inputPRDD: 60 ms
+[TIME] create missPRDD: 445 ms
+[TIME] join - hit data: 516 ms
+[Thread_1 : TIME] 516 ms
+[TIME] create query: 578 ms
+[TIME] get data from mongodb using cursor: 928 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 242 ms
+[Thread_2 : TIME] 1188 ms
+[TIME] union output data: 266 ms
+>> output data: 4000
+[Time] total: 1962 ms
+============== Stream num [147] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 469 ms
+[TIME] join - hit data: 227 ms
+[Thread_1 : TIME] 227 ms
+[TIME] create query: 244 ms
+[TIME] get data from mongodb using cursor: 616 ms
+[TIME] create newPRDD: 23 ms
+[TIME] join - miss data: 153 ms
+[Thread_2 : TIME] 792 ms
+[TIME] union output data: 250 ms
+>> output data: 4000
+[Time] total: 1548 ms
+============== Stream num [148] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 480 ms
+[TIME] join - hit data: 432 ms
+[Thread_1 : TIME] 432 ms
+[TIME] create query: 490 ms
+[TIME] get data from mongodb using cursor: 873 ms
+[TIME] create newPRDD: 22 ms
+[TIME] join - miss data: 389 ms
+[Thread_2 : TIME] 1284 ms
+[TIME] union output data: 299 ms
+>> output data: 4000
+[Time] total: 2106 ms
+============== Stream num [149] =================
+>> input data: 4000
+[TIME] create inputPRDD: 33 ms
+[TIME] create missPRDD: 505 ms
+[TIME] join - hit data: 273 ms
+[Thread_1 : TIME] 273 ms
+[TIME] create query: 287 ms
+[TIME] get data from mongodb using cursor: 662 ms
+[TIME] create newPRDD: 32 ms
+[TIME] join - miss data: 248 ms
+[Thread_2 : TIME] 942 ms
+[TIME] union output data: 262 ms
+>> output data: 4000
+[Time] total: 1744 ms
+============== Stream num [150] =================
+>> input data: 4000
+[TIME] create inputPRDD: 57 ms
+[TIME] create missPRDD: 513 ms
+[TIME] join - hit data: 356 ms
+[Thread_1 : TIME] 356 ms
+[TIME] create query: 469 ms
+[TIME] get data from mongodb using cursor: 825 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 225 ms
+[Thread_2 : TIME] 1066 ms
+[TIME] union output data: 292 ms
+>> output data: 4000
+[Time] total: 1930 ms
+============== Stream num [151] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 561 ms
+[TIME] join - hit data: 421 ms
+[Thread_1 : TIME] 421 ms
+[TIME] create query: 488 ms
+[TIME] get data from mongodb using cursor: 838 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 245 ms
+[Thread_2 : TIME] 1103 ms
+[TIME] union output data: 352 ms
+>> output data: 4000
+[Time] total: 2059 ms
+============== Stream num [152] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 477 ms
+[TIME] create query: 306 ms
+[TIME] join - hit data: 400 ms
+[Thread_1 : TIME] 400 ms
+[TIME] get data from mongodb using cursor: 644 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 261 ms
+[Thread_2 : TIME] 922 ms
+[TIME] union output data: 302 ms
+>> output data: 4000
+[Time] total: 1739 ms
+============== Stream num [153] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 471 ms
+[TIME] join - hit data: 271 ms
+[Thread_1 : TIME] 271 ms
+[TIME] create query: 344 ms
+[TIME] get data from mongodb using cursor: 690 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 396 ms
+[Thread_2 : TIME] 1106 ms
+[TIME] union output data: 421 ms
+>> output data: 4000
+[Time] total: 2040 ms
+============== Stream num [154] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 506 ms
+[TIME] join - hit data: 268 ms
+[Thread_1 : TIME] 268 ms
+[TIME] create query: 280 ms
+[TIME] get data from mongodb using cursor: 659 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 188 ms
+[Thread_2 : TIME] 866 ms
+[TIME] union output data: 376 ms
+>> output data: 4000
+[Time] total: 1787 ms
+============== Stream num [155] =================
+>> input data: 4000
+[TIME] create inputPRDD: 45 ms
+[TIME] create missPRDD: 488 ms
+[TIME] join - hit data: 274 ms
+[Thread_1 : TIME] 274 ms
+[TIME] create query: 281 ms
+[TIME] get data from mongodb using cursor: 597 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 307 ms
+[Thread_2 : TIME] 922 ms
+[TIME] union output data: 288 ms
+>> output data: 4000
+[Time] total: 1746 ms
+============== Stream num [156] =================
+>> input data: 4000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 503 ms
+[TIME] join - hit data: 526 ms
+[Thread_1 : TIME] 526 ms
+[TIME] create query: 542 ms
+[TIME] get data from mongodb using cursor: 876 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 268 ms
+[Thread_2 : TIME] 1165 ms
+[TIME] union output data: 277 ms
+>> output data: 4000
+[Time] total: 1990 ms
+============== Stream num [157] =================
+>> input data: 8000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 412 ms
+[TIME] join - hit data: 266 ms
+[Thread_1 : TIME] 266 ms
+[TIME] create query: 319 ms
+[TIME] get data from mongodb using cursor: 1810 ms
+[TIME] create newPRDD: 169 ms
+[TIME] join - miss data: 181 ms
+[Thread_2 : TIME] 2160 ms
+[TIME] union output data: 201 ms
+>> output data: 8000
+[Time] total: 2811 ms
+============== Stream num [158] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 486 ms
+[TIME] join - hit data: 269 ms
+[Thread_1 : TIME] 269 ms
+[TIME] create query: 299 ms
+[TIME] get data from mongodb using cursor: 655 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 277 ms
+[Thread_2 : TIME] 950 ms
+[TIME] union output data: 333 ms
+>> output data: 4000
+[Time] total: 1807 ms
+============== Stream num [159] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 477 ms
+[TIME] join - hit data: 215 ms
+[Thread_1 : TIME] 215 ms
+[TIME] create query: 328 ms
+[TIME] get data from mongodb using cursor: 675 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 266 ms
+[Thread_2 : TIME] 960 ms
+[TIME] union output data: 327 ms
+>> output data: 4000
+[Time] total: 1806 ms
+============== Stream num [160] =================
+>> input data: 4000
+[TIME] create inputPRDD: 72 ms
+[TIME] create missPRDD: 483 ms
+[TIME] join - hit data: 283 ms
+[Thread_1 : TIME] 283 ms
+[TIME] create query: 304 ms
+[TIME] get data from mongodb using cursor: 660 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 408 ms
+[Thread_2 : TIME] 1088 ms
+[TIME] union output data: 276 ms
+>> output data: 4000
+[Time] total: 1920 ms
+============== Stream num [161] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 468 ms
+[TIME] join - hit data: 380 ms
+[Thread_1 : TIME] 380 ms
+[TIME] create query: 403 ms
+[TIME] get data from mongodb using cursor: 762 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 178 ms
+[Thread_2 : TIME] 961 ms
+[TIME] union output data: 275 ms
+>> output data: 4000
+[Time] total: 1741 ms
+============== Stream num [162] =================
+>> input data: 4000
+[TIME] create inputPRDD: 36 ms
+[TIME] create missPRDD: 467 ms
+[TIME] join - hit data: 291 ms
+[Thread_1 : TIME] 291 ms
+[TIME] create query: 349 ms
+[TIME] get data from mongodb using cursor: 709 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 242 ms
+[Thread_2 : TIME] 970 ms
+[TIME] union output data: 437 ms
+>> output data: 4000
+[Time] total: 1913 ms
+============== Stream num [163] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 511 ms
+[TIME] join - hit data: 289 ms
+[Thread_1 : TIME] 289 ms
+[TIME] create query: 309 ms
+[TIME] get data from mongodb using cursor: 676 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 427 ms
+[Thread_2 : TIME] 1120 ms
+[TIME] union output data: 322 ms
+>> output data: 4000
+[Time] total: 1993 ms
+============== Stream num [164] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 496 ms
+[TIME] join - hit data: 209 ms
+[Thread_1 : TIME] 209 ms
+[TIME] create query: 318 ms
+[TIME] get data from mongodb using cursor: 677 ms
+[TIME] create newPRDD: 20 ms
+[TIME] join - miss data: 245 ms
+[Thread_2 : TIME] 941 ms
+[TIME] union output data: 302 ms
+>> output data: 4000
+[Time] total: 1782 ms
+============== Stream num [165] =================
+>> input data: 4000
+[TIME] create inputPRDD: 47 ms
+[TIME] create missPRDD: 572 ms
+[TIME] join - hit data: 363 ms
+[Thread_1 : TIME] 363 ms
+[TIME] create query: 485 ms
+[TIME] get data from mongodb using cursor: 822 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 404 ms
+[Thread_2 : TIME] 1245 ms
+[TIME] union output data: 279 ms
+>> output data: 4000
+[Time] total: 2147 ms
+============== Stream num [166] =================
+>> input data: 4000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 675 ms
+[TIME] join - hit data: 259 ms
+[Thread_1 : TIME] 259 ms
+[TIME] create query: 325 ms
+[TIME] get data from mongodb using cursor: 660 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 259 ms
+[Thread_2 : TIME] 936 ms
+[TIME] union output data: 297 ms
+>> output data: 4000
+[Time] total: 1946 ms
+============== Stream num [167] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 545 ms
+[TIME] join - hit data: 294 ms
+[Thread_1 : TIME] 294 ms
+[TIME] create query: 350 ms
+[TIME] get data from mongodb using cursor: 701 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 408 ms
+[Thread_2 : TIME] 1125 ms
+[TIME] union output data: 339 ms
+>> output data: 4000
+[Time] total: 2055 ms
+============== Stream num [168] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 488 ms
+[TIME] join - hit data: 531 ms
+[Thread_1 : TIME] 531 ms
+[TIME] create query: 537 ms
+[TIME] get data from mongodb using cursor: 877 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 282 ms
+[Thread_2 : TIME] 1176 ms
+[TIME] union output data: 309 ms
+>> output data: 4000
+[Time] total: 2017 ms
+============== Stream num [169] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 593 ms
+[TIME] join - hit data: 367 ms
+[Thread_1 : TIME] 367 ms
+[TIME] create query: 517 ms
+[TIME] get data from mongodb using cursor: 866 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 266 ms
+[Thread_2 : TIME] 1154 ms
+[TIME] union output data: 288 ms
+>> output data: 4000
+[Time] total: 2080 ms
+============== Stream num [170] =================
+>> input data: 4000
+[TIME] create inputPRDD: 33 ms
+[TIME] create missPRDD: 579 ms
+[TIME] join - hit data: 293 ms
+[Thread_1 : TIME] 293 ms
+[TIME] create query: 365 ms
+[TIME] get data from mongodb using cursor: 687 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 264 ms
+[Thread_2 : TIME] 966 ms
+[TIME] union output data: 359 ms
+>> output data: 4000
+[Time] total: 1942 ms
+============== Stream num [171] =================
+>> input data: 4000
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 606 ms
+[TIME] join - hit data: 400 ms
+[Thread_1 : TIME] 400 ms
+[TIME] create query: 486 ms
+[TIME] get data from mongodb using cursor: 848 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 254 ms
+[Thread_2 : TIME] 1119 ms
+[TIME] union output data: 428 ms
+>> output data: 4000
+[Time] total: 2194 ms
+============== Stream num [172] =================
+>> input data: 4000
+[TIME] create inputPRDD: 50 ms
+[TIME] create missPRDD: 510 ms
+[TIME] join - hit data: 278 ms
+[Thread_1 : TIME] 278 ms
+[TIME] create query: 347 ms
+[TIME] get data from mongodb using cursor: 668 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 253 ms
+[Thread_2 : TIME] 939 ms
+[TIME] union output data: 284 ms
+>> output data: 4000
+[Time] total: 1784 ms
+============== Stream num [173] =================
+>> input data: 8000
+[TIME] create inputPRDD: 35 ms
+[TIME] create missPRDD: 648 ms
+[TIME] join - hit data: 385 ms
+[Thread_1 : TIME] 385 ms
+[TIME] create query: 428 ms
+[TIME] get data from mongodb using cursor: 1829 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 210 ms
+[Thread_2 : TIME] 2058 ms
+[TIME] union output data: 226 ms
+>> output data: 8000
+[Time] total: 2970 ms
+============== Stream num [174] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 573 ms
+[TIME] join - hit data: 347 ms
+[Thread_1 : TIME] 347 ms
+[TIME] create query: 420 ms
+[TIME] get data from mongodb using cursor: 759 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 278 ms
+[Thread_2 : TIME] 1055 ms
+[TIME] union output data: 424 ms
+>> output data: 4000
+[Time] total: 2096 ms
+============== Stream num [175] =================
+>> input data: 4000
+[TIME] create inputPRDD: 32 ms
+[TIME] create missPRDD: 400 ms
+[TIME] join - hit data: 386 ms
+[Thread_1 : TIME] 386 ms
+[TIME] create query: 407 ms
+[TIME] get data from mongodb using cursor: 741 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 181 ms
+[Thread_2 : TIME] 940 ms
+[TIME] union output data: 369 ms
+>> output data: 4000
+[Time] total: 1742 ms
+============== Stream num [176] =================
+>> input data: 4000
+[TIME] create inputPRDD: 38 ms
+[TIME] create missPRDD: 557 ms
+[TIME] join - hit data: 226 ms
+[Thread_1 : TIME] 226 ms
+[TIME] create query: 343 ms
+[TIME] get data from mongodb using cursor: 650 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 275 ms
+[Thread_2 : TIME] 941 ms
+[TIME] union output data: 310 ms
+>> output data: 4000
+[Time] total: 1849 ms
+============== Stream num [177] =================
+>> input data: 4000
+[TIME] create inputPRDD: 47 ms
+[TIME] create missPRDD: 728 ms
+[TIME] join - hit data: 284 ms
+[Thread_1 : TIME] 284 ms
+[TIME] create query: 354 ms
+[TIME] get data from mongodb using cursor: 676 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 318 ms
+[Thread_2 : TIME] 1011 ms
+[TIME] union output data: 435 ms
+>> output data: 4000
+[Time] total: 2223 ms
+============== Stream num [178] =================
+>> input data: 4000
+[TIME] create inputPRDD: 48 ms
+[TIME] create missPRDD: 525 ms
+[TIME] join - hit data: 306 ms
+[Thread_1 : TIME] 306 ms
+[TIME] create query: 367 ms
+[TIME] get data from mongodb using cursor: 677 ms
+[TIME] create newPRDD: 21 ms
+[TIME] join - miss data: 437 ms
+[Thread_2 : TIME] 1131 ms
+[TIME] union output data: 317 ms
+>> output data: 4000
+[Time] total: 2026 ms
+============== Stream num [179] =================
+>> input data: 4000
+[TIME] create inputPRDD: 43 ms
+[TIME] create missPRDD: 524 ms
+[TIME] join - hit data: 280 ms
+[Thread_1 : TIME] 280 ms
+[TIME] create query: 297 ms
+[TIME] get data from mongodb using cursor: 652 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 285 ms
+[Thread_2 : TIME] 956 ms
+[TIME] union output data: 386 ms
+>> output data: 4000
+[Time] total: 1911 ms
+============== Stream num [180] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 745 ms
+[TIME] join - hit data: 463 ms
+[Thread_1 : TIME] 463 ms
+[TIME] create query: 479 ms
+[TIME] get data from mongodb using cursor: 826 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 301 ms
+[Thread_2 : TIME] 1144 ms
+[TIME] union output data: 328 ms
+>> output data: 4000
+[Time] total: 2260 ms
+============== Stream num [181] =================
+>> input data: 4000
+[TIME] create inputPRDD: 50 ms
+[TIME] create missPRDD: 642 ms
+[TIME] join - hit data: 239 ms
+[Thread_1 : TIME] 239 ms
+[TIME] create query: 402 ms
+[TIME] get data from mongodb using cursor: 714 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 293 ms
+[Thread_2 : TIME] 1023 ms
+[TIME] union output data: 314 ms
+>> output data: 4000
+[Time] total: 2031 ms
+============== Stream num [182] =================
+>> input data: 4000
+[TIME] create inputPRDD: 53 ms
+[TIME] create missPRDD: 539 ms
+[TIME] join - hit data: 436 ms
+[Thread_1 : TIME] 436 ms
+[TIME] create query: 499 ms
+[TIME] get data from mongodb using cursor: 850 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 268 ms
+[Thread_2 : TIME] 1136 ms
+[TIME] union output data: 420 ms
+>> output data: 4000
+[Time] total: 2151 ms
+============== Stream num [183] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 575 ms
+[TIME] join - hit data: 339 ms
+[Thread_1 : TIME] 339 ms
+[TIME] create query: 354 ms
+[TIME] get data from mongodb using cursor: 692 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 283 ms
+[Thread_2 : TIME] 994 ms
+[TIME] union output data: 317 ms
+>> output data: 4000
+[Time] total: 1927 ms
+============== Stream num [184] =================
+>> input data: 4000
+[TIME] create inputPRDD: 42 ms
+[TIME] create missPRDD: 691 ms
+[TIME] join - hit data: 302 ms
+[Thread_1 : TIME] 302 ms
+[TIME] create query: 318 ms
+[TIME] get data from mongodb using cursor: 648 ms
+[TIME] create newPRDD: 18 ms
+[TIME] join - miss data: 437 ms
+[Thread_2 : TIME] 1104 ms
+[TIME] union output data: 323 ms
+>> output data: 4000
+[Time] total: 2162 ms
+============== Stream num [185] =================
+>> input data: 4000
+[TIME] create inputPRDD: 47 ms
+[TIME] create missPRDD: 575 ms
+[TIME] join - hit data: 258 ms
+[Thread_1 : TIME] 258 ms
+[TIME] create query: 382 ms
+[TIME] get data from mongodb using cursor: 749 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 270 ms
+[Thread_2 : TIME] 1036 ms
+[TIME] union output data: 452 ms
+>> output data: 4000
+[Time] total: 2112 ms
+============== Stream num [186] =================
+>> input data: 4000
+[TIME] create inputPRDD: 44 ms
+[TIME] create missPRDD: 645 ms
+[TIME] join - hit data: 446 ms
+[Thread_1 : TIME] 446 ms
+[TIME] create query: 532 ms
+[TIME] get data from mongodb using cursor: 867 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 269 ms
+[Thread_2 : TIME] 1153 ms
+[TIME] union output data: 326 ms
+>> output data: 4000
+[Time] total: 2169 ms
+============== Stream num [187] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 612 ms
+[TIME] join - hit data: 306 ms
+[Thread_1 : TIME] 306 ms
+[TIME] create query: 374 ms
+[TIME] get data from mongodb using cursor: 695 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 298 ms
+[Thread_2 : TIME] 1009 ms
+[TIME] union output data: 331 ms
+>> output data: 4000
+[Time] total: 1996 ms
+============== Stream num [188] =================
+>> input data: 4000
+[TIME] create inputPRDD: 50 ms
+[TIME] create missPRDD: 572 ms
+[TIME] join - hit data: 458 ms
+[Thread_1 : TIME] 458 ms
+[TIME] create query: 535 ms
+[TIME] get data from mongodb using cursor: 882 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 410 ms
+[Thread_2 : TIME] 1309 ms
+[TIME] union output data: 311 ms
+>> output data: 4000
+[Time] total: 2244 ms
+============== Stream num [189] =================
+>> input data: 4958
+[TIME] create inputPRDD: 50 ms
+[TIME] create missPRDD: 491 ms
+[TIME] join - hit data: 231 ms
+[Thread_1 : TIME] 231 ms
+[TIME] create query: 249 ms
+[TIME] get data from mongodb using cursor: 761 ms
+[TIME] create newPRDD: 19 ms
+[TIME] join - miss data: 211 ms
+[Thread_2 : TIME] 991 ms
+[TIME] union output data: 222 ms
+>> output data: 4958
+[Time] total: 1756 ms
+============== Stream num [190] =================
+>> input data: 7042
+[TIME] create inputPRDD: 39 ms
+[TIME] create missPRDD: 436 ms
+[TIME] join - hit data: 382 ms
+[Thread_1 : TIME] 382 ms
+[TIME] create query: 416 ms
+[TIME] get data from mongodb using cursor: 1483 ms
+[TIME] create newPRDD: 52 ms
+[TIME] join - miss data: 222 ms
+[Thread_2 : TIME] 1754 ms
+[TIME] union output data: 427 ms
+>> output data: 7042
+[Time] total: 2660 ms
+============== Stream num [191] =================
+>> input data: 4000
+[TIME] create inputPRDD: 41 ms
+[TIME] create missPRDD: 436 ms
+[TIME] join - hit data: 381 ms
+[Thread_1 : TIME] 381 ms
+[TIME] create query: 451 ms
+[TIME] get data from mongodb using cursor: 797 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 172 ms
+[Thread_2 : TIME] 986 ms
+[TIME] union output data: 225 ms
+>> output data: 4000
+[Time] total: 1690 ms
+============== Stream num [192] =================
+>> input data: 4000
+[TIME] create inputPRDD: 37 ms
+[TIME] create missPRDD: 565 ms
+[TIME] join - hit data: 306 ms
+[Thread_1 : TIME] 306 ms
+[TIME] create query: 323 ms
+[TIME] get data from mongodb using cursor: 829 ms
+[TIME] create newPRDD: 27 ms
+[TIME] join - miss data: 456 ms
+[Thread_2 : TIME] 1311 ms
+[TIME] union output data: 329 ms
+>> output data: 4000
+[Time] total: 2244 ms
+============== Stream num [193] =================
+>> input data: 4000
+[TIME] create inputPRDD: 27 ms
+[TIME] create missPRDD: 551 ms
+[TIME] join - hit data: 492 ms
+[Thread_1 : TIME] 492 ms
+[TIME] create query: 513 ms
+[TIME] get data from mongodb using cursor: 838 ms
+[TIME] create newPRDD: 16 ms
+[TIME] join - miss data: 298 ms
+[Thread_2 : TIME] 1153 ms
+[TIME] union output data: 312 ms
+>> output data: 4000
+[Time] total: 2045 ms
+============== Stream num [194] =================
+>> input data: 4000
+[TIME] create inputPRDD: 40 ms
+[TIME] create missPRDD: 630 ms
+[TIME] join - hit data: 408 ms
+[Thread_1 : TIME] 408 ms
+[TIME] create query: 513 ms
+[TIME] get data from mongodb using cursor: 884 ms
+[TIME] create newPRDD: 17 ms
+[TIME] join - miss data: 276 ms
+[Thread_2 : TIME] 1178 ms
+[TIME] union output data: 315 ms
+>> output data: 4000
+[Time] total: 2166 ms
+============== Stream num [195] =================
+>> input data: 4000
+[TIME] create inputPRDD: 53 ms
+[TIME] create missPRDD: 708 ms
+[TIME] join - hit data: 321 ms
+[Thread_1 : TIME] 321 ms
+[TIME] create query: 383 ms

@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/DS_join_step3/src/main/scala/streaming.scala:433:49: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : org.apache.spark.rdd.RDD[(Int, Int)][0m
+[0m[[0m[31merror[0m] [0m[0m required: Null[0m
+[0m[[0m[31merror[0m] [0m[0m							inputKeysRDD = cogroupedRDD.mapPartitions({ iter =>[0m
+[0m[[0m[31merror[0m] [0m[0m							                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

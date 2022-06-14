@@ -1,0 +1,17 @@
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/myNapp_v3/src/main/scala/streaming.scala:178:20: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : com.mongodb.casbah.MongoDB[0m
+[0m[[0m[31merror[0m] [0m[0m required: com.mongodb.casbah.MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m			db = mongoClient("admin")[0m
+[0m[[0m[31merror[0m] [0m[0m			                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/myNapp_v3/src/main/scala/streaming.scala:182:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : com.mongodb.casbah.MongoDB[0m
+[0m[[0m[31merror[0m] [0m[0m required: com.mongodb.casbah.MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m				db = mongoClient("admin")[0m
+[0m[[0m[31merror[0m] [0m[0m				                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/myNapp_v3/src/main/scala/streaming.scala:187:25: value command is not a member of com.mongodb.casbah.MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m		var serverStatus = db.command("serverStatus").get("wiredTiger").toString[0m
+[0m[[0m[31merror[0m] [0m[0m		                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/user/spark-2.1.0-bin-hadoop2.7/myNapp_v3/src/main/scala/streaming.scala:665:27: value command is not a member of com.mongodb.casbah.MongoClient[0m
+[0m[[0m[31merror[0m] [0m[0m				var serverStatus = db.command("serverStatus").get("wiredTiger").toString[0m
+[0m[[0m[31merror[0m] [0m[0m				                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

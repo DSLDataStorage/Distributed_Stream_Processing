@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.github.nscala-time
+Implementation-Title: nscala-time
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: com.github.nscala-time
+Specification-Vendor: com.github.nscala-time
+Specification-Title: nscala-time
+Specification-Version: 1.0.0
+

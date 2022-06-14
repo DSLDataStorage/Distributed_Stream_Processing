@@ -1,0 +1,1447 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>server - akka.http.scaladsl.server</title>
+          <meta name="description" content="server - akka.http.scaladsl.server" />
+          <meta name="keywords" content="server akka.http.scaladsl.server" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'akka.http.scaladsl.server.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="akka">akka</a>.<a href="../../package.html" class="extype" name="akka.http">http</a>.<a href="../package.html" class="extype" name="akka.http.scaladsl">scaladsl</a></p>
+        <h1>server</h1><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">server</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="http://github.com/akka/akka/tree/v2.4.11//akka-http/src/main/scala/akka/http/scaladsl/server/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph1" viewBox="0.00 0.00 5127.00 158.00" height="158pt" width="5127pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph0"><polygon points="-4,4 -4,-154 5123,-154 5123,4 -4,4" stroke="white" fill="white"></polygon><!-- node0 --><g class="node class" id="graph1_0"><g id="a_class|graph1_0"><a xlink:title="akka.http.scaladsl.server.ValidationRejection" xlink:href="ValidationRejection.html#inheritance-diagram"><polygon points="2030.25,-26 1901.75,-26 1901.75,-0 2030.25,-0 2030.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-19" x="1914" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="1933.68" text-anchor="start">ValidationRejection</text></a></g></g><!-- node1 --><g class="node class" id="graph1_1"><g id="a_class|graph1_1"><a xlink:title="akka.http.scaladsl.server.UnsupportedWebSocketSubprotocolRejection" xlink:href="UnsupportedWebSocketSubprotocolRejection.html#inheritance-diagram"><polygon points="248,-88 0,-88 0,-62 248,-62 248,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="12" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="31.9751" text-anchor="start">UnsupportedWebSocketSubprotocolRejection</text></a></g></g><!-- node2 --><g class="node class" id="graph1_2"><g id="a_class|graph1_2"><a xlink:title="akka.http.scaladsl.server.UnsupportedRequestEncodingRejection" xlink:href="UnsupportedRequestEncodingRejection.html#inheritance-diagram"><polygon points="488,-88 266,-88 266,-62 488,-62 488,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="278" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="297.663" text-anchor="start">UnsupportedRequestEncodingRejection</text></a></g></g><!-- node3 --><g class="node class" id="graph1_3"><g id="a_class|graph1_3"><a xlink:title="akka.http.scaladsl.server.UnsupportedRequestContentTypeRejection" xlink:href="UnsupportedRequestContentTypeRejection.html#inheritance-diagram"><polygon points="743.25,-88 506.75,-88 506.75,-62 743.25,-62 743.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="519" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="538.661" text-anchor="start">UnsupportedRequestContentTypeRejection</text></a></g></g><!-- node4 --><g class="node class" id="graph1_4"><g id="a_class|graph1_4"><a xlink:title="akka.http.scaladsl.server.UnsatisfiableRangeRejection" xlink:href="UnsatisfiableRangeRejection.html#inheritance-diagram"><polygon points="934.25,-88 761.75,-88 761.75,-62 934.25,-62 934.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="774" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="793.907" text-anchor="start">UnsatisfiableRangeRejection</text></a></g></g><!-- node5 --><g class="node class" id="graph1_5"><g id="a_class|graph1_5"><a xlink:title="akka.http.scaladsl.server.UnacceptedResponseEncodingRejection" xlink:href="UnacceptedResponseEncodingRejection.html#inheritance-diagram"><polygon points="1179,-88 953,-88 953,-62 1179,-62 1179,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="965" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="984.717" text-anchor="start">UnacceptedResponseEncodingRejection</text></a></g></g><!-- node6 --><g class="node class" id="graph1_6"><g id="a_class|graph1_6"><a xlink:title="akka.http.scaladsl.server.UnacceptedResponseContentTypeRejection" xlink:href="UnacceptedResponseContentTypeRejection.html#inheritance-diagram"><polygon points="1438.25,-88 1197.75,-88 1197.75,-62 1438.25,-62 1438.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="1210" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="1229.71" text-anchor="start">UnacceptedResponseContentTypeRejection</text></a></g></g><!-- node7 --><g class="node class" id="graph1_7"><g id="a_class|graph1_7"><a xlink:title="akka.http.scaladsl.server.TransformationRejection" xlink:href="TransformationRejection.html#inheritance-diagram"><polygon points="1609.25,-88 1456.75,-88 1456.75,-62 1609.25,-62 1609.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="1469" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="1488.83" text-anchor="start">TransformationRejection</text></a></g></g><!-- node8 --><g class="node class" id="graph1_8"><g id="a_class|graph1_8"><a xlink:title="akka.http.scaladsl.server.TooManyRangesRejection" xlink:href="TooManyRangesRejection.html#inheritance-diagram"><polygon points="1788.25,-88 1627.75,-88 1627.75,-62 1788.25,-62 1788.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="1640" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="1659.74" text-anchor="start">TooManyRangesRejection</text></a></g></g><!-- node9 --><g class="node class" id="graph1_9"><g id="a_class|graph1_9"><a xlink:title="akka.http.scaladsl.server.SchemeRejection" xlink:href="SchemeRejection.html#inheritance-diagram"><polygon points="1929.25,-88 1806.75,-88 1806.75,-62 1929.25,-62 1929.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="1819" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="1838.92" text-anchor="start">SchemeRejection</text></a></g></g><!-- node10 --><g class="node object" id="graph1_10"><g id="a_object|graph1_10"><a xlink:title="akka.http.scaladsl.server.RoutingLog" xlink:href="RoutingLog$.html#inheritance-diagram"><polygon points="4491.25,-88 4396.75,-88 4396.75,-62 4491.25,-62 4491.25,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-81" x="4409" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="4428.53" text-anchor="start">RoutingLog</text></a></g></g><!-- node11 --><g class="node object" id="graph1_11"><g id="a_object|graph1_11"><a xlink:title="akka.http.scaladsl.server.RouteConcatenation" xlink:href="RouteConcatenation$.html#inheritance-diagram"><polygon points="4682.25,-88 4547.75,-88 4547.75,-62 4682.25,-62 4682.25,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-81" x="4560" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="4579.52" text-anchor="start">RouteConcatenation</text></a></g></g><!-- node12 --><g class="node trait" id="graph1_12"><g id="a_trait|graph1_12"><a xlink:title="akka.http.scaladsl.server.RouteConcatenation" xlink:href="RouteConcatenation.html#inheritance-diagram"><polygon points="4721.25,-150 4586.75,-150 4586.75,-124 4721.25,-124 4721.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-143" x="4599" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="4618.52" text-anchor="start">RouteConcatenation</text></a></g></g><!-- node12&#45;&gt;node11 --><g class="edge inheritance" id="graph1_12_11"><g id="a_inheritance|graph1_12_11"><a xlink:title="RouteConcatenation is a subtype of RouteConcatenation"><path d="M4643.27,-119.493C4636.82,-109.565 4628.75,-97.1465 4622.88,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="4641.92,-120.62 4646.11,-123.858 4644.85,-118.712 4641.92,-120.62" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node33 --><g class="node trait" id="graph1_33"><g id="a_trait|graph1_33"><a xlink:title="akka.http.scaladsl.server.Directives" xlink:href="Directives.html#inheritance-diagram"><polygon points="4789,-88 4701,-88 4701,-62 4789,-62 4789,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-81" x="4713" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="4732.66" text-anchor="start">Directives</text></a></g></g><!-- node12&#45;&gt;node33 --><g class="edge inheritance" id="graph1_12_33"><g id="a_inheritance|graph1_12_33"><a xlink:title="Directives is a subtype of RouteConcatenation"><path d="M4676.63,-121.08C4692.04,-110.917 4712.19,-97.6342 4726.61,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="4675.63,-119.645 4672.42,-123.858 4677.55,-122.567 4675.63,-119.645" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node13 --><g class="node object" id="graph1_13"><g id="a_object|graph1_13"><a xlink:title="akka.http.scaladsl.server.RequestEntityExpectedRejection" xlink:href="RequestEntityExpectedRejection$.html#inheritance-diagram"><polygon points="2138,-88 1948,-88 1948,-62 2138,-62 2138,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-81" x="1960" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="1979.79" text-anchor="start">RequestEntityExpectedRejection</text></a></g></g><!-- node14 --><g class="node trait" id="graph1_14"><g id="a_trait|graph1_14"><a xlink:title="akka.http.scaladsl.server.RejectionWithOptionalCause" xlink:href="RejectionWithOptionalCause.html#inheritance-diagram"><polygon points="2328,-88 2156,-88 2156,-62 2328,-62 2328,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-81" x="2168" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="2187.69" text-anchor="start">RejectionWithOptionalCause</text></a></g></g><!-- node14&#45;&gt;node0 --><g class="edge inheritance" id="graph1_14_0"><g id="a_inheritance|graph1_14_0"><a xlink:title="ValidationRejection is a subtype of RejectionWithOptionalCause"><path d="M2181.34,-60.8129C2133.64,-50.4432 2067.73,-36.1154 2021.43,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="2181.22,-62.5781 2186.48,-61.9303 2181.97,-59.158 2181.22,-62.5781" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node25 --><g class="node class" id="graph1_25"><g id="a_class|graph1_25"><a xlink:title="akka.http.scaladsl.server.MalformedQueryParamRejection" xlink:href="MalformedQueryParamRejection.html#inheritance-diagram"><polygon points="2239,-26 2049,-26 2049,-0 2239,-0 2239,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-19" x="2061" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="2080.81" text-anchor="start">MalformedQueryParamRejection</text></a></g></g><!-- node14&#45;&gt;node25 --><g class="edge inheritance" id="graph1_14_25"><g id="a_inheritance|graph1_14_25"><a xlink:title="MalformedQueryParamRejection is a subtype of RejectionWithOptionalCause"><path d="M2217.63,-59.0801C2201.03,-48.9173 2179.34,-35.6342 2163.8,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2216.99,-60.7398 2222.17,-61.8581 2218.82,-57.7548 2216.99,-60.7398" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node26 --><g class="node class" id="graph1_26"><g id="a_class|graph1_26"><a xlink:title="akka.http.scaladsl.server.MalformedHeaderRejection" xlink:href="MalformedHeaderRejection.html#inheritance-diagram"><polygon points="2423,-26 2257,-26 2257,-0 2423,-0 2423,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-19" x="2269" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="2288.75" text-anchor="start">MalformedHeaderRejection</text></a></g></g><!-- node14&#45;&gt;node26 --><g class="edge inheritance" id="graph1_14_26"><g id="a_inheritance|graph1_14_26"><a xlink:title="MalformedHeaderRejection is a subtype of RejectionWithOptionalCause"><path d="M2266.37,-59.0801C2282.97,-48.9173 2304.66,-35.6342 2320.2,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2265.18,-57.7548 2261.83,-61.8581 2267.01,-60.7398 2265.18,-57.7548" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node27 --><g class="node class" id="graph1_27"><g id="a_class|graph1_27"><a xlink:title="akka.http.scaladsl.server.MalformedFormFieldRejection" xlink:href="MalformedFormFieldRejection.html#inheritance-diagram"><polygon points="2619,-26 2441,-26 2441,-0 2619,-0 2619,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-19" x="2453" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="2472.65" text-anchor="start">MalformedFormFieldRejection</text></a></g></g><!-- node14&#45;&gt;node27 --><g class="edge inheritance" id="graph1_14_27"><g id="a_inheritance|graph1_14_27"><a xlink:title="MalformedFormFieldRejection is a subtype of RejectionWithOptionalCause"><path d="M2305,-60.8758C2354.79,-50.5012 2423.75,-36.1357 2472.16,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="2304.47,-59.1972 2299.93,-61.9303 2305.19,-62.6236 2304.47,-59.1972" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15 --><g class="node trait" id="graph1_15"><g id="a_trait|graph1_15"><a xlink:title="akka.http.scaladsl.server.Rejection" xlink:href="Rejection.html#inheritance-diagram"><polygon points="2381,-150 2295,-150 2295,-124 2381,-124 2381,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-143" x="2307" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="2326.77" text-anchor="start">Rejection</text></a></g></g><!-- node15&#45;&gt;node1 --><g class="edge inheritance" id="graph1_15_1"><g id="a_inheritance|graph1_15_1"><a xlink:title="UnsupportedWebSocketSubprotocolRejection is a subtype of Rejection"><path d="M2289.49,-136.08C2060.94,-136.203 1068.73,-133.929 257,-88 254.107,-87.8363 251.179,-87.66 248.227,-87.4726" stroke="#d4d4d4" fill="none"></path><polygon points="2289.75,-137.83 2294.75,-136.076 2289.75,-134.33 2289.75,-137.83" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node2 --><g class="edge inheritance" id="graph1_15_2"><g id="a_inheritance|graph1_15_2"><a xlink:title="UnsupportedRequestEncodingRejection is a subtype of Rejection"><path d="M2289.61,-136.046C2077.48,-135.971 1208.61,-132.796 497,-88 494.075,-87.8158 491.11,-87.6159 488.12,-87.4026" stroke="#d4d4d4" fill="none"></path><polygon points="2289.8,-137.796 2294.8,-136.047 2289.8,-134.296 2289.8,-137.796" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node3 --><g class="edge inheritance" id="graph1_15_3"><g id="a_inheritance|graph1_15_3"><a xlink:title="UnsupportedRequestContentTypeRejection is a subtype of Rejection"><path d="M2289.73,-135.664C2096.24,-134.082 1358.02,-125.763 752,-88 749.126,-87.8209 746.217,-87.6291 743.284,-87.4263" stroke="#d4d4d4" fill="none"></path><polygon points="2289.73,-137.414 2294.75,-135.705 2289.76,-133.915 2289.73,-137.414" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node4 --><g class="edge inheritance" id="graph1_15_4"><g id="a_inheritance|graph1_15_4"><a xlink:title="UnsatisfiableRangeRejection is a subtype of Rejection"><path d="M2289.7,-135.908C2110.95,-135.235 1470.18,-129.86 944,-88 940.819,-87.7469 937.581,-87.4653 934.312,-87.1608" stroke="#d4d4d4" fill="none"></path><polygon points="2289.84,-137.659 2294.85,-135.927 2289.86,-134.159 2289.84,-137.659" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node5 --><g class="edge inheritance" id="graph1_15_5"><g id="a_inheritance|graph1_15_5"><a xlink:title="UnacceptedResponseEncodingRejection is a subtype of Rejection"><path d="M2289.85,-134.962C2131.83,-131.346 1614.69,-117.866 1188,-88 1185.13,-87.7994 1182.23,-87.5866 1179.3,-87.3634" stroke="#d4d4d4" fill="none"></path><polygon points="2289.84,-136.712 2294.87,-135.076 2289.92,-133.212 2289.84,-136.712" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node6 --><g class="edge inheritance" id="graph1_15_6"><g id="a_inheritance|graph1_15_6"><a xlink:title="UnacceptedResponseContentTypeRejection is a subtype of Rejection"><path d="M2289.81,-134.065C2155.98,-128.547 1768.47,-111.602 1447,-88 1444.2,-87.7941 1441.36,-87.5798 1438.5,-87.3582" stroke="#d4d4d4" fill="none"></path><polygon points="2289.78,-135.815 2294.85,-134.272 2289.92,-132.318 2289.78,-135.815" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node7 --><g class="edge inheritance" id="graph1_15_7"><g id="a_inheritance|graph1_15_7"><a xlink:title="TransformationRejection is a subtype of Rejection"><path d="M2289.85,-134.017C2173.94,-128.978 1870.32,-114.185 1618,-88 1615.18,-87.7077 1612.32,-87.3927 1609.42,-87.06" stroke="#d4d4d4" fill="none"></path><polygon points="2289.82,-135.768 2294.89,-134.236 2289.97,-132.271 2289.82,-135.768" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node8 --><g class="edge inheritance" id="graph1_15_8"><g id="a_inheritance|graph1_15_8"><a xlink:title="TooManyRangesRejection is a subtype of Rejection"><path d="M2289.56,-132.446C2194.83,-125.331 1978.41,-108.267 1797,-88 1794.21,-87.6884 1791.37,-87.3613 1788.51,-87.0224" stroke="#d4d4d4" fill="none"></path><polygon points="2289.69,-134.21 2294.8,-132.839 2289.95,-130.72 2289.69,-134.21" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node9 --><g class="edge inheritance" id="graph1_15_9"><g id="a_inheritance|graph1_15_9"><a xlink:title="SchemeRejection is a subtype of Rejection"><path d="M2289.52,-130.923C2214.33,-122.877 2065.1,-106.231 1939,-88 1935.91,-87.5528 1932.74,-87.0785 1929.55,-86.5867" stroke="#d4d4d4" fill="none"></path><polygon points="2289.65,-132.696 2294.81,-131.487 2290.02,-129.216 2289.65,-132.696" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node13 --><g class="edge inheritance" id="graph1_15_13"><g id="a_inheritance|graph1_15_13"><a xlink:title="RequestEntityExpectedRejection is a subtype of Rejection"><path d="M2289.61,-126.158C2238.3,-115.721 2157.2,-99.2274 2102.13,-88.0272" stroke="#d4d4d4" fill="none"></path><polygon points="2289.54,-127.929 2294.79,-127.211 2290.24,-124.5 2289.54,-127.929" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node15&#45;&gt;node14 --><g class="edge inheritance" id="graph1_15_14"><g id="a_inheritance|graph1_15_14"><a xlink:title="RejectionWithOptionalCause is a subtype of Rejection"><path d="M2314.13,-121.08C2297.87,-110.917 2276.61,-97.6342 2261.4,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2313.41,-122.692 2318.57,-123.858 2315.26,-119.724 2313.41,-122.692" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node19 --><g class="node class" id="graph1_19"><g id="a_class|graph1_19"><a xlink:title="akka.http.scaladsl.server.MissingQueryParamRejection" xlink:href="MissingQueryParamRejection.html#inheritance-diagram"><polygon points="2523.25,-88 2346.75,-88 2346.75,-62 2523.25,-62 2523.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="2359" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="2378.98" text-anchor="start">MissingQueryParamRejection</text></a></g></g><!-- node15&#45;&gt;node19 --><g class="edge inheritance" id="graph1_15_19"><g id="a_inheritance|graph1_15_19"><a xlink:title="MissingQueryParamRejection is a subtype of Rejection"><path d="M2362.12,-121.08C2378.55,-110.917 2400.02,-97.6342 2415.4,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2360.96,-119.74 2357.63,-123.858 2362.8,-122.716 2360.96,-119.74" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node20 --><g class="node class" id="graph1_20"><g id="a_class|graph1_20"><a xlink:title="akka.http.scaladsl.server.MissingHeaderRejection" xlink:href="MissingHeaderRejection.html#inheritance-diagram"><polygon points="2694.25,-88 2541.75,-88 2541.75,-62 2694.25,-62 2694.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="2554" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="2573.92" text-anchor="start">MissingHeaderRejection</text></a></g></g><!-- node15&#45;&gt;node20 --><g class="edge inheritance" id="graph1_15_20"><g id="a_inheritance|graph1_15_20"><a xlink:title="MissingHeaderRejection is a subtype of Rejection"><path d="M2386.06,-125.701C2434.82,-115.253 2510.25,-99.0903 2561.75,-88.0528" stroke="#d4d4d4" fill="none"></path><polygon points="2385.66,-123.998 2381.14,-126.756 2386.39,-127.42 2385.66,-123.998" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node21 --><g class="node class" id="graph1_21"><g id="a_class|graph1_21"><a xlink:title="akka.http.scaladsl.server.MissingFormFieldRejection" xlink:href="MissingFormFieldRejection.html#inheritance-diagram"><polygon points="2877.25,-88 2712.75,-88 2712.75,-62 2877.25,-62 2877.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="2725" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="2744.82" text-anchor="start">MissingFormFieldRejection</text></a></g></g><!-- node15&#45;&gt;node21 --><g class="edge inheritance" id="graph1_15_21"><g id="a_inheritance|graph1_15_21"><a xlink:title="MissingFormFieldRejection is a subtype of Rejection"><path d="M2386.41,-129.645C2464.03,-119.454 2617.24,-99.3381 2712.41,-86.8435" stroke="#d4d4d4" fill="none"></path><polygon points="2386.14,-127.915 2381.41,-130.301 2386.59,-131.385 2386.14,-127.915" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node22 --><g class="node class" id="graph1_22"><g id="a_class|graph1_22"><a xlink:title="akka.http.scaladsl.server.MissingCookieRejection" xlink:href="MissingCookieRejection.html#inheritance-diagram"><polygon points="3046.25,-88 2895.75,-88 2895.75,-62 3046.25,-62 3046.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="2908" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="2927.75" text-anchor="start">MissingCookieRejection</text></a></g></g><!-- node15&#45;&gt;node22 --><g class="edge inheritance" id="graph1_15_22"><g id="a_inheritance|graph1_15_22"><a xlink:title="MissingCookieRejection is a subtype of Rejection"><path d="M2386.06,-132.649C2481.51,-125.804 2701.66,-109.07 2886,-88 2889.11,-87.6446 2892.28,-87.2667 2895.48,-86.8725" stroke="#d4d4d4" fill="none"></path><polygon points="2385.92,-130.904 2381.06,-133.007 2386.17,-134.395 2385.92,-130.904" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node23 --><g class="node class" id="graph1_23"><g id="a_class|graph1_23"><a xlink:title="akka.http.scaladsl.server.MethodRejection" xlink:href="MethodRejection.html#inheritance-diagram"><polygon points="3183.25,-88 3064.75,-88 3064.75,-62 3183.25,-62 3183.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="3077" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="3096.59" text-anchor="start">MethodRejection</text></a></g></g><!-- node15&#45;&gt;node23 --><g class="edge inheritance" id="graph1_15_23"><g id="a_inheritance|graph1_15_23"><a xlink:title="MethodRejection is a subtype of Rejection"><path d="M2386.43,-134.519C2502.3,-130.592 2804.49,-118.084 3055,-88 3058.14,-87.6231 3061.35,-87.1989 3064.59,-86.741" stroke="#d4d4d4" fill="none"></path><polygon points="2386.33,-132.771 2381.39,-134.688 2386.44,-136.269 2386.33,-132.771" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node24 --><g class="node class" id="graph1_24"><g id="a_class|graph1_24"><a xlink:title="akka.http.scaladsl.server.MalformedRequestContentRejection" xlink:href="MalformedRequestContentRejection.html#inheritance-diagram"><polygon points="3406.25,-88 3201.75,-88 3201.75,-62 3406.25,-62 3406.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="3214" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="3233.51" text-anchor="start">MalformedRequestContentRejection</text></a></g></g><!-- node15&#45;&gt;node24 --><g class="edge inheritance" id="graph1_15_24"><g id="a_inheritance|graph1_15_24"><a xlink:title="MalformedRequestContentRejection is a subtype of Rejection"><path d="M2386.43,-134.137C2516.77,-128.938 2885.8,-112.992 3192,-88 3195.12,-87.7455 3198.28,-87.4759 3201.48,-87.1941" stroke="#d4d4d4" fill="none"></path><polygon points="2386.08,-132.4 2381.15,-134.347 2386.22,-135.897 2386.08,-132.4" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node29 --><g class="node class" id="graph1_29"><g id="a_class|graph1_29"><a xlink:title="akka.http.scaladsl.server.InvalidOriginRejection" xlink:href="InvalidOriginRejection.html#inheritance-diagram"><polygon points="3567,-88 3425,-88 3425,-62 3567,-62 3567,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="3437" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="3456.98" text-anchor="start">InvalidOriginRejection</text></a></g></g><!-- node15&#45;&gt;node29 --><g class="edge inheritance" id="graph1_15_29"><g id="a_inheritance|graph1_15_29"><a xlink:title="InvalidOriginRejection is a subtype of Rejection"><path d="M2386.47,-135.608C2538.46,-134.002 3019.14,-126.044 3415,-88 3418.25,-87.6872 3421.58,-87.3338 3424.93,-86.9495" stroke="#d4d4d4" fill="none"></path><polygon points="2386.19,-133.861 2381.2,-135.663 2386.22,-137.361 2386.19,-133.861" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node31 --><g class="node object" id="graph1_31"><g id="a_object|graph1_31"><a xlink:title="akka.http.scaladsl.server.ExpectedWebSocketRequestRejection" xlink:href="ExpectedWebSocketRequestRejection$.html#inheritance-diagram"><polygon points="3801,-88 3585,-88 3585,-62 3801,-62 3801,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-81" x="3597" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="3616.82" text-anchor="start">ExpectedWebSocketRequestRejection</text></a></g></g><!-- node15&#45;&gt;node31 --><g class="edge inheritance" id="graph1_15_31"><g id="a_inheritance|graph1_15_31"><a xlink:title="ExpectedWebSocketRequestRejection is a subtype of Rejection"><path d="M2386.35,-135.228C2552.25,-132.346 3113.55,-120.647 3576,-88 3578.95,-87.7915 3581.95,-87.5681 3584.97,-87.3322" stroke="#d4d4d4" fill="none"></path><polygon points="2386.06,-133.483 2381.09,-135.319 2386.12,-136.983 2386.06,-133.483" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node34 --><g class="node class" id="graph1_34"><g id="a_class|graph1_34"><a xlink:title="akka.http.scaladsl.server.CircuitBreakerOpenRejection" xlink:href="CircuitBreakerOpenRejection.html#inheritance-diagram"><polygon points="3993,-88 3819,-88 3819,-62 3993,-62 3993,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="3831" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="3850.86" text-anchor="start">CircuitBreakerOpenRejection</text></a></g></g><!-- node15&#45;&gt;node34 --><g class="edge inheritance" id="graph1_15_34"><g id="a_inheritance|graph1_15_34"><a xlink:title="CircuitBreakerOpenRejection is a subtype of Rejection"><path d="M2386.19,-136.033C2570.93,-135.82 3251.57,-131.913 3810,-88 3812.93,-87.7696 3815.91,-87.5146 3818.91,-87.2394" stroke="#d4d4d4" fill="none"></path><polygon points="2386.13,-134.283 2381.13,-136.038 2386.13,-137.783 2386.13,-134.283" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node35 --><g class="node object" id="graph1_35"><g id="a_object|graph1_35"><a xlink:title="akka.http.scaladsl.server.AuthorizationFailedRejection" xlink:href="AuthorizationFailedRejection$.html#inheritance-diagram"><polygon points="4183,-88 4011,-88 4011,-62 4183,-62 4183,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-81" x="4023" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="4042.96" text-anchor="start">AuthorizationFailedRejection</text></a></g></g><!-- node15&#45;&gt;node35 --><g class="edge inheritance" id="graph1_15_35"><g id="a_inheritance|graph1_15_35"><a xlink:title="AuthorizationFailedRejection is a subtype of Rejection"><path d="M2386.31,-136.314C2585.74,-137.249 3364.37,-137.352 4002,-88 4004.9,-87.7755 4007.85,-87.5256 4010.82,-87.2549" stroke="#d4d4d4" fill="none"></path><polygon points="2386.16,-134.563 2381.15,-136.289 2386.14,-138.063 2386.16,-134.563" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node36 --><g class="node class" id="graph1_36"><g id="a_class|graph1_36"><a xlink:title="akka.http.scaladsl.server.AuthenticationFailedRejection" xlink:href="AuthenticationFailedRejection.html#inheritance-diagram"><polygon points="4378.25,-88 4201.75,-88 4201.75,-62 4378.25,-62 4378.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-81" x="4214" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="4233.96" text-anchor="start">AuthenticationFailedRejection</text></a></g></g><!-- node15&#45;&gt;node36 --><g class="edge inheritance" id="graph1_15_36"><g id="a_inheritance|graph1_15_36"><a xlink:title="AuthenticationFailedRejection is a subtype of Rejection"><path d="M2386.36,-135.378C2640.73,-132.008 3825.85,-115.094 4192,-88 4195.16,-87.766 4198.38,-87.5031 4201.63,-87.2168" stroke="#d4d4d4" fill="none"></path><polygon points="2386.22,-133.629 2381.24,-135.445 2386.27,-137.129 2386.22,-133.629" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node16 --><g class="node object" id="graph1_16"><g id="a_object|graph1_16"><a xlink:title="akka.http.scaladsl.server.PathMatchers" xlink:href="PathMatchers$.html#inheritance-diagram"><polygon points="4913,-88 4807,-88 4807,-62 4913,-62 4913,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-81" x="4819" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="4838.76" text-anchor="start">PathMatchers</text></a></g></g><!-- node17 --><g class="node trait" id="graph1_17"><g id="a_trait|graph1_17"><a xlink:title="akka.http.scaladsl.server.PathMatchers" xlink:href="PathMatchers.html#inheritance-diagram"><polygon points="4913,-150 4807,-150 4807,-124 4913,-124 4913,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-143" x="4819" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="4838.76" text-anchor="start">PathMatchers</text></a></g></g><!-- node17&#45;&gt;node16 --><g class="edge inheritance" id="graph1_17_16"><g id="a_inheritance|graph1_17_16"><a xlink:title="PathMatchers is a subtype of PathMatchers"><path d="M4860,-118.683C4860,-108.896 4860,-96.9026 4860,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="4858.25,-118.858 4860,-123.858 4861.75,-118.858 4858.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node18 --><g class="node object" id="graph1_18"><g id="a_object|graph1_18"><a xlink:title="akka.http.scaladsl.server.PathMatcher" xlink:href="PathMatcher$.html#inheritance-diagram"><polygon points="5075.25,-88 4974.75,-88 4974.75,-62 5075.25,-62 5075.25,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-81" x="4987" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-70.7495" x="5006.76" text-anchor="start">PathMatcher</text></a></g></g><!-- node28 --><g class="node class" id="graph1_28"><g id="a_class|graph1_28"><a xlink:title="akka.http.scaladsl.server.LowerPriorityRoutingLogImplicits" xlink:href="LowerPriorityRoutingLogImplicits.html#inheritance-diagram"><polygon points="4539,-150 4349,-150 4349,-124 4539,-124 4539,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-143" x="4361" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="4380.8" text-anchor="start">LowerPriorityRoutingLogImplicits</text></a></g></g><!-- node28&#45;&gt;node10 --><g class="edge inheritance" id="graph1_28_10"><g id="a_inheritance|graph1_28_10"><a xlink:title="RoutingLog is a subtype of LowerPriorityRoutingLogImplicits"><path d="M4444,-118.683C4444,-108.896 4444,-96.9026 4444,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="4442.25,-118.858 4444,-123.858 4445.75,-118.858 4442.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node30 --><g class="node trait" id="graph1_30"><g id="a_trait|graph1_30"><a xlink:title="akka.http.scaladsl.server.ImplicitPathMatcherConstruction" xlink:href="ImplicitPathMatcherConstruction.html#inheritance-diagram"><polygon points="5119,-150 4931,-150 4931,-124 5119,-124 5119,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-143" x="4943" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-132.75" x="4962.64" text-anchor="start">ImplicitPathMatcherConstruction</text></a></g></g><!-- node30&#45;&gt;node18 --><g class="edge inheritance" id="graph1_30_18"><g id="a_inheritance|graph1_30_18"><a xlink:title="PathMatcher is a subtype of ImplicitPathMatcherConstruction"><path d="M5025,-118.683C5025,-108.896 5025,-96.9026 5025,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="5023.25,-118.858 5025,-123.858 5026.75,-118.858 5023.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g><!-- node32 --><g class="node object" id="graph1_32"><g id="a_object|graph1_32"><a xlink:title="akka.http.scaladsl.server.Directives" xlink:href="Directives$.html#inheritance-diagram"><polygon points="4789,-26 4701,-26 4701,-0 4789,-0 4789,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../../lib/object_diagram.png" y="-19" x="4713" preserveAspectRatio="xMinYMin meet" height="12px" width="12px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-8.74951" x="4732.66" text-anchor="start">Directives</text></a></g></g><!-- node33&#45;&gt;node32 --><g class="edge inheritance" id="graph1_33_32"><g id="a_inheritance|graph1_33_32"><a xlink:title="Directives is a subtype of Directives"><path d="M4745,-56.6826C4745,-46.8961 4745,-34.9026 4745,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="4743.25,-56.8581 4745,-61.8581 4746.75,-56.8581 4743.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="akka.http.scaladsl.server"><span>server</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.http.scaladsl.server.AuthenticationFailedRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AuthenticationFailedRejectionextendsAuthenticationFailedRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="AuthenticationFailedRejection:AuthenticationFailedRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthenticationFailedRejection.html"><span class="name">AuthenticationFailedRejection</span></a><span class="params">(<span name="cause">cause: <a href="AuthenticationFailedRejection$$Cause.html" class="extype" name="akka.http.scaladsl.server.AuthenticationFailedRejection.Cause">Cause</a></span>, <span name="challenge">challenge: <a href="../model/headers/HttpChallenge.html" class="extype" name="akka.http.scaladsl.model.headers.HttpChallenge">HttpChallenge</a></span>)</span><span class="result"> extends <a href="../../javadsl/server/AuthenticationFailedRejection.html" class="extype" name="akka.http.javadsl.server.AuthenticationFailedRejection">javadsl.server.AuthenticationFailedRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@AuthenticationFailedRejectionextendsAuthenticationFailedRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by the various <a href="directives/SecurityDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.SecurityDirectives">akka.http.scaladsl.server.directives.SecurityDirectives</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by the various <a href="directives/SecurityDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.SecurityDirectives">akka.http.scaladsl.server.directives.SecurityDirectives</a>.
+Signals that the request was rejected because the user could not be authenticated. The reason for the rejection is
+specified in the cause.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.CharsetNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CharsetNegotiatorextendsAnyRef"></a>
+      <a id="CharsetNegotiator:CharsetNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CharsetNegotiator.html"><span class="name">CharsetNegotiator</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@CharsetNegotiatorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.CircuitBreakerOpenRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CircuitBreakerOpenRejectionextendsCircuitBreakerOpenRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="CircuitBreakerOpenRejection:CircuitBreakerOpenRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CircuitBreakerOpenRejection.html"><span class="name">CircuitBreakerOpenRejection</span></a><span class="params">(<span name="cause">cause: <a href="../../../pattern/CircuitBreakerOpenException.html" class="extype" name="akka.pattern.CircuitBreakerOpenException">CircuitBreakerOpenException</a></span>)</span><span class="result"> extends <a href="../../javadsl/server/CircuitBreakerOpenRejection.html" class="extype" name="akka.http.javadsl.server.CircuitBreakerOpenRejection">javadsl.server.CircuitBreakerOpenRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@CircuitBreakerOpenRejectionextendsCircuitBreakerOpenRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by the <code>onCompleteWithBreaker</code> directive.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by the <code>onCompleteWithBreaker</code> directive.
+Signals that the request was rejected because the supplied circuit breaker is open and requests are failing fast.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.ConjunctionMagnet" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConjunctionMagnet[L]extendsAnyRef"></a>
+      <a id="ConjunctionMagnet[L]:ConjunctionMagnet[L]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ConjunctionMagnet.html"><span class="name">ConjunctionMagnet</span></a><span class="tparams">[<span name="L">L</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ConjunctionMagnet[L]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.ContentNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ContentNegotiatorextendsAnyRef"></a>
+      <a id="ContentNegotiator:ContentNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ContentNegotiator.html"><span class="name">ContentNegotiator</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ContentNegotiatorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.Directive" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Directive[L]extendsAnyRef"></a>
+      <a id="Directive[L]:Directive[L]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Directive.html"><span class="name">Directive</span></a><span class="tparams">[<span name="L">L</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@Directive[L]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A directive that provides a tuple of values of type <code>L</code> to create an inner route.</p>
+    </li><li name="akka.http.scaladsl.server.Directive0" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Directive0=akka.http.scaladsl.server.Directive[Unit]"></a>
+      <a id="Directive0:Directive0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Directive0</span><span class="result"> = <a href="Directive.html" class="extype" name="akka.http.scaladsl.server.Directive">Directive</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@Directive0=akka.http.scaladsl.server.Directive[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.Directive1" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Directive1[T]=akka.http.scaladsl.server.Directive[(T,)]"></a>
+      <a id="Directive1[T]:Directive1[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Directive1</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> = <a href="Directive.html" class="extype" name="akka.http.scaladsl.server.Directive">Directive</a>[(<span class="extype" name="akka.http.scaladsl.server.Directive1.T">T</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@Directive1[T]=akka.http.scaladsl.server.Directive[(T,)]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.Directives" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DirectivesextendsRouteConcatenationwithBasicDirectiveswithCacheConditionDirectiveswithCookieDirectiveswithDebuggingDirectiveswithCodingDirectiveswithExecutionDirectiveswithFileAndResourceDirectiveswithFileUploadDirectiveswithFormFieldDirectiveswithFutureDirectiveswithHeaderDirectiveswithHostDirectiveswithMarshallingDirectiveswithMethodDirectiveswithMiscDirectiveswithParameterDirectiveswithTimeoutDirectiveswithPathDirectiveswithRangeDirectiveswithRespondWithDirectiveswithRouteDirectiveswithSchemeDirectiveswithSecurityDirectiveswithWebSocketDirectiveswithFramedEntityStreamingDirectives"></a>
+      <a id="Directives:Directives"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Directives.html"><span class="name">Directives</span></a><span class="result"> extends <a href="RouteConcatenation.html" class="extype" name="akka.http.scaladsl.server.RouteConcatenation">RouteConcatenation</a> with <a href="directives/BasicDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.BasicDirectives">BasicDirectives</a> with <a href="directives/CacheConditionDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.CacheConditionDirectives">CacheConditionDirectives</a> with <a href="directives/CookieDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.CookieDirectives">CookieDirectives</a> with <a href="directives/DebuggingDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.DebuggingDirectives">DebuggingDirectives</a> with <a href="directives/CodingDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.CodingDirectives">CodingDirectives</a> with <a href="directives/ExecutionDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.ExecutionDirectives">ExecutionDirectives</a> with <a href="directives/FileAndResourceDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.FileAndResourceDirectives">FileAndResourceDirectives</a> with <a href="directives/FileUploadDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.FileUploadDirectives">FileUploadDirectives</a> with <a href="directives/FormFieldDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.FormFieldDirectives">FormFieldDirectives</a> with <a href="directives/FutureDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.FutureDirectives">FutureDirectives</a> with <a href="directives/HeaderDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.HeaderDirectives">HeaderDirectives</a> with <a href="directives/HostDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.HostDirectives">HostDirectives</a> with <a href="directives/MarshallingDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.MarshallingDirectives">MarshallingDirectives</a> with <a href="directives/MethodDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.MethodDirectives">MethodDirectives</a> with <a href="directives/MiscDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.MiscDirectives">MiscDirectives</a> with <a href="directives/ParameterDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.ParameterDirectives">ParameterDirectives</a> with <a href="directives/TimeoutDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.TimeoutDirectives">TimeoutDirectives</a> with <a href="directives/PathDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.PathDirectives">PathDirectives</a> with <a href="directives/RangeDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.RangeDirectives">RangeDirectives</a> with <a href="directives/RespondWithDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.RespondWithDirectives">RespondWithDirectives</a> with <a href="directives/RouteDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.RouteDirectives">RouteDirectives</a> with <a href="directives/SchemeDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.SchemeDirectives">SchemeDirectives</a> with <a href="directives/SecurityDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.SecurityDirectives">SecurityDirectives</a> with <a href="directives/WebSocketDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.WebSocketDirectives">WebSocketDirectives</a> with <a href="directives/FramedEntityStreamingDirectives.html" class="extype" name="akka.http.scaladsl.server.directives.FramedEntityStreamingDirectives">FramedEntityStreamingDirectives</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@DirectivesextendsRouteConcatenationwithBasicDirectiveswithCacheConditionDirectiveswithCookieDirectiveswithDebuggingDirectiveswithCodingDirectiveswithExecutionDirectiveswithFileAndResourceDirectiveswithFileUploadDirectiveswithFormFieldDirectiveswithFutureDirectiveswithHeaderDirectiveswithHostDirectiveswithMarshallingDirectiveswithMethodDirectiveswithMiscDirectiveswithParameterDirectiveswithTimeoutDirectiveswithPathDirectiveswithRangeDirectiveswithRespondWithDirectiveswithRouteDirectiveswithSchemeDirectiveswithSecurityDirectiveswithWebSocketDirectiveswithFramedEntityStreamingDirectives" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Collects all default directives into one trait for simple importing.</p><div class="fullcomment"><div class="comment cmt"><p>Collects all default directives into one trait for simple importing.</p><p>See <a href="../../javadsl/server/AllDirectives.html" class="extype" name="akka.http.javadsl.server.AllDirectives">akka.http.javadsl.server.AllDirectives</a> for JavaDSL equivalent of this trait.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.EncodingNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EncodingNegotiatorextendsAnyRef"></a>
+      <a id="EncodingNegotiator:EncodingNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EncodingNegotiator.html"><span class="name">EncodingNegotiator</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@EncodingNegotiatorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.ExceptionHandler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ExceptionHandlerextendsakka.http.scaladsl.server.ExceptionHandler.PF"></a>
+      <a id="ExceptionHandler:ExceptionHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ExceptionHandler.html"><span class="name">ExceptionHandler</span></a><span class="result"> extends <a href="ExceptionHandler$.html#PF=PartialFunction[Throwable,akka.http.scaladsl.server.Route]" class="extmbr" name="akka.http.scaladsl.server.ExceptionHandler.PF">PF</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ExceptionHandlerextendsakka.http.scaladsl.server.ExceptionHandler.PF" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.ImplicitPathMatcherConstruction" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ImplicitPathMatcherConstructionextendsAnyRef"></a>
+      <a id="ImplicitPathMatcherConstruction:ImplicitPathMatcherConstruction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ImplicitPathMatcherConstruction.html"><span class="name">ImplicitPathMatcherConstruction</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ImplicitPathMatcherConstructionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="akka.http.scaladsl.server.InvalidOriginRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InvalidOriginRejectionextendsInvalidOriginRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="InvalidOriginRejection:InvalidOriginRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InvalidOriginRejection.html"><span class="name">InvalidOriginRejection</span></a><span class="params">(<span name="allowedOrigins">allowedOrigins: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<a href="../model/headers/HttpOrigin.html" class="extype" name="akka.http.scaladsl.model.headers.HttpOrigin">HttpOrigin</a>]</span>)</span><span class="result"> extends <a href="../../javadsl/server/InvalidOriginRejection.html" class="extype" name="akka.http.javadsl.server.InvalidOriginRejection">javadsl.server.InvalidOriginRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@InvalidOriginRejectionextendsInvalidOriginRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by <a href="directives/HeaderDirectives$.html#checkSameOrigin(allowed:akka.http.scaladsl.model.headers.HttpOriginRange.Default):akka.http.scaladsl.server.Directive0" class="extmbr" name="akka.http.scaladsl.server.directives.HeaderDirectives#checkSameOrigin">akka.http.scaladsl.server.directives.HeaderDirectives.checkSameOrigin</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by <a href="directives/HeaderDirectives$.html#checkSameOrigin(allowed:akka.http.scaladsl.model.headers.HttpOriginRange.Default):akka.http.scaladsl.server.Directive0" class="extmbr" name="akka.http.scaladsl.server.directives.HeaderDirectives#checkSameOrigin">akka.http.scaladsl.server.directives.HeaderDirectives.checkSameOrigin</a>.
+Signals that the request was rejected because <code>Origin</code> header value is invalid.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.LanguageNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LanguageNegotiatorextendsAnyRef"></a>
+      <a id="LanguageNegotiator:LanguageNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LanguageNegotiator.html"><span class="name">LanguageNegotiator</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@LanguageNegotiatorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.LowerPriorityRoutingLogImplicits" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LowerPriorityRoutingLogImplicitsextendsAnyRef"></a>
+      <a id="LowerPriorityRoutingLogImplicits:LowerPriorityRoutingLogImplicits"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LowerPriorityRoutingLogImplicits.html"><span class="name">LowerPriorityRoutingLogImplicits</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@LowerPriorityRoutingLogImplicitsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.MalformedFormFieldRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MalformedFormFieldRejectionextendsMalformedFormFieldRejectionwithRejectionWithOptionalCausewithProductwithSerializable"></a>
+      <a id="MalformedFormFieldRejection:MalformedFormFieldRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MalformedFormFieldRejection.html"><span class="name">MalformedFormFieldRejection</span></a><span class="params">(<span name="fieldName">fieldName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="errorMsg">errorMsg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cause">cause: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Throwable">Throwable</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MalformedFormFieldRejection.html" class="extype" name="akka.http.javadsl.server.MalformedFormFieldRejection">javadsl.server.MalformedFormFieldRejection</a> with <a href="RejectionWithOptionalCause.html" class="extype" name="akka.http.scaladsl.server.RejectionWithOptionalCause">RejectionWithOptionalCause</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MalformedFormFieldRejectionextendsMalformedFormFieldRejectionwithRejectionWithOptionalCausewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by form field filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by form field filters.
+Signals that the request was rejected because a form field could not be interpreted.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MalformedHeaderRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MalformedHeaderRejectionextendsMalformedHeaderRejectionwithRejectionWithOptionalCausewithProductwithSerializable"></a>
+      <a id="MalformedHeaderRejection:MalformedHeaderRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MalformedHeaderRejection.html"><span class="name">MalformedHeaderRejection</span></a><span class="params">(<span name="headerName">headerName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="errorMsg">errorMsg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cause">cause: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Throwable">Throwable</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MalformedHeaderRejection.html" class="extype" name="akka.http.javadsl.server.MalformedHeaderRejection">javadsl.server.MalformedHeaderRejection</a> with <a href="RejectionWithOptionalCause.html" class="extype" name="akka.http.scaladsl.server.RejectionWithOptionalCause">RejectionWithOptionalCause</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MalformedHeaderRejectionextendsMalformedHeaderRejectionwithRejectionWithOptionalCausewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by header directives.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by header directives.
+Signals that the request was rejected because a header value is malformed.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MalformedQueryParamRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MalformedQueryParamRejectionextendsMalformedQueryParamRejectionwithRejectionWithOptionalCausewithProductwithSerializable"></a>
+      <a id="MalformedQueryParamRejection:MalformedQueryParamRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MalformedQueryParamRejection.html"><span class="name">MalformedQueryParamRejection</span></a><span class="params">(<span name="parameterName">parameterName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="errorMsg">errorMsg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cause">cause: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Throwable">Throwable</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MalformedQueryParamRejection.html" class="extype" name="akka.http.javadsl.server.MalformedQueryParamRejection">javadsl.server.MalformedQueryParamRejection</a> with <a href="RejectionWithOptionalCause.html" class="extype" name="akka.http.scaladsl.server.RejectionWithOptionalCause">RejectionWithOptionalCause</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MalformedQueryParamRejectionextendsMalformedQueryParamRejectionwithRejectionWithOptionalCausewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by parameter filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by parameter filters.
+Signals that the request was rejected because a query parameter could not be interpreted.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MalformedRequestContentRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MalformedRequestContentRejectionextendsMalformedRequestContentRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="MalformedRequestContentRejection:MalformedRequestContentRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MalformedRequestContentRejection.html"><span class="name">MalformedRequestContentRejection</span></a><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cause">cause: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MalformedRequestContentRejection.html" class="extype" name="akka.http.javadsl.server.MalformedRequestContentRejection">javadsl.server.MalformedRequestContentRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MalformedRequestContentRejectionextendsMalformedRequestContentRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by unmarshallers.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by unmarshallers.
+Signals that the request was rejected because unmarshalling failed with an error that wasn't
+an <code>IllegalArgumentException</code>. Usually that means that the request content was not of the expected format.
+Note that semantic issues with the request content (e.g. because some parameter was out of range)
+will usually trigger a <code>ValidationRejection</code> instead.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MediaTypeNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediaTypeNegotiatorextendsAnyRef"></a>
+      <a id="MediaTypeNegotiator:MediaTypeNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MediaTypeNegotiator.html"><span class="name">MediaTypeNegotiator</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MediaTypeNegotiatorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.MethodRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MethodRejectionextendsMethodRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="MethodRejection:MethodRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MethodRejection.html"><span class="name">MethodRejection</span></a><span class="params">(<span name="supported">supported: <a href="../model/HttpMethod.html" class="extype" name="akka.http.scaladsl.model.HttpMethod">HttpMethod</a></span>)</span><span class="result"> extends <a href="../../javadsl/server/MethodRejection.html" class="extype" name="akka.http.javadsl.server.MethodRejection">javadsl.server.MethodRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MethodRejectionextendsMethodRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by method filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by method filters.
+Signals that the request was rejected because the HTTP method is unsupported.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MissingCookieRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MissingCookieRejectionextendsMissingCookieRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="MissingCookieRejection:MissingCookieRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MissingCookieRejection.html"><span class="name">MissingCookieRejection</span></a><span class="params">(<span name="cookieName">cookieName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MissingCookieRejection.html" class="extype" name="akka.http.javadsl.server.MissingCookieRejection">javadsl.server.MissingCookieRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MissingCookieRejectionextendsMissingCookieRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by the <code>cookie</code> directive.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by the <code>cookie</code> directive.
+Signals that the request was rejected because a cookie was not found.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MissingFormFieldRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MissingFormFieldRejectionextendsMissingFormFieldRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="MissingFormFieldRejection:MissingFormFieldRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MissingFormFieldRejection.html"><span class="name">MissingFormFieldRejection</span></a><span class="params">(<span name="fieldName">fieldName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MissingFormFieldRejection.html" class="extype" name="akka.http.javadsl.server.MissingFormFieldRejection">javadsl.server.MissingFormFieldRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MissingFormFieldRejectionextendsMissingFormFieldRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by form field filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by form field filters.
+Signals that the request was rejected because a form field was not found.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MissingHeaderRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MissingHeaderRejectionextendsMissingHeaderRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="MissingHeaderRejection:MissingHeaderRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MissingHeaderRejection.html"><span class="name">MissingHeaderRejection</span></a><span class="params">(<span name="headerName">headerName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MissingHeaderRejection.html" class="extype" name="akka.http.javadsl.server.MissingHeaderRejection">javadsl.server.MissingHeaderRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MissingHeaderRejectionextendsMissingHeaderRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by header directives.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by header directives.
+Signals that the request was rejected because a required header could not be found.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.MissingQueryParamRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MissingQueryParamRejectionextendsMissingQueryParamRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="MissingQueryParamRejection:MissingQueryParamRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MissingQueryParamRejection.html"><span class="name">MissingQueryParamRejection</span></a><span class="params">(<span name="parameterName">parameterName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/MissingQueryParamRejection.html" class="extype" name="akka.http.javadsl.server.MissingQueryParamRejection">javadsl.server.MissingQueryParamRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@MissingQueryParamRejectionextendsMissingQueryParamRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by parameter filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by parameter filters.
+Signals that the request was rejected because a query parameter was not found.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.PathMatcher" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PathMatcher[L]extendsakka.http.scaladsl.model.Uri.Path=&gt;akka.http.scaladsl.server.PathMatcher.Matching[L]"></a>
+      <a id="PathMatcher[L]:PathMatcher[L]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PathMatcher.html"><span class="name">PathMatcher</span></a><span class="tparams">[<span name="L">L</span>]</span><span class="result"> extends (<a href="../model/Uri$$Path.html" class="extype" name="akka.http.scaladsl.model.Uri.Path">Path</a>) ⇒ <a href="PathMatcher$$Matching.html" class="extype" name="akka.http.scaladsl.server.PathMatcher.Matching">Matching</a>[<span class="extype" name="akka.http.scaladsl.server.PathMatcher.L">L</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@PathMatcher[L]extendsakka.http.scaladsl.model.Uri.Path=&gt;akka.http.scaladsl.server.PathMatcher.Matching[L]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A PathMatcher tries to match a prefix of a given string and returns either a PathMatcher.Matched instance
+if matched, otherwise PathMatcher.Unmatched.</p>
+    </li><li name="akka.http.scaladsl.server.PathMatcher0" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathMatcher0=akka.http.scaladsl.server.PathMatcher[Unit]"></a>
+      <a id="PathMatcher0:PathMatcher0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PathMatcher0</span><span class="result"> = <a href="PathMatcher.html" class="extype" name="akka.http.scaladsl.server.PathMatcher">PathMatcher</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@PathMatcher0=akka.http.scaladsl.server.PathMatcher[Unit]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.PathMatcher1" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathMatcher1[T]=akka.http.scaladsl.server.PathMatcher[(T,)]"></a>
+      <a id="PathMatcher1[T]:PathMatcher1[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PathMatcher1</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> = <a href="PathMatcher.html" class="extype" name="akka.http.scaladsl.server.PathMatcher">PathMatcher</a>[(<span class="extype" name="akka.http.scaladsl.server.PathMatcher1.T">T</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@PathMatcher1[T]=akka.http.scaladsl.server.PathMatcher[(T,)]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.PathMatchers" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PathMatchersextendsAnyRef"></a>
+      <a id="PathMatchers:PathMatchers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PathMatchers.html"><span class="name">PathMatchers</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@PathMatchersextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="akka.http.scaladsl.server.Rejection" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RejectionextendsRejection"></a>
+      <a id="Rejection:Rejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Rejection.html"><span class="name">Rejection</span></a><span class="result"> extends <a href="../../javadsl/server/Rejection.html" class="extype" name="akka.http.javadsl.server.Rejection">javadsl.server.Rejection</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RejectionextendsRejection" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A rejection encapsulates a specific reason why a Route was not able to handle a request.</p><div class="fullcomment"><div class="comment cmt"><p>A rejection encapsulates a specific reason why a Route was not able to handle a request. Rejections are gathered
+up over the course of a Route evaluation and finally converted to <a href="../model/HttpResponse.html" class="extype" name="akka.http.scaladsl.model.HttpResponse">akka.http.scaladsl.model.HttpResponse</a>s by the
+<code>handleRejections</code> directive, if there was no way for the request to be completed.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.RejectionError" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RejectionErrorextendsRuntimeExceptionwithProductwithSerializable"></a>
+      <a id="RejectionError:RejectionError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RejectionError.html"><span class="name">RejectionError</span></a><span class="params">(<span name="rejection">rejection: <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a></span>)</span><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RejectionErrorextendsRuntimeExceptionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Throwable wrapping a Rejection.</p><div class="fullcomment"><div class="comment cmt"><p>A Throwable wrapping a Rejection.
+Can be used for marshalling <code>Future[T]</code> or <code>Try[T]</code> instances, whose failure side is supposed to trigger a route
+rejection rather than an Exception that is handled by the nearest ExceptionHandler.
+(Custom marshallers can of course use it as well.)
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.RejectionHandler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RejectionHandlerextendscollection.immutable.Seq[akka.http.scaladsl.server.Rejection]=&gt;Option[akka.http.scaladsl.server.Route]"></a>
+      <a id="RejectionHandler:RejectionHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RejectionHandler.html"><span class="name">RejectionHandler</span></a><span class="result"> extends (<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a>]) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="#Route=akka.http.scaladsl.server.RequestContext=&gt;scala.concurrent.Future[akka.http.scaladsl.server.RouteResult]" class="extmbr" name="akka.http.scaladsl.server.Route">Route</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RejectionHandlerextendscollection.immutable.Seq[akka.http.scaladsl.server.Rejection]=&gt;Option[akka.http.scaladsl.server.Route]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RejectionWithOptionalCause" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RejectionWithOptionalCauseextendsRejection"></a>
+      <a id="RejectionWithOptionalCause:RejectionWithOptionalCause"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RejectionWithOptionalCause.html"><span class="name">RejectionWithOptionalCause</span></a><span class="result"> extends <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RejectionWithOptionalCauseextendsRejection" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RequestContext" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RequestContextextendsAnyRef"></a>
+      <a id="RequestContext:RequestContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RequestContext.html"><span class="name">RequestContext</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RequestContextextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Immutable object encapsulating the context of an <a href="../model/HttpRequest.html" class="extype" name="akka.http.scaladsl.model.HttpRequest">akka.http.scaladsl.model.HttpRequest</a>
+as it flows through a akka-http Route structure.</p>
+    </li><li name="akka.http.scaladsl.server.Route" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Route=akka.http.scaladsl.server.RequestContext=&gt;scala.concurrent.Future[akka.http.scaladsl.server.RouteResult]"></a>
+      <a id="Route:Route"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Route</span><span class="result"> = (<a href="RequestContext.html" class="extype" name="akka.http.scaladsl.server.RequestContext">RequestContext</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.concurrent.Future" class="extype" target="_top">Future</a>[<a href="RouteResult.html" class="extype" name="akka.http.scaladsl.server.RouteResult">RouteResult</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@Route=akka.http.scaladsl.server.RequestContext=&gt;scala.concurrent.Future[akka.http.scaladsl.server.RouteResult]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RouteConcatenation" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RouteConcatenationextendsAnyRef"></a>
+      <a id="RouteConcatenation:RouteConcatenation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RouteConcatenation.html"><span class="name">RouteConcatenation</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RouteConcatenationextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="akka.http.scaladsl.server.RouteGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RouteGenerator[T]=T=&gt;akka.http.scaladsl.server.package.Route"></a>
+      <a id="RouteGenerator[T]:RouteGenerator[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RouteGenerator</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> = (<span class="extype" name="akka.http.scaladsl.server.RouteGenerator.T">T</span>) ⇒ <a href="#Route=akka.http.scaladsl.server.RequestContext=&gt;scala.concurrent.Future[akka.http.scaladsl.server.RouteResult]" class="extmbr" name="akka.http.scaladsl.server.Route">Route</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RouteGenerator[T]=T=&gt;akka.http.scaladsl.server.package.Route" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RouteResult" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RouteResultextendsRouteResult"></a>
+      <a id="RouteResult:RouteResult"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RouteResult.html"><span class="name">RouteResult</span></a><span class="result"> extends <a href="../../javadsl/server/RouteResult.html" class="extype" name="akka.http.javadsl.server.RouteResult">javadsl.server.RouteResult</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RouteResultextendsRouteResult" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The result of handling a request.</p><div class="fullcomment"><div class="comment cmt"><p>The result of handling a request.</p><p>As a user you typically don't create RouteResult instances directly.
+Instead, use the methods on the <a href="RequestContext.html" class="extype" name="akka.http.scaladsl.server.RequestContext">RequestContext</a> to achieve the desired effect.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.RoutingLog" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RoutingLogextendsAnyRef"></a>
+      <a id="RoutingLog:RoutingLog"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RoutingLog.html"><span class="name">RoutingLog</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RoutingLogextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.SchemeRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SchemeRejectionextendsSchemeRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="SchemeRejection:SchemeRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SchemeRejection.html"><span class="name">SchemeRejection</span></a><span class="params">(<span name="supported">supported: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/SchemeRejection.html" class="extype" name="akka.http.javadsl.server.SchemeRejection">javadsl.server.SchemeRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@SchemeRejectionextendsSchemeRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by scheme filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by scheme filters.
+Signals that the request was rejected because the Uri scheme is unsupported.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.StandardRoute" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StandardRouteextendsakka.http.scaladsl.server.Route"></a>
+      <a id="StandardRoute:StandardRoute"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="StandardRoute.html"><span class="name">StandardRoute</span></a><span class="result"> extends <a href="#Route=akka.http.scaladsl.server.RequestContext=&gt;scala.concurrent.Future[akka.http.scaladsl.server.RouteResult]" class="extmbr" name="akka.http.scaladsl.server.Route">Route</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@StandardRouteextendsakka.http.scaladsl.server.Route" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Route that can be implicitly converted into a Directive (fitting any signature).</p>
+    </li><li name="akka.http.scaladsl.server.TooManyRangesRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TooManyRangesRejectionextendsTooManyRangesRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="TooManyRangesRejection:TooManyRangesRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TooManyRangesRejection.html"><span class="name">TooManyRangesRejection</span></a><span class="params">(<span name="maxRanges">maxRanges: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="../../javadsl/server/TooManyRangesRejection.html" class="extype" name="akka.http.javadsl.server.TooManyRangesRejection">javadsl.server.TooManyRangesRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@TooManyRangesRejectionextendsTooManyRangesRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by range directives.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by range directives.
+Signals that the request contains too many ranges. An irregular high number of ranges
+indicates a broken client or a denial of service attack.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.TransformationRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TransformationRejectionextendsTransformationRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="TransformationRejection:TransformationRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TransformationRejection.html"><span class="name">TransformationRejection</span></a><span class="params">(<span name="transform">transform: (<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a>]) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a>]</span>)</span><span class="result"> extends <a href="../../javadsl/server/TransformationRejection.html" class="extype" name="akka.http.javadsl.server.TransformationRejection">javadsl.server.TransformationRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@TransformationRejectionextendsTransformationRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A special Rejection that serves as a container for a transformation function on rejections.</p><div class="fullcomment"><div class="comment cmt"><p>A special Rejection that serves as a container for a transformation function on rejections.
+It is used by some directives to &quot;cancel&quot; rejections that are added by later directives of a similar type.</p><p>Consider this route structure for example:</p><pre>put { reject(ValidationRejection(<span class="lit">"no"</span>) } ~ get { ... }</pre><p>If this structure is applied to a PUT request the list of rejections coming back contains three elements:</p><p>1. A ValidationRejection
+2. A MethodRejection
+3. A TransformationRejection holding a function filtering out the MethodRejection</p><p>so that in the end the RejectionHandler will only see one rejection (the ValidationRejection), because the
+MethodRejection added by the <code>get</code> directive is canceled by the <code>put</code> directive (since the HTTP method
+did indeed match eventually).
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.UnacceptedResponseContentTypeRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnacceptedResponseContentTypeRejectionextendsUnacceptedResponseContentTypeRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="UnacceptedResponseContentTypeRejection:UnacceptedResponseContentTypeRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnacceptedResponseContentTypeRejection.html"><span class="name">UnacceptedResponseContentTypeRejection</span></a><span class="params">(<span name="supported">supported: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Set" class="extype" target="_top">Set</a>[<a href="ContentNegotiator$$Alternative.html" class="extype" name="akka.http.scaladsl.server.ContentNegotiator.Alternative">Alternative</a>]</span>)</span><span class="result"> extends <a href="../../javadsl/server/UnacceptedResponseContentTypeRejection.html" class="extype" name="akka.http.javadsl.server.UnacceptedResponseContentTypeRejection">javadsl.server.UnacceptedResponseContentTypeRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@UnacceptedResponseContentTypeRejectionextendsUnacceptedResponseContentTypeRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by marshallers.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by marshallers.
+Signals that the request was rejected because the service is not capable of producing a response entity whose
+content type is accepted by the client
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.UnacceptedResponseEncodingRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnacceptedResponseEncodingRejectionextendsUnacceptedResponseEncodingRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="UnacceptedResponseEncodingRejection:UnacceptedResponseEncodingRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnacceptedResponseEncodingRejection.html"><span class="name">UnacceptedResponseEncodingRejection</span></a><span class="params">(<span name="supported">supported: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Set" class="extype" target="_top">Set</a>[<a href="../model/headers/HttpEncoding.html" class="extype" name="akka.http.scaladsl.model.headers.HttpEncoding">HttpEncoding</a>]</span>)</span><span class="result"> extends <a href="../../javadsl/server/UnacceptedResponseEncodingRejection.html" class="extype" name="akka.http.javadsl.server.UnacceptedResponseEncodingRejection">javadsl.server.UnacceptedResponseEncodingRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@UnacceptedResponseEncodingRejectionextendsUnacceptedResponseEncodingRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by encoding filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by encoding filters.
+Signals that the request was rejected because the service is not capable of producing a response entity whose
+content encoding is accepted by the client
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.UnsatisfiableRangeRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnsatisfiableRangeRejectionextendsUnsatisfiableRangeRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="UnsatisfiableRangeRejection:UnsatisfiableRangeRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnsatisfiableRangeRejection.html"><span class="name">UnsatisfiableRangeRejection</span></a><span class="params">(<span name="unsatisfiableRanges">unsatisfiableRanges: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Seq" class="extype" target="_top">Seq</a>[<a href="../model/headers/ByteRange.html" class="extype" name="akka.http.scaladsl.model.headers.ByteRange">ByteRange</a>]</span>, <span name="actualEntityLength">actualEntityLength: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result"> extends <a href="../../javadsl/server/UnsatisfiableRangeRejection.html" class="extype" name="akka.http.javadsl.server.UnsatisfiableRangeRejection">javadsl.server.UnsatisfiableRangeRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@UnsatisfiableRangeRejectionextendsUnsatisfiableRangeRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by range directives.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by range directives.
+Signals that the request was rejected because the requests contains only unsatisfiable ByteRanges.
+The actualEntityLength gives the client a hint to create satisfiable ByteRanges.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.UnsupportedRequestContentTypeRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnsupportedRequestContentTypeRejectionextendsUnsupportedRequestContentTypeRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="UnsupportedRequestContentTypeRejection:UnsupportedRequestContentTypeRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnsupportedRequestContentTypeRejection.html"><span class="name">UnsupportedRequestContentTypeRejection</span></a><span class="params">(<span name="supported">supported: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.immutable.Set" class="extype" target="_top">Set</a>[<a href="../model/ContentTypeRange.html" class="extype" name="akka.http.scaladsl.model.ContentTypeRange">ContentTypeRange</a>]</span>)</span><span class="result"> extends <a href="../../javadsl/server/UnsupportedRequestContentTypeRejection.html" class="extype" name="akka.http.javadsl.server.UnsupportedRequestContentTypeRejection">javadsl.server.UnsupportedRequestContentTypeRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@UnsupportedRequestContentTypeRejectionextendsUnsupportedRequestContentTypeRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by unmarshallers.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by unmarshallers.
+Signals that the request was rejected because the requests content-type is unsupported.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.UnsupportedRequestEncodingRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnsupportedRequestEncodingRejectionextendsUnsupportedRequestEncodingRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="UnsupportedRequestEncodingRejection:UnsupportedRequestEncodingRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnsupportedRequestEncodingRejection.html"><span class="name">UnsupportedRequestEncodingRejection</span></a><span class="params">(<span name="supported">supported: <a href="../model/headers/HttpEncoding.html" class="extype" name="akka.http.scaladsl.model.headers.HttpEncoding">HttpEncoding</a></span>)</span><span class="result"> extends <a href="../../javadsl/server/UnsupportedRequestEncodingRejection.html" class="extype" name="akka.http.javadsl.server.UnsupportedRequestEncodingRejection">javadsl.server.UnsupportedRequestEncodingRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@UnsupportedRequestEncodingRejectionextendsUnsupportedRequestEncodingRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by decoding filters.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by decoding filters.
+Signals that the request was rejected because the requests content encoding is unsupported.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.UnsupportedWebSocketSubprotocolRejection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnsupportedWebSocketSubprotocolRejectionextendsUnsupportedWebSocketSubprotocolRejectionwithRejectionwithProductwithSerializable"></a>
+      <a id="UnsupportedWebSocketSubprotocolRejection:UnsupportedWebSocketSubprotocolRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnsupportedWebSocketSubprotocolRejection.html"><span class="name">UnsupportedWebSocketSubprotocolRejection</span></a><span class="params">(<span name="supportedProtocol">supportedProtocol: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/UnsupportedWebSocketSubprotocolRejection.html" class="extype" name="akka.http.javadsl.server.UnsupportedWebSocketSubprotocolRejection">javadsl.server.UnsupportedWebSocketSubprotocolRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@UnsupportedWebSocketSubprotocolRejectionextendsUnsupportedWebSocketSubprotocolRejectionwithRejectionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created when a websocket request was not handled because none of the given subprotocols
+was supported.</p>
+    </li><li name="akka.http.scaladsl.server.ValidationRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ValidationRejectionextendsValidationRejectionwithRejectionWithOptionalCausewithProductwithSerializable"></a>
+      <a id="ValidationRejection:ValidationRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ValidationRejection.html"><span class="name">ValidationRejection</span></a><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cause">cause: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Throwable">Throwable</span>] = <span class="symbol">None</span></span>)</span><span class="result"> extends <a href="../../javadsl/server/ValidationRejection.html" class="extype" name="akka.http.javadsl.server.ValidationRejection">javadsl.server.ValidationRejection</a> with <a href="RejectionWithOptionalCause.html" class="extype" name="akka.http.scaladsl.server.RejectionWithOptionalCause">RejectionWithOptionalCause</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ValidationRejectionextendsValidationRejectionwithRejectionWithOptionalCausewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by the <code>validation</code> directive as well as for <code>IllegalArgumentExceptions</code>
+thrown by domain model constructors (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by the <code>validation</code> directive as well as for <code>IllegalArgumentExceptions</code>
+thrown by domain model constructors (e.g. via <code>require</code>).
+It signals that an expected value was semantically invalid.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="akka.http.scaladsl.server.AuthenticationFailedRejection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AuthenticationFailedRejection"></a>
+      <a id="AuthenticationFailedRejection:AuthenticationFailedRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthenticationFailedRejection$.html"><span class="name">AuthenticationFailedRejection</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@AuthenticationFailedRejection" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.AuthorizationFailedRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AuthorizationFailedRejection"></a>
+      <a id="AuthorizationFailedRejection:AuthorizationFailedRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthorizationFailedRejection$.html"><span class="name">AuthorizationFailedRejection</span></a><span class="result"> extends <a href="../../javadsl/server/AuthorizationFailedRejection.html" class="extype" name="akka.http.javadsl.server.AuthorizationFailedRejection">javadsl.server.AuthorizationFailedRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@AuthorizationFailedRejection" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by the 'authorize' directive.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by the 'authorize' directive.
+Signals that the request was rejected because the user is not authorized.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.ConjunctionMagnet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConjunctionMagnet"></a>
+      <a id="ConjunctionMagnet:ConjunctionMagnet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ConjunctionMagnet$.html"><span class="name">ConjunctionMagnet</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ConjunctionMagnet" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.ContentNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ContentNegotiator"></a>
+      <a id="ContentNegotiator:ContentNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ContentNegotiator$.html"><span class="name">ContentNegotiator</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ContentNegotiator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.Directive" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Directive"></a>
+      <a id="Directive:Directive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Directive$.html"><span class="name">Directive</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@Directive" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.Directives" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Directives"></a>
+      <a id="Directives:Directives"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Directives$.html"><span class="name">Directives</span></a><span class="result"> extends <a href="Directives.html" class="extype" name="akka.http.scaladsl.server.Directives">Directives</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@Directives" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.EncodingNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EncodingNegotiator"></a>
+      <a id="EncodingNegotiator:EncodingNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EncodingNegotiator$.html"><span class="name">EncodingNegotiator</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@EncodingNegotiator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.ExceptionHandler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExceptionHandler"></a>
+      <a id="ExceptionHandler:ExceptionHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ExceptionHandler$.html"><span class="name">ExceptionHandler</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ExceptionHandler" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.ExpectedWebSocketRequestRejection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExpectedWebSocketRequestRejection"></a>
+      <a id="ExpectedWebSocketRequestRejection:ExpectedWebSocketRequestRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ExpectedWebSocketRequestRejection$.html"><span class="name">ExpectedWebSocketRequestRejection</span></a><span class="result"> extends <a href="../../javadsl/server/ExpectedWebSocketRequestRejection.html" class="extype" name="akka.http.javadsl.server.ExpectedWebSocketRequestRejection">javadsl.server.ExpectedWebSocketRequestRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@ExpectedWebSocketRequestRejection" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created when a websocket request was expected but none was found.</p>
+    </li><li name="akka.http.scaladsl.server#FIXME" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FIXME:Nothing"></a>
+      <a id="FIXME:Nothing"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FIXME</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Nothing" class="extype" target="_top">Nothing</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@FIXME:Nothing" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.LanguageNegotiator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LanguageNegotiator"></a>
+      <a id="LanguageNegotiator:LanguageNegotiator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="LanguageNegotiator$.html"><span class="name">LanguageNegotiator</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@LanguageNegotiator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.PathMatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathMatcher"></a>
+      <a id="PathMatcher:PathMatcher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PathMatcher$.html"><span class="name">PathMatcher</span></a><span class="result"> extends <a href="ImplicitPathMatcherConstruction.html" class="extype" name="akka.http.scaladsl.server.ImplicitPathMatcherConstruction">ImplicitPathMatcherConstruction</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@PathMatcher" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.PathMatchers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathMatchers"></a>
+      <a id="PathMatchers:PathMatchers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PathMatchers$.html"><span class="name">PathMatchers</span></a><span class="result"> extends <a href="PathMatchers.html" class="extype" name="akka.http.scaladsl.server.PathMatchers">PathMatchers</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@PathMatchers" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RejectionHandler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RejectionHandler"></a>
+      <a id="RejectionHandler:RejectionHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RejectionHandler$.html"><span class="name">RejectionHandler</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RejectionHandler" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RequestEntityExpectedRejection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RequestEntityExpectedRejection"></a>
+      <a id="RequestEntityExpectedRejection:RequestEntityExpectedRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RequestEntityExpectedRejection$.html"><span class="name">RequestEntityExpectedRejection</span></a><span class="result"> extends <a href="../../javadsl/server/RequestEntityExpectedRejection.html" class="extype" name="akka.http.javadsl.server.RequestEntityExpectedRejection">javadsl.server.RequestEntityExpectedRejection</a> with <a href="Rejection.html" class="extype" name="akka.http.scaladsl.server.Rejection">Rejection</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RequestEntityExpectedRejection" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Rejection created by unmarshallers.</p><div class="fullcomment"><div class="comment cmt"><p>Rejection created by unmarshallers.
+Signals that the request was rejected because an message body entity was expected but not supplied.
+</p></div></div>
+    </li><li name="akka.http.scaladsl.server.Route" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Route"></a>
+      <a id="Route:Route"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Route$.html"><span class="name">Route</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@Route" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RouteConcatenation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RouteConcatenation"></a>
+      <a id="RouteConcatenation:RouteConcatenation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RouteConcatenation$.html"><span class="name">RouteConcatenation</span></a><span class="result"> extends <a href="RouteConcatenation.html" class="extype" name="akka.http.scaladsl.server.RouteConcatenation">RouteConcatenation</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RouteConcatenation" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RouteResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RouteResult"></a>
+      <a id="RouteResult:RouteResult"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RouteResult$.html"><span class="name">RouteResult</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RouteResult" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.RoutingLog" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RoutingLog"></a>
+      <a id="RoutingLog:RoutingLog"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RoutingLog$.html"><span class="name">RoutingLog</span></a><span class="result"> extends <a href="LowerPriorityRoutingLogImplicits.html" class="extype" name="akka.http.scaladsl.server.LowerPriorityRoutingLogImplicits">LowerPriorityRoutingLogImplicits</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@RoutingLog" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.StandardRoute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StandardRoute"></a>
+      <a id="StandardRoute:StandardRoute"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StandardRoute$.html"><span class="name">StandardRoute</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@StandardRoute" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.UnacceptedResponseEncodingRejection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnacceptedResponseEncodingRejection"></a>
+      <a id="UnacceptedResponseEncodingRejection:UnacceptedResponseEncodingRejection"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UnacceptedResponseEncodingRejection$.html"><span class="name">UnacceptedResponseEncodingRejection</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@UnacceptedResponseEncodingRejection" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.directives" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="directives"></a>
+      <a id="directives:directives"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="directives/package.html"><span class="name">directives</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@directives" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="akka.http.scaladsl.server.util" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="util"></a>
+      <a id="util:util"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="util/package.html"><span class="name">util</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#akka.http.scaladsl.server.package@util" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
