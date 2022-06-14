@@ -5,5 +5,11 @@
 
 ## Semi-Stream Similarity Join Processing in a Distributed Environment
 
+
+
+
+Hong-Ji Kim and Ki-Hoon Lee, “Semi-Stream Similarity Join Processing in a Distributed Environment(https://ieeexplore.ieee.org/document/9141233),” IEEE Access, Vol. 8, pp. 130194-130204 , July 2020. (ISSN: 2169-3536)
+
+
 ## 세미-스트림 서브시퀀스 매칭을 이용한 온라인 머신러닝
 
