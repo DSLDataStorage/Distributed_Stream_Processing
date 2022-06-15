@@ -7,6 +7,10 @@
 * 유사조인의 모든 처리 단계를 완전 분산 병렬화
 * 유사조인의 특성을 고려하여 분산 캐시의 크기를 동적으로 최적화
 
+## 실험결과
+![exp1](https://user-images.githubusercontent.com/50433145/173740081-8bb364ab-dfcf-46e0-8858-34692ff4453f.png)
+그림 2. 데이터베이스 크기에 따른 유사조인 처리율
+* Amazon review 데이터 기반 실험 결과(그림 2) 제안한 방법(DSim-Join)이 최신 유사조인 방법(Dima)에 비해 최대 1.8배의 성능향상을 보이며 데이터베이스 크기가 커질수록 성능이 향상됨
 
 ## How to compile spark project
 ```
