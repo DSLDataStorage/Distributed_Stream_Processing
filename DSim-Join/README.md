@@ -21,6 +21,6 @@ argument 4 : class name.
 
 
 
-
+## paper
 Hong-Ji Kim and Ki-Hoon Lee, “[Semi-Stream Similarity Join Processing in a Distributed Environment](https://ieeexplore.ieee.org/document/9141233),” IEEE Access, Vol. 8, pp. 130194-130204 , July 2020. (ISSN: 2169-3536)
 
